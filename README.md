@@ -26,7 +26,7 @@ jsdo.it archives
 </tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/zt4L/" alt="地理院地図3Dデータを使ってみるテスト（その１０改3）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/zt4L.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/8y4C/" alt="Three.js + Oimo.js で坂道にボールを転がしてみるテスト（その８）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8y4C.jpg" width="200" height="200"></a></td>
 <td></td>
 </tr>
 </table>
