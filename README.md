@@ -36,7 +36,7 @@ jsdo.it archives
 </tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/aFHd/" alt="Three.js + Oimo.js で消しゴムを落下させてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/aFHd.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/bsZG/" alt="Three.js + Oimo.js で消しゴムを落下させてみるテスト（その５）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/bsZG.jpg" width="200" height="200"></a></td>
 <td></td>
 </tr>
 </table>
