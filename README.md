@@ -34,4 +34,9 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/1RNU/" alt="Three.js + Oimo.js で消しゴムを落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1RNU.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/StoN/" alt="Three.js で消しゴムをストーンヘンジっぽく並べてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/StoN.jpg" width="200" height="200"></a></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/aFHd/" alt="Three.js + Oimo.js で消しゴムを落下させてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/aFHd.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+</tr>
 </table>
