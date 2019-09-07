@@ -34,4 +34,10 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/aFHd/" alt="Three.js + Oimo.js で消しゴムを落下させてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/aFHd.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/bsZG/" alt="Three.js + Oimo.js で消しゴムを落下させてみるテスト（その５）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/bsZG.jpg" width="200" height="200"></a></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/vkVp/" alt="LiquidFun を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vkVp.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </table>
