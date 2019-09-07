@@ -29,4 +29,9 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/8y4C/" alt="Three.js + Oimo.js で坂道にボールを転がしてみるテスト（その８）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8y4C.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/1zNO/" alt="Three.js + Oimo.js でポッキーを落下させてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1zNO.jpg" width="200" height="200"></a></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/oobX/" alt="Three.js + Oimo.js でコインを落下させてみるテスト（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/oobX.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+</tr>
 </table>
