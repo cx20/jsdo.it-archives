@@ -22,6 +22,6 @@ jsdo.it archives
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/8Jmv/" alt="地理院地図3Dデータを使ってみるテスト（その８）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8Jmv.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/bUGs/" alt="地理院地図3Dデータを使ってみるテスト（その８改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/bUGs.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/yc3W/" alt="地理院地図3Dデータを使ってみるテスト（その１０改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yc3W.jpg" width="200" height="200"></a></td>
 </tr>
 </table>
