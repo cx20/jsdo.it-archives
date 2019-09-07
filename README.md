@@ -14,3 +14,7 @@ jsdo.it archives
 ### 無限大に変化するロゴ（Edgeロゴ版）
 
 <a href="https://cx20.github.io/jsdo.it-archives/2t9J/"><img src="/screenshot/2t9J.jpg" width="200" height="200"></a>
+
+### Three.js の雲のサンプルに飛行石を追加してみるテスト
+
+<a href="https://cx20.github.io/jsdo.it-archives/uMJj/"><img src="/screenshot/uMJj.jpg" width="200" height="200"></a>
