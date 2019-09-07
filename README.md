@@ -36,7 +36,7 @@ jsdo.it archives
 </tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/vkVp/" alt="LiquidFun を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vkVp.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/gsAW/" alt="LiquidFun を試してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/gsAW.jpg" width="200" height="200"></a></td>
 <td></td>
 <td></td>
 </tr>
