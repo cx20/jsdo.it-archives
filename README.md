@@ -18,3 +18,7 @@ jsdo.it archives
 ### Three.js の雲のサンプルに飛行石を追加してみるテスト
 
 <a href="https://cx20.github.io/jsdo.it-archives/uMJj/"><img src="/screenshot/uMJj.jpg" width="200" height="200"></a>
+
+### 海に某未確認飛行物体を追加してみるテスト
+
+<a href="https://cx20.github.io/jsdo.it-archives/d38T/"><img src="/screenshot/d38T.jpg" width="200" height="200"></a>
