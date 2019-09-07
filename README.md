@@ -14,4 +14,9 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/d38T/" alt="海に某未確認飛行物体を追加してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/d38T.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/7bHz/" alt="ダンボールを落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/7bHz.jpg" width="200" height="200"></a></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/8ReN/" alt="Three.js + Oimo.js でドミノっぽくドット絵を作るテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8ReN.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+</tr>
 </table>
