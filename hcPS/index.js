@@ -68,7 +68,7 @@ function getTexture( c )
         "黄":"../assets/4/5/t/5/45t52.png", // block_yellow.png",
         "緑":"../assets/8/q/x/5/8qx5Y.png", // block_green.png",
         "水":"../assets/c/n/I/B/cnIBE.png", // block_ltblue.png",
-        "青":"../assets/g/B/P/W/gBPW5.png", // block_blue.png",
+        "青":"../assets/g/B/P/W/gbPW5.png", // block_blue.png",
         "紫":"../assets/1/y/8/H/1y8HS.png"  // block_purple.png"
     };
     return textureHash[ c ];
