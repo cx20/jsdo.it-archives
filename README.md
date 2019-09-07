@@ -19,4 +19,9 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/8ReN/" alt="Three.js + Oimo.js でドミノっぽくドット絵を作るテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8ReN.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/yWa7/" alt="地理院地図3Dデータを使ってみるテスト（その１１）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yWa7.jpg" width="200" height="200"></a></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/8Jmv/" alt="地理院地図3Dデータを使ってみるテスト（その８）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8Jmv.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+</tr>
 </table>
