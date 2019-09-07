@@ -40,4 +40,10 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/hcPS/" alt="Matter.js でテクスチャを使ってみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/hcPS.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/dJbc/" alt="Matter.js でゴゴゴを物理演算してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/dJbc.jpg" width="200" height="200"></a></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/lJhf/" alt="雲の中でゴゴゴを落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/lJhf.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </table>
