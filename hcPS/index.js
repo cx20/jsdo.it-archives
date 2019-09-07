@@ -63,7 +63,7 @@ function getTexture( c )
         "無":"../assets/v/N/a/u/vNauP.png", // block_black.png",
         "白":"../assets/y/l/s/1/yls1Y.png", // block_white.png",
         "肌":"../assets/f/z/1/T/fz1Ta.png", // block_beige.png",
-        "茶":"../assets/7/c/V/6/7cV6C.png", // block_brown.png",
+        "茶":"../assets/7/c/V/6/7CV6C.png", // block_brown.png",
         "赤":"../assets/4/W/5/e/4W5e7.png", // block_red.png",
         "黄":"../assets/4/5/t/5/45t52.png", // block_yellow.png",
         "緑":"../assets/8/q/x/5/8qx5Y.png", // block_green.png",
