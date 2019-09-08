@@ -43,7 +43,7 @@ jsdo.it archives
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/lJhf/" alt="雲の中でゴゴゴを落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/lJhf.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/7lgA/" alt="Three.js + Cannon.js でゴゴゴを落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/7lgA.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/saka/" alt="Three.js + Oimo.js で箱にゴゴゴを入れてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/saka.jpg" width="200" height="200"></a></td>
 <td></td>
 </tr>
 </table>
