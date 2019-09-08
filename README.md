@@ -47,7 +47,7 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/hh04/" alt="Three.js + Oimo.js でゴゴゴを振り回してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/hh04.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/1000/" alt="[WebGL] d3.js を使って作品を並べてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1000.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/1000/" alt="[WebGL] d3.js を使って作品を並べてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/lKJh.jpg" width="200" height="200"></a></td>
 <td></td>
 <td></td>
 <td></td>
