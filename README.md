@@ -49,7 +49,7 @@ jsdo.it archives
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/1000/" alt="[WebGL] d3.js を使って作品を並べてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/lKJh.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/bcus/" alt="[GLSL] d3.js を使ってサンプルを並べてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/bcus.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/ccJ0/" alt="[Three.js+Oimo.js] d3.js を使って作品を並べてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ccJ0.jpg" width="200" height="200"></a></td>
 <td></td>
 </tr>
 </table>
