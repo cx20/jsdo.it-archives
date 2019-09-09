@@ -52,4 +52,10 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/ccJ0/" alt="[Three.js+Oimo.js] d3.js を使って作品を並べてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ccJ0.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/qBHw/" alt="[Grimoire.js] d3.js を使って作品を並べてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/qBHw.jpg" width="200" height="200"></a></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/OEes/" alt="[WebGL] Grimoire.js + Oimo.js を用いて作品を噴出させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/OEes.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </table>
