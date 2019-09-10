@@ -85,12 +85,12 @@ function init() {
     buffgeoCylinder.fromGeometry( new THREE.CylinderGeometry( 0.5, 0.5, 1, 6 ) );
     
     var materials = [
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('/assets/7/c/m/Z/7cmZs.png')}), // 1.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('/assets/r/7/0/e/r70eD.png')}), // 2.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('/assets/d/v/s/L/dvsLs.png')}), // 3.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('/assets/f/Q/F/U/fQFUI.png')}), // 4.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('/assets/f/N/l/x/fNlxK.png')}), // 5.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('/assets/i/6/u/k/i6ukX.png')})  // 6.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/7/c/m/Z/7cmZs.png')}), // 1.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/r/7/0/e/r70eD.png')}), // 2.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/d/v/s/L/dvsLs.png')}), // 3.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/f/Q/F/U/fQFUI.png')}), // 4.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/f/N/l/x/fNlxK.png')}), // 5.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/i/6/u/k/i6ukX.png')})  // 6.png
     ];
     
     matBox = new THREE.MeshLambertMaterial( {  map: basicTexture(0), name:'box' } );
@@ -104,12 +104,12 @@ function init() {
     matGround = new THREE.MeshLambertMaterial( { color: 0x777777, map: texture } );
 
     var urls = [
-        "/assets/j/r/q/8/jrq8Z.jpg",    // px.jpg
-        "/assets/b/A/n/h/bAnhv.jpg",    // nx.jpg
-        "/assets/k/F/t/6/kFt6K.jpg",    // py.jpg
-        "/assets/l/6/9/p/l69pi.jpg",    // ny.jpg
-        "/assets/k/2/t/g/k2tgI.jpg",    // pz.jpg
-        "/assets/l/O/u/H/lOuHI.jpg"     // nz.jpg
+        "../assets/j/r/q/8/jrq8Z.jpg",    // px.jpg
+        "../assets/b/A/n/h/bAnhv.jpg",    // nx.jpg
+        "../assets/k/F/t/6/kFt6K.jpg",    // py.jpg
+        "../assets/l/6/9/p/l69pi.jpg",    // ny.jpg
+        "../assets/k/2/t/g/k2tgI.jpg",    // pz.jpg
+        "../assets/l/O/u/H/lOuHI.jpg"     // nz.jpg
         ];
     
     var textureCube = THREE.ImageUtils.loadTextureCube( urls );
