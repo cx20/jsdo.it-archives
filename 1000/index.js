@@ -1,7 +1,9 @@
 // forked from _shimizu's "d3.js ネットワーク（Force Layout）" http://jsdo.it/_shimizu/9nUr
 
-var w = 465;
-var h = 465;
+//var w = 465;
+//var h = 465;
+var w = window.innerWidth;
+var h = window.innerHeight;
  
 var nodes = [];   // ノードを収める配列
 var links = [];   // ノード間のリンク情報を収める配列
