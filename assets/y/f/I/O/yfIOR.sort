@@ -1,0 +1,69 @@
+@Pass {
+  @DepthFunc(LEQUAL)
+  @BlendFunc(SRC_ALPHA, ONE_MINUS_SRC_ALPHA)
+  @CullFace(BACK)
+
+  FS_PREC(mediump,float)
+
+  varying vec2 vTexCoord;
+  varying vec3 vNormal;
+  varying vec3 vPosition;
+
+  #ifdef VS
+    attribute vec3 position;
+    attribute vec3 normal;
+    attribute vec2 texCoord;
+    uniform mat4 _matPVM;
+    uniform mat4 _matM;
+    void main(){
+      gl_Position = _matPVM * vec4(position, 1.);
+      vTexCoord = texCoord;
+      vNormal = normalize((_matM * vec4(normal, 0.)).xyz);
+      vec4 p = _matM * vec4(position, 1.);
+      vPosition = p.xyz / p.w;
+    }
+  #endif
+
+  #ifdef FS
+    vec3 lambert(vec3 albedo, vec3 normal, vec3 lightDirection) {
+      return max(dot(vNormal, -1. * lightDirection), 0.) * albedo;
+    }
+
+    float drawShade(vec2 uv, float blur) {
+      return smoothstep(1. - blur, 1., abs(uv.x)) + smoothstep(1. - blur, 1., abs(uv.y));
+    }
+
+    vec4 alphaBlend(vec4 base, vec4 blend) {
+      return vec4(base.rgb * base.a * (1.0 - blend.a) + blend.rgb * blend.a, blend.a + base.a * (1.0 - blend.a));
+    }
+
+    @HAS_TEXTURE{sampler:"texture"}
+    uniform bool _textureUsed;
+    uniform sampler2D texture;
+    uniform vec3 _cameraPosition;
+    @{type:"color", default:"#6E183D"}
+    uniform vec4 color;
+    @{type:"color", default:"#FFFFFF"}
+    uniform vec4 specular;
+    @{type:"color", default:"#000000"}
+    uniform vec4 ambient;
+    @{default:"10"}
+    uniform float power;
+    @{default:"n(1,1,1)"}
+    uniform vec3 sun;
+    @{default:"0.4"}
+    uniform float blur;
+    @{default:"0.3"}
+    uniform float shade;
+    void main(){
+      vec2 uv = vTexCoord * 2. - vec2(1.);
+      vec3 albedo = color.rgb;
+      if (_textureUsed) {
+        albedo *= texture2D(texture, vTexCoord).rgb;
+      }
+      vec3 diffuseContrib = lambert(albedo, vNormal, sun);
+      vec4 c = vec4(diffuseContrib, 1.) + ambient * vec4(albedo, color.a);
+      gl_FragColor = alphaBlend(vec4(min(c.r, 1.), min(c.g, 1.), min(c.b, 1.), min(c.a, 1.)), vec4(0., 0., 0., shade) * drawShade(uv, blur));
+    }
+  #endif
+}

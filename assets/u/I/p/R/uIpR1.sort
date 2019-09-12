@@ -1,0 +1,94 @@
+@Pass {
+  @DepthFunc(LEQUAL)
+  @BlendFunc(SRC_ALPHA, ONE_MINUS_SRC_ALPHA)
+  @CullFace(BACK)
+
+  FS_PREC(mediump,float)
+
+  varying vec2 vTexCoord;
+  varying vec3 vNormal;
+  varying vec3 vPosition;
+
+  #ifdef VS
+    attribute vec3 position;
+    attribute vec3 normal;
+    attribute vec2 texCoord;
+    uniform mat4 _matPVM;
+    uniform mat4 _matM;
+    @{default:"-1"}
+    uniform float radius;
+    @{default:"0.1"}
+    uniform float coef;
+    void main(){
+      float phi = position.x / radius;
+      vec3 tposition = vec3(radius * sin(phi), radius * (1. - cos(phi)) / coef + position.y, position.z);
+      gl_Position = _matPVM * vec4(tposition, 1.);
+      vTexCoord = texCoord;
+      vNormal = normalize((_matM * vec4(normal, 0.)).xyz);
+      vec4 p = _matM * vec4(tposition, 1.);
+      vPosition = p.xyz / p.w;
+    }
+  #endif
+
+  #ifdef FS
+    vec3 lambert(vec3 albedo, vec3 normal, vec3 lightDirection) {
+      return max(dot(vNormal, -1. * lightDirection), 0.) * albedo;
+    }
+
+    float drawStripe(vec2 uv, vec2 offset, float width, float margin, float blur) {
+      float x = offset.x + uv.x;
+      return smoothstep(-blur, blur, abs(mod(x, width + margin) - width / 2.) - width / 2.);
+    }
+
+    mat2 rotate(float t) {
+      return mat2(cos(t), -sin(t), sin(t), cos(t));
+    }
+
+    @HAS_TEXTURE{sampler:"texture"}
+    uniform bool _textureUsed;
+    uniform sampler2D texture;
+    @{type:"color", default:"#000000"}
+    uniform vec4 ambient;
+    @{default:"10"}
+    uniform vec3 sun;
+    @{type:"color", default:"#fff"}
+    uniform vec4 color;
+    @{type:"color", default:"#ccc"}
+    uniform vec4 colorStripe;
+    @{default:"0,0"}
+    uniform vec2 offset;
+    @{default:"0.05"}
+    uniform float width;
+    @{default:"0.07"}
+    uniform float margin;
+    @{default:"45"}
+    uniform float rotation;
+    @{default:"0.01"}
+    uniform float blur;
+    void main(){
+      float c;
+      vec2 o = -offset - vec2(0.3333, 0.3333);
+      mat2 r = rotate(radians(rotation));
+      if (vTexCoord.x < 0.3333) {
+        c = drawStripe(r * vec2(0.3333, vTexCoord.y), o, width, margin, blur);
+      } else if (vTexCoord.x > 0.6666) {
+        c = drawStripe(r * vec2(0.6666, vTexCoord.y), o, width, margin, blur);
+      } else {
+        if (vTexCoord.y < 0.3333) {
+          c = drawStripe(r * vec2(vTexCoord.x, 0.3333), o, width, margin, blur);
+        } else if (vTexCoord.y > 0.6666) {
+          c = drawStripe(r * vec2(vTexCoord.x, 0.6666), o, width, margin, blur);
+        } else {
+          c = drawStripe(r * vTexCoord, o, width, margin, blur);
+        }
+      }
+      vec3 albedo = color.rgb * c + colorStripe.rgb * (1. - c);
+      if (_textureUsed) {
+        albedo *= texture2D(texture, vTexCoord).rgb;
+      }
+      vec3 diffuseContrib = lambert(albedo, vNormal, sun);
+      gl_FragColor = vec4(diffuseContrib, 1.) + ambient * vec4(albedo, color.a);
+      // gl_FragColor = vec4(albedo, 1.);
+    }
+  #endif
+}
