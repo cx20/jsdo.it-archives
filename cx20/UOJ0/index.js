@@ -68,7 +68,7 @@ function loadOneModel() {
     let draco_file = new XMLHttpRequest();
     //draco_file.open("GET", "throw_14.drc", true);
     //draco_file.open("GET", "http://jsrun.it/assets/6/E/0/L/6E0Lv", true); // Itokawa Hayabusa 50k poly.drc
-    draco_file.open("GET", "../assets/k/y/x/g/kyxge.drc", true); // Itokawa Hayabusa 200k poly.drc
+    draco_file.open("GET", "../../assets/k/y/x/g/kyxge.drc", true); // Itokawa Hayabusa 200k poly.drc
     draco_file.responseType = "arraybuffer";
     draco_file.send();
     draco_file.onload = function(e) {

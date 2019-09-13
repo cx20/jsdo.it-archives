@@ -44,7 +44,7 @@ function init() {
 
     scene = new THREE.Scene();
     geometry = new THREE.Geometry();
-    var texture = THREE.ImageUtils.loadTexture('../assets/A/6/6/7/A667Q.png', null, animate); // cloud10.png
+    var texture = THREE.ImageUtils.loadTexture('../../assets/A/6/6/7/A667Q.png', null, animate); // cloud10.png
     texture.magFilter = THREE.LinearMipMapLinearFilter;
     texture.minFilter = THREE.LinearMipMapLinearFilter;
     var fog = new THREE.Fog(0x4584b4, -100, 3000);

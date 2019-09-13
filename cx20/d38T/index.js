@@ -228,7 +228,7 @@ var DEMO = {
 		
 		// Load textures		
 		//var waterNormals = new THREE.ImageUtils.loadTexture('./assets/img/waternormals.jpg');
-		var waterNormals = new THREE.ImageUtils.loadTexture('../assets/f/F/2/S/fF2SS.jpg');
+		var waterNormals = new THREE.ImageUtils.loadTexture('../../assets/f/F/2/S/fF2SS.jpg');
 		waterNormals.wrapS = waterNormals.wrapT = THREE.RepeatWrapping; 
 		
 		// Create the water effect
@@ -267,12 +267,12 @@ var DEMO = {
 	
 	loadSkyBox: function loadSkyBox() {
 		var aCubeMap = THREE.ImageUtils.loadTextureCube([
-            '../assets/j/r/q/8/jrq8Z.jpg',    // px.jpg
-            '../assets/b/A/n/h/bAnhv.jpg',    // nx.jpg
-            '../assets/k/F/t/6/kFt6K.jpg',    // py.jpg
-            '../assets/l/6/9/p/l69pi.jpg',    // ny.jpg
-            '../assets/k/2/t/g/k2tgI.jpg',    // pz.jpg
-            '../assets/l/O/u/H/lOuHI.jpg'     // nz.jpg
+            '../../assets/j/r/q/8/jrq8Z.jpg',    // px.jpg
+            '../../assets/b/A/n/h/bAnhv.jpg',    // nx.jpg
+            '../../assets/k/F/t/6/kFt6K.jpg',    // py.jpg
+            '../../assets/l/6/9/p/l69pi.jpg',    // ny.jpg
+            '../../assets/k/2/t/g/k2tgI.jpg',    // pz.jpg
+            '../../assets/l/O/u/H/lOuHI.jpg'     // nz.jpg
 		]);
 		aCubeMap.format = THREE.RGBFormat;
 

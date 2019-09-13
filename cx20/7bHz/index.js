@@ -83,20 +83,20 @@ function webGLStart() {
     var boxMaterial = new CubicVR.Material({
         name: "boxMaterial",
         textures: {
-            color: new CubicVR.Texture("../assets/c/K/k/k/cKkkH.jpg")
+            color: new CubicVR.Texture("../../assets/c/K/k/k/cKkkH.jpg")
         }
     });
 */
     var boxMaterial1 = new CubicVR.Material({
         name: "boxMaterial1",
         textures: {
-            color: new CubicVR.Texture("../assets/9/x/m/A/9xmAw.jpg")
+            color: new CubicVR.Texture("../../assets/9/x/m/A/9xmAw.jpg")
         }
     });
     var boxMaterial2 = new CubicVR.Material({
         name: "boxMaterial2",
         textures: {
-            color: new CubicVR.Texture("../assets/d/Z/1/n/dZ1nX.jpg")
+            color: new CubicVR.Texture("../../assets/d/Z/1/n/dZ1nX.jpg")
         }
     });
 

@@ -63,7 +63,7 @@ function init() {
     buffgeoBox = new THREE.BufferGeometry();
     buffgeoBox.fromGeometry( new THREE.BoxGeometry( 1, 1, 1 ) );
     
-    var texture = THREE.ImageUtils.loadTexture('../assets/b/M/L/p/bMLps.jpg'); // earth.jpg
+    var texture = THREE.ImageUtils.loadTexture('../../assets/b/M/L/p/bMLps.jpg'); // earth.jpg
     matSphere = new THREE.MeshLambertMaterial( { map: texture, name:'sph' } );
     //matSphere = new THREE.MeshLambertMaterial( { map: basicTexture(0), name:'sph' } );
     matBox = new THREE.MeshLambertMaterial( {  map: basicTexture(2), name:'box' } );

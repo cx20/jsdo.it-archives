@@ -57,7 +57,7 @@ function init() {
     scene.add(light);
 
     //var texture = THREE.ImageUtils.loadTexture("road.jpg"); // road.jpg
-    var texture = THREE.ImageUtils.loadTexture("../assets/r/B/f/1/rBf1v.jpg"); // road.jpg
+    var texture = THREE.ImageUtils.loadTexture("../../assets/r/B/f/1/rBf1v.jpg"); // road.jpg
     texture.wrapS   = texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set( 1, 1 );  
 

@@ -72,7 +72,7 @@ function init() {
     buffgeoCylinder.fromGeometry( new THREE.CylinderGeometry( 0.5, 0.5, 1, 6 ) );
     
     //var image = THREE.ImageUtils.loadTexture('koala.png');
-    var image = THREE.ImageUtils.loadTexture('../assets/w/u/w/y/wuwyI.png');
+    var image = THREE.ImageUtils.loadTexture('../../assets/w/u/w/y/wuwyI.png');
     matBox = new THREE.MeshLambertMaterial( {  map: basicTexture(0), name:'box' } );
     matPocky[0] = new THREE.MeshLambertMaterial( {  map: basicTexture(1), name:'pky1' } );
     matPocky[1] = new THREE.MeshLambertMaterial( {  map: basicTexture(2), name:'pky2' } );

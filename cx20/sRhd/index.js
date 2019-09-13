@@ -135,6 +135,6 @@ gr.register(() => {
         geometry: "sphere",
         shape: "sphere",
         scale: 1.0,
-        texture: "../assets/s/s/X/x/ssXxc.png"
+        texture: "../../assets/s/s/X/x/ssXxc.png"
    }, "mesh");
 });

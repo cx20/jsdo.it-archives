@@ -103,7 +103,7 @@ function initBuffers() {
         gl.generateMipmap(gl.TEXTURE_2D);
     };
     //img0.src = "frog.jpg";
-    img0.src = "../assets/A/k/w/j/AkwjW.jpg";
+    img0.src = "../../assets/A/k/w/j/AkwjW.jpg";
 
     var img1 = new Image();
     img1.onload = function(){
@@ -114,7 +114,7 @@ function initBuffers() {
         gl.generateMipmap(gl.TEXTURE_2D);
     };
     //img1.src = "cloud.png";
-    img1.src = "../assets/5/W/y/G/5WyGG.png";
+    img1.src = "../../assets/5/W/y/G/5WyGG.png";
 }
 
 

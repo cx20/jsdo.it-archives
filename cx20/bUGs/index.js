@@ -91,7 +91,7 @@ xhr.addEventListener('load', function (evt) {
 }, false);
 
 
-xhr.open('GET', '../assets/4/9/G/4/49G4v.csv', true); // 芦ノ湖
+xhr.open('GET', '../../assets/4/9/G/4/49G4v.csv', true); // 芦ノ湖
 xhr.send(null);
 
 window.onresize = function () {

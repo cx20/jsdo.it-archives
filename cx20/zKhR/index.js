@@ -162,14 +162,14 @@ function loadMario() {
 
     var imageLoader = new THREE.ImageLoader( manager );
     //imageLoader.load( 'halloween.png', function ( image ) {
-    imageLoader.load( '../assets/k/q/7/I/kq7Is.png', function ( image ) {
+    imageLoader.load( '../../assets/k/q/7/I/kq7Is.png', function ( image ) {
         texture.image = image;
         texture.needsUpdate = true;
     } );
 
     var objLoader = new THREE.OBJLoader();
     //objLoader.load( 'halloween.obj', function ( object ) {
-    objLoader.load( '../assets/j/M/p/1/jMp1l.obj', function ( object ) {
+    objLoader.load( '../../assets/j/M/p/1/jMp1l.obj', function ( object ) {
         object.traverse( function ( child ) {
             if ( child instanceof THREE.Mesh ) {
                 child.material.map = texture;

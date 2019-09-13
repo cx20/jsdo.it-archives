@@ -78,12 +78,12 @@ function init() {
     buffgeoCylinder.fromGeometry( new THREE.CylinderGeometry( 0.5, 0.5, 1, 6 ) );
     
     var materials = [
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/A/i/j/F/AijFH.png')}), // 1.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/p/s/K/b/psKbZ.png')}), // 2.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/z/Y/H/8/zYH8O.png')}), // 3.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/d/7/D/N/d7DNy.png')}), // 4.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/A/i/j/F/AijFH.png')}), // 5.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/o/8/G/M/o8GM9.png')})  // 6.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/A/i/j/F/AijFH.png')}), // 1.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/p/s/K/b/psKbZ.png')}), // 2.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/z/Y/H/8/zYH8O.png')}), // 3.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/d/7/D/N/d7DNy.png')}), // 4.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/A/i/j/F/AijFH.png')}), // 5.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/o/8/G/M/o8GM9.png')})  // 6.png
     ];
     
     matBox = new THREE.MeshLambertMaterial( {  map: basicTexture(0), name:'box' } );

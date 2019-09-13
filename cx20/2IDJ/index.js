@@ -157,7 +157,7 @@ function draw() {
         animate();
     };
     //img.src = "frog.jpg";
-    img.src = "../assets/A/k/w/j/AkwjW.jpg";
+    img.src = "../../assets/A/k/w/j/AkwjW.jpg";
 }
 
 function animate() {

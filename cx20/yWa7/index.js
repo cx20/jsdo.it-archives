@@ -167,7 +167,7 @@ function initTerrain(w, h) {
     	buffgeo, 
     	new THREE.MeshPhongMaterial ({
     		//map: THREE.ImageUtils.loadTexture('texture.png')
-            map: THREE.ImageUtils.loadTexture('../assets/9/r/4/P/9r4PX.png') // 芦ノ湖
+            map: THREE.ImageUtils.loadTexture('../../assets/9/r/4/P/9r4PX.png') // 芦ノ湖
 		}));
     //terrain.rotation.x = Math.PI / -2; // 90度回転（地面を上向きに設定）
     terrain.castShadow = true;
@@ -351,5 +351,5 @@ var rayTest = function () {
 }
 
 
-xhr.open('GET', '../assets/4/9/G/4/49G4v.csv', true); // 芦ノ湖
+xhr.open('GET', '../../assets/4/9/G/4/49G4v.csv', true); // 芦ノ湖
 xhr.send(null);

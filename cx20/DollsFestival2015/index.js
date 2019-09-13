@@ -51,7 +51,7 @@ function init() {
     scene.add(light);
 
     //var texture = THREE.ImageUtils.loadTexture("red.jpg");
-    var texture = THREE.ImageUtils.loadTexture("../assets/f/9/t/n/f9tnp.jpg"); // red.jpg
+    var texture = THREE.ImageUtils.loadTexture("../../assets/f/9/t/n/f9tnp.jpg"); // red.jpg
     texture.wrapS   = texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set( 1, 1 );  
 

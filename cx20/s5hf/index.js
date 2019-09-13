@@ -70,12 +70,12 @@ function init() {
     buffgeoMono = new THREE.BoxGeometry( 1, 1, 1 );
 
     var materials = [
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/7/c/m/Z/7cmZs.png')}), // 1.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/r/7/0/e/r70eD.png')}), // 2.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/d/v/s/L/dvsLs.png')}), // 3.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/f/Q/F/U/fQFUI.png')}), // 4.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/f/N/l/x/fNlxK.png')}), // 5.png
-       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../assets/i/6/u/k/i6ukX.png')})  // 6.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/7/c/m/Z/7cmZs.png')}), // 1.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/r/7/0/e/r70eD.png')}), // 2.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/d/v/s/L/dvsLs.png')}), // 3.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/f/Q/F/U/fQFUI.png')}), // 4.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/f/N/l/x/fNlxK.png')}), // 5.png
+       new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/i/6/u/k/i6ukX.png')})  // 6.png
     ];
     matMono = new THREE.MeshFaceMaterial( materials );
 

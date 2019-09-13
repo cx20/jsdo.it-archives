@@ -32,18 +32,18 @@ var boxSizeZ = 9/16*20;
 
 var dataSet = [
 {
-    image: "../assets/9/9/W/G/99WGE.png", // mario.png
-    model: "../assets/t/N/6/x/tN6xU.obj",     // mario.obj
+    image: "../../assets/9/9/W/G/99WGE.png", // mario.png
+    model: "../../assets/t/N/6/x/tN6xU.obj",     // mario.obj
     type: 'box', 
     size: [16/16*20, 16/16*20, 9/16*20]
 },{
-    image: "../assets/7/F/G/d/7FGdo.png", // sheep.png
-    model: "../assets/o/U/g/q/oUgqI.obj",     // sheep.obj
+    image: "../../assets/7/F/G/d/7FGdo.png", // sheep.png
+    model: "../../assets/o/U/g/q/oUgqI.obj",     // sheep.obj
     type: 'box', 
     size: [8/16*20, 11/16*20, 16/16*20]
 }, {
-    image: "../assets/k/q/7/I/kq7Is.png", // halloween.png
-    model: "../assets/j/M/p/1/jMp1l.obj",     // halloween.obj
+    image: "../../assets/k/q/7/I/kq7Is.png", // halloween.png
+    model: "../../assets/j/M/p/1/jMp1l.obj",     // halloween.obj
     type: 'sphere', 
     size: [16/16*20]
 }];

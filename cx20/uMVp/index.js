@@ -157,7 +157,7 @@ function draw() {
         gl.generateMipmap(gl.TEXTURE_2D);
     };
     //img.src = "frog.jpg";
-    img.src = "../assets/A/k/w/j/AkwjW.jpg";  // 256x256
+    img.src = "../../assets/A/k/w/j/AkwjW.jpg";  // 256x256
 
     var rad = 0;
     (function(){

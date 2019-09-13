@@ -201,7 +201,7 @@ gr.register(() => {
     gr.registerNode("rigid-eraser", ["Rigid"], {
         material: "new(textureShader)",
         geometry: "c1",
-        texture: "../assets/7/5/o/P/75oPt.png",
+        texture: "../../assets/7/5/o/P/75oPt.png",
         //scale: [1.0, 0.2, 0.5]
         scale: [1.0, 0.2, 0.5]
     }, "mesh");

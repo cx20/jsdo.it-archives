@@ -73,9 +73,9 @@ function init() {
     buffgeoCylinder= new THREE.BufferGeometry();
     buffgeoCylinder.fromGeometry( new THREE.CylinderGeometry( 0.5, 0.5, 1.0, 24 ) );
     
-    var image1 = THREE.ImageUtils.loadTexture('../assets/f/Q/A/K/fQAKv.png'); // gold.png
-    var image2 = THREE.ImageUtils.loadTexture('../assets/5/5/3/h/553h3.png'); // silver.png
-    var image3 = THREE.ImageUtils.loadTexture('../assets/5/L/S/8/5LS83.png'); // bronze.png
+    var image1 = THREE.ImageUtils.loadTexture('../../assets/f/Q/A/K/fQAKv.png'); // gold.png
+    var image2 = THREE.ImageUtils.loadTexture('../../assets/5/5/3/h/553h3.png'); // silver.png
+    var image3 = THREE.ImageUtils.loadTexture('../../assets/5/L/S/8/5LS83.png'); // bronze.png
     
     matBox = new THREE.MeshLambertMaterial( {  map: basicTexture(0), name:'box' } );
 /*

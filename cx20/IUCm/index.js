@@ -77,7 +77,7 @@ gr.register(() => {
         scale: 0.5
     }, "mesh");
     gr.registerNode("rigid-gltf", ["Rigid"], {
-        src: "../assets/g/s/5/8/gs58O.gltf", // glTF-Embedded/Duck.gltf
+        src: "../../assets/g/s/5/8/gs58O.gltf", // glTF-Embedded/Duck.gltf
         shape: "duck",
         //material:"#green",
         //geometry: "cube",

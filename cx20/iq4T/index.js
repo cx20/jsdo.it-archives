@@ -290,12 +290,12 @@ function createMesh() {
     coin_cap_geo.computeFaceNormals();
     coin_cap_geo.computeVertexNormals();
 
-    var coin_sides_texture           = THREE.ImageUtils.loadTexture("../assets/y/l/j/V/yljV4.png"); // side.png
-    var coin_sides_texture_bump      = THREE.ImageUtils.loadTexture("../assets/k/1/j/Z/k1jZN.png"); // side_bump.png
-    var coin_cap_texture_top         = THREE.ImageUtils.loadTexture("../assets/k/S/o/2/kSo2z.png"); // top.png
-    var coin_cap_texture_top_bump    = THREE.ImageUtils.loadTexture("../assets/o/n/n/8/onn8S.png"); // top_bump.png
-    var coin_cap_texture_bottom      = THREE.ImageUtils.loadTexture("../assets/h/p/D/N/hpDNA.png"); // bottom.png
-    var coin_cap_texture_bottom_bump = THREE.ImageUtils.loadTexture("../assets/o/3/U/e/o3Uer.png"); // bottom_bump.png
+    var coin_sides_texture           = THREE.ImageUtils.loadTexture("../../assets/y/l/j/V/yljV4.png"); // side.png
+    var coin_sides_texture_bump      = THREE.ImageUtils.loadTexture("../../assets/k/1/j/Z/k1jZN.png"); // side_bump.png
+    var coin_cap_texture_top         = THREE.ImageUtils.loadTexture("../../assets/k/S/o/2/kSo2z.png"); // top.png
+    var coin_cap_texture_top_bump    = THREE.ImageUtils.loadTexture("../../assets/o/n/n/8/onn8S.png"); // top_bump.png
+    var coin_cap_texture_bottom      = THREE.ImageUtils.loadTexture("../../assets/h/p/D/N/hpDNA.png"); // bottom.png
+    var coin_cap_texture_bottom_bump = THREE.ImageUtils.loadTexture("../../assets/o/3/U/e/o3Uer.png"); // bottom_bump.png
 
     var coin_sides_mat = new THREE.MeshPhongMaterial({
         map: coin_sides_texture,

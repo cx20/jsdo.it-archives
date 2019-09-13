@@ -114,7 +114,7 @@ onload = function(){
 	// テクスチャを生成
 	//create_texture('texture.png');
 	//create_texture('frog.jpg');
-    create_texture('../assets/h/s/W/8/hsW8H.jpg');
+    create_texture('../../assets/h/s/W/8/hsW8H.jpg');
 	
 	// カウンタの宣言
 	var count = 0;

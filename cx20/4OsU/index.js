@@ -285,7 +285,7 @@ function populate(n) {
     }
 */
     //var texture = THREE.ImageUtils.loadTexture('football.png');  // Football.png
-    var texture = THREE.ImageUtils.loadTexture('../assets/s/s/X/x/ssXxc.png');  // Football.png
+    var texture = THREE.ImageUtils.loadTexture('../../assets/s/s/X/x/ssXxc.png');  // Football.png
     for ( var i = 0; i < dataSet.length; i++ ) {
         //x = 150;
         x = 400;

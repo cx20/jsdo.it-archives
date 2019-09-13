@@ -61,7 +61,7 @@ function loadData() {
     //image.src = "fuji.png";
     //image.src = "/assets/c/C/N/m/cCNmz.png";
     //image.src = "frog.jpg";
-    image.src = "../assets/A/k/w/j/AkwjW.jpg";
+    image.src = "../../assets/A/k/w/j/AkwjW.jpg";
     image.onload = function() {
         var WIDTH = this.width;
         var HEIGHT = this.height;

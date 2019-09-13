@@ -54,7 +54,7 @@ function initShaders() {
 function loadData() {
     var xhr = new XMLHttpRequest();
     //xhr.open("GET", "fuji.csv", true);
-    xhr.open("GET", "../assets/2/g/t/o/2gtor.csv", true);
+    xhr.open("GET", "../../assets/2/g/t/o/2gtor.csv", true);
     xhr.send(null);
     xhr.addEventListener("load", function(evt) {
 

@@ -95,7 +95,7 @@ xhr.addEventListener('load', function (evt) {
 }, false);
 
 
-xhr.open('GET', '../assets/7/D/o/H/7DoHj.csv', true); // 黒部峡谷
+xhr.open('GET', '../../assets/7/D/o/H/7DoHj.csv', true); // 黒部峡谷
 xhr.send(null);
 
 window.onresize = function () {

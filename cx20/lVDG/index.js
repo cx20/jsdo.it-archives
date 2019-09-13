@@ -250,9 +250,9 @@ function createMesh() {
     coin_cap_geo.computeFaceNormals();
     coin_cap_geo.computeVertexNormals();
 
-    var coin_sides_texture      = THREE.ImageUtils.loadTexture("../assets/4/g/0/q/4g0qn.png"); // side.jpg
-    var coin_cap_texture_top    = THREE.ImageUtils.loadTexture("../assets/e/v/7/I/ev7Ia.png"); // top.png
-    var coin_cap_texture_bottom = THREE.ImageUtils.loadTexture("../assets/e/v/7/I/ev7Ia.png"); // bottom.png
+    var coin_sides_texture      = THREE.ImageUtils.loadTexture("../../assets/4/g/0/q/4g0qn.png"); // side.jpg
+    var coin_cap_texture_top    = THREE.ImageUtils.loadTexture("../../assets/e/v/7/I/ev7Ia.png"); // top.png
+    var coin_cap_texture_bottom = THREE.ImageUtils.loadTexture("../../assets/e/v/7/I/ev7Ia.png"); // bottom.png
 
     var coin_sides_mat = new THREE.MeshLambertMaterial({
         map: coin_sides_texture
