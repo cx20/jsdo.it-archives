@@ -34,7 +34,7 @@ async function main() {
     let shader = new Shader(vs, fs, macro);
     let textureMat = new Material(shader);
     textureMat.doubleSided = true;
-    let frog = await Asset.loadTexture('/assets/A/k/w/j/AkwjW.jpg', { minFilter: screen.gl.NEAREST_MIPMAP_NEAREST });
+    let frog = await Asset.loadTexture('../../assets/A/k/w/j/AkwjW.jpg', { minFilter: screen.gl.NEAREST_MIPMAP_NEAREST });
 
     // Create a renderer component
     let textureMR = new MeshRenderer(screen, new TextureMesh(), textureMat);
