@@ -139,7 +139,7 @@ var MainScene = tm.createClass({
         ];
         
         var geometry = new GLBoost.Geometry('#world');
-        var texture = new GLBoost.Texture('/assets/A/k/w/j/AkwjW.jpg', '#world'); // frog.jpg
+        var texture = new GLBoost.Texture('../../assets/A/k/w/j/AkwjW.jpg', '#world'); // frog.jpg
         var material = new GLBoost.ClassicMaterial('#world');
         material.diffuseTexture = texture;
         geometry.materials = [material];
