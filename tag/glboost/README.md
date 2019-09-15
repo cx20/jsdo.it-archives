@@ -116,24 +116,30 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qPZz" alt="[WebGL] GLBoost で GridGizmo を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/qPZz.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/GIhN" alt="GLBoost + Oimo.js でサッカーボールを落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/GIhN.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Y91w" alt="GLBoost + Oimo.js で箱にボールを入れてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Y91w.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Kx37" alt="GLBoost + Oimo.js でモデルを落下させてみるテスト（改2）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Kx37.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/45Wj" alt="GLBoost + Oimo.js で坂道にボール転がしてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/45Wj.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/QkuW" alt="GLBoost + Oimo.js で雛(ひよこ)祭"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/QkuW.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Kx37" alt="GLBoost + Oimo.js でモデルを落下させてみるテスト（改2）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Kx37.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sBPJ" alt="GLBoost + Oimo.js でモデルを落下させてみるテスト（改3）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/sBPJ.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/2Nrf" alt="[WebGL] GLBoost + vox.js を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/2Nrf.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/eTiU" alt="[WebGL] GLBoost + vox.js を試してみるテスト（その２改4）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/eTiU.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ed5q" alt="[WebGL] GLBoost + vox.js を試してみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ed5q.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/gM7m" alt="[WebGL] GLBoost + Particle を試してみるテスト（ES6編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/gM7m.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/oODw" alt="[WebGL] GLBoost + Particle を試してみるテスト（ES6編）（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/oODw.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/gj2y" alt="[WebGL] GLBoost + Particle を試してみるテスト（ES6編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/gj2y.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sUXr" alt="[WebGL] GLBoost + Particle を試してみるテスト（ES6編）（その３改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/sUXr.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/gj2y" alt="[WebGL] GLBoost + Particle を試してみるテスト（ES6編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/gj2y.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sUXr" alt="[WebGL] GLBoost + Particle を試してみるテスト（ES6編）（その３改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/sUXr.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ItB2" alt="[WebGL] GLBoost + LiquidFun を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ItB2.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Az9Q" alt="[WebGL] GLBoost + LiquidFun を試してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Az9Q.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/spSX" alt="[WebGL] GLBoost + LiquidFun を試してみるテスト（その３改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/spSX.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 </table>
