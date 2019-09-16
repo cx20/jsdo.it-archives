@@ -39,10 +39,10 @@ let camera = glBoostContext.createPerspectiveCamera({
     center: new GLBoost.Vector3(0.0, 0.0, 0.0),
     up: new GLBoost.Vector3(0.0, 1.0, 0.0)
 }, {
-    fovy: 75.0,
+    fovy: 45.0,
     aspect: width/height,
     zNear: 0.1,
-    zFar: 3000.0
+    zFar: 10000.0
 });
 camera.cameraController = glBoostContext.createCameraController();
 //camera.cameraController.zFarAdjustingFactorBasedOnAABB = 3;
