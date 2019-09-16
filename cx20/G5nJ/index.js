@@ -7,67 +7,73 @@
 // forked from cx20's "[WebGL] GLBoost を試してみるテスト" http://jsdo.it/cx20/SWec
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
-var arg = new Object;
-var pair = location.search.substring(1).split('&');
-for (var i = 0; pair[i]; i++) {
-    var kv = pair[i].split('=');
-    arg[kv[0]] = kv[1];
-}
+let canvas = document.getElementById("world");
+let width = window.innerWidth;
+let height = window.innerHeight;
 
-GLBoost.TARGET_WEBGL_VERSION = arg.webglver ? parseInt(arg.webglver) : 1;
-
-var canvas = document.getElementById("world");
-
-var renderer = new GLBoost.Renderer({
-    canvas: canvas,
+let glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
+let renderer = glBoostContext.createRenderer({
     clearColor: {
-        red: 0,
-        green: 0,
-        blue: 0,
+        red: 0.0,
+        green: 0.0,
+        blue: 0.0,
         alpha: 1
     }
 });
 
-var scene = new GLBoost.Scene();
+renderer.resize(width, height);
 
+let scene = glBoostContext.createScene();
 
-var pointLight = new GLBoost.PointLight(new GLBoost.Vector3(1.0, 1.0, 1.0), '#world');
+let pointLight = glBoostContext.createPointLight(new GLBoost.Vector3(1.0, 1.0, 1.0));
 pointLight.translate = new GLBoost.Vector3(10, 10, 10);
-scene.add(pointLight);
-
-var pointLight2 = new GLBoost.PointLight(new GLBoost.Vector3(1.0, 1.0, 1.0), '#world');
-pointLight2.translate = new GLBoost.Vector3(-10, -10, -10);
-scene.add(pointLight2);
-
-var camera = new GLBoost.Camera({
-    eye: new GLBoost.Vector3(0.0, 1, 5),
+scene.addChild(pointLight);
+let camera = glBoostContext.createPerspectiveCamera({
+    eye: new GLBoost.Vector3(0.0, 0.0, 3.0),
     center: new GLBoost.Vector3(0.0, 0.0, 0.0),
     up: new GLBoost.Vector3(0.0, 1.0, 0.0)
 }, {
     fovy: 45.0,
-    aspect: 1.0,
+    aspect: width/height,
     zNear: 0.1,
-    zFar: 300.0
+    zFar: 10000.0
 });
-scene.add(camera);
+camera.cameraController = glBoostContext.createCameraController();
+//camera.cameraController.zFarAdjustingFactorBasedOnAABB = 3;
+scene.addChild(camera);
 
+//let gridGizmo = glBoostContext.createGridGizmo(16, 16, true, true, false, new GLBoost.Vector4(1, 1, 1, 1));
+//scene.addChild(gridGizmo);
 
-var glTFLoader = GLBoost.GLTFLoader.getInstance();
-var promise = glTFLoader.loadGLTF('../../assets/w/b/X/7/wbX7Y.gltf', '#world'); // box.gltf
-//var promise = glTFLoader.loadGLTF('/assets/a/G/Q/N/aGQNo', '#world'); // simple_box.gltf
-promise.then(function(mesh) {
-    scene.add(mesh);
+let axisGizmo = glBoostContext.createAxisGizmo(4);
+scene.addChild(axisGizmo);
 
-    scene.prepareForRender();
+let gtime = 0;
+let glTFLoader = GLBoost.GLTFLoader.getInstance();
+let scale = 0.4;
+let url = "../../assets/w/b/X/7/wbX7Y.gltf"
+let promise = glTFLoader.loadGLTF(glBoostContext, url, null);
+      
+promise.then(function(group) {
+    group.scale = new GLBoost.Vector3(scale, scale, scale);
+    scene.addChild(group);
 
-    var render = function() {
+    let expression = glBoostContext.createExpressionAndRenderPasses(1);
+    expression.renderPasses[0].scene = scene;
+    expression.prepareToRender();
+    
+    let render = function() {
+        scene.setCurrentAnimationValue('time', gtime);
         renderer.clearCanvas();
-        renderer.draw(scene);
-
-        var rotateMatrix = GLBoost.Matrix33.rotateY(GLBoost.MathUtil.radianToDegree(-0.02));
-        var rotatedVector = rotateMatrix.multiplyVector(camera.eye);
+        renderer.update(expression); 
+        renderer.draw(expression);
+        gtime += 0.03;
+        if (gtime > 5) {
+            gtime = 0.0;
+        }
+        let rotateMatrix = GLBoost.Matrix33.rotateY(-0.5);
+        let rotatedVector = rotateMatrix.multiplyVector(camera.eye);
         camera.eye = rotatedVector;
-
         requestAnimationFrame(render);
     };
     render();
