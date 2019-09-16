@@ -3,74 +3,62 @@
 // forked from cx20's "GLBoost で地球を回してみるテスト" http://jsdo.it/cx20/Chqk
 // forked from cx20's "WebGL で地球を回してみるテスト" http://jsdo.it/cx20/cI8t
 
-GLBoost.TARGET_WEBGL_VERSION = 1;
-
-var stats;
-var canvas = document.getElementById("world");
-
-var renderer = new GLBoost.Renderer({
-    canvas: canvas,
-    clearColor: {
-        red: 0.0,
-        green: 0.0,
-        blue: 0.0,
-        alpha: 1
-    }
+let width = window.innerWidth;
+let height = window.innerHeight;
+let canvas = document.getElementById("world");
+let glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
+let renderer = glBoostContext.createRenderer({
+    clearColor: {red: 0.0, green: 0.0, blue: 0.0, alpha: 1}
 });
+renderer.resize(width, height);
 
-stats = new Stats();
-stats.setMode( 0 ); // 0: fps, 1: ms, 2: mb
-stats.domElement.style.position = "fixed";
-stats.domElement.style.left     = "5px";
-stats.domElement.style.top      = "5px";
-document.body.appendChild(stats.domElement);
+let scene = glBoostContext.createScene();
 
-var scene = new GLBoost.Scene();
+let directionalLight = glBoostContext.createDirectionalLight(new GLBoost.Vector3(0.4, 0.4, 0.4), new GLBoost.Vector3(-10, -1, -10));
+scene.addChild( directionalLight );
+let pointLight1 = glBoostContext.createDirectionalLight(new GLBoost.Vector3(0.6, 0.6, 0.6), new GLBoost.Vector3(0, 100, -100));
+scene.addChild( pointLight1 );
+let pointLight2 = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1.0, 1.0, 1.0), new GLBoost.Vector3(50, -50, -100));
+scene.addChild( pointLight2 );
 
-var material = new GLBoost.ClassicMaterial('#world');
-var texture = new GLBoost.Texture('../../assets/b/M/L/p/bMLps.jpg', '#world'); // earth.jpg
-material.diffuseTexture = texture;
+let material1 = glBoostContext.createClassicMaterial();
+let texture1 = glBoostContext.createTexture('../../assets/b/M/L/p/bMLps.jpg'); // earth.jpg
+material1.setTexture(texture1);
+material1.shaderClass = GLBoost.PhongShader;
+let geometry1 = glBoostContext.createSphere(20, 24, 24);
+let earth = glBoostContext.createMesh(geometry1, material1);
+scene.addChild(earth);
 
-var shader = new GLBoost.PhongShader('#world');
-var geometry = new GLBoost.Sphere(20, 24, 24, null, "#world");
-
-var earth = new GLBoost.Mesh(geometry, material);
-scene.add(earth);
-
-var camera = new GLBoost.Camera({
+var camera = glBoostContext.createPerspectiveCamera({
     eye: new GLBoost.Vector3(0.0, 0.0, 60.0),
     center: new GLBoost.Vector3(0.0, 0.0, 0.0),
     up: new GLBoost.Vector3(0.0, 1.0, 0.0)
 }, {
     fovy: 45.0,
-    aspect: 1.0,
+    aspect: width/height,
     zNear: 0.1,
     zFar: 1000.0
 });
 
-scene.add(camera);
-scene.prepareForRender();
+scene.addChild(camera);
 
-var angle = 1;
-var axis = new GLBoost.Vector3(0,1,0);
+// create an expression (which is composed of several rendering passes)
+let expression = glBoostContext.createExpressionAndRenderPasses(1);
 
-var render = function() {
-    renderer.clearCanvas();
-    renderer.draw(scene);
+// set scene to render pass of expression
+expression.renderPasses[0].scene = scene;
 
-/*
-    // カメラの位置変更により回転しているように見せかける
-    var rotateMatrixY = GLBoost.Matrix33.rotateY(GLBoost.MathUtil.radianToDegree(-0.02));
-    rotatedVector = rotateMatrixY.multiplyVector(camera.eye);
-    camera.eye = rotatedVector;
-*/
+// call this method before rendering
+expression.prepareToRender();
+
+let angle = 1;
+let angle2 = 1;
+let axis = new GLBoost.Vector3(0,1,0);
+
+// rendering loop
+renderer.doConvenientRenderLoop(expression, function(){
+
     // quaternion による回転
     earth.quaternion = GLBoost.Quaternion.axisAngle(axis, GLBoost.MathUtil.radianToDegree(angle));
-    angle += 0.02;
-    
-    stats.update();
-
-    requestAnimationFrame(render);
-};
-
-render();
+    angle += 0.005;
+});
