@@ -5,76 +5,52 @@ jsdo.it archives
 
 <table>
 <tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/SWec" alt="[WebGL] GLBoost を試してみるテスト（tmlib.js編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/SWec.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/UFoi" alt="[WebGL] GLBoost を試してみるテスト（tmlib.js編）（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/UFoi.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/wKvY" alt="[WebGL] GLBoost を試してみるテスト（tmlib.js編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/wKvY.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/21OF" alt="[WebGL] GLBoost を試してみるテスト（tmlib.js編）（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/21OF.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/SmrF" alt="[WebGL] GLBoost を試してみるテスト（phina.js編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/SmrF.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Sxek" alt="[WebGL] GLBoost を試してみるテスト（phina.js編）（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Sxek.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/aODs" alt="[WebGL] GLBoost を試してみるテスト（phina.js編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/aODs.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/0bua" alt="[WebGL] GLBoost を試してみるテスト（phina.js編）（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/0bua.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/KXXM" alt="[WebGL] GLBoost を試してみるテスト（standalone編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/KXXM.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Uvah" alt="[WebGL] GLBoost を試してみるテスト（standalone編）（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Uvah.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Elgc" alt="[WebGL] GLBoost を試してみるテスト（standalone編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Elgc.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/wf7T" alt="[WebGL] GLBoost を試してみるテスト（standalone編）（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/wf7T.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/g9yj" alt="[WebGL] GLBoost を試してみるテスト（組み込み関数編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/g9yj.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/8PA0" alt="[WebGL] GLBoost を試してみるテスト（組み込み関数編）（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8PA0.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/WlZW" alt="[WebGL] GLBoost を試してみるテスト（組み込み関数編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/WlZW.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yy3I" alt="[WebGL] GLBoost を試してみるテスト（組み込み関数編）（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yy3I.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/smSr" alt="[WebGL] GLBoost を試してみるテスト（シェーダ編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/smSr.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/snpq" alt="[WebGL] GLBoost を試してみるテスト（シェーダ編）（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/snpq.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/WE99" alt="[WebGL] GLBoost を試してみるテスト（シェーダ編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/WE99.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sZb3" alt="[WebGL] GLBoost を試してみるテスト（シェーダ編）（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/sZb3.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/G5nJ" alt="[WebGL] GLBoost + glTF Loader を試してみるテスト（その１）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/G5nJ.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Qr7c" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Qr7c.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Gldx" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その２）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Gldx.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/89Fn" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その３）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/89Fn.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/4bHc" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その４）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/4bHc.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/E9Ph" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その５）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/E9Ph.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/O3eo" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その６）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/O3eo.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/mkHR" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その７）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/mkHR.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/6K2e" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その８）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/6K2e.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/s6N4" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その９）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/s6N4.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/uBnn" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１０）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/uBnn.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Apcc" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１１）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Apcc.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Q4Pa" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１２）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Q4Pa.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Augb" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１３）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Augb.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ii1Q" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１４）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ii1Q.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/eOF8" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１５）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/eOF8.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/8XnT" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１６）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8XnT.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/cYfc" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１７）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/cYfc.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yMLW" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１８）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yMLW.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/UGTc" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１９）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/UGTc.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/QzHY" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その２１）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/QzHY.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/MTai" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その２２）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/MTai.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/KNkb" alt="[WebGL] GLBoost で消しゴムを表示させてみるテスト（standalone編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/KNkb.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/69rDk" alt="[WebGL] GLBoost で将棋の駒を表示させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/69rDk.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/IalE" alt="[WebGL] GLBoost で Teapot を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/IalE.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/WT6C" alt="[WebGL] GLBoost で Teapot に色を付けてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/WT6C.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/mEtS" alt="[WebGL] GLBoost で Teapot にテクスチャを貼り付けてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/mEtS.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/CAMw" alt="[WebGL] GLBoost で Teapot に光を当ててみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/CAMw.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/KNkb" alt="[WebGL] GLBoost で消しゴムを表示させてみるテスト（standalone編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/KNkb.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/69rDk" alt="[WebGL] GLBoost で将棋の駒を表示させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/69rDk.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/G5nJ" alt="[WebGL] GLBoost + glTF Loader を試してみるテスト（その１）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/G5nJ.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Qr7c" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Qr7c.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Gldx" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その２）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Gldx.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/89Fn" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その３）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/89Fn.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/4bHc" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その４）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/4bHc.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/E9Ph" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その５）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/E9Ph.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/O3eo" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その６）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/O3eo.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/mkHR" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その７）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/mkHR.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/6K2e" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その８）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/6K2e.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/s6N4" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その９）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/s6N4.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/uBnn" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１０）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/uBnn.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Apcc" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１１）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Apcc.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Q4Pa" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１２）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Q4Pa.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Augb" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１３）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Augb.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ii1Q" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１４）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ii1Q.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/eOF8" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１５）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/eOF8.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/8XnT" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１６）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8XnT.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/cYfc" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１７）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/cYfc.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yMLW" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１８）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yMLW.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/UGTc" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その１９）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/UGTc.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/QzHY" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その２１）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/QzHY.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/MTai" alt="[WebGL] GLBoost で glTF 2.0 モデルを表示してみるテスト（その２２）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/MTai.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/WO1O" alt="[WebGL] GLBoost でリサージュ図形を描いてみるテスト（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/WO1O.jpg" width="200" height="200"></a></td>
