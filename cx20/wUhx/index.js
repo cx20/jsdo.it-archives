@@ -1,7 +1,7 @@
 // forked from cx20's "Three.js + Oimo.js でドット絵を落下させるテスト" http://jsdo.it/cx20/voHQ
 // forked from Lo-Th's "oimo basic" http://jsdo.it/Lo-Th/frXo
 
-var DOT_SIZE = 16;
+let DOT_SIZE = 16;
 // ‥‥‥‥‥‥‥‥‥‥‥‥‥□□□
 // ‥‥‥‥‥‥〓〓〓〓〓‥‥□□□
 // ‥‥‥‥‥〓〓〓〓〓〓〓〓〓□□
@@ -18,7 +18,7 @@ var DOT_SIZE = 16;
 // ‥‥■■■〓〓〓〓〓〓〓〓〓■■
 // ‥■■■〓〓〓〓〓〓〓‥‥‥‥‥
 // ‥■‥‥〓〓〓〓‥‥‥‥‥‥‥‥
-var dataSet = [
+let dataSet = [
     "無","無","無","無","無","無","無","無","無","無","無","無","無","肌","肌","肌",
     "無","無","無","無","無","無","赤","赤","赤","赤","赤","無","無","肌","肌","肌",
     "無","無","無","無","無","赤","赤","赤","赤","赤","赤","赤","赤","赤","肌","肌",
@@ -39,7 +39,7 @@ var dataSet = [
 
 function getRgbColor( c )
 {
-    var colorHash = {
+    let colorHash = {
         "無":{r:0xDC,g:0xAA,b:0x6B},    // 段ボール色
         "白":{r:0xff,g:0xff,b:0xff},
         "肌":{r:0xff,g:0xcc,b:0xcc},
@@ -54,19 +54,21 @@ function getRgbColor( c )
     return colorHash[ c ];
 }
 
+let width = window.innerWidth;
+let height = window.innerHeight;
 // glboost var
-var canvas = document.getElementById("world");
-var renderer;
-var camera;
-var scene;
-var meshs = [];
+let canvas = document.getElementById("world");
+let renderer;
+let camera;
+let scene;
+let meshs = [];
 
 //oimo var
-var world;
-var G = -10, nG = -10;
-var wakeup = false;
-var bodys = [];
-var stats;
+let world;
+let G = -10, nG = -10;
+let wakeup = false;
+let bodys = [];
+let stats;
 
 init();
 
@@ -83,26 +85,27 @@ function init() {
         canvas: canvas,
         clearColor: {red: 0, green: 0, blue: 0, alpha: 1}
     });
+    renderer.resize(width, height);
     camera = new GLBoost.Camera({
         eye: new GLBoost.Vector3(0, 100, 400),
         center: new GLBoost.Vector3(0.0, 0.0, 0.0),
         up: new GLBoost.Vector3(0.0, 1.0, 0.0)
     }, {
         fovy: 70.0,
-        aspect: 1.0,
+        aspect: width/height,
         zNear: 1,
         zFar: 1000.0
     });
     scene.add(camera);
 
-    var directionalLight = new GLBoost.DirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(-1, -1, -1), '#world');
+    let directionalLight = new GLBoost.DirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(-1, -1, -1), '#world');
     scene.add( directionalLight );
 
-    var geo1 = new GLBoost.Cube(new GLBoost.Vector3(400, 40, 400), new GLBoost.Vector3(0.7, 0.7, 0.7), "#world");
-    var material = new GLBoost.ClassicMaterial('#world');
-    var shader = new GLBoost.PhongShader('#world');
+    let geo1 = new GLBoost.Cube(new GLBoost.Vector3(400, 40, 400), new GLBoost.Vector3(0.7, 0.7, 0.7), "#world");
+    let material = new GLBoost.ClassicMaterial('#world');
+    let shader = new GLBoost.PhongShader('#world');
     material.shader = shader;
-    var mground1 = new GLBoost.Mesh(geo1, material);
+    let mground1 = new GLBoost.Mesh(geo1, material);
     mground1.translate.y = -50;
     mground1.dirty = true;
     scene.add( mground1 );
@@ -118,23 +121,23 @@ function init() {
 
 function populate() {
     
-    var max = 256;
+    let max = 256;
 
     // reset old
     clearMesh();
     world.clear();
 
-    var ground2 = new OIMO.Body({size:[400, 40, 400], pos:[0,-50,0], world:world});
+    let ground2 = new OIMO.Body({size:[400, 40, 400], pos:[0,-50,0], world:world});
 
-    var w = DOT_SIZE * 0.8;
-    var h = DOT_SIZE * 0.8;
-    var d = DOT_SIZE * 0.8;
+    let w = DOT_SIZE * 0.8;
+    let h = DOT_SIZE * 0.8;
+    let d = DOT_SIZE * 0.8;
 
-    for (var i = 0; i < dataSet.length; i++) {
-        var x = i % 16 - 6;
-        var y = 16 - Math.floor(i / 16);
-        var z = 2;
-        var c = getRgbColor(dataSet[i]);
+    for (let i = 0; i < dataSet.length; i++) {
+        let x = i % 16 - 6;
+        let y = 16 - Math.floor(i / 16);
+        let z = 2;
+        let c = getRgbColor(dataSet[i]);
         bodys[i] = new OIMO.Body({
             type: 'box',
             size: [w, h, d],
@@ -142,11 +145,11 @@ function populate() {
             move: true,
             world: world
         });
-        var material = new GLBoost.ClassicMaterial('#world');
-        var shader = new GLBoost.PhongShader('#world');
+        let material = new GLBoost.ClassicMaterial('#world');
+        let shader = new GLBoost.PhongShader('#world');
         material.shader = shader;
-        var color = new GLBoost.Vector3(c.r / 0xff, c.g / 0xff, c.b / 0xff);
-        var geoBox = new GLBoost.Cube(new GLBoost.Vector3(w, h, d), color, "#world");
+        let color = new GLBoost.Vector3(c.r / 0xff, c.g / 0xff, c.b / 0xff);
+        let geoBox = new GLBoost.Cube(new GLBoost.Vector3(w, h, d), color, "#world");
         meshs[i] = new GLBoost.Mesh(geoBox, material);
         meshs[i].translate = new GLBoost.Vector3(x * DOT_SIZE, y * DOT_SIZE, z * DOT_SIZE);
         scene.add(meshs[i]);
@@ -155,7 +158,7 @@ function populate() {
 
 function clearMesh(){
 /*
-    var i=meshs.length;
+    let i=meshs.length;
     while (i--){scene.remove(meshs[ i ]);}
 */
 }
@@ -168,9 +171,9 @@ function loop() {
     
     world.step();
     
-    var p, r, m, x, y, z;
-    var i = bodys.length;
-    var mesh;
+    let p, r, m, x, y, z;
+    let i = bodys.length;
+    let mesh;
     wakeup = false;
 
     if (G !== nG) {
@@ -179,19 +182,19 @@ function loop() {
     }
 
     while (i--) {
-        var body = bodys[i].body;
+        let body = bodys[i].body;
         mesh = meshs[i];
         if (wakeup) bodys[i].body.awake();
         if (!body.sleeping) {
-            var p = body.getPosition();
+            let p = body.getPosition();
             mesh.translate = new GLBoost.Vector3(p.x, p.y, p.z);
-            var q = body.getQuaternion();
+            let q = body.getQuaternion();
             mesh.quaternion = new GLBoost.Quaternion(q.x, q.y, q.z, q.w);
         }
     }
 
-    var rotateMatrixY = GLBoost.Matrix33.rotateY(1);
-    var rotatedVector = rotateMatrixY.multiplyVector(camera.eye);
+    let rotateMatrixY = GLBoost.Matrix33.rotateY(1);
+    let rotatedVector = rotateMatrixY.multiplyVector(camera.eye);
     camera.eye = rotatedVector;
 
     stats.update();
