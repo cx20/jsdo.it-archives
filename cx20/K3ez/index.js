@@ -41,7 +41,7 @@ var material1 = new GLBoost.ClassicMaterial();
 //var shader1 = new GLBoost.SimpleShader();
 //var shader1 = new GLBoost.HalfLambertShader();
 var shader1 = new GLBoost.PhongShader();
-var texture1 = new GLBoost.Texture('../../assets/4/i/b/A/4ibAL.jpg'); // earth_atmos_1024.jpg
+var texture1 = new GLBoost.Texture('../../assets/4/I/b/A/4IbAL.jpg'); // earth_atmos_1024.jpg
 material1.diffuseTexture = texture1;
 material1.specularColor = new GLBoost.Vector4(0.5, 0.5, 0.5, 1);
 material1.shader = shader1;
@@ -51,7 +51,7 @@ scene.add(earth);
 
 var material2 = new GLBoost.ClassicMaterial();
 var shader2 = new GLBoost.HalfLambertShader();
-var texture2 = new GLBoost.Texture('/assets/n/l/9/m/nl9m8.png'); // earth_clouds_1024.png
+var texture2 = new GLBoost.Texture('../../assets/n/l/9/m/nl9m8.png'); // earth_clouds_1024.png
 material2.diffuseTexture = texture2;
 material2.shader = shader2;
 var geometry2 = new GLBoost.Sphere(20*1.01, 24, 24);
