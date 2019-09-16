@@ -33,9 +33,12 @@ function hslToRgb(h, s, l) {
 
 function init() 
 {
+    let width = window.innerWidth;
+    let height = window.innerHeight;
     let canvas = document.getElementById("world");
     let glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
     let renderer = glBoostContext.createRenderer({ canvas: canvas, clearColor: {red:0, green:0, blue:0, alpha:1}});
+    renderer.resize(width, height);
     
     let scene = glBoostContext.createScene();
     
