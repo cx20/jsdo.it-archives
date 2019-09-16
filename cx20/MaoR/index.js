@@ -7,6 +7,9 @@
 // forked from cx20's "[WebGL] GLBoost を試してみるテスト" http://jsdo.it/cx20/SWec
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
+let width = window.innerWidth;
+let height = window.innerHeight;
+
 // setup GLBoost renderer
 var canvas = document.getElementById("world");
 var glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
@@ -19,6 +22,7 @@ var renderer = glBoostContext.createRenderer({
     alpha: 1
   }
 });
+renderer.resize(width, height);
 
 // make a scene
 var scene = glBoostContext.createScene();
@@ -53,7 +57,7 @@ var meshGrid = glBoostContext.createGridGizmo(0.5, 2, true, true, false, new GLB
 meshGrid.translate = new GLBoost.Vector3(0.0, -0.5, 0.0);
 
 var materialB = glBoostContext.createClassicMaterial();
-var textureB = glBoostContext.createTexture('http://jsrun.it/assets/U/L/K/7/ULK7v.jpg');
+var textureB = glBoostContext.createTexture('../../assets/U/L/K/7/ULK7v.jpg');
 materialB.setTexture(textureB);
 materialB.shaderClass = GLBoost.PhongShader;
 
@@ -75,16 +79,18 @@ scene.addChild(meshAxis);
 scene.addChild(meshGrid);
 scene.addChild(meshParticle);
 
-var directionalLight = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(0, 0, -1));
-scene.addChild( directionalLight );
+var directionalLight1 = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(60, 30, 30));
+scene.addChild( directionalLight1 );
+var directionalLight2 = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(-60, -30, -30));
+scene.addChild( directionalLight2 );
 
 var camera = glBoostContext.createPerspectiveCamera({
-  eye: new GLBoost.Vector3(0.0, 0.0, 6.0),
+  eye: new GLBoost.Vector3(0.0, 0.0, 3.0),
   center: new GLBoost.Vector3(0.0, 0.0, 0.0),
   up: new GLBoost.Vector3(0.0, 1.0, 0.0)
 }, {
   fovy: 45.0,
-  aspect: 1.0,
+  aspect: width/height,
   zNear: 0.1,
   zFar: 1000.0
 });
