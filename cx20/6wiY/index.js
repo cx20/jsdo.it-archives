@@ -7,11 +7,14 @@
 // forked from cx20's "GLBoost で地球を回してみるテスト" http://jsdo.it/cx20/Chqk
 // forked from cx20's "WebGL で地球を回してみるテスト" http://jsdo.it/cx20/cI8t
 
+let width = window.innerWidth;
+let height = window.innerHeight;
 let canvas = document.getElementById("world");
 let glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
 let renderer = glBoostContext.createRenderer({
     clearColor: {red: 0.0, green: 0.0, blue: 0.0, alpha: 1}
 });
+renderer.resize(width, height);
 
 let scene = glBoostContext.createScene();
 
@@ -30,23 +33,13 @@ let geometry1 = glBoostContext.createSphere(20, 24, 24);
 let jupiter = glBoostContext.createMesh(geometry1, material1);
 scene.addChild(jupiter);
 
-/*
-let material2 = glBoostContext.createClassicMaterial();
-let texture2 = glBoostContext.createTexture('/assets/n/l/9/m/nl9m8.png'); // jupiter_clouds_1024.png
-material2.setTexture(texture2);
-material2.shaderClass = GLBoost.HalfLambertShader;
-let geometry2 = glBoostContext.createSphere(20*1.01, 24, 24);
-let cloud = glBoostContext.createMesh(geometry2, material2);
-scene.addChild(cloud);
-*/
-
 var camera = glBoostContext.createPerspectiveCamera({
     eye: new GLBoost.Vector3(0.0, 0.0, 60.0),
     center: new GLBoost.Vector3(0.0, 0.0, 0.0),
     up: new GLBoost.Vector3(0.0, 1.0, 0.0)
 }, {
     fovy: 45.0,
-    aspect: 1.0,
+    aspect: width/height,
     zNear: 0.1,
     zFar: 1000.0
 });
@@ -72,7 +65,4 @@ renderer.doConvenientRenderLoop(expression, function(){
     // quaternion による回転
     jupiter.quaternion = GLBoost.Quaternion.axisAngle(axis, GLBoost.MathUtil.radianToDegree(angle));
     angle += 0.005;
-
-    //cloud.quaternion = GLBoost.Quaternion.axisAngle(axis, GLBoost.MathUtil.radianToDegree(angle2));
-    //angle2 += 0.0075;
 });
