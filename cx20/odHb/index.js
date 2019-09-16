@@ -5,11 +5,14 @@
 // forked from cx20's "GLBoost で地球を回してみるテスト" http://jsdo.it/cx20/Chqk
 // forked from cx20's "WebGL で地球を回してみるテスト" http://jsdo.it/cx20/cI8t
 
+let width = window.innerWidth;
+let height = window.innerHeight;
 let canvas = document.getElementById("world");
 let glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
 let renderer = glBoostContext.createRenderer({
     clearColor: {red: 0.0, green: 0.0, blue: 0.0, alpha: 1}
 });
+renderer.resize(width, height);
 
 let scene = glBoostContext.createScene();
 
@@ -42,7 +45,7 @@ var camera = glBoostContext.createPerspectiveCamera({
     up: new GLBoost.Vector3(0.0, 1.0, 0.0)
 }, {
     fovy: 45.0,
-    aspect: 1.0,
+    aspect: width/height,
     zNear: 0.1,
     zFar: 1000.0
 });
