@@ -5,9 +5,12 @@
 
 function init() 
 {
+    let width = window.innerWidth;
+    let height = window.innerHeight;
     let canvas = document.getElementById("world");
     let glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
     let renderer = glBoostContext.createRenderer({ canvas: canvas, clearColor: {red:0, green:0, blue:0, alpha:1}});
+    renderer.resize(width, height);
     
     let scene = glBoostContext.createScene();
     
@@ -20,8 +23,8 @@ function init()
         up: new GLBoost.Vector3(0.0, 1.0, 0.0)
     }, {
         fovy: 45.0,
-        aspect: 1.0,
-        zNear: 0.1,
+        aspect: width/height,
+        zNear: 0.001,
         zFar: 1000.0
     });
     camera.cameraController = glBoostContext.createCameraController();
@@ -70,7 +73,7 @@ function init()
         let y = R * Math.sin(2 * Math.PI * t / MAX * B + beta);
         let z = R * Math.sin(2 * Math.PI * t / MAX * C + gamma);
         positions.push([x, y, z]);
-        colors.push([x + 0.5, y + 0.5, z + 0.5]);
+        colors.push([x + 0.5, y + 0.5, z + 0.5, 1.0]);
         indices.push(i);
         i++;
     }
