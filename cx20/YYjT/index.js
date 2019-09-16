@@ -8,11 +8,13 @@
 // forked from cx20's "[WebGL] GLBoost を試してみるテスト" http://jsdo.it/cx20/SWec
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
+let width = window.innerWidth;
+let height = window.innerHeight;
 // setup GLBoost renderer
-var canvas = document.getElementById("world");
-var glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
+let canvas = document.getElementById("world");
+let glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
 
-var renderer = glBoostContext.createRenderer({
+let renderer = glBoostContext.createRenderer({
   clearColor: {
     red: 0.0,
     green: 0.0,
@@ -20,12 +22,13 @@ var renderer = glBoostContext.createRenderer({
     alpha: 1
   }
 });
+renderer.resize(width, height);
 
 // make a scene
-var scene = glBoostContext.createScene();
+let scene = glBoostContext.createScene();
 
 // createSphere(radius, widthSegments, heightSegments, vertexColor)
-var geometrySphere = glBoostContext.createSphere(0.5, 24, 24, null);
+let geometrySphere = glBoostContext.createSphere(0.5, 24, 24, null);
 
 
 // ・縦軸
@@ -37,17 +40,17 @@ var geometrySphere = glBoostContext.createSphere(0.5, 24, 24, null);
 // ・横軸
 //   [Smooth]←→[Rough]
 //
-for(var r = 0.0; r <= 1.0; r += 0.25) {
-    for(var m = 0.0; m <= 1.0; m += 0.25) {
+for(let r = 0.0; r <= 1.0; r += 0.25) {
+    for(let m = 0.0; m <= 1.0; m += 0.25) {
         // setup material
-        var material = glBoostContext.createPBRMetallicRoughnessMaterial();
-        //var texture = glBoostContext.createTexture('http://jsrun.it/assets/U/L/K/7/ULK7v.jpg');
+        let material = glBoostContext.createPBRMetallicRoughnessMaterial();
+        //let texture = glBoostContext.createTexture('http://jsrun.it/assets/U/L/K/7/ULK7v.jpg');
         //material.setTexture(texture);
         material.baseColor = new GLBoost.Vector3(1.0, 1.0, 1.0);
         material.metallic = m;
         material.roughness = r;
         
-        var meshSphere = glBoostContext.createMesh(geometrySphere, material);
+        let meshSphere = glBoostContext.createMesh(geometrySphere, material);
         meshSphere.translate = new GLBoost.Vector3((r-0.5)*4, (m-0.5)*4, 0);
         
         scene.addChild(meshSphere);
@@ -55,32 +58,32 @@ for(var r = 0.0; r <= 1.0; r += 0.25) {
 }
 
 
-//var directionalLight = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(0, 0, -1));
-var directionalLight = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(90, 0, 0));
+//let directionalLight = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(0, 0, -1));
+let directionalLight = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(90, 0, 0));
 //directionalLight.rotate = new GLBoost.Vector3(90,0,0);
 scene.addChild( directionalLight );
 
-var camera = glBoostContext.createPerspectiveCamera({
+let camera = glBoostContext.createPerspectiveCamera({
   eye: new GLBoost.Vector3(0.0, 0.0, 2.7),
   center: new GLBoost.Vector3(0.0, 0.0, 0.0),
   up: new GLBoost.Vector3(0.0, 1.0, 0.0)
 }, {
   fovy: 45.0,
-  aspect: 1.0,
+  aspect: width/height,
   zNear: 0.1,
   zFar: 1000.0
 });
 camera.cameraController = glBoostContext.createCameraController();
 scene.addChild(camera);
 
-var expression = glBoostContext.createExpressionAndRenderPasses(1);
+let expression = glBoostContext.createExpressionAndRenderPasses(1);
 expression.renderPasses[0].scene = scene;
 expression.prepareToRender();
 
-var angle = 0;
-var axis = new GLBoost.Vector3(0,1,0);
+let angle = 0;
+let axis = new GLBoost.Vector3(0,1,0);
 
-var render = function() {
+let render = function() {
   renderer.clearCanvas();
   renderer.draw(expression);
 
