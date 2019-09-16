@@ -5,27 +5,27 @@
 // forked from cx20's "Three.js + Oimo.js でドット絵を落下させるテスト" http://jsdo.it/cx20/voHQ
 // forked from Lo-Th's "oimo basic" http://jsdo.it/Lo-Th/frXo
 
-var DOT_SIZE = 30;
+let DOT_SIZE = 30;
 
 GLBoost.CONSOLE_OUT_FOR_DEBUGGING = true;
 
 // glboost var
-var canvas = document.getElementById("world");
-var width = window.innerWidth;
-var height = window.innerHeight;
-var glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
-var renderer;
-var camera;
-var scene;
-var meshs = [];
-var expression;
+let canvas = document.getElementById("world");
+let width = window.innerWidth;
+let height = window.innerHeight;
+let glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
+let renderer;
+let camera;
+let scene;
+let meshs = [];
+let expression;
 
 //oimo var
-var world;
-var G = -10, nG = -10;
-var wakeup = false;
-var bodys = [];
-var stats;
+let world;
+let G = -10, nG = -10;
+let wakeup = false;
+let bodys = [];
+let stats;
 
 init();
 
@@ -50,22 +50,25 @@ function init() {
     }, {
         fovy: 70.0,
         aspect: width/height,
-        zNear: 1,
-        zFar: 1000.0
+        zNear: 0.1,
+        zFar: 10000.0
     });
     camera.cameraController = glBoostContext.createCameraController();
     scene.addChild(camera);
 
-    var directionalLight1 = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(1, -1, 1));
+    let directionalLight1 = glBoostContext.createDirectionalLight(new GLBoost.Vector3(0.5, 0.5, 0.5), new GLBoost.Vector3(30, 30, 30));
     scene.addChild( directionalLight1 );
-    var directionalLight2 = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(-1, -1, -1));
+    let directionalLight2 = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(-30, -30, -30));
     scene.addChild( directionalLight2 );
     
-    var geo1 = glBoostContext.createCube(new GLBoost.Vector3(200, 20, 200), new GLBoost.Vector4(0.7, 0.7, 0.7, 1));
-    var material = glBoostContext.createClassicMaterial();
+    let geo1 = glBoostContext.createCube(new GLBoost.Vector3(200, 20, 200), new GLBoost.Vector4(0.7, 0.7, 0.7, 1));
+    let material = glBoostContext.createClassicMaterial();
     //material.shaderClass = GLBoost.PhongShader;
-    var mground1 = glBoostContext.createMesh(geo1, material);
-    mground1.translate.y = -50;
+    material.shaderClass = GLBoost.HalfLambertShader;
+    let mground1 = glBoostContext.createMesh(geo1, material);
+    //mground1.translate.y = -50;
+    let tmpVector3 = mground1.translate;
+    mground1.translate = new GLBoost.Vector3(tmpVector3.x, tmpVector3.y - 50, tmpVector3.z);
     mground1.dirty = true;
     scene.addChild( mground1 );
 
@@ -83,19 +86,19 @@ function init() {
 
 function populate() {
     
-    var max = 500;
+    let max = 500;
 
     // reset old
     clearMesh();
     world.clear();
 
-    var ground2 = new OIMO.Body({size:[200, 20, 200], pos:[0,-50,0], world:world});
+    let ground2 = new OIMO.Body({size:[200, 20, 200], pos:[0,-50,0], world:world});
 
-    var w = DOT_SIZE * 0.8 * 1.0;
-    var h = DOT_SIZE * 0.8 * 1.0;
-    var d = DOT_SIZE * 0.8 * 0.2;
+    let w = DOT_SIZE * 0.8 * 1.0;
+    let h = DOT_SIZE * 0.8 * 1.0;
+    let d = DOT_SIZE * 0.8 * 0.2;
 
-    var positions = [
+    let positions = [
         // Front face
         [-0.5 * w,  -0.5 * h,  0.7 * d], // v0
         [ 0.5 * w,  -0.5 * h,  0.7 * d], // v1
@@ -146,7 +149,7 @@ function populate() {
         [ 0.0 * w,   0.6 * h,  0.35 * d]  // v8
     ];
     
-    var texcoords = [
+    let texcoords = [
         // Front face
         [0.5,  0.5], // v0
         [0.75, 0.5], // v1
@@ -203,7 +206,7 @@ function populate() {
         [0.75,  0.5]  // v8
     ];
 
-    var indices = [
+    let indices = [
          0,  1,  2,    0,  2 , 3,  // Front face
          4,  5,  6,    4,  6 , 7,  // Back face
          8,  9, 10,    8, 10, 11,  // Top face
@@ -216,19 +219,21 @@ function populate() {
         34, 35, 36,   34, 36, 37   // Left2 face
     ];
 
-    var geometry = glBoostContext.createGeometry();
-    var texture = glBoostContext.createTexture('../../assets/o/v/g/u/ovguM.png');
-    var material = glBoostContext.createClassicMaterial();
+    let geometry = glBoostContext.createGeometry();
+    let texture = glBoostContext.createTexture('../../assets/o/v/g/u/ovguM.png');
+    let material = glBoostContext.createClassicMaterial();
     material.setTexture(texture);
+    //material.shaderClass = GLBoost.PhongShader;
+    material.shaderClass = GLBoost.HalfLambertShader;
     geometry.setVerticesData({
         position: positions,
         texcoord: texcoords
     }, [indices], GLBoost.TRIANGLE);
 
-    for (var i = 0; i < max; i++) {
-        var x = (Math.random() * 8) - 4;
-        var y = (Math.random() * 8*2) + 10;
-        var z = (Math.random() * 8) - 4;
+    for (let i = 0; i < max; i++) {
+        let x = (Math.random() * 8) - 4;
+        let y = (Math.random() * 8*2) + 10;
+        let z = (Math.random() * 8) - 4;
         bodys[i] = new OIMO.Body({
             type: 'box',
             size: [w, h, d],
@@ -237,13 +242,13 @@ function populate() {
             world: world
         });
 /*
-        var color = new GLBoost.Vector4(1, 1, 1, 1);
-        var geoBox = glBoostContext.createCube(new GLBoost.Vector3(w, h, d), color);
+        let color = new GLBoost.Vector4(1, 1, 1, 1);
+        let geoBox = glBoostContext.createCube(new GLBoost.Vector3(w, h, d), color);
         geoBox.updateVerticesData({
             texcoord: texcoords
         });
 */
-        var mesh = glBoostContext.createMesh(geometry, material);
+        let mesh = glBoostContext.createMesh(geometry, material);
         meshs[i] = mesh;
         meshs[i].translate = new GLBoost.Vector3(x * DOT_SIZE, y * DOT_SIZE, z * DOT_SIZE);
         scene.addChild(meshs[i]);
@@ -261,8 +266,8 @@ function loop() {
     
     world.step();
     
-    var p, r, m, x, y, z;
-    var mesh;
+    let p, r, m, x, y, z;
+    let mesh;
     wakeup = false;
 
     if (G !== nG) {
@@ -270,26 +275,26 @@ function loop() {
         G = nG;
     }
 
-    for ( var i = 0; i < bodys.length; i++ ) {
-        var body = bodys[i].body;
+    for ( let i = 0; i < bodys.length; i++ ) {
+        let body = bodys[i].body;
         mesh = meshs[i];
         if (wakeup) bodys[i].body.awake();
         if (!body.sleeping) {
-            var p = body.getPosition();
+            let p = body.getPosition();
             mesh.translate = new GLBoost.Vector3(p.x, p.y, p.z);
-            var q = body.getQuaternion();
+            let q = body.getQuaternion();
             mesh.quaternion = new GLBoost.Quaternion(q.x, q.y, q.z, q.w);
             if ( p.y < -300 ) {
-                var x = (Math.random() * 8) - 4;
-                var y = (Math.random() * 8*2) + 10;
-                var z = (Math.random() * 8) - 4;
+                let x = (Math.random() * 8) - 4;
+                let y = (Math.random() * 8*2) + 10;
+                let z = (Math.random() * 8) - 4;
                 bodys[i].resetPosition(x * DOT_SIZE, y * DOT_SIZE, z * DOT_SIZE);
             }
         }
     }
 
-    var rotateMatrixY = GLBoost.Matrix33.rotateY(1);
-    var rotatedVector = rotateMatrixY.multiplyVector(camera.eye);
+    let rotateMatrixY = GLBoost.Matrix33.rotateY(1);
+    let rotatedVector = rotateMatrixY.multiplyVector(camera.eye);
     camera.eye = rotatedVector;
 
     stats.update();
