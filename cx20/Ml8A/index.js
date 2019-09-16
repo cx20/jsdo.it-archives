@@ -10,6 +10,8 @@
 // forked from cx20's "[WebGL] GLBoost を試してみるテスト" http://jsdo.it/cx20/SWec
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
+let width = window.innerWidth;
+let height = window.innerHeight;
 // setup GLBoost renderer
 var canvas = document.getElementById("world");
 var glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
@@ -22,6 +24,7 @@ var renderer = glBoostContext.createRenderer({
     alpha: 1
   }
 });
+renderer.resize(width, height);
 
 // make a scene
 var scene = glBoostContext.createScene();
@@ -68,7 +71,7 @@ var camera = glBoostContext.createPerspectiveCamera({
   up: new GLBoost.Vector3(0.0, 1.0, 0.0)
 }, {
   fovy: 45.0,
-  aspect: 1.0,
+  aspect: width/height,
   zNear: 0.1,
   zFar: 1000.0
 });
