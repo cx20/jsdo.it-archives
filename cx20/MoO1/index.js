@@ -9,12 +9,14 @@
 // forked from cx20's "WebGL で地球を回してみるテスト" http://jsdo.it/cx20/cI8t
 
 async function webgl() {
+    let width = window.innerWidth;
+    let height = window.innerHeight;
     let canvas = document.getElementById("world");
     let glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
     let renderer = glBoostContext.createRenderer({
         clearColor: {red: 0.0, green: 0.0, blue: 0.0, alpha: 1}
     });
-    
+    renderer.resize(width, height);
     let scene = glBoostContext.createScene();
     
     let directionalLight = glBoostContext.createDirectionalLight(new GLBoost.Vector3(0.4, 0.4, 0.4), new GLBoost.Vector3(-10, -1, -10));
@@ -28,7 +30,7 @@ async function webgl() {
     //let texture1 = glBoostContext.createTexture('/assets/2/N/E/a/2NEaQ.jpg'); // jupiter.jpg
     var texture1 = glBoostContext.createVideoTexture("MyVideoTexture");
     await texture1.generateTextureFromVideoUri(
-        "../../assets/g/B/h/x/GBhxi.mp4", // jupiter.mp4
+        "../../assets/g/B/h/x/gBhxi.mp4", // jupiter.mp4
         document.getElementById("playButton"),
         true
     );
