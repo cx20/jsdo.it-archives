@@ -7,14 +7,15 @@
 // forked from cx20's "[WebGL] GLBoost を試してみるテスト" http://jsdo.it/cx20/SWec
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
-var renderer;
-var camera;
-var expression;
-var meshGround;
-var meshCube;
+let renderer;
+let camera;
+let expression;
+let meshGround;
+let meshCube;
 
-var world;
-var body;
+let world;
+let groundBody;
+let body;
 
 function initOimo() {
     world = new OIMO.World({ 
@@ -27,7 +28,7 @@ function initOimo() {
         gravity: [0,-9.8,0] 
     });
 
-    var groundBody = world.add({
+    groundBody = world.add({
         type: "box",
         size: [200, 2, 200],
         pos: [0, -20, 0],
@@ -51,37 +52,44 @@ function initOimo() {
 
 function initBoost() {
 
-    var canvas = document.getElementById("world");
-    var glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
+    let canvas = document.getElementById("world");
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    let glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
     renderer = glBoostContext.createRenderer({ canvas: canvas, clearColor: {red:1, green:1, blue:1, alpha:1}});
-    var scene = glBoostContext.createScene();
+    renderer.resize(width, height);
+    let scene = glBoostContext.createScene();
     
-    var texture = glBoostContext.createTexture('../../assets/A/k/w/j/AkwjW.jpg'); // frog.jpg
-    var material = glBoostContext.createClassicMaterial();
+    let texture = glBoostContext.createTexture('../../assets/A/k/w/j/AkwjW.jpg'); // frog.jpg
+    let material = glBoostContext.createClassicMaterial();
     material.setTexture(texture);
     material.baseColor = new GLBoost.Vector4(1, 1, 1, 1);
     
-    var geometryGround = glBoostContext.createCube(new GLBoost.Vector3(200, 2, 200), new GLBoost.Vector4(1, 1, 1, 1));
+    let geometryGround = glBoostContext.createCube(new GLBoost.Vector3(200, 2, 200), new GLBoost.Vector4(1, 1, 1, 1));
     meshGround = glBoostContext.createMesh(geometryGround, material);
-    meshGround.translate.y = -20;
     scene.addChild(meshGround);
 
-    var geometryCube = glBoostContext.createCube(new GLBoost.Vector3(50, 50, 50), new GLBoost.Vector4(1, 1, 1, 1));
+    let p = groundBody.getPosition();
+    let q = groundBody.getQuaternion();
+    meshGround.translate = new GLBoost.Vector3(p.x, p.y, p.z);
+    meshGround.quaternion = new GLBoost.Quaternion(q.x, q.y, q.z, q.w);
+
+    let geometryCube = glBoostContext.createCube(new GLBoost.Vector3(50, 50, 50), new GLBoost.Vector4(1, 1, 1, 1));
     meshCube = glBoostContext.createMesh(geometryCube, material);
     scene.addChild(meshCube);
     
-    var directionalLight = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(0, 0, -1));
+    let directionalLight = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(0, 0, -1));
     scene.addChild( directionalLight );
     
     camera = glBoostContext.createPerspectiveCamera({
-        eye: new GLBoost.Vector3(0.0, 50, 200),
+        eye: new GLBoost.Vector3(0.0, 50, 100),
         center: new GLBoost.Vector3(0.0, 0.0, 0.0),
         up: new GLBoost.Vector3(0.0, 1.0, 0.0)
     }, {
         fovy: 45.0,
-        aspect: 1.0,
-        zNear: 0.1,
-        zFar: 1000.0
+        aspect: width/height,
+        zNear: 0.001,
+        zFar: 3000.0
     });
     camera.cameraController = glBoostContext.createCameraController();
     scene.addChild(camera);
@@ -91,19 +99,24 @@ function initBoost() {
     expression.prepareToRender();
 }
 
+function updatePhysics() {
+    world.step();
+    let p = body.getPosition();
+    let q = body.getQuaternion();
+    meshCube.translate = new GLBoost.Vector3(p.x, p.y, p.z);
+    meshCube.quaternion = new GLBoost.Quaternion(q.x, q.y, q.z, q.w);
+}
+
 function animate() {
     renderer.clearCanvas();
     renderer.draw(expression);
     updatePhysics();
-    requestAnimationFrame(animate);
-}
 
-function updatePhysics() {
-    world.step();
-    var p = body.getPosition();
-    var q = body.getQuaternion();
-    meshCube.translate = new GLBoost.Vector3(p.x, p.y, p.z);
-    meshCube.quaternion = new GLBoost.Quaternion(q.x, q.y, q.z, q.w);
+    let rotateMatrix = GLBoost.Matrix33.rotateY(0.1);
+    let rotatedVector = rotateMatrix.multiplyVector(camera.eye);
+    camera.eye = rotatedVector;
+
+    requestAnimationFrame(animate);
 }
 
 initOimo();
