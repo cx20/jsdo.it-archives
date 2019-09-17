@@ -147,12 +147,12 @@ var createScene = function () {
     //skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("skybox/skybox", scene);
     
     var extensions = [
-        "../../assets/e/Y/8/U/eY8Uv.jpg", // "/../../skybox/skybox_px.jpg", 
-        "../../assets/l/e/M/D/leMDV.jpg", // "/../../skybox/skybox_py.jpg", 
-        "../../assets/x/o/v/B/xovBS.jpg", // "/../../skybox/skybox_pz.jpg", 
-        "../../assets/m/X/w/v/mXwvU.jpg", // "/../../skybox/skybox_nx.jpg", 
-        "../../assets/b/P/d/Y/bPdYb.jpg", // "/../../skybox/skybox_ny.jpg", 
-        "../../assets/h/z/U/B/hzUBa.jpg"  // "/../../skybox/skybox_nz.jpg"
+        "../../../../../assets/e/Y/8/U/eY8Uv.jpg", // "/../../skybox/skybox_px.jpg", 
+        "../../../../../assets/l/e/M/D/leMDV.jpg", // "/../../skybox/skybox_py.jpg", 
+        "../../../../../assets/x/o/v/B/xovBS.jpg", // "/../../skybox/skybox_pz.jpg", 
+        "../../../../../assets/m/X/w/v/mXwvU.jpg", // "/../../skybox/skybox_nx.jpg", 
+        "../../../../../assets/b/P/d/Y/bPdYb.jpg", // "/../../skybox/skybox_ny.jpg", 
+        "../../../../../assets/h/z/U/B/hzUBa.jpg"  // "/../../skybox/skybox_nz.jpg"
     ];
     skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("skybox/skybox", scene, extensions);
     
