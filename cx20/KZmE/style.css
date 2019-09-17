@@ -1,0 +1,20 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#renderCanvas {
+    width: 100%;
+    height: 100%;
+}
+
+#info {
+    color: #ccc;
+    text-align: center;
+    position: absolute;
+    top: 0px; width: 100%;
+    padding: 5px;
+}
