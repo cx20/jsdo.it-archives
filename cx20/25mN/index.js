@@ -5,7 +5,7 @@ if (BABYLON.Engine.isSupported()) {
     var camera = new BABYLON.FreeCamera("Camera", new BABYLON.Vector3(0, 0, -10), scene);
     var sphere = BABYLON.Mesh.CreateSphere("sphere", 30, 1, scene);
     var material = new BABYLON.StandardMaterial("default", scene);
-    material.diffuseTexture = new BABYLON.Texture("/assets/e/N/O/A/eNOAX.jpg", scene); // "earth.jpg"
+    material.diffuseTexture = new BABYLON.Texture("../../assets/e/N/O/A/eNOAX.jpg", scene); // "earth.jpg"
     material.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
     sphere.material = material;
     scene.clearColor  = new BABYLON.Color3(0.0, 0.0, 0.0);
