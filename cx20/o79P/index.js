@@ -112,7 +112,7 @@ var createScene = function(engine) {
     return scene;
 }
 
-var canvas = document.querySelector("#c");
+var canvas = document.querySelector("#renderCanvas");
 var engine = new BABYLON.Engine(canvas, true);
 var scene = createScene(engine);
 
@@ -123,4 +123,8 @@ engine.runRenderLoop(function () {
     cube.rotation.y = rad;
     cube.rotation.z = rad;
     scene.render();
+});
+
+window.addEventListener('resize', function(){
+    engine.resize();
 });
