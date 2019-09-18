@@ -33,7 +33,7 @@ var createScene = function() {
 
     // The first parameter can be used to specify which mesh to import. Here we import all meshes
     //BABYLON.SceneLoader.ImportMesh("", "scenes/", "rabbit.babylon", scene, function (meshes) {
-    BABYLON.SceneLoader.ImportMesh("", "/assets/E/c/r/y/", "Ecryr", scene, function(meshes) {
+    BABYLON.SceneLoader.ImportMesh("", "../../assets/e/c/r/y/", "ecryr.babylon", scene, function(meshes) {
 
         var k = 0.0;
         var gravity = -0.01;
