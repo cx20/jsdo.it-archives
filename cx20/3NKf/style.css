@@ -1,0 +1,17 @@
+/* @import url("http://cdn.jsdelivr.net/cesium/b19/Widgets/CesiumWidget/CesiumWidget.css"); */
+@import url("https://cesiumjs.org/Cesium/Build/Cesium/Widgets/widgets.css");
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.fullSize {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
