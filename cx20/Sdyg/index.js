@@ -28,19 +28,18 @@ var viewer = new Cesium.Viewer('cesiumContainer', {
 function createModel(url, height) {
     viewer.entities.removeAll();
 
-    var position = Cesium.Cartesian3.fromDegrees(139.691706, 35.689487, height);
+    let position = Cesium.Cartesian3.fromDegrees(139.691706, 35.689487, height);
+    let heading = Cesium.Math.toRadians(135);
+    let pitch = 0;
+    let roll = 0;
 /*
-    var heading = Cesium.Math.toRadians(135);
-    var pitch = 0;
-    var roll = 0;
+    let heading = Cesium.Math.toRadians(30);
+    let pitch = Cesium.Math.toRadians(0);
+    let roll = Cesium.Math.toRadians(0);
 */
-    //var heading = Cesium.Math.toRadians(30.0);
-    var heading = Cesium.Math.toRadians(90.0);
-    var pitch = Cesium.Math.toRadians(45.0);
-    var roll = Cesium.Math.toRadians(0.0);
-
-    var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-    var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+    
+    let hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+    let orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
 
     var entity = viewer.entities.add({
         name : url,
