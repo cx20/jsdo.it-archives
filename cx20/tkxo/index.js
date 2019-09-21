@@ -1090,12 +1090,14 @@ function getColorByMag( mag )
 //セシウムウィジェットを作成
 var widget = new Cesium.CesiumWidget('cesiumContainer');
 
+/*
 //Use STK World Terrain
 widget.terrainProvider = new Cesium.CesiumTerrainProvider({
     url : '//cesiumjs.org/stk-terrain/world',
     requestWaterMask : true,
     requestVertexNormals : true
 });
+*/
 
 var scene = widget.scene;
 var primitives = scene.primitives;
