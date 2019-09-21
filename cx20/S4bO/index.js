@@ -14,7 +14,7 @@ var widget = new Cesium.CesiumWidget('cesiumContainer', {
 var scene = widget.scene;
 var layers = scene.imageryLayers;
 layers.addImageryProvider(new Cesium.SingleTileImageryProvider({
-    url : 'http://jsrun.it/assets/y/n/c/B/yncBb.jpg',
+    url : '../../assets/y/n/c/B/yncBb.jpg',
     rectangle : Cesium.Rectangle.fromDegrees(130.870278, 31.899384, 130.896413, 31.921242)
 }));
 
