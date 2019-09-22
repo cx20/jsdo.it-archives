@@ -39,7 +39,7 @@ const sky_url = `https://rawcdn.githack.com/cx20/gltf-test/076d00ab4da1989f51e55
 //let mesh_url = "https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/LittlestTokyo.glb";
 let mesh_url = "https://ft-lab.github.io/gltf/yunomi/Yunomi_normal_20.glb";
 let basePath = convertRelativeToAbsUrl(getPathNameFromUrl(mesh_url)) + "/";
-let scale = 30;
+let scale = 50;
 
 function getPathNameFromUrl(path) {
     let result = path.replace(/\\/g, '/').replace(/\/[^/]*$/, '');
@@ -155,7 +155,7 @@ class App {
         const width = this.canvas.width = window.innerWidth * dpr;
         const height = this.canvas.height = window.innerHeight * dpr;
         this.view.setViewport([0, 0, width, height]);
-        const y = 0.0, eye = [0, y, 8], center = [0, y, 0], up = [0, 1, 0];
+        const y = 0.0, eye = [0, y, 8], center = [0, 2, 0], up = [0, 1, 0];
         this.camera.lookAt(eye, center, up);
         const aspect = width / height;
         const fov = aspect < 1 ? Fov.HORIZONTAL : Fov.VERTICAL;
