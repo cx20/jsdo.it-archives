@@ -149,7 +149,7 @@ class App {
         const width = this.canvas.width = window.innerWidth * dpr;
         const height = this.canvas.height = window.innerHeight * dpr;
         this.view.setViewport([0, 0, width, height]);
-        const y = 0.0, eye = [0, y, 8], center = [0, y, 0], up = [0, 1, 0];
+        const y = 0.0, eye = [0, y, 8], center = [0, 2, 0], up = [0, 1, 0];
         this.camera.lookAt(eye, center, up);
         const aspect = width / height;
         const fov = aspect < 1 ? Fov.HORIZONTAL : Fov.VERTICAL;
