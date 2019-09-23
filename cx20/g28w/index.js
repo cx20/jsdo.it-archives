@@ -30,3 +30,7 @@ var app = clay.application.create('#main', {
         this._mesh.rotation.rotateY(Math.PI/300);
     }
 });
+
+window.onresize = function () {
+    app.resize()
+};
