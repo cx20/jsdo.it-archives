@@ -27,3 +27,7 @@ var app = clay.application.create('#main', {
 
     loop: function () {}
 });
+
+window.onresize = function () {
+    app.resize()
+};
