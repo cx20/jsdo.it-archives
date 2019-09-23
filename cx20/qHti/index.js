@@ -90,7 +90,7 @@ var app = clay.application.create('#main', {
         })
         var diffuse = new clay.Texture2D;
         //diffuse.load("/assets/A/k/w/j/AkwjW.jpg");
-        diffuse.load("/assets/8/Y/F/W/8YFWD.png"); // white.png
+        diffuse.load("../../assets/8/y/F/W/8yFWD.png"); // white.png
                 
         this._oimoGround = this._world.add({
            type: "box",
