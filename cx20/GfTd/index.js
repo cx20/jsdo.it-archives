@@ -10,11 +10,11 @@
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
 var dataSet = [
-    {imageFile:"/assets/3/O/Z/o/3OZoF.jpg", scale:1.0}, // Basketball.jpg
-    {imageFile:"/assets/2/y/4/W/2y4Wl.jpg", scale:0.9}, // BeachBall.jpg
-    {imageFile:"/assets/r/x/X/q/rxXqY.jpg", scale:1.0}, // Football.jpg
-    {imageFile:"/assets/i/M/6/F/iM6FW.jpg", scale:0.3}, // Softball.jpg
-    {imageFile:"/assets/f/M/F/x/fMFxB.jpg", scale:0.3}, // TennisBall.jpg
+    {imageFile:"../../assets/3/O/Z/o/3OZoF.jpg", scale:1.0}, // Basketball.jpg
+    {imageFile:"../../assets/2/y/4/W/2y4Wl.jpg", scale:0.9}, // BeachBall.jpg
+    {imageFile:"../../assets/r/x/X/q/rxXqY.jpg", scale:1.0}, // Football.jpg
+    {imageFile:"../../assets/i/M/6/F/iM6FW.jpg", scale:0.3}, // Softball.jpg
+    {imageFile:"../../assets/f/M/F/x/fMFxB.jpg", scale:0.3}, // TennisBall.jpg
 ];
  
 var meshSpheres = [];
