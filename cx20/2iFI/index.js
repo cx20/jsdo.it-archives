@@ -59,7 +59,7 @@ var app = clay.application.create('#main', {
         this._meshGround.scale.set(200, 4, 200);
         this._meshGround.position.set(0, -50, 0);
         var diffuse = new clay.Texture2D;
-        diffuse.load("/assets/A/k/w/j/AkwjW.jpg");
+        diffuse.load("../../assets/A/k/w/j/AkwjW.jpg");
         material.set('diffuseMap', diffuse);
         
         app.createAmbientLight("#fff", 1.0);
