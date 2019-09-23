@@ -76,3 +76,7 @@ var app = clay.application.create('#main', {
         this._rad += Math.PI/180;
      }
 });
+
+window.onresize = function () {
+    app.resize()
+};
