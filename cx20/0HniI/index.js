@@ -91,10 +91,10 @@ var app = clay.application.create('#main', {
         var diffuse = new clay.Texture2D();
         //diffuse.load("/assets/A/k/w/j/AkwjW.jpg");
         //diffuse.load("/assets/8/Y/F/W/8YFWD.png"); // white.png
-        diffuse.load("/assets/u/y/G/y/uyGy9.jpg"); // grass.jpg
+        diffuse.load("../../assets/u/y/G/y/uyGy9.jpg"); // grass.jpg
 
         var diffuseFootball = new clay.Texture2D();
-        diffuseFootball.load("/assets/s/s/X/x/ssXxc.png"); // Football.png
+        diffuseFootball.load("../../assets/s/s/X/x/ssXxc.png"); // Football.png
         
         this._oimoGround = this._world.add({
            type: "box",
