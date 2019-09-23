@@ -51,12 +51,12 @@ var app = clay.application.create('#main', {
 
         // Skybox need a cubemap texture.
         app.loadTextureCube({
-            px: 'http://jsrun.it/assets/K/A/Q/S/KAQS9.jpg',
-            nx: 'http://jsrun.it/assets/W/i/p/E/WipE5.jpg',
-            py: 'http://jsrun.it/assets/G/b/O/t/GbOtw.jpg',
-            ny: 'http://jsrun.it/assets/Y/H/v/c/YHvca.jpg',
-            pz: 'http://jsrun.it/assets/i/X/C/d/iXCdr.jpg',
-            nz: 'http://jsrun.it/assets/y/s/c/P/yscPf.jpg'
+            px: '../../assets/j/r/q/8/jrq8Z.jpg',    // px.jpg
+            nx: '../../assets/b/A/n/h/bAnhv.jpg',    // nx.jpg
+            py: '../../assets/k/F/t/6/kFt6K.jpg',    // py.jpg
+            ny: '../../assets/l/6/9/p/l69pi.jpg',    // ny.jpg
+            pz: '../../assets/k/2/t/g/k2tgI.jpg',    // pz.jpg
+            nz: '../../assets/l/O/u/H/lOuHI.jpg'     // nz.jpg
         }).then(function (cubemap) {
             var skybox = new clay.plugin.Skybox({
                 // Attach skybox to the scene.
