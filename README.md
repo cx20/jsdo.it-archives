@@ -3,7 +3,7 @@ jsdo.it archives
 
 ## Tags
 
-[Ashes](/tag/ashes) / [Babylon.js](/tag/babylon.js) / [Cesium.js](/tag/cesium.js) / [Filament](/tag/filament) / [GLBoost](/tag/glboost) / [GLSL](/tag/glsl) / [Grimoire.js](/tag/grimoire.js) / [Physics](/tag/physics) / [PlayCanvas](/tag/playcanvas)
+[Ashes](/tag/ashes) / [Babylon.js](/tag/babylon.js) / [Cesium.js](/tag/cesium.js) / [ClayGL](/tag/claygl) / [Filament](/tag/filament) / [GLBoost](/tag/glboost) / [GLSL](/tag/glsl) / [Grimoire.js](/tag/grimoire.js) / [Physics](/tag/physics) / [PlayCanvas](/tag/playcanvas)
 
 ## Works
 
