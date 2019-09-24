@@ -127,7 +127,7 @@ function addGround() {
         geometry: geometryGround,
         material: new Hilo3d.BasicMaterial({
             diffuse:new Hilo3d.LazyTexture({
-                src:'/assets/u/y/G/y/uyGy9.jpg' // grass.jpg
+                src:'../../assets/u/y/G/y/uyGy9.jpg' // grass.jpg
             }),
         }),
     });
@@ -167,7 +167,7 @@ function addSphere() {
                 material: new Hilo3d.BasicMaterial({
 /*
                     diffuse:new Hilo3d.LazyTexture({
-                        src:'/assets/s/s/X/x/ssXxc.png' // football.png
+                        src:'../../assets/s/s/X/x/ssXxc.png' // football.png
                     }),
 */
                     diffuse: new Hilo3d.Color(c[0], c[1], c[2]),
