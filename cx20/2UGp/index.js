@@ -63,7 +63,7 @@ function addGround() {
         geometry: geometryGround,
         material: new Hilo3d.BasicMaterial({
             diffuse:new Hilo3d.LazyTexture({
-                src:'/assets/A/k/w/j/AkwjW.jpg'
+                src:'../../assets/A/k/w/j/AkwjW.jpg'
             })
         }),
     });
@@ -93,7 +93,7 @@ function addBox() {
         geometry: geometryBox,
         material: new Hilo3d.BasicMaterial({
             diffuse:new Hilo3d.LazyTexture({
-                src:'/assets/A/k/w/j/AkwjW.jpg'
+                src:'../../assets/A/k/w/j/AkwjW.jpg'
             })
         }),
         onUpdate: function() {
