@@ -143,7 +143,7 @@ var DEMO = {
 		
 		// Load textures		
 		//var waterNormals = new THREE.ImageUtils.loadTexture('./assets/img/waternormals.jpg');
-		var waterNormals = new THREE.ImageUtils.loadTexture('/assets/f/F/2/S/fF2SS.jpg');
+		var waterNormals = new THREE.ImageUtils.loadTexture('../../assets/f/F/2/S/fF2SS.jpg');
 		waterNormals.wrapS = waterNormals.wrapT = THREE.RepeatWrapping; 
 		
 		// Load filesdnd texture
