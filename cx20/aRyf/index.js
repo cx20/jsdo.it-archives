@@ -25,13 +25,21 @@ var mx = 0.5, my = 0.5;
 onload = function(){
 	// canvasエレメントを取得
 	var c = document.getElementById('canvas');
-	c.width = 465;
-	c.height = 465;
 
 	c.addEventListener('mousemove', mouseMove, true);
 	
 	// webglコンテキストを取得
 	var gl = c.getContext('webgl') || c.getContext('experimental-webgl');
+	resizeCanvas();
+	window.addEventListener("resize", function(){
+		resizeCanvas();
+	});
+
+	function resizeCanvas() {
+		c.width = window.innerWidth;
+		c.height = window.innerHeight;
+		gl.viewport(0, 0, c.width, c.height);
+	}
 	
 	// 頂点シェーダとフラグメントシェーダの生成
 	var v_shader = create_shader('vs');
