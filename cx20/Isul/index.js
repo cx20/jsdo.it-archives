@@ -101,7 +101,7 @@ RedGL(canvas, function (v) {
         indexData  // data
     );
     
-    var tTexture = RedBitmapTexture(this, '/assets/A/k/w/j/AkwjW.jpg');
+    var tTexture = RedBitmapTexture(this, '../../assets/A/k/w/j/AkwjW.jpg');
     var tMaterial = RedBitmapMaterial(this, tTexture);
     
     tGeometry = RedGeometry(tInterleaveBuffer, tIndexBuffer);
