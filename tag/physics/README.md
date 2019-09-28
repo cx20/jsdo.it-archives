@@ -80,6 +80,18 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3Dpt" alt="Three.js + Oimo.js で箱に色々入れてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/3Dpt.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/s5hf" alt="Three.js + Oimo.js で箱に消しゴムを入れてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/s5hf.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/LastDayOfWinter2015" alt="Three.js + Oimo.js で豆まきしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/rJXX.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/WIrf" alt="Three.js + Oimo.js でタマゴを転がしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/WIrf.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/oslD" alt="Three.js + Oimo.js でスナック菓子を落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/oslD.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/EyiF" alt="Three.js + Oimo.js でスナック菓子を落下させてみるテスト（改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/EyiF.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/UV3r" alt="Three.js + Oimo.js で恵方巻を落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/UV3r.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/O7Bu" alt="Three.js + Oimo.js で CD-ROM を落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/O7Bu.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/Uf66" alt="Three.js + Oimo.js でフロッピーを落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Uf66.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/WilT" alt="Three.js + Oimo.js でフロッピーを落下させてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/WilT.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/Axzo" alt="Three.js + Oimo.js でフロッピーを落下させてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Axzo.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/Wue7" alt="Three.js + Oimo.js で花札を落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Wue7.jpg" width="200" height="200"></a></td>
 </tr>
 </table>
