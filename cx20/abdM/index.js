@@ -1,0 +1,126 @@
+// forked from cx20's "[WebGL] three.js で glTF 2.0形式のデータを表示してみるテスト（その１１）（調整中）" http://jsdo.it/cx20/UqP9
+// forked from cx20's "[WebGL] three.js で glTF 2.0形式のデータを表示してみるテスト（その１０）（調整中）" http://jsdo.it/cx20/mrOD
+// forked from cx20's "[WebGL] three.js で glTF 2.0形式のデータを表示してみるテスト（その９）（調整中）" http://jsdo.it/cx20/6MMO
+// forked from cx20's "[WebGL] three.js で glTF 2.0形式のデータを表示してみるテスト（その８）" http://jsdo.it/cx20/qugw
+// forked from cx20's "[WebGL] three.js で glTF 2.0形式のデータを表示してみるテスト（その７）" http://jsdo.it/cx20/4r5U
+// forked from cx20's "[WebGL] three.js で glTF 2.0形式のデータを表示してみるテスト（その６）" http://jsdo.it/cx20/SMjx
+// forked from cx20's "[WebGL] three.js で glTF 2.0形式のデータを表示してみるテスト（その５）" http://jsdo.it/cx20/ahsW
+// forked from cx20's "[WebGL] three.js で glTF 2.0形式のデータを表示してみるテスト（その４）" http://jsdo.it/cx20/waIx
+// forked from cx20's "[WebGL] three.js で glTF 2.0形式のデータを表示してみるテスト（その３）（調整中）" http://jsdo.it/cx20/q0cx
+// forked from cx20's "[WebGL] three.js で glTF 2.0形式のデータを表示してみるテスト（その２）" http://jsdo.it/cx20/K0k6
+// forked from cx20's "[WebGL] three.js で glTF 2.0形式のデータを表示してみるテスト" http://jsdo.it/cx20/gMdU
+// forked from cx20's "three.js で glTF 形式のデータを表示してみるテスト（その１）" http://jsdo.it/cx20/2qm8N
+// forked from cx20's "three.js で OBJ 形式のデータを表示してみるテスト（その１）" http://jsdo.it/cx20/wGMY
+// forked from cx20's "three.js で Blender のデータを表示してみるテスト" http://jsdo.it/cx20/2CXI
+// forked from 【WebGL特集】第4回：Blenderでモデル出力 http://mox-motion.com/blog/webgl04-2/
+
+var gltf = null;
+var mixer = null;
+var clock = new THREE.Clock();
+var controls;
+var camera;
+
+init();
+animate();
+  
+function init() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    
+    scene = new THREE.Scene();
+    
+    var ambient = new THREE.AmbientLight( 0x101030 );
+    scene.add( ambient );
+
+    var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+    directionalLight.position.set( 0, 0, 1 );
+    scene.add( directionalLight );
+
+    var directionalLight2 = new THREE.DirectionalLight( 0xffeedd );
+    directionalLight2.position.set( 0, 5, -5 );
+    directionalLight2.shadow.mapSize.width = 2048;
+    directionalLight2.shadow.mapSize.height = 2048;
+    directionalLight2.castShadow = true;
+    scene.add( directionalLight2 );
+    
+    camera = new THREE.PerspectiveCamera( 60, width / height, 0.01, 10000 );
+    //camera.position.set(2, 2, 3);
+    camera.position.set(1, 5, 30);
+
+    var geometry = new THREE.BoxGeometry(100, 5, 100);
+    var material = new THREE.MeshLambertMaterial({
+        color: "#707070"
+    });
+    var ground = new THREE.Mesh(geometry, material);
+    ground.position.y -= 15;
+    ground.receiveShadow = true;
+    scene.add(ground);
+
+    var manager = new THREE.LoadingManager();
+    manager.onProgress = function ( item, loaded, total ) {
+        console.log( item, loaded, total );
+    };
+
+    var loader = new THREE.GLTFLoader();
+    loader.setCrossOrigin( 'anonymous' ); // r84 以降は明示的に setCrossOrigin() を指定する必要がある
+
+    var scale = 5.0;
+    //var url = "https://cdn.rawgit.com/cx20/gltf-test/e5c46e508942f1686ed84fcb1e2e1132de80490a/tutorialModels/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf";
+    //var url = "https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/c89c1709fbfd67a11aa7e540ab4ecb795763b627/2.0/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf";
+    //var url = "https://raw.githubusercontent.com/shrekshao/minimal-gltf-loader/store-drone-model/glTFs/glTF_version_2/buster_drone/scene.gltf";
+    //var url = "https://cdn.rawgit.com/KhronosGroup/glTF-Blender-Exporter/2bdcb263/polly/project_polly.gltf";
+    //var url = "https://cdn.rawgit.com/KhronosGroup/glTF-Blender-Exporter/0e23c773bf27dad67d2c25f060370d6fa012d87d/polly/project_polly.gltf";
+    //var url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/8a3e977a/models/gltf/2.0/BearOnBalloons/scene.gltf";
+    //var url = "https://cdn.rawgit.com/mrdoob/rome-gltf/784089b4/files/models/life_soup/quadruped_fox.gltf";
+    //var url = "https://cdn.rawgit.com/pissang/claygl/c4f45119/example/assets/models/SambaDancing/SambaDancing.gltf";
+    var url = "https://cdn.rawgit.com/cx20/gltf-test/e63efa65/tutorialModels/FlightHelmet/glTF/FlightHelmet.gltf";
+    
+    loader.load(url, function (data) {
+        gltf = data;
+        var object = gltf.scene;
+        object.scale.set(scale, scale, scale);
+        object.position.y = 5;
+        object.castShadow = true;
+        object.receiveShadow = true;
+
+        var animations = gltf.animations;
+        if ( animations && animations.length ) {
+            mixer = new THREE.AnimationMixer( object );
+            for ( var i = 0; i < animations.length; i ++ ) {
+                var animation = animations[ i ];
+                mixer.clipAction( animation ).play();
+            }
+        }
+        scene.add(object);
+    });
+
+    var axis = new THREE.AxesHelper(1000);   
+    scene.add(axis);
+
+    renderer = new THREE.WebGLRenderer();
+    renderer.setClearColor( 0xaaaaaa );
+    renderer.shadowMap.enabled = true;
+    
+    controls = new THREE.OrbitControls( camera, renderer.domElement );
+    controls.userPan = false;
+    controls.userPanSpeed = 0.0;
+    controls.maxDistance = 5000.0;
+    controls.maxPolarAngle = Math.PI * 0.495;
+    controls.autoRotate = true;
+    controls.autoRotateSpeed = -10.0;
+
+    renderer.setSize( width, height );
+    renderer.gammaOutput = true;
+    document.body.appendChild( renderer.domElement );
+}
+
+function animate() {
+    requestAnimationFrame( animate );
+    if (mixer) mixer.update(clock.getDelta());
+    controls.update();
+    render();
+}
+
+function render() {
+    renderer.render( scene, camera );
+}
