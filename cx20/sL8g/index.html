@@ -57,7 +57,7 @@ void main(void)
     float coordX = gl_FragCoord.x / resolution.x;
     float coordY = gl_FragCoord.y / resolution.x;
     vec2 dstCoord = vec2(coordX, coordY);
-    vec2 srcCoord = vec2(coordX, coordY / ratio);
+    vec2 srcCoord = vTextureCoord; // vec2(coordX, coordY / ratio);
     vec2 rotationCenter = vec2(0.5, 0.5);
     vec2 shift = dstCoord - rotationCenter;
     
@@ -65,7 +65,7 @@ void main(void)
     float angle = 45.0;
     
     float rasterPattern = added(shift, sind(angle), cosd(angle), rotationCenter, PI / dotSize * 680.0);
-    vec4 srcPixel = texture2D(texture, -srcCoord);
+    vec4 srcPixel = texture2D(texture, srcCoord);
         
     float avg = 0.2125 * srcPixel.r + 0.7154 * srcPixel.g + 0.0721 * srcPixel.b;
     float gray = (rasterPattern * threshold + avg - threshold) / (1.0 - threshold);
