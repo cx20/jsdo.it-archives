@@ -24,8 +24,8 @@ varying vec4 vColor;
 varying vec2 vTextureCoord;
 
 void main(void) {
-    vec2 uv = gl_FragCoord.xy / resolution.xy;
-    vec3 rgb = texture2D(texture, -uv).rgb;
+    vec2 uv = vTextureCoord; // gl_FragCoord.xy / resolution.xy;
+    vec3 rgb = texture2D(texture, uv).rgb;
     uv = gl_FragCoord.xy / resolution.y;
     uv.x -= .5 * floor(mod(32. * uv.y + .5, 2.)) / 32.;
     vec2 uv0 = floor(uv * 32. + .5) / 32.;
