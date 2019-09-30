@@ -67,7 +67,9 @@ vec4 halftone(in vec2 fc,in mat2 m)
 {
     vec2 smp = (grid(m*fc)+0.5*S)*m;
     float s = min(length(fc-smp)/(DOTSIZE*0.5*S),1.0);
-    vec4 c = rgb2cmyki(texture2D(texture,-px2uv(smp+ORIGIN)));
+    vec2 uv = -px2uv(smp+ORIGIN);
+    uv.x = -uv.x;  // TODO: Investigate where to reverse
+    vec4 c = rgb2cmyki(texture2D(texture,uv));
     return c+s;
 }
 
