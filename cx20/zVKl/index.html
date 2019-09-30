@@ -35,7 +35,7 @@ vec2 fmod(vec2 a, vec2 b)
 
 void main(void)
 {
-    vec2 uv = gl_FragCoord.xy / resolution.xy;
+    vec2 uv = vTextureCoord; // gl_FragCoord.xy / resolution.xy;
     float size = 1.0 / NumTiles;
 
     vec2 Pbase = uv - fmod(uv, vec2(size));
@@ -82,7 +82,7 @@ void main(void)
     }
 
     vec4 cTop = c2;
-    vec4 tileColor = texture2D(texture, -PCenter);
+    vec4 tileColor = texture2D(texture, PCenter);
     gl_FragColor = tileColor + cTop - cBottom;
 }
 </script>
