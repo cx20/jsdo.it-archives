@@ -31,16 +31,16 @@ float random(vec2 ab)
 }
 
 void main(void) {
-    vec2 uv = gl_FragCoord.xy / resolution.xy;
+    vec2 uv = vTextureCoord; // gl_FragCoord.xy / resolution.xy;
     vec4 color = vec4(0.0);
 
     float go = sin(time) * 0.01;
     float go2 = sin(time) * 0.01;
     vec2 strenght = vec2(5, 2) * random(uv);
 
-    color.r = texture2D(texture, -uv - vec2(go, 0.0) * strenght).r;
-    color.g = texture2D(texture, -uv - vec2(0.005, go2) * strenght).g;
-    color.b = texture2D(texture, -uv).g;
+    color.r = texture2D(texture, uv - vec2(go, 0.0) * strenght).r;
+    color.g = texture2D(texture, uv - vec2(0.005, go2) * strenght).g;
+    color.b = texture2D(texture, uv).g;
     color.a = 1.0;
 
     gl_FragColor = color;
