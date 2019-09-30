@@ -33,13 +33,13 @@ void main(void)
     vec2 cor;
 
     cor.x = gl_FragCoord.x / PIXELSIZE;
-    cor.y = (gl_FragCoord.y + PIXELSIZE * 1.5 * mod(floor(cor.x), 2.0)) / (PIXELSIZE * 3.0);
+    cor.y = - (gl_FragCoord.y + PIXELSIZE * 1.5 * mod(floor(cor.x), 2.0)) / (PIXELSIZE * 3.0);
 
     vec2 ico = floor(cor);
     vec2 fco = fract(cor);
 
     vec3 pix = step(1.5, mod(vec3(0.0, 1.0, 2.0) + ico.x, 3.0));
-    vec3 ima = texture2D(texture,- PIXELSIZE * ico * vec2(1.0, 3.0) / resolution.xy).xyz;
+    vec3 ima = texture2D(texture, PIXELSIZE * ico * vec2(1.0, 3.0) / resolution.xy).xyz;
 
     vec3 col = pix * dot(pix, ima);
 
