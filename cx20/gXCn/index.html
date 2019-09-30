@@ -85,7 +85,7 @@ void main(void){
     vec2 uv = gl_FragCoord.xy/resolution.xy;
     float s = resolution.x/80.0;
     vec2 nearest = nearestHex(s, gl_FragCoord.xy);
-    vec4 texel = texture2D(texture, -nearest/resolution.xy, -100.0);
+    vec4 texel = texture2D(texture, - nearest/vec2(-resolution.x, resolution.y), -100.0); // TODO: Investigate where to reverse
     float dist = hexDist(gl_FragCoord.xy, nearest);
     
     float luminance = (texel.r + texel.g + texel.b)/3.0;
