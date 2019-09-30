@@ -28,9 +28,9 @@ varying vec2 vTextureCoord;
 void main(void)
 {
     vec2 p = gl_FragCoord.xy / SUBPIXEL_SIZE;
-    vec2 uv = floor(p)*SUBPIXEL_SIZE / resolution.xy;
+    vec2 uv = vTextureCoord; // floor(p)*SUBPIXEL_SIZE / resolution.xy;
     
-    vec4 color = texture2D(texture, -uv);    
+    vec4 color = texture2D(texture, uv);    
     vec4 result = vec4(0.0, 0.0, 0.0, 1.0);
     
     vec2 remainder = floor(mod(p, 2.0)+0.5);
