@@ -87,8 +87,8 @@ float dither( mat4 m, ivec2 p )
 void main(void)
 {
     ivec2 p = ivec2(mod( gl_FragCoord.xy, 8.0 ));
-    vec2 uv = gl_FragCoord.xy / resolution.xy;
-    vec3 c = texture2D( texture, -uv ).xyz;
+    vec2 uv = vTextureCoord; // gl_FragCoord.xy / resolution.xy;
+    vec3 c = texture2D( texture, uv ).xyz;
     c = pow( c, vec3(2.2) );    
     c -= 1.0/255.0;
     
