@@ -25,8 +25,8 @@ varying vec2 vTextureCoord;
 
 void main(void) 
 {
-    vec2 uv = gl_FragCoord.xy / resolution.xy;
-    vec4 tex = texture2D(texture, -uv);
+    vec2 uv = vTextureCoord; // gl_FragCoord.xy / resolution.xy;
+    vec4 tex = texture2D(texture, uv);
     vec4 texsound = texture2D(texture, vec2(0.01, 0.25));
     vec2 center = vec2(0.5 + 0.5 * sin(time), 0.5);
     float dist = 1.0 - smoothstep(0.35, 0.45, length(center - uv));
