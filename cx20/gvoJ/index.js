@@ -1,7 +1,8 @@
 // forked from cx20's "ドット絵を点と線でつなぐテスト" http://jsdo.it/cx20/mPoA
 // forked from Tim Holman's "Interactive image nodes" http://codepen.io/tholman/pen/AmptL
 
-var DOT_SIZE = 16;
+//var DOT_SIZE = 16;
+var DOT_SIZE = (window.innerHeight/18); // 20;
 var X_START_POS = 50;
 var Y_START_POS = 50;
 
@@ -152,6 +153,8 @@ var Nodes = {
     init: function () {
         // Set up the visual canvas 
         this.canvas = document.getElementById('canvas');
+		this.canvas.width = window.innerWidth;
+		this.canvas.height = window.innerHeight;
         this.context = this.canvas.getContext('2d');
         this.context.globalCompositeOperation = "lighter";
         
