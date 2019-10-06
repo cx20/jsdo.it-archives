@@ -1,6 +1,7 @@
 // forked from edo_m18's "UndulateNet" http://jsdo.it/edo_m18/tY0o
 
-var DOT_SIZE = 20;
+//var DOT_SIZE = 20;
+var DOT_SIZE = (window.innerHeight/18); // 20;
 var X_START_POS = 50;
 var Y_START_POS = 0;
 var X_MAX = 440;
@@ -257,8 +258,10 @@ UndulateNet.prototype.populate = function() {
     //var verticalPadding = 100;
 
     // set size
-    this.width = this.canvas.width = X_MAX;    // window.innerWidth;
-    this.height = this.canvas.height = Y_MAX;    // window.innerHeight + verticalPadding * 2;
+    //this.width = this.canvas.width = X_MAX;    // window.innerWidth;
+    //this.height = this.canvas.height = Y_MAX;    // window.innerHeight + verticalPadding * 2;
+    this.width = this.canvas.width = window.innerWidth;    // window.innerWidth;
+    this.height = this.canvas.height = window.innerHeight;    // window.innerHeight + verticalPadding * 2;
 
     //var netHeight = this.height - verticalPadding * 2;
     var netHeight = this.height;
@@ -381,6 +384,8 @@ UndulateNet.prototype.cursorEnd = function ( event ) {
 
 function init() {
     var canvasElem = document.getElementById('cv');
+	canvasElem.width = window.innerWidth;
+	canvasElem.height = window.innerHeight;
     var net = new UndulateNet({
         canvas: canvasElem,
         nodeCount: 550, // an approximate figure
