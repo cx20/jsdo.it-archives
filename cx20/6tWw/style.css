@@ -1,0 +1,80 @@
+body {
+   overflow: hidden;
+}
+
+.jagrid {
+  overflow: hidden;
+  padding-left: 20px;
+  border-style: solid;
+  position: relative;
+  line-height: 20px;
+  border-width: 0px;
+}
+
+.jagrid .jg-header {
+  box-shadow: none;
+  background-color: #dfe3e8;
+}
+
+.jagrid .jg-header.row {
+  margin-left: -20px;
+  margin-top: -20px;
+  position: absolute;
+}
+
+.jagrid .jg-header td, .jagrid .jg-header th {
+  box-shadow: inset #b1b5ba -1px -1px 0;
+  font-size: 90%;
+  color: #3e3e36;
+  text-align: center;
+}
+
+.jagrid * {
+  padding: 0;
+  margin: 0;
+}
+
+.jagrid ul, .jagrid ol {
+  padding-left: 20px;
+}
+
+.jagrid table {
+  box-shadow: #000 -1px -1px 0px;
+  border-collapse: collapse;
+}
+
+.jagrid table:not(.jg-header) {
+  height: 100%;
+}
+
+.jagrid table tr:first-child td {
+  height: 0;
+  border: 0;
+}
+
+.jagrid table td, .jagrid table th {
+  box-shadow: inset #000 -1px -1px 0;
+  line-heignt: 20px;
+  min-width: 20px;
+  max-width: 20px;
+  width: 20px;
+}
+
+.jagrid table td > div, .jagrid table th > div {
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: inset #000 -1px -1px 0;
+  width: 100%;
+}
+
+.無 { background-color: #000000; }
+.白 { background-color: #ffffff; }
+.肌 { background-color: #ffcccc; }
+.茶 { background-color: #800000; }
+.赤 { background-color: #ff0000; }
+.黄 { background-color: #ffff00; }
+.緑 { background-color: #00ff00; }
+.水 { background-color: #00ffff; }
+.青 { background-color: #0000ff; }
+.紫 { background-color: #800080; }
