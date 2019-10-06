@@ -1,0 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+canvas#canvas {
+  position: absolute;
+  visibility:hidden;
+}
+
+div#canvas-frame {
+  position: absolute;
+  width: 465px;
+  height: 465px;
+}
