@@ -1,0 +1,156 @@
+body {
+	background-image: url(http://jsrun.it/assets/w/i/3/R/wi3Rs.png);
+	font-family: sans-serif;
+	color: #666;
+	font-size: 12px;
+	background-position: 9px 0px;
+}
+
+button,
+select {
+	font-family: sans-serif;
+}
+
+#outer-wrapper {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#wrapper {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper::before {
+	content: 'loading...';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: -100px;
+	margin-top: -20px;
+	color: #333;
+	text-align: center;
+	transition: all 0.3s;
+	opacity: 0;
+}
+
+#wrapper.is-loading::before {
+	opacity: 1;
+}
+
+#blocks {
+	position: absolute;
+	z-index: 1;
+	width: 680px;
+	height: 470px;
+	transition-property: transform, -webkit-transform;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-out;
+}
+
+#ui {
+	position: relative;
+	z-index: 10;
+	padding: 10px;
+}
+
+	#ui select
+	{
+		margin-right: 30px;
+	}
+
+.block {
+	width: 28px;
+	height: 28px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 1;
+	background-image: url(http://jsrun.it/assets/1/w/V/d/1wVdp.png);
+	background-repeat: no-repeat;
+	-webkit-transform: translateX(-370px) translateY(-92px);
+	transform: translateX(-370px) translateY(-92px);
+}
+
+.block.is-hidden {
+	display: none;
+}
+
+.block.is-transparent {
+	opacity: 0;
+}
+
+.block.is-transitioning {
+	transition: all 0.5s;
+}
+
+.color-red {
+	background-position: 0 -112px;
+}
+	
+.color-green {
+	background-position: 0 -56px;
+}
+
+.color-pink {
+	background-position: 0 -84px;
+}
+
+.color-blue {
+	background-position: 0 0;
+}
+
+.color-brown {
+	background-position: 0 -225px;
+}
+
+.color-white {
+	background-position: 0 -196px;
+}
+
+.color-yellow {
+	background-position: 0 -140px;
+}
+
+.color-orange {
+	background-position: 0 -28px;
+}
+
+.color-transparent {
+	background-position: -28px -168px;
+}
+
+#snorpey {
+  position: absolute;
+  z-index: 3;
+  left: 10px;
+  bottom: 0px;
+}
+
+#snorpey a {
+  color: #06f;
+  text-decoration: none;
+}
+
+#snorpey a:hover {
+  color: #06f;
+}
+
+#snorpey .link {
+  display: none;
+}
+
+#snorpey:hover .link {
+  display: inline;
+}
