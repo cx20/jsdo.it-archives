@@ -1,0 +1,147 @@
+body {
+	background: #000;
+	color: #555;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+}
+canvas {
+	background: transparent;
+	display: block;
+	margin: 1em auto;
+}
+#user {
+	margin: 5em auto 1em;
+	position: relative;
+}
+#rotation {
+	border: 0;
+	margin: 0 auto 1em;
+	position: relative;
+		top: -1.5em;
+		z-index: 1;
+	text-align: center;
+	width: 7em;
+}
+#rotation legend {
+	color: #555;
+	cursor: pointer;
+	opacity: 0.3;
+	position: relative;
+		top: 2em;
+	text-transform: lowercase;
+	-moz-transition: opacity 0.25s;
+	-ms-transition: opacity 0.25s;
+	-o-transition: opacity 0.25s;
+	-webkit-transition: opacity 0.25s;
+	transition: opacity 0.25s;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#rotation legend:hover,
+#rotation.visibility legend {
+	opacity: 1;
+}
+#rotation input {
+	display: none;
+}
+#rotation label {
+	display: block;
+	opacity: 0;
+	cursor: pointer;
+	-moz-transition: opacity 0.25s;
+	-ms-transition: opacity 0.25s;
+	-o-transition: opacity 0.25s;
+	-webkit-transition: opacity 0.25s;
+	transition: opacity 0.25s;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: pre;
+}
+#rotation.visibility label {
+	opacity: 1;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+#rotation label:first-of-type {
+	margin-top: 2.5em;
+}
+#rotation label:after {
+	content: '';
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.1em;
+	position: relative;
+		left: 0.5em;
+	width: 0.75em;
+	height: 0.75em;
+}
+#rotation input + label:after {
+	color: #ccc;
+	content: '\2714';
+	display: inline-block;
+	line-height: 0.8;
+	position: relative:
+	-moz-transform: rotate( -10deg );
+	-ms-transform: rotate( -10deg );
+	-o-transform: rotate( -10deg );
+	-webkit-transform: rotate( -10deg );
+	transform: rotate( -10deg );
+}
+#rotation input:checked + label:after {
+	color: #555;
+}
+#toggle {
+	background: rgb( 250, 75, 75 );
+	border: 1px solid rgb( 200, 75, 75 );
+	border-radius: 10px;
+	color: rgb( 250, 250, 250 );
+	cursor: pointer;
+	display: block;
+	font-size: 1em;
+	line-height: 2;
+	margin: 0 auto;
+	opacity: 0.3;
+	position: relative;
+		z-index: 2;
+	text-transform: uppercase;
+	-moz-transition: opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+	width: 6em;
+}
+#toggle:hover {
+	opacity: 1;
+}
+#toggle.disabled:hover {
+	cursor: auto;
+	opacity: 0.3;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	-webkit-transition: none;
+	transition: none;
+}
+
+
+input[type="button"]:hover {
+
+}
+input[type="button"]:active,
+input[type="button"]:focus {
+
+}
