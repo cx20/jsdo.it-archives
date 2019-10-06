@@ -1,0 +1,16 @@
+#canvas {
+    display: block;
+    width: 465px;
+    height: 465px;
+    margin: 0 auto;
+}
+
+#control {
+    position: absolute;
+    margin: 20px;
+}
+
+body {
+    background: #000;
+    overflow: hidden;
+}
