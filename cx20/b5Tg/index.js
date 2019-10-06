@@ -124,7 +124,8 @@ function draw() {
 }
 
 function drawScreen() {
-    ctx.clearRect( 0, 0, X_MAX, Y_MAX );
+    //ctx.clearRect( 0, 0, X_MAX, Y_MAX );
+    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 }
 
 function drawMario() {
