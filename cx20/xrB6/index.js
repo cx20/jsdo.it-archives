@@ -9,10 +9,10 @@ var canvas, stage, traceTxt;
 var fishImg = [];
 var fileList = 
     [
-//      {"src":"http://jsrun.it/assets/y/v/w/r/yvwr8.png","id":"image1"}, // 金魚
-        {"src":"http://jsrun.it/assets/c/f/Q/F/cfQFC.png","id":"image2"}, // ドット絵
-        {"src":"http://jsrun.it/assets/t/v/j/l/tvjlj.png","id":"image3"}, // こいのぼり（青）
-        {"src":"http://jsrun.it/assets/k/c/m/u/kcmuo.png","id":"image4"}  // こいのぼり（赤）
+//      {"src":"../../assets/y/v/w/r/yvwr8.png","id":"image1"}, // 金魚
+        {"src":"../../assets/c/f/Q/F/cfQFC.png","id":"image2"}, // ドット絵
+        {"src":"../../assets/t/v/j/l/tvjlj.png","id":"image3"}, // こいのぼり（青）
+        {"src":"../../assets/k/C/m/u/kCmuo.png","id":"image4"}  // こいのぼり（赤）
     ];
 
 var queue = new createjs.LoadQueue(false);
