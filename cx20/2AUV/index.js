@@ -123,7 +123,7 @@ function init() {
         animate();
 
     };
-    img.src = "/assets/6/q/0/6/6q06E.png";  // mario.png
+    img.src = "../../assets/6/q/0/6/6q06E.png";  // mario.png
 
 }
 
