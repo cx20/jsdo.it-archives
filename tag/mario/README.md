@@ -9,6 +9,36 @@ jsdo.it archives
 
 <table>
 <tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/zdjp" alt="Glitchy Mario"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/zdjp.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/vZug" alt="Glitchy Rainbow Mario（その１）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vZug.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/30vg" alt="Glitchy Rainbow Mario（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/30vg.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/keec" alt="Glitchy Rainbow Mario（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/keec.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/i7NO" alt="Glitchy Rainbow Mario（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/i7NO.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/f636" alt="Glitchy Rainbow Mario（その５）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/f636.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ntcdX" alt="Three.js + BufferGeometry を試してみるテスト（その２改2）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ntcdX.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/oW24" alt="Three.js + BufferGeometry を試してみるテスト（サンタバージョン）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/oW24.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/68Nl" alt="Matter.js + Three.js でドット絵を物理演算してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/68Nl.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/uEj0" alt="立体的なドット絵を変形してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/uEj0.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/uVMY" alt="Three.js + ParticleSystem でドット絵を描いてみるテスト（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/uVMY.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3D7e" alt="[GLSL] Three.js + ParticleSystem でコマアニメしてみるテスト（その６）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/3D7e.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/lfVq" alt="『群れ』シミュレーションをドット絵に変えてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/lfVq.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/gAXT" alt="pixi.js v3 の Particle Container を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/gAXT.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/8BRk" alt="Three.js でドット絵をフサフサにしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8BRk.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/pyqw" alt="Three.js + ShaderMaterial を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/pyqw.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/rdrj" alt="forked: 単純図形回転"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/rdrj.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ez5v" alt="時計の針にドット絵を貼りつけるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ez5v.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/tmNT" alt="hull.js を試してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/tmNT.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/AlsT" alt="バブルチャートで絵を描いてみるテスト。"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/AlsT.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/8tfT" alt="Canvas で LED っぽく表示するテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8tfT.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/2DwX" alt="ドット絵を液晶表示っぽくするテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/2DwX.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/j4TG" alt="ドット絵をCRT表示っぽくするテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/j4TG.jpg" width="200" height="200"></a></td>
