@@ -1,0 +1,15 @@
+body {
+    background-color: #000;
+    margin: 0;
+}
+
+#glitch_canvas {
+    position: absolute;
+    margin: auto;
+    width: 465px;
+    height: 465px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
