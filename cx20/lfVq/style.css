@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
 canvas {
     position: absolute;
-    background: #222;
-}​
+    background: #000;
+}
+
+body {
+    background-color: #000;
+}
+​

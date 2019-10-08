@@ -2,7 +2,8 @@
 // forked from cx20's "forked: お互いに間隔を調整しあうボール" http://jsdo.it/cx20/5uTp
 // forked from makishimaa's "お互いに間隔を調整しあうボール" http://jsdo.it/makishimaa/ahOV
 
-var DOT_SIZE = 16;
+//var DOT_SIZE = 16;
+var DOT_SIZE = (window.innerHeight/18); // 16;
 var X_START_POS = 50;
 var Y_START_POS = 50;
 
@@ -93,7 +94,9 @@ function getSingleLightColor( c, baseColor, rgbType )
 
 // 定数
 var FPS = 30;          // フレームレート
-var SCREEN_SIZE = 460; // 画面サイズ
+//var SCREEN_SIZE = 460; // 画面サイズ
+var SCREEN_SIZE_X = window.innerWidth; // 画面サイズ
+var SCREEN_SIZE_Y = window.innerHeight; // 画面サイズ
 var BOID_SIZE = DOT_SIZE * 0.8;  // ボイドの大きさ
 var MAX_SPEED = 7;     // ボイドの最大速度
 var canvas = document.getElementById('world');
@@ -121,7 +124,8 @@ function initImage( baseColor ) {
 
 window.onload = function () {
     /* 初期化 */
-    canvas.width = canvas.height = SCREEN_SIZE;
+    canvas.width = SCREEN_SIZE_X;
+    canvas.height = SCREEN_SIZE_Y;
     var i;
     var x, y;
     var color;
@@ -162,7 +166,7 @@ var simulate = function () {
  * ボイドの描画
  */
 var draw = function () {
-    ctx.clearRect(0, 0, SCREEN_SIZE, SCREEN_SIZE); // 画面をクリア
+    ctx.clearRect(0, 0, SCREEN_SIZE_X, SCREEN_SIZE_Y); // 画面をクリア
     // 全てのボイドの描画
     var boid;
     for (var i = 0; i < boids.length; ++i) {
@@ -202,8 +206,8 @@ var move = function () {
         b.x += b.vx;
         b.y += b.vy;
         // 壁の外に出てしまった場合速度を内側へ向ける
-        if (b.x < 0 && b.vx < 0 || b.x > SCREEN_SIZE && b.vx > 0) b.vx *= -1;
-        if (b.y < 0 && b.vy < 0 || b.y > SCREEN_SIZE && b.vy > 0) b.vy *= -1;
+        if (b.x < 0 && b.vx < 0 || b.x > SCREEN_SIZE_X && b.vx > 0) b.vx *= -1;
+        if (b.y < 0 && b.vy < 0 || b.y > SCREEN_SIZE_Y && b.vy > 0) b.vy *= -1;
     }
 };
 
