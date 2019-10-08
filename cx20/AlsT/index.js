@@ -1,6 +1,8 @@
 // forked from cx20's "Google Chart Tools テスト" http://jsdo.it/cx20/li2g
 // forked from https://google-developers.appspot.com/chart/interactive/docs/quick_start
  
+var DOT_SIZE = (window.innerHeight/465) * 0.1;
+
 // Load the Visualization API and the piechart package.
 google.load('visualization', '1.0', {'packages':['corechart']});
  
@@ -76,13 +78,13 @@ function drawChart() {
 		data.setValue(i + rows, 1, x);
 		data.setValue(i + rows, 2, y);
 		data.setValue(i + rows, 3, colorName);
-		data.setValue(i + rows, 4, 0.1);
+		data.setValue(i + rows, 4, DOT_SIZE);
 	}
 	 
 	var options = {
 		title: 'Chart of Mario',
-		height: 440,
-		width: 440,
+		height: window.innerHeight, // 440,
+		width: window.innerWidth, // 440,
 		hAxis: {title: 'x'},
         vAxis: {title: 'y'},
 		colors:["#000000",
