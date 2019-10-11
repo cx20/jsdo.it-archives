@@ -15,13 +15,14 @@
 <script id="vs" type="x-shader/x-vertex">
 attribute vec3 position;
 attribute vec4 color;
+uniform float scale;
 varying   vec4 vColor;
 
 void main()
 {
     vColor = color;
     gl_Position = vec4(position, 1.0);
-    gl_PointSize = 12.0;
+    gl_PointSize = 12.0 * scale;
 }
 </script>
 
