@@ -61,9 +61,12 @@ function getRgbColor( c )
 var c, gl;
 var aLoc = [];
 var uLoc = [];
+var SCALE = window.innerHeight / 465;
 
 function initWebGL() {
     c = document.getElementById("c");
+    c.width = window.innerHeight;
+    c.height = window.innerHeight;
     gl = c.getContext("experimental-webgl");
 }
 
@@ -83,6 +86,7 @@ function initShaders() {
     gl.useProgram(p);
     aLoc[0] = gl.getAttribLocation(p, "position");
     aLoc[1] = gl.getAttribLocation(p, "color");
+    uLoc[0] = gl.getUniformLocation(p, "scale");
     gl.enableVertexAttribArray(aLoc[0]);
     gl.enableVertexAttribArray(aLoc[1]);
 }
@@ -106,6 +110,8 @@ function draw() {
     gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(color), gl.STATIC_DRAW);
     gl.vertexAttribPointer(aLoc[1], 4, gl.FLOAT, false, 0, 0);
+    
+    gl.uniform1f(uLoc[0], SCALE);
 
     gl.drawArrays(gl.POINTS, 0, data.length / 3);
     gl.flush();
