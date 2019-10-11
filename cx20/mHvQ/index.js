@@ -65,9 +65,12 @@ var timeScale = 0.0;
 var verteces1 = [];
 var verteces2 = [];
 var colors = [];
+var SCALE = window.innerHeight / 465;
 
 function initWebGL() {
     c = document.getElementById("c");
+    c.width = window.innerHeight;
+    c.height = window.innerHeight;
     gl = c.getContext("experimental-webgl");
 }
 
@@ -89,6 +92,7 @@ function initShaders() {
     aLoc[1] = gl.getAttribLocation(p, "position2");  // リサージュ図形の座標の状態
     aLoc[2] = gl.getAttribLocation(p, "color");
     uLoc[0] = gl.getUniformLocation(p, "timeScale");
+    uLoc[1] = gl.getUniformLocation(p, "scale");
     gl.enableVertexAttribArray(aLoc[0]);
     gl.enableVertexAttribArray(aLoc[1]);
     gl.enableVertexAttribArray(aLoc[2]);
@@ -134,6 +138,7 @@ function render() {
     time = (new Date().getTime() - startTime) * 0.001;
     timeScale = Math.sin(time);
     gl.uniform1f(uLoc[0], timeScale);
+    gl.uniform1f(uLoc[1], SCALE);
 
     gl.drawArrays(gl.POINTS, 0, verteces1.length / 3);
     gl.flush();
