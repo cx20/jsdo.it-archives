@@ -11,6 +11,4 @@ canvas#canvas {
 
 div#canvas-frame {
   position: absolute;
-  width: 465px;
-  height: 465px;
 }

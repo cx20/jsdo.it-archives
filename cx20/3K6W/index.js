@@ -3,8 +3,8 @@
 // forked from cx20's "Three.js でドット絵を表示するテスト" http://jsdo.it/cx20/3U7N
 
 var controls;
-var width = 465;
-var height = 465;
+var width  = window.innerWidth;
+var height = window.innerHeight;
 var scene;
 var camera;
 var renderer;
