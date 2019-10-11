@@ -134,7 +134,7 @@ function sleep(time) {
 var drawCount = 0;
 
 function render(){
-    if ( drawCount < dataSet.length ) {
+    if ( Math.floor(drawCount / 4) < dataSet.length ) {
         drawMario();
         drawCount++;
         
@@ -155,7 +155,8 @@ function render(){
 
 function drawMario() {
     var i, x, y;
-    i = drawCount;
+    var pos = drawCount % 4;
+    i = Math.floor(drawCount / 4);
     x = ( i % 16 ) * DOT_SIZE + X_START_POS;
     y = ( 16 - Math.floor( i / 16 ) ) * DOT_SIZE + Y_START_POS;
     z = 0;
@@ -169,39 +170,18 @@ function drawMario() {
         boxVertices.push( new THREE.Vector3( x                 , y + DOT_SIZE * 0.8, z ) );
         boxVertices.push( new THREE.Vector3( x                 , y                 , z ) );
         
-        for ( var j = 0; j < ( boxVertices.length - 1 ); j++ ) {
-            // 線分毎に描画
-            var geometry = new THREE.Geometry();
-            geometry.vertices.push( boxVertices[j] );
-            geometry.vertices.push( boxVertices[j+1] );
-            var material = new THREE.LineBasicMaterial({color: color});
-            var line = new THREE.Line(geometry, material, THREE.LineStrip);
-            scene.add( line );
-            camera.position.x = boxVertices[j].x;
-            camera.position.y = boxVertices[j].y;
-            camera.position.z = 50;
-            renderer.render( scene, camera );
-            sleep( 20 );
-        }
-    }
-/*
-    if ( dataSet[i] != "無" ) {
-       // 四角ごとに描画
+        var j = pos;
+        // 線分毎に描画
         var geometry = new THREE.Geometry();
-        geometry.vertices.push( new THREE.Vector3( x                 , y                 , z ) );
-        geometry.vertices.push( new THREE.Vector3( x + DOT_SIZE * 0.8, y                 , z ) );
-        geometry.vertices.push( new THREE.Vector3( x + DOT_SIZE * 0.8, y + DOT_SIZE * 0.8, z ) );
-        geometry.vertices.push( new THREE.Vector3( x                 , y + DOT_SIZE * 0.8, z ) );
-        geometry.vertices.push( new THREE.Vector3( x                 , y                 , z ) );
-        
+        geometry.vertices.push( boxVertices[j] );
+        geometry.vertices.push( boxVertices[j+1] );
         var material = new THREE.LineBasicMaterial({color: color});
         var line = new THREE.Line(geometry, material, THREE.LineStrip);
         scene.add( line );
-        camera.position.x = geometry.vertices[0].x;
-        camera.position.y = geometry.vertices[0].y;
+        camera.position.x = boxVertices[j].x;
+        camera.position.y = boxVertices[j].y;
         camera.position.z = 50;
         renderer.render( scene, camera );
-        sleep( 100 );
+        sleep( 50 );
     }
-*/
 }
