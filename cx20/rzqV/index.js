@@ -205,8 +205,8 @@ function getRgbColor( c )
 	return colorHash[ c ];
 }
 
-var width  = 465;
-var height = 465;
+var width  = window.innerWidth;
+var height = window.innerHeight;
 var fov    = 80;
 var aspect = width / height;
 var near   = 1;
