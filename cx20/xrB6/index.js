@@ -18,13 +18,14 @@ var fileList =
 var queue = new createjs.LoadQueue(false);
 var imgList = [],
     setCnt = 0; //読み込み画像
-var viewWidth = 400,
-    viewHeight = 400;
+var viewWidth = window.innerWidth,
+    viewHeight = window.innerHeight
 var tankLeft, tankRight, tankTop, tankBottom;
 var streamVX = 2,
     streamVY = 0;
 var separete_dist_min = 20,
     attract_dist_max = 500;
+var SCALE = window.innerHeight / 440 * 2;
 
 //*************************************************************
 
@@ -56,7 +57,7 @@ function handleFileLoad(e) {
 
 function handleComplete() {
 
-    var n = 60; //osakana no kazu 
+    var n = 60 * SCALE; //osakana no kazu 
     for (i = 0; i < n; i++) {
         //setInstance(fishImg);
         setInstance(fishImg[Math.floor(Math.random()*3)]);
