@@ -64,9 +64,12 @@ var uLoc = [];
 var data = [];
 var color = [];
 var indices = [];
+var SCALE = window.innerHeight / 465;
 
 function initWebGL() {
     c = document.getElementById("c");
+    c.width = window.innerHeight;
+    c.height = window.innerHeight;
     gl = c.getContext("experimental-webgl");
 }
 
@@ -86,6 +89,7 @@ function initShaders() {
     gl.useProgram(p);
     aLoc[0] = gl.getAttribLocation(p, "position");
     aLoc[1] = gl.getAttribLocation(p, "color");
+    uLoc[0] = gl.getUniformLocation(p, "scale");
     gl.enableVertexAttribArray(aLoc[0]);
     gl.enableVertexAttribArray(aLoc[1]);
 }
@@ -134,6 +138,9 @@ function animate() {
 var pos = 0;
 function render() {
     pos = pos % indices.length;
+
+    gl.uniform1f(uLoc[0], SCALE);
+
     gl.drawElements(gl.LINES, pos, gl.UNSIGNED_SHORT, 0);
     gl.flush();
     pos++;
