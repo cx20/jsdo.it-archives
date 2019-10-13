@@ -1,0 +1,11 @@
+* {
+  margin: 1;
+  padding: 1;
+  border: 1;
+  overflow: hidden;
+}
+
+body {
+  background: #fff;
+  font: 30px sans-serif;
+}
