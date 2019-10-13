@@ -1,0 +1,36 @@
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+.shape {
+    fill: none;
+    stroke: #FFC34C; /* 蜜柑色 */
+}
+.outline,
+.doors {
+    fill: #F4EEE6;
+    stroke: #60544F;
+    stroke-width: 2pt;
+}
+.water {
+    fill: #D6EDEE;
+    stroke: #60544F;
+}
+.water-cut {
+    fill: #B4D6DB;
+}
+.milk {
+    fill: #fff;
+    stroke: #60544F;
+}
+.milk-cut {
+    fill: #F4EEE6;
+}
+.coffee {
+    fill: #FFC34C; /* 蜜柑色 */
+    stroke: #FFC34C; /* 蜜柑色 */
+}
+.coffee-cut {
+    fill: #FFC34C; /* 蜜柑色 */
+}
