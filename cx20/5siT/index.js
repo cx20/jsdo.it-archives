@@ -7,7 +7,7 @@ var canvas;
 var ctx;
 var imageData;
 var img = new Image();
-img.src = "../../assets/7/W/q/q/7WqqS.jpg";
+img.src = "../../assets/A/k/w/j/AkwjW.jpg";
 //img.src = "kaeru.jpg";
 
 var scene, camera, renderer, pc;
