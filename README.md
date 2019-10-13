@@ -1,9 +1,13 @@
 # jsdo.it-archives
 jsdo.it archives
 
+## Libraries
+
+[Ashes](./tag/ashes) / [Babylon.js](./tag/babylon.js) / [Cesium.js](./tag/cesium.js) / [ClayGL](./tag/claygl) / [Filament](./tag/filament) / [GLBoost](./tag/glboost)  / [Grimoire.js](./tag/grimoire.js) / [Hilo3d](./tag/hilo3d) / [PlayCanvas](./tag/playcanvas) / [RedGL](./tag/redgl) / [three.js](./tag/three.js) / [X3DOM](./tag/x3dom)
+
 ## Tags
 
-[Ashes](./tag/ashes) / [Babylon.js](./tag/babylon.js) / [Cesium.js](./tag/cesium.js) / [ClayGL](./tag/claygl) / [Filament](./tag/filament) / [GLBoost](./tag/glboost) / [GLSL](./tag/glsl) / [Grimoire.js](./tag/grimoire.js) / [Hilo3d](./tag/hilo3d) / [Physics](./tag/physics) / [PlayCanvas](./tag/playcanvas) / [RedGL](./tag/redgl) / [three.js](./tag/three.js) / [X3DOM](./tag/x3dom)
+[GLSL](./tag/glsl) / [glTF](./tag/gltf) / [Mario](./tag/mario) / [MML](./tag/mml) / [Physics](./tag/physics) / [SVG](./tag/svg) / [WebG](./tag/webgl)
 
 ## Works
 
