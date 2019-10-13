@@ -1,9 +1,13 @@
 # jsdo.it-archives
 jsdo.it archives
 
+## Libraries
+
+[Ashes](../ashes) / [Babylon.js](../babylon.js) / [Cesium.js](../cesium.js) / [ClayGL](../claygl) / [Filament](../filament) / [GLBoost](../glboost)  / [Grimoire.js](../grimoire.js) / [Hilo3d](../hilo3d) / [PlayCanvas](../playcanvas) / [RedGL](../redgl) / [three.js](../three.js) / [X3DOM](../x3dom)
+
 ## Tags
 
-[Ashes](../ashes) / [Babylon.js](../babylon.js) / [Cesium.js](../cesium.js) / [ClayGL](../claygl) / [Filament](../filament) / [GLBoost](../glboost) / [GLSL](../glsl) / [Grimoire.js](../grimoire.js) / [Hilo3d](../hilo3d) / [Physics](../physics) / [PlayCanvas](../playcanvas) / [RedGL](../redgl) / [three.js](../three.js) / [X3DOM](../x3dom)
+[GLSL](../glsl) / [glTF](../gltf) / [Mario](../mario) / [MML](../mml) / [Physics](../physics) / [SVG](../svg) / [WebGL](../webgl)
 
 ## Tag: SVG
 
