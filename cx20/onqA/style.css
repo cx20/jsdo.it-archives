@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+body {
+    background: #01d;
+    font: 15px sans-serif;
+}
+
+canvas {
+    color: #000;
+    z-index: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#info {
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font: 15px;
+} 
