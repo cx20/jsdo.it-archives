@@ -110,7 +110,7 @@ jsdo.it archives
 </tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/aHH4" alt="歩行ロボットを某巨神兵っぽくしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/aHH4.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/vIsc" alt="Oimo.js で歩行ロボットを動かしてみるテスト（その３改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vIsc.jpg" width="200" height="200"></a></td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
