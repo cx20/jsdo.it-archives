@@ -168,4 +168,22 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/aJg5" alt="[WebGL] Grimoire.js でポストエフェクトを試してみるテスト（その２０）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/aJg5.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/snhP" alt="[WebGL] Grimoire.js でポストエフェクトを試してみるテスト（その２１）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/snhP.jpg" width="200" height="200"></a></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/AtCh" alt="[WebGL] Grimoire.js で render-quad を使ってシェーダを実行してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/AtCh.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/OBMN" alt="[WebGL] Grimoire.js で render-quad を使ってシェーダを実行してみるテスト（改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/OBMN.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/wVDH" alt="[WebGL] Grimoire.js で render-quad を使ってシェーダを実行してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/wVDH.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Ehzy" alt="[WebGL] Grimoire.js で render-quad を使ってシェーダを実行してみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Ehzy.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/4EztL" alt="[WebGL] Grimoire.js で正解するカドっぽいものを表現してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/4EztL.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/4iKk" alt="[WebGL] Grimoire.js で正解するカドっぽいものを表現してみるテスト（改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/4iKk.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/4glF" alt="[WebGL] Grimoire.js で立方体にエフェクトをかけてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/4glF.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/IGxr" alt="[WebGL] Grimoire.js で立方体にエフェクトをかけてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/IGxr.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/eRe9" alt="[WebGL] Grimoire.js で球体にエフェクトをかけてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/eRe9.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Gtie" alt="[WebGL] Grimoire.js で球体にエフェクトをかけてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Gtie.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+</tr>
 </table>
