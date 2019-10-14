@@ -9,7 +9,7 @@ jsdo.it archives
 
 [GLSL](../glsl) / [glTF](../gltf) / [Mario](../mario) / [MML](../mml) / [Physics2D](../physics2d) / [Physics3D](../physics3d) / [SVG](../svg) / [WebGL](../webgl)
 
-## Tag: Physics
+## Tag: Physics3D
 
 <table>
 <tr>
@@ -101,5 +101,17 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/WilT" alt="Three.js + Oimo.js でフロッピーを落下させてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/WilT.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Axzo" alt="Three.js + Oimo.js でフロッピーを落下させてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Axzo.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Wue7" alt="Three.js + Oimo.js で花札を落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Wue7.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yC4Y" alt="物理演算で豆まきをしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yC4Y.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Ejrp" alt="物理演算でボールを投げてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Ejrp.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/YkWd" alt="物理演算でボールを投げてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/YkWd.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/mTOaU" alt="[Three.js] 物理演算で板を破壊してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/mTOaU.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/aHH4" alt="歩行ロボットを某巨神兵っぽくしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/aHH4.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/vIsc" alt="Oimo.js で歩行ロボットを動かしてみるテスト（その３改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vIsc.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
 </tr>
 </table>
