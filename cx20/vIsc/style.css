@@ -1,0 +1,6 @@
+* {  margin: 0; padding: 0; border: 0;}	
+body{ background-color: #3D4143; overflow: hidden; color:#cccccc; font-family:Arial; font-size: 10px; text-shadow: 1px 1px #000000;}
+button {padding:8px; border: 2px solid #72797D; cursor: pointer; background:linear-gradient(#72797D , #3D4143); color:#CCCCCC; -moz-border-radius: 16px; -webkit-border-radius: 16px; border-radius: 16px;}
+button:hover{border: 2px solid #72797D; cursor: pointer; background: #11BBFF; color:#000000; font-weight: bold;}
+#walk{ position: absolute; top: 20px; left: 5px; width:70px; }
+#run{ position: absolute;  top: 20px; left: 80px; width:70px; }
