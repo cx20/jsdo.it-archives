@@ -26,6 +26,11 @@ function initWebGL() {
     gl.depthFunc(gl.LEQUAL);
     //gl.enable(gl.CULL_FACE);
     
+    resizeCanvas();
+    window.addEventListener("resize", function(){
+        resizeCanvas();
+    });
+
     // Stats
     stats = new Stats();
     // 左上に設定
@@ -33,6 +38,13 @@ function initWebGL() {
     stats.domElement.style.left     = "5px";
     stats.domElement.style.top      = "5px";
     document.body.appendChild(stats.domElement);
+}
+
+function resizeCanvas() {
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    //gl.viewport(0, 0, c.width, c.heihgt);
+    gl.viewport(window.innerWidth/2 - c.height/2, 0, c.height, c.height); // TODO: Temporarily adjusted to square for full screen display
 }
 
 function initShaders() {
