@@ -18,6 +18,12 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/adVd" alt="[WebGL] Perlin noise を用いて頂点データを加工してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/adVd.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sbRU" alt="[WebGL] Perlin noise を用いて頂点データを加工してみるテスト（改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/sbRU.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/8SAg" alt="[WebGL] Perlin noise を用いて頂点データを加工してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8SAg.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/synR" alt="[簡易版] WebGL でハーモノグラフみたいな何かを描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/synR.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yHOc" alt="[簡易版] WebGL でハーモノグラフを描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yHOc.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 </table>
