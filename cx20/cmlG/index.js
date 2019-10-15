@@ -25,7 +25,6 @@ var uLoc = [];
 function initWebGL() {
     c = document.getElementById("c");
     gl = c.getContext("experimental-webgl");
-    document.body.appendChild(stats.domElement);
     resizeCanvas();
     window.addEventListener("resize", function(){
         resizeCanvas();
@@ -37,6 +36,7 @@ function initWebGL() {
     stats.domElement.style.position = "fixed";
     stats.domElement.style.left     = "5px";
     stats.domElement.style.top      = "5px";
+    document.body.appendChild(stats.domElement);
 }
 
 function resizeCanvas() {
