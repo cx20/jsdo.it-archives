@@ -5,6 +5,16 @@ var f = "precision mediump float; void main() { gl_FragColor = vec4(0.0, 0.0, 1.
 function initWebGL() {
     c = document.getElementById("c");
     gl = c.getContext("experimental-webgl");
+    resizeCanvas();
+    window.addEventListener("resize", function(){
+        resizeCanvas();
+    });
+}
+
+function resizeCanvas() {
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    gl.viewport(0, 0, c.width, c.height);
 }
 
 function initShaders() {
