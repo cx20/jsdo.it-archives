@@ -109,36 +109,6 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/vtQs" title="ドット絵をプロットしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vtQs.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/rzqV" title="最先端のレンダラを用いてドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/rzqV.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ciEf" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.POINTS 編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ciEf.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/7mdD" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.POINTS 編）（改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/7mdD.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/1vMP" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.POINTS 編）（改2）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1vMP.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Cff6" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.POINTS 編）（改3）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Cff6.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/iAiS" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.POINTS 編）（改4）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/iAiS.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/mHvQ" title="[簡易版] WebGL でドット絵をアニメーションさせてみるテスト（gl.POINTS 編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/mHvQ.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/1MO7" title="[簡易版] WebGL で型付き配列を操作してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1MO7.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/wF83" title="[簡易版] WebGL で型付き配列を操作してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/wF83.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/oLCy" title="[簡易版] WebGL で型付き配列を操作してみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/oLCy.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3xw9" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.LINES 編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/3xw9.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/vcxh" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.LINES 編）（改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vcxh.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/l4q0" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.LINES 編）（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/l4q0.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/5AAc" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.LINES 編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/5AAc.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/jF8j" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.LINES 編）（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/jF8j.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/42ylm" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.LINES 編）（その５）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/42ylm.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/kFIQ" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.TRIANGLES 編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/kFIQ.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/bbGE" title="[簡易版] WebGL でドット絵を描いてみるテスト（instanced arrays 編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/bbGE.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/zggH" title="[簡易版] WebGL でドット絵を描いてみるテスト（instanced arrays 編）（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/zggH.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/b7zn" title="[簡易版] WebGL でドット絵を描いてみるテスト（instanced arrays 編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/b7zn.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/lj8W" title="水滴でドット絵を作るテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/lj8W.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/oowZ" title="水滴でドット絵を作るテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/oowZ.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/vklj" title="スポットライトでドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vklj.jpg" width="200" height="200"></a></td>
@@ -197,6 +167,36 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/1np2" title="forked: 2次元 落下する球体 その1"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1np2.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qRXi" title="box2d-jquery でドット絵を落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/qRXi.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ed62" title="Particle の絵柄をネコからドット絵に変えてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ed62.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/rzqV" title="最先端のレンダラを用いてドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/rzqV.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ciEf" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.POINTS 編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ciEf.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/7mdD" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.POINTS 編）（改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/7mdD.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/1vMP" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.POINTS 編）（改2）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1vMP.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Cff6" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.POINTS 編）（改3）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Cff6.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/iAiS" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.POINTS 編）（改4）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/iAiS.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/mHvQ" title="[簡易版] WebGL でドット絵をアニメーションさせてみるテスト（gl.POINTS 編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/mHvQ.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/1MO7" title="[簡易版] WebGL で型付き配列を操作してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1MO7.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/wF83" title="[簡易版] WebGL で型付き配列を操作してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/wF83.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/oLCy" title="[簡易版] WebGL で型付き配列を操作してみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/oLCy.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3xw9" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.LINES 編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/3xw9.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/vcxh" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.LINES 編）（改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vcxh.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/l4q0" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.LINES 編）（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/l4q0.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/5AAc" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.LINES 編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/5AAc.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/jF8j" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.LINES 編）（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/jF8j.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/42ylm" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.LINES 編）（その５）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/42ylm.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/kFIQ" title="[簡易版] WebGL でドット絵を描いてみるテスト（gl.TRIANGLES 編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/kFIQ.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/bbGE" title="[簡易版] WebGL でドット絵を描いてみるテスト（instanced arrays 編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/bbGE.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/zggH" title="[簡易版] WebGL でドット絵を描いてみるテスト（instanced arrays 編）（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/zggH.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/b7zn" title="[簡易版] WebGL でドット絵を描いてみるテスト（instanced arrays 編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/b7zn.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/xxkj" title="Three.js + ParticleSystem でドット絵を描いてみるテスト（その３改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/xxkj.jpg" width="200" height="200"></a></td>
