@@ -7,7 +7,7 @@ jsdo.it archives
 
 ## Tags
 
-[CSS](./tag/css) / [GLSL](./tag/glsl) / [glTF](./tag/gltf) / [MML](./tag/mml) / [Physics2D](./tag/physics2d) / [Physics3D](./tag/physics3d) / [PixelArt](./tag/pixelart) / [SVG](./tag/svg) / [WebGL](./tag/webgl)
+[Canvas](./tag/canvas) / [CSS](./tag/css) / [GLSL](./tag/glsl) / [glTF](./tag/gltf) / [MML](./tag/mml) / [Physics2D](./tag/physics2d) / [Physics3D](./tag/physics3d) / [PixelArt](./tag/pixelart) / [SVG](./tag/svg) / [WebGL](./tag/webgl)
 
 ## Works
 
