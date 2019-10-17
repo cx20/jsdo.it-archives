@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+body {
+/*  background: #7bf; */
+  font: 30px sans-serif;
+}
+
+#main-container {
+  position: relative;
+  width:100%;
+  height:100%;
+}
+
+#fish-frame {
+  width:465px;
+  height:465px;
+  background-image: linear-gradient(to bottom, #15418a 0%, #57afdc 100%);
+}
