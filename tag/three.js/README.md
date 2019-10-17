@@ -7,7 +7,7 @@ jsdo.it archives
 
 ## Tags
 
-[CSS](../css) / [GLSL](../glsl) / [glTF](../gltf) / [MML](../mml) / [Physics2D](../physics2d) / [Physics3D](../physics3d) / [PixelArt](../pixelart) / [SVG](../svg) / [WebGL](../webgl)
+[Canvas](../canvas) / [CSS](../css) / [GLSL](../glsl) / [glTF](../gltf) / [MML](../mml) / [Physics2D](../physics2d) / [Physics3D](../physics3d) / [PixelArt](../pixelart) / [SVG](../svg) / [WebGL](../webgl)
 
 ## Tag: three.js
 
