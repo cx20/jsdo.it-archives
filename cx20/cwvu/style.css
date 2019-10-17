@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #000;font:sans-serif;
+}
+
+#world {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    margin:auto;
+    padding:100px 60px 100px 60px;
+    perspective: 1000;
+    -webkit-perspective: 1000;
+}
+
+#album {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left:85px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+canvas{
+    position: absolute;
+    box-reflect: below 0px gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), color-stop(0.4, rgba(0,0,0,0)),to(rgba(0,0,0,0.8))); 
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), color-stop(0.4, rgba(0,0,0,0)),to(rgba(0,0,0,0.8))); 
+}
+
+#canvas1  {
+    transform: rotateY(  -46deg ) translateZ( 180px );
+    -webkit-transform: rotateY(  -46deg ) translateZ( 180px );
+}
+
+#canvas2  {
+    transform: rotateY(  0deg ) translateZ( 180px );
+    -webkit-transform: rotateY(  0deg ) translateZ( 180px );
+}
+
+#canvas3  { 
+    transform: rotateY(  46deg ) translateZ( 180px );
+    -webkit-transform: rotateY(  46deg ) translateZ( 180px );
+}
