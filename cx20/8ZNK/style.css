@@ -1,0 +1,5 @@
+body {
+    background-color:black;
+}
+.link { stroke: #ccc; }
+.nodetext { pointer-events: none; font: 10px sans-serif;color:#FFF;fill:#fff }
