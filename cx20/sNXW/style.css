@@ -1,0 +1,15 @@
+* {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font: 16px sans-serif;
+}
+
+canvas {
+    position: absolute;
+}
