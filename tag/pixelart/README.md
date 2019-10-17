@@ -9,7 +9,7 @@ jsdo.it archives
 
 [CSS](../css) / [GLSL](../glsl) / [glTF](../gltf) / [MML](../mml) / [Physics2D](../physics2d) / [Physics3D](../physics3d) / [PixelArt](../pixelart) / [SVG](../svg) / [WebGL](../webgl)
 
-## Tag: Mario
+## Tag: PixelArt
 
 <table>
 <tr>
@@ -137,5 +137,71 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/bbGE" title="[簡易版] WebGL でドット絵を描いてみるテスト（instanced arrays 編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/bbGE.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/zggH" title="[簡易版] WebGL でドット絵を描いてみるテスト（instanced arrays 編）（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/zggH.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/b7zn" title="[簡易版] WebGL でドット絵を描いてみるテスト（instanced arrays 編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/b7zn.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/lj8W" title="水滴でドット絵を作るテスト"><img src="https://cx20.github.io/jsdo.it-archives/lj8W.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/oowZ" title="水滴でドット絵を作るテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/oowZ.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/vklj" title="スポットライトでドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/vklj.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/v4nJ" title="点光源でドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/v4nJ.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3NCC" title="Three.jsオセロの駒をドット絵に変えてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/3NCC.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/aDlf" title="BOIDサンプルの鳥をドット絵に変えてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/aDlf.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/8ZNK" title="d3.js 力指向グラフで絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/8ZNK.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/AlyU" title="ピースでドット絵を作ってみるテスト - tmlib.js 0.2.0"><img src="https://cx20.github.io/jsdo.it-archives/AlyU.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/inMY" title="Three.js で Cloth Simulation のサンプルを試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/inMY.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/mN0X" title="Matter.js + Three.js でドット絵を物理演算してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/mN0X.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/rbiY" title="forked: Map Generator"><img src="https://cx20.github.io/jsdo.it-archives/rbiY.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/an9O" title="ボロノイ図でドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/an9O.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/7Cvi" title="ハニカム構造でドット絵を描くテスト"><img src="https://cx20.github.io/jsdo.it-archives/7Cvi.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/pnst" title="forked: Dots"><img src="https://cx20.github.io/jsdo.it-archives/pnst.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/tFVs" title="forked: Dot grid"><img src="https://cx20.github.io/jsdo.it-archives/tFVs.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/xVZr" title="forked: 風"><img src="https://cx20.github.io/jsdo.it-archives/xVZr.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/rwgX" title="forked: Flocking Boids"><img src="https://cx20.github.io/jsdo.it-archives/rwgX.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/aqNp" title="forked: LIght Circles"><img src="https://cx20.github.io/jsdo.it-archives/aqNp.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/kTn1" title="forked: 四角の描画テスト：徐々に埋めるやつ"><img src="https://cx20.github.io/jsdo.it-archives/kTn1.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/hhf9" title="円軌道に合わせてドット絵を表示するテスト"><img src="https://cx20.github.io/jsdo.it-archives/hhf9.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qJUh" title="Z3d.js を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/qJUh.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/rQhX" title="forked: Binary Tree"><img src="https://cx20.github.io/jsdo.it-archives/rQhX.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/mPoA" title="ドット絵を点と線でつなぐテスト"><img src="https://cx20.github.io/jsdo.it-archives/mPoA.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/iZRs" title="プログラマブルシェーダーでドット絵の色を変更するテスト"><img src="https://cx20.github.io/jsdo.it-archives/iZRs.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/9Wvu" title="立体的なブロックでドット絵を作るテスト"><img src="https://cx20.github.io/jsdo.it-archives/9Wvu.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/lnRT" title="Three.js でドット絵を波立たせるテスト（その１）"><img src="https://cx20.github.io/jsdo.it-archives/lnRT.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/pIIs" title="fabric.js で記号文字を回転するテスト"><img src="https://cx20.github.io/jsdo.it-archives/pIIs.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3vKz" title="pixi.js でドット絵を変形させるテスト"><img src="https://cx20.github.io/jsdo.it-archives/3vKz.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/46Ks" title="ドット絵でドット絵を作るテスト"><img src="https://cx20.github.io/jsdo.it-archives/46Ks.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/7Nlt" title="文字で書いたドット絵を粉砕するテスト"><img src="https://cx20.github.io/jsdo.it-archives/7Nlt.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/67bF" title="点を集めてドット絵を作るテスト"><img src="https://cx20.github.io/jsdo.it-archives/67bF.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/eKtT" title="Chart.js でドット絵を描くテスト"><img src="https://cx20.github.io/jsdo.it-archives/eKtT.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/wlPW" title="ドット絵を紙ふぶきにしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/wlPW.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/1czQ" title="「毬」でドット絵を動かしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/1czQ.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sNXW" title="剥がれ落ちるドット絵"><img src="https://cx20.github.io/jsdo.it-archives/sNXW.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sfcM" title="ドット絵をサイバーっぽく表示してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/sfcM.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/gicJ" title="ドット絵の世界"><img src="https://cx20.github.io/jsdo.it-archives/gicJ.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/1np2" title="forked: 2次元 落下する球体 その1"><img src="https://cx20.github.io/jsdo.it-archives/1np2.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qRXi" title="box2d-jquery でドット絵を落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/qRXi.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ed62" title="Particle の絵柄をネコからドット絵に変えてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/ed62.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/xxkj" title="Three.js + ParticleSystem でドット絵を描いてみるテスト（その３改）"><img src="https://cx20.github.io/jsdo.it-archives/xxkj.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </table>
