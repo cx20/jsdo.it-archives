@@ -1,0 +1,10 @@
+@import url(http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/ui-lightness/jquery-ui.css);
+
+* {
+    overflow: hidden;
+}
+
+body {
+    background-color: #000;
+    font: 15px sans-serif;
+}
