@@ -7,7 +7,7 @@ jsdo.it archives
 
 ## Tags
 
-[Canvas](../canvas) / [CSS](../css) / [GLSL](../glsl) / [glTF](../gltf) / [MML](../mml) / [Physics2D](../physics2d) / [Physics3D](../physics3d) / [PixelArt](../pixelart) / [SVG](../svg) / [WebGL](../webgl)
+[Canvas](../canvas) / [CSS](../css) / [GLSL](../glsl) / [glTF](../gltf) / [MML](../mml) / [Physics2D](../physics2d) / [Physics3D](../physics3d) / [PixelArt](../pixelart) / [SVG](../svg) / [WebAudio](../webaudio) / [WebGL](../webgl)
 
 ## Tag: glTF
 
