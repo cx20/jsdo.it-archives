@@ -73,3 +73,14 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/1WIe" title="box2dweb.js でドット絵を物理演算してみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1WIe.jpg" width="200" height="200"></a></td>
 </tr>
 </table>
+
+### Box2DWeb
+
+<table>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/hizq" title="p2.js でドット絵を物理演算してみるテスト（その１）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/hizq.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/oMcN" title="p2.js でドット絵を物理演算してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/oMcN.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+</tr>
+</table>
