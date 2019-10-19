@@ -55,9 +55,9 @@ jsdo.it archives
 
 <table>
 <tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3uxl" title="Box2DWeb.js でクッキーを落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/3uxl.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3PT8" title="box2dweb.js でドット絵を物理演算してみるテスト（その１）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/3PT8.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/9kU5" title="box2dweb.js でドット絵を物理演算してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/9kU5.jpg" width="200" height="200"></a></td>
-<td></td>
-<td></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/1WIe" title="box2dweb.js でドット絵を物理演算してみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1WIe.jpg" width="200" height="200"></a></td>
 </tr>
 </table>
