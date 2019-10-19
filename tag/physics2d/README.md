@@ -46,6 +46,12 @@ jsdo.it archives
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/68Nl" title="Matter.js + Three.js でドット絵を物理演算してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/68Nl.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/hcPS" title="Matter.js でテクスチャを使ってみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/hcPS.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/uTss" title="Matter.js でドット絵を物理演算してみるテスト（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/uTss.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/0LXj" title="Matter.js でピタゴラスの定理を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/0LXj.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/YLTn" title="Matter.js で三平方の定理を試してみるテスト（改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/YLTn.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/s4Vw" title="Matter.js で傘を降らせてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/s4Vw.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/dJbc" title="Matter.js でゴゴゴを物理演算してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/dJbc.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/lJhf" title="雲の中でゴゴゴを落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/lJhf.jpg" width="200" height="200"></a></td>
 </tr>
