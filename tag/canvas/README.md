@@ -55,27 +55,27 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/vQY3" title="Canvas でベン図を書いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vQY3.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sZm0p" title="HTML5 + Canvas で四角形を描くテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/sZm0p.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/zPGP" title="HTML5 + Canvas で三角形を描くテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/zPGP.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/9uO9" title="Canvas で音楽のビジュアライズを試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/9uO9.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/etk3" title="Canvas で音楽のビジュアライズを試してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/etk3.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/W2cn" title="forked: オリンピックロゴ（Canvas編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/W2cn.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/I9FV" title="forked: オリンピックロゴ・デ・ライオン"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/I9FV.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/2IEU" title="オリンピックロゴを物理演算してみるテスト（その１）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/2IEU.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/OkxS" title="スーパーカミオカンデの検出結果をLEDっぽく表示してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/OkxS.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/pmnX" title="texgen.js を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/pmnX.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/cd6f" title="texgen.js を試してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/cd6f.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/2xXN" title="texgen.js を試してみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/2xXN.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/gY3w" title="texgen.js を試してみるテスト（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/gY3w.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/z4VL" title="texgen.js を試してみるテスト（その５）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/z4VL.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yXYm" title="texgen.js でアニメーションさせてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yXYm.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/z4VL" title="texgen.js を試してみるテスト（その５）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/z4VL.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yXYm" title="texgen.js でアニメーションさせてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yXYm.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/5Hek" title="TexGen.js でアニメーションさせてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/5Hek.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/age2" title="TexGen.js でアニメーションさせてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/age2.jpg" width="200" height="200"></a></td>
-<td></td>
-<td></td>
 </tr>
 </table>
