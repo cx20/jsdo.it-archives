@@ -27,7 +27,7 @@ jsdo.it archives
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/LastDayOfWinter2015" title="Three.js + Oimo.js で豆まきしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/rJXX.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/DollsFestival2015" title="Three.js + Oimo.js でひな壇に紅白餅を落としてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/aRzy.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ChildrensDay2015" title="Three.js で鯉のぼりをなびかせてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/brMs.jpg" width="200" height="200"></a></td>
 <td></td>
 </tr>
 </table>
