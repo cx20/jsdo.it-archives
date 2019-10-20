@@ -81,7 +81,7 @@ jsdo.it archives
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qAMm" title="Canvas でベクターフォントを使って文字を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/qAMm.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/jQVW" title="Canvas でベクターフォントを使って文字を描いてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/jQVW.jpg" width="200" height="200"></a></td>
-<td></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/tUm6" title="HTML TABLEで文字を描いてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/tUm6.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/prGL" title="HTML TABLEで文字を描いてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/prGL.jpg" width="200" height="200"></a></td>
 </tr>
 </table>
