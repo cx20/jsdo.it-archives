@@ -90,7 +90,7 @@ jsdo.it archives
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/syCY" title="[WebVR] A-Frame で WebVR を試してみるテスト（その５）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/syCY.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/8tid" title="[WebVR] A-Frame で WebVR を試してみるテスト（その６）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8tid.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/SDFt" title="[WebVR] A-Frame で WebVR を試してみるテスト（その７）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/SDFt.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Qb57" title="[WebVR] A-Frame で WebVR を試してみるテスト（その７）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Qb57.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/SDFt" title="[WebVR] A-Frame で WebVR を試してみるテスト（その８）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/SDFt.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
