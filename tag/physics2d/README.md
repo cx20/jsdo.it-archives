@@ -74,7 +74,7 @@ jsdo.it archives
 </tr>
 </table>
 
-### Box2DWeb
+### p2.js
 
 <table>
 <tr>
