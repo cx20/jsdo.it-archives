@@ -78,4 +78,10 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/5Hek" title="TexGen.js でアニメーションさせてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/5Hek.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/age2" title="TexGen.js でアニメーションさせてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/age2.jpg" width="200" height="200"></a></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qAMm" title="Canvas でベクターフォントを使って文字を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/qAMm.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/jQVW" title="Canvas でベクターフォントを使って文字を描いてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/jQVW.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+</tr>
 </table>
