@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: #ddd;
+  font: 15px sans-serif;
+}
+
+/*
+#paper {
+    width: 440px;
+    height: 440px;
+    border: 1px solid gray;
+}
+*/
