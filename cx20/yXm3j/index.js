@@ -146,7 +146,7 @@ function createObjects() {
     }));
     ground.castShadow = true;
     ground.receiveShadow = true;
-    textureLoader.load("/assets/k/w/j/6/kwj6X.png", function(texture) { // grid.png
+    textureLoader.load("../../assets/k/W/j/6/kWj6X.png", function(texture) { // grid.png
         texture.wrapS = THREE.RepeatWrapping;
         texture.wrapT = THREE.RepeatWrapping;
         texture.repeat.set(40, 40);
