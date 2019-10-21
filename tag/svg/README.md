@@ -26,16 +26,10 @@ jsdo.it archives
 
 <table>
 <tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/kCUy" title="Snap.svg でドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/kCUy.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/rTqj" title="Snap.svg + Velocity.js でドット絵を動かしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/rTqj.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/6n9Y" title="Snap.svg でリサージュ図形を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/6n9Y.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/5AWE" title="Snap.svg で試験問題を解いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/5AWE.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/2agQ" title="Snap.svg で試験問題を解いてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/2agQ.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3MIh" title="Snap.svg で試験問題を解いてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/3MIh.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/7EGy" title="某社員食堂では蛇口をひねるとミカンジュースが出てくるらしい。"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/7EGy.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/1iQg" title="Snap.svg で四角形をアニメーションさせてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1iQg.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3gi9" title="Snap.svg で鍵盤を作ってみるテスト（その１）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/3gi9.jpg" width="200" height="200"></a></td>
@@ -44,10 +38,10 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/kXFE" title="Snap.svg で鍵盤を作ってみるテスト（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/kXFE.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/7EGy" title="某社員食堂では蛇口をひねるとミカンジュースが出てくるらしい。"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/7EGy.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/1iQg" title="Snap.svg で四角形をアニメーションさせてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1iQg.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/QJ3k" title="forked: オリンピックロゴ（SVG編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/QJ3k.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/89uK" title="オリンピックロゴをSnap.svg + Velocity.jsで動かしてみる"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/89uK.jpg" width="200" height="200"></a></td>
-<td></td>
-<td></td>
 </tr>
 </table>
 
@@ -66,9 +60,15 @@ jsdo.it archives
 
 <table>
 <tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/kCUy" title="Snap.svg でドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/kCUy.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/rTqj" title="Snap.svg + Velocity.js でドット絵を動かしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/rTqj.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/fnHA" title="svg.js でドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/fnHA.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/32yJX" title="Raphael.js でドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/32yJX.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/pc42" title="Two.js でドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/pc42.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/vhj6" title="bonsai.js でドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vhj6.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
 </tr>
 </table>
