@@ -5,9 +5,15 @@ var Y_START_POS = 30;
 
 var map = L.map('map').setView([35.685692 + Y_START_POS/1000, 139.754784 + X_START_POS/1000], 12);
 
+/*
 L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
     maxZoom: 18,
     id: 'examples.map-i86knfo3'
+}).addTo(map);
+*/
+L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
 }).addTo(map);
 
 var markers = [];
