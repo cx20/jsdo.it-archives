@@ -4567,7 +4567,7 @@ function plot(scene, dataSet) {
     uniforms = {
         color:     { type: "c", value: new THREE.Color( 0xffffff ) },
         //texture:   { type: "t", value: new THREE.TextureLoader().load( "ball.png" ) }
-        texture:   { type: "t", value: new THREE.TextureLoader().load( "/assets/y/V/x/3/yVx3R.png" ) } // ball.png
+        texture:   { type: "t", value: new THREE.TextureLoader().load( "../../assets/y/V/x/3/yVx3R.png" ) } // ball.png
     };
 
 
