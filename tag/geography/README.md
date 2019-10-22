@@ -13,6 +13,24 @@ jsdo.it archives
 
 <table>
 <tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qbTa" title="Google Maps でドット絵を描くテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/qbTa.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/uQV0" title="Google マップで絵を描いてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/uQV0.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/epIj" title="Google マップで絵を描いてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/epIj.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/hcFw" title="Google マップのスタイルを変更してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/hcFw.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3bxL" title="Leaflet.js でドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/3bxL.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/nnPP" title="Leaflet.js で奥の細道を旅してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/nnPP.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/5a4FI" title="OpenLayers でドット絵を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/5a4FI.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/5aj8" title="WebGL Earth API を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/5aj8.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/bMh0" title="WebGL Earth API を試してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/bMh0.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yKOU" title="WebGL Earth で奥の細道を旅してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yKOU.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/cM2g" title="御嶽山の場所を表示してみる"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/cM2g.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Q5kU" title="スーパーカミオカンデの場所を表示してみる"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Q5kU.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/l4shv" title="地理院地図3Dデータを使ってみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/l4shv.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/zt4L" title="地理院地図3Dデータを使ってみるテスト（その１０改3）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/zt4L.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/4D7O" title="地理院地図3Dデータを使ってみるテスト（その１３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/4D7O.jpg" width="200" height="200"></a></td>
