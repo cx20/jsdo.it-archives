@@ -41,31 +41,17 @@ var dataSet = [
 ];
 
 function getColorIconUrl( c ) {
-/*
     var colorHash = {
-		"無":"//maps.google.co.jp/mapfiles/ms/icons/black.png",  // "#000000",
-		"白":"//maps.google.co.jp/mapfiles/ms/icons/blue.png",   // "#ffffff",
-		"肌":"//maps.google.co.jp/mapfiles/ms/icons/yellow.png", // "#ffcccc",
-		"茶":"//maps.google.co.jp/mapfiles/ms/icons/orange.png", // "#800000",
-		"赤":"//maps.google.co.jp/mapfiles/ms/icons/red.png",    // "#ff0000",
-		"黄":"//maps.google.co.jp/mapfiles/ms/icons/yellow.png", // "#ffff00",
-		"緑":"//maps.google.co.jp/mapfiles/ms/icons/green.png",  // "#00ff00",
-		"水":"//maps.google.co.jp/mapfiles/ms/icons/ltblue.png", // "#00ffff",
-		"青":"//maps.google.co.jp/mapfiles/ms/icons/blue.png",   // "#0000ff",
-		"紫":"//maps.google.co.jp/mapfiles/ms/icons/purple.png"  // "#800080"
-	};
-*/
-    var colorHash = {
-		"無":"//labs.google.com/ridefinder/images/mm_20_black.png",  // "#000000",
-		"白":"//labs.google.com/ridefinder/images/mm_20_blue.png",   // "#ffffff",
-		"肌":"//labs.google.com/ridefinder/images/mm_20_white.png",  // "#ffcccc",
-		"茶":"//labs.google.com/ridefinder/images/mm_20_orange.png", // "#800000",
-		"赤":"//labs.google.com/ridefinder/images/mm_20_red.png",    // "#ff0000",
-		"黄":"//labs.google.com/ridefinder/images/mm_20_yellow.png", // "#ffff00",
-		"緑":"//labs.google.com/ridefinder/images/mm_20_green.png",  // "#00ff00",
-		"水":"//labs.google.com/ridefinder/images/mm_20_ltblue.png", // "#00ffff",
-		"青":"//labs.google.com/ridefinder/images/mm_20_blue.png",   // "#0000ff",
-		"紫":"//labs.google.com/ridefinder/images/mm_20_purple.png"  // "#800080"
+		"無":"//maps.gstatic.com/mapfiles/ridefinder-images/mm_20_black.png",  // "#000000",
+		"白":"//maps.gstatic.com/mapfiles/ridefinder-images/mm_20_blue.png",   // "#ffffff",
+		"肌":"//maps.gstatic.com/mapfiles/ridefinder-images/mm_20_white.png",  // "#ffcccc",
+		"茶":"//maps.gstatic.com/mapfiles/ridefinder-images/mm_20_orange.png", // "#800000",
+		"赤":"//maps.gstatic.com/mapfiles/ridefinder-images/mm_20_red.png",    // "#ff0000",
+		"黄":"//maps.gstatic.com/mapfiles/ridefinder-images/mm_20_yellow.png", // "#ffff00",
+		"緑":"//maps.gstatic.com/mapfiles/ridefinder-images/mm_20_green.png",  // "#00ff00",
+		"水":"//maps.gstatic.com/mapfiles/ridefinder-images/mm_20_ltblue.png", // "#00ffff",
+		"青":"//maps.gstatic.com/mapfiles/ridefinder-images/mm_20_blue.png",   // "#0000ff",
+		"紫":"//maps.gstatic.com/mapfiles/ridefinder-images/mm_20_purple.png"  // "#800080"
 	};
 
     return colorHash[ c ];
