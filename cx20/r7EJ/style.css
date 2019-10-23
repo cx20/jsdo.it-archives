@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+body
+{
+    background-color:#000000;
+}
+
+div#canvas-frame
+{
+    margin:0px auto;
+    width:465px;
+    height:465px;
+}
