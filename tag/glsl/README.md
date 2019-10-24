@@ -23,7 +23,7 @@ jsdo.it archives
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yHOc" title="[簡易版] WebGL でハーモノグラフを描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yHOc.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/chhM" title="[WebGL] Grimoire.js で太陽を表示させてみるテスト（改2）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/chhM.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/pprC" title="立体的なドット絵を崩壊させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/pprC.jpg" width="200" height="200"></a></td>
 <td></td>
 </tr>
 </table>
@@ -31,6 +31,18 @@ jsdo.it archives
 ### Fragment Shader
 
 <table>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sOX6" title="GLSL で正弦波を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/sOX6.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/iwrh" title="GLSL で正弦波を描いてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/iwrh.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Ajwm" title="GLSL で正弦波を描いてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Ajwm.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/2S6I" title="GLSL で正弦波を描いてみるテスト（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/2S6I.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/bc7e" title="GLSL でリサージュ図形を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/bc7e.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/9Ksl" title="GLSL でリサージュ図形を描いてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/9Ksl.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/wnFq" title="GLSL でリサージュ図形を描いてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/wnFq.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3NOQ" title="GLSL でハーモノグラフを描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/3NOQ.jpg" width="200" height="200"></a></td>
+</tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3yw3" title="GLSL で画像にフィルタをかけてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/3yw3.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/uudu" title="GLSL で画像にフィルタをかけてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/uudu.jpg" width="200" height="200"></a></td>
@@ -124,7 +136,7 @@ jsdo.it archives
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/j0VV" title="[簡易版] GLSL でパーティクルの形を変えてみるテスト（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/j0VV.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/j0VV" title="[簡易版] GLSL でパーティクルの形を変えてみるテスト（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/j0VV.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/lMo6" title="GLSL で富士山を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/lMo6.jpg" width="200" height="200"></a></td>
 <td></td>
 </tr>
 </table>
