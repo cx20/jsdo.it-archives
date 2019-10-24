@@ -1,5 +1,6 @@
 # jsdo.it-archives
-jsdo.it archives
+
+cx20's jsdo.it archives. jsdo.it was an online code sharing site. Service was provided from 2010 to 2019.
 
 ## Libraries
 
