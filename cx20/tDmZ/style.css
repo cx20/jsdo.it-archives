@@ -1,0 +1,18 @@
+body {
+	margin: 0px;
+	background-color: #000;
+	overflow: hidden;
+}
+
+.absoluteTitle {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	color: #999;
+	font-family: Arial;
+	font-size: 9pt;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+}
