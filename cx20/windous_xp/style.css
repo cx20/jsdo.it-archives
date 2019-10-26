@@ -1,0 +1,9 @@
+body {
+    background: #fff;
+    width: 465px;
+    height: 465px;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/m/d/e/3/mde30.png");
+    overflow: hidden;
+    font: 15px sans-serif;
+}
