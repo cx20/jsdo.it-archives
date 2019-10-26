@@ -44,3 +44,14 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ydru" title="Three.js で鍵盤を作ってみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ydru.jpg" width="200" height="200"></a></td>
 </tr>
 </table>
+
+### Soramimi
+
+<table>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/s0Et" title="speak.js テスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/s0Et.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/wYpR" title="空耳メーカー for jsdo.it ver 0.04"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/wYpR.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/mhnb" title="空耳メーカー by Clippy.js"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/mhnb.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/kpoX" title="空耳モールス信号メーカー for jsdo.it ver 0.01"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/kpoX.jpg" width="200" height="200"></a></td>
+</tr>
+</table>
