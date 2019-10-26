@@ -40,18 +40,12 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/en7l" title="forked: WebGL 2 Samples - draw_instanced"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/en7l.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/UfrM" title="forked: WebGL 2 Samples - texture_vertex"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/UfrM.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/MQlg" title="forked: WebGL 2 Samples - texture_lod"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/MQlg.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/YI0B" title="forked: WebGL 2 Samples - texture_2d_array"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/YI0B.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/9OoF" title="forked: WebGL 2 Instancing"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/9OoF.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/9OoF" title="forked: WebGL 2 Instancing"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/9OoF.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sflW" title="forked: WebGL 2 Crowds"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/sflW.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/GUz8" title="消しゴムを落下させてみるテスト (WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/GUz8.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/09wC" title="将棋の駒を落下させてみるテスト (WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/09wC.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/u9rQ" title="ドミノっぽくドット絵を作るテスト(WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/u9rQ.jpg" width="200" height="200"></a></td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 </table>
