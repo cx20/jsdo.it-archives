@@ -107,6 +107,12 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ILM8" title="Blockfall (WebGL拡張 + Oimo.js)（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ILM8.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/uKB1" title="Teapotfall (WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/uKB1.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/c6JP" title="Suikafall (WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/c6JP.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/GUz8" title="消しゴムを落下させてみるテスト (WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/GUz8.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/09wC" title="将棋の駒を落下させてみるテスト (WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/09wC.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/u9rQ" title="ドミノっぽくドット絵を作るテスト(WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/u9rQ.jpg" width="200" height="200"></a></td>
+<td></td>
 <td></td>
 </tr>
 </table>
