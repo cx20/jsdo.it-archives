@@ -11,6 +11,8 @@ jsdo.it archives
 
 ## Tag: WebGL
 
+### WebGL
+
 <table>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/oaQC" title="[簡易版] 30行で WebGL を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/oaQC.jpg" width="200" height="200"></a></td>
@@ -88,6 +90,23 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/cRQ1" title="[簡易版] WebGL でフォントをプロットしてみるテスト（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/cRQ1.jpg" width="200" height="200"></a></td>
 <td></td>
 <td></td>
+<td></td>
+</tr>
+</table>
+
+### Extension
+
+<table>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/6Kfq" title="forked: WebGL拡張 + Instancing"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/6Kfq.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/A72xn" title="forked: Domino (WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/A72xn.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/8Jar" title="forked: Waterfall (WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8Jar.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/A58k" title="Blockfall (WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/A58k.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ILM8" title="Blockfall (WebGL拡張 + Oimo.js)（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ILM8.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/uKB1" title="Teapotfall (WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/uKB1.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/c6JP" title="Suikafall (WebGL拡張 + Oimo.js)"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/c6JP.jpg" width="200" height="200"></a></td>
 <td></td>
 </tr>
 </table>
