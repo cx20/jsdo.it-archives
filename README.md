@@ -8,7 +8,7 @@ cx20's jsdo.it archives. jsdo.it was an online code sharing site. Service was pr
 
 ## Tags
 
-[Canvas](./tag/canvas) / [CSS](./tag/css) / [Geography](./tag/geography) / [GLSL](./tag/glsl) / [glTF](./tag/gltf) / [MML](./tag/mml) / [Physics2D](./tag/physics2d) / [Physics3D](./tag/physics3d) / [PixelArt](./tag/pixelart) / [SVG](./tag/svg) / [WebAudio](./tag/webaudio) / [WebGL](./tag/webgl) / [WebVR](./tag/webvr)
+[Canvas](./tag/canvas) / [CSS](./tag/css) / [Geography](./tag/geography) / [GLSL](./tag/glsl) / [glTF](./tag/gltf) / [MML](./tag/mml) / [Physics2D](./tag/physics2d) / [Physics3D](./tag/physics3d) / [PixelArt](./tag/pixelart) / [SVG](./tag/svg) / [WebAudio](./tag/webaudio) / [WebGL](./tag/webgl) / [WebGL2](./tag/webgl2) / [WebVR](./tag/webvr)
 
 ## Works
 
