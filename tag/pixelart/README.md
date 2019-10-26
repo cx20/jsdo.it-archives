@@ -11,6 +11,8 @@ jsdo.it archives
 
 ## Tag: PixelArt
 
+### Plumber
+
 <table>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/8tfT" title="Canvas で LED っぽく表示するテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8tfT.jpg" width="200" height="200"></a></td>
@@ -200,8 +202,43 @@ jsdo.it archives
 </tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/xxkj" title="Three.js + ParticleSystem でドット絵を描いてみるテスト（その３改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/xxkj.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/QnLf" title="vox.js を試してみるテスト（その１１改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/QnLf.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/0jZN" title="vox.js を試してみるテスト（その１１改2）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/0jZN.jpg" width="200" height="200"></a></td>
 <td></td>
-<td></td>
-<td></td>
+</tr>
+</table>
+
+### MagicaVoxel
+
+<table>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/adwz" title="vox.js を試してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/adwz.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ymYt" title="vox.js を試してみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ymYt.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qL0R" title="vox.js を試してみるテスト（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/qL0R.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/iCF8" title="vox.js を試してみるテスト（その４改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/iCF8.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/af9L" title="vox.js を試してみるテスト（その５）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/af9L.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/oZg0" title="vox.js を試してみるテスト（その６）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/oZg0.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/K6wm" title="vox.js を試してみるテスト（その７）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/K6wm.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/iEi8" title="vox.js を試してみるテスト（その８）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/iEi8.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qo9n" title="vox.js を試してみるテスト（その８改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/qo9n.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/4LYl" title="vox.js を試してみるテスト（その９）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/4LYl.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/q67O" title="vox.js を試してみるテスト（その１０）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/q67O.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/04WG" title="vox.js を試してみるテスト（その１１）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/04WG.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/E8nZ" title="vox.js を試してみるテスト（その１２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/E8nZ.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Iods" title="vox.js を試してみるテスト（その１３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Iods.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/wnEk" title="vox.js を試してみるテスト（その１４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/wnEk.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/u9eU" title="vox.js を試してみるテスト（その１４改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/u9eU.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/CQqz" title="vox.js を試してみるテスト（その１５）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/CQqz.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/cjF0" title="vox.js を試してみるテスト（その１６）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/cjF0.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/IKJa" title="vox.js を試してみるテスト（その１６改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/IKJa.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/0YKx" title="vox.js を試してみるテスト（その１６改２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/0YKx.jpg" width="200" height="200"></a></td>
 </tr>
 </table>
