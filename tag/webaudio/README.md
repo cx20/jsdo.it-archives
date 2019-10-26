@@ -33,14 +33,14 @@ jsdo.it archives
 <table>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/2V5t" title="MMLEmitter で MML を試してみるテスト で MML を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/2V5t.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/cjUi" title="MMLEmitter で MML を試してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/cjUi.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/vEZU" title="MMLEmitter で MML を試してみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vEZU.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qzUp" title="MMLEmitter で MML を試してみるテスト（その６）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/qzUp.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/dSbQ" title="Snap.svg で鍵盤を作ってみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/dSbQ.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/wptb" title="Snap.svg で鍵盤を作ってみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/wptb.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/kXFE" title="Snap.svg で鍵盤を作ってみるテスト（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/kXFE.jpg" width="200" height="200"></a></td>
-</tr>
-<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ydru" title="Three.js で鍵盤を作ってみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ydru.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/cjUi" title="MMLEmitter で MML を試してみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/cjUi.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/vEZU" title="MMLEmitter で MML を試してみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/vEZU.jpg" width="200" height="200"></a></td>
-<td></td>
 </tr>
 </table>
