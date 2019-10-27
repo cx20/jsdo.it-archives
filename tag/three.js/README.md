@@ -122,7 +122,43 @@ jsdo.it archives
 </tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/0TFG" title="Three.js でカメラを２つ使ってみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/0TFG.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/QoZL" title="Three.js で月食っぽいものを表示してみるテスト（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/QoZL.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/S5Bt" title="Three.js で月食っぽいものを表示してみるテスト（改）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/S5Bt.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/y01k" title="Three.js でレジストリエディタアイコンを表示してみる"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/y01k.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/QQAP" title="[WebGL] three.js でリサージュ図形を描いてみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/QQAP.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Cmdi" title="[WebGL] three.js で渦巻きを描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Cmdi.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yapJ" title="[WebGL] three.js でリサージュ図形を繰り返し描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yapJ.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/075N" title="[WebGL] three.js で３次元リサージュ図形を描いてみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/075N.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/GbyF" title="[WebGL] three.js でハーモノグラフを描いてみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/GbyF.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qcoh" title="[WebGL] three.js でローマ曲面を描いてみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/qcoh.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/YuLf" title="[WebGL] three.js で貝殻曲面を描いてみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/YuLf.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/eAlO" title="[WebGL] three.js で貝殻曲面に法線ベクトルを追加してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/eAlO.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sAZvW" title="[WebGL] three.js でリンゴ曲面を描いてみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/sAZvW.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/K9Me" title="[WebGL] three.js でリンゴ曲面に法線ベクトルを追加してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/K9Me.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/CHKo" title="[WebGL] three.js でトーラスを描いてみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/CHKo.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/MLYQ" title="[WebGL] three.js で Wave Ball を描いてみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/MLYQ.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ksyv" title="[WebGL] three.js でスライム曲面を描いてみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ksyv.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/6Djf" title="[WebGL] three.js でスライム曲面に法線ベクトルを追加してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/6Djf.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/8dJM" title="[WebGL] three.js 小惑星に法線ベクトルを追加してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8dJM.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/wzAv" title="[WebGL] three.js でハート曲面を描いてみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/wzAv.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Ou1B" title="[WebGL] three.js でリサージュ図形を描いてみるテスト（組み込み関数編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Ou1B.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/iXHw" title="[WebGL] three.js で３次元リサージュ図形を描いてみるテスト（組み込み関数編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/iXHw.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/k7xv" title="[WebGL] three.js で３次元関数を描いてみるテスト（組み込み関数編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/k7xv.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qf2Z" title="[WebGL] three.js で３次元関数をプロットしてみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/qf2Z.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ylYQ" title="[WebGL] three.js + ポリゴンで３次元関数を表示してみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ylYQ.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/QBNI" title="[WebGL] three.js で３次元関数に法線ベクトルを追加してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/QBNI.jpg" width="200" height="200"></a></td>
 <td></td>
 <td></td>
 </tr>
