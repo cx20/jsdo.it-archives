@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+body {
+  background: #000;
+  font: 30px sans-serif;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.counter {
+    background: #ccc;
+	width: 74px;
+	position: absolute;
+	background-color:#105CB6;
+	padding: 3px;
+	
+	top:50px;
+	
+	color:#0ff;
+	font-family: Helvetica, Arial;
+	font-size: 9px;
+	font-weight: bold;
+}
