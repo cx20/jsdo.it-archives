@@ -18,7 +18,7 @@ var buffgeoCylinder;
 var raycaster, projector;
 var terrain;
 var ToRad = Math.PI / 180;
-var MAP = "/assets/U/9/8/3/U983y.png"; // シャクルトンクレーター
+var MAP = "../../assets/u/9/8/3/u983y.png"; // シャクルトンクレーター
 var ROTATE = true;
 var WIREFRAME = false;
 
