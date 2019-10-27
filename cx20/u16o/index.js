@@ -5,7 +5,7 @@
 
 var gl = GL.create();
 var mesh = GL.Mesh.cube({coords: true});
-var texture = GL.Texture.fromURL('/assets/A/k/w/j/AkwjW.jpg');    // frog.jpg
+var texture = GL.Texture.fromURL('../../assets/A/k/w/j/AkwjW.jpg');    // frog.jpg
 
 var vs = document.getElementById("vs").textContent;
 var fs = document.getElementById("fs").textContent;
