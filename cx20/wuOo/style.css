@@ -1,0 +1,15 @@
+@import url("http://codemirror.net/lib/codemirror.css");
+ .CodeMirror {
+    font-family: Monaco, 'Andale Mono', 'Lucida Console', 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
+    font-size: 9pt;
+    height: 100%;
+    background-color: transparent;
+}
+
+#world {
+    position: absolute;
+    left: 0px; 
+    top: 0px; 
+    height:100%; 
+    width:100%   
+}
