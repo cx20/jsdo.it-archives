@@ -24,7 +24,7 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yHOc" title="[簡易版] WebGL でハーモノグラフを描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yHOc.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/chhM" title="[WebGL] Grimoire.js で太陽を表示させてみるテスト（改2）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/chhM.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/pprC" title="立体的なドット絵を崩壊させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/pprC.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ed5q" title="[WebGL] GLBoost + vox.js を試してみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ed5q.jpg" width="200" height="200"></a></td>
 </tr>
 </table>
 
