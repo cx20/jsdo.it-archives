@@ -91,7 +91,7 @@ gr.registerComponent('Rotate', {
       isInitialized = false;
       isTextureLoaded = true;
     }
-    img.src = "http://jsrun.it/assets/G/Q/Q/v/GQQv0.png"; // heightmap_256x256.png
+    img.src = "../../assets/g/Q/q/v/gQqv0.png"; // heightmap_256x256.png
   },
   $update: function () {
     var gr = this.companion.get("GeometryRegistory");
