@@ -159,7 +159,7 @@ jsdo.it archives
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ylYQ" title="[WebGL] three.js + ポリゴンで３次元関数を表示してみるテスト（BufferGeometry編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ylYQ.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/QBNI" title="[WebGL] three.js で３次元関数に法線ベクトルを追加してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/QBNI.jpg" width="200" height="200"></a></td>
-<td></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/7zTG" title="Three.js + Constructive Solid Geometry ライブラリを試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/7zTG.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/WQIw" title="Three.js で某スイーツを作ってみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/WQIw.jpg" width="200" height="200"></a></td>
 </tr>
 </table>
