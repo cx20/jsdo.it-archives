@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+}
+
+body {
+  background: #FFF;
+  font: 15px sans-serif;
+}
+
+canvas {
+    position: absolute; left: 0; top: 0;
+}
+
+button {
+  /* iPhone でボタン色が背景色と同じになってしまう問題の対策 */
+  background: #ddd;
+  color: #000;
+}
+
+#interface{
+  position: absolute;
+  left:10px;
+  top:10px;
+}
