@@ -184,6 +184,6 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/eRe9" title="[WebGL] Grimoire.js で球体にエフェクトをかけてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/eRe9.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Gtie" title="[WebGL] Grimoire.js で球体にエフェクトをかけてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Gtie.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/chhM" title="[WebGL] Grimoire.js で太陽を表示させてみるテスト（改2）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/chhM.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yQou" title="[WebGL] Grimoire.js で AmbientLight を使ってみるテスト（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yQou.jpg" width="200" height="200"></a></td>
 </tr>
 </table>
