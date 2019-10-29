@@ -11,6 +11,8 @@ jsdo.it archives
 
 ## Tag: PlayCanvas
 
+### Primitive
+
 <table>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/s9Lw" title="[WebGL] PlayCanvas Engine を試してみるテスト（VBO編）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/s9Lw.jpg" width="200" height="200"></a></td>
@@ -18,6 +20,11 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/MPE2" title="[WebGL] PlayCanvas Engine を試してみるテスト（VBO編）（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/MPE2.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/YOtL" title="[WebGL] PlayCanvas Engine を試してみるテスト（VBO編）（その４）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/YOtL.jpg" width="200" height="200"></a></td>
 </tr>
+</table>
+
+### glTF
+
+<table>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/yh4S" title="[WebGL] PlayCanvas + glTF ファイルを試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/yh4S.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/SCCy" title="[WebGL] PlayCanvas で glTF 2.0 モデルを表示してみるテスト（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/SCCy.jpg" width="200" height="200"></a></td>
@@ -54,10 +61,31 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/CNLh" title="[WebGL] PlayCanvas で glTF 2.0 モデルを表示してみるテスト（その２２）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/CNLh.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sY2n6" title="[WebGL] PlayCanvas で PBR を試してみるテスト（glTF編）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/sY2n6.jpg" width="200" height="200"></a></td>
 </tr>
+</table>
+
+### Shader
+
+<table>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/2wmD" title="[WebGL] PlayCanvas Engine でシェーダを試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/2wmD.jpg" width="200" height="200"></a></td>
 <td></td>
 <td></td>
 <td></td>
+</tr>
+</table>
+
+### Ammo.js
+
+<table>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/oWV0" alt="PlayCanvas で物理演算を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/oWV0.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/gmdS" alt="PlayCanvas で碁石を落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/gmdS.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/xFX1" alt="PlayCanvas で碁盤を回転させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/xFX1.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/emEI" alt="PlayCanvas でドミノっぽくドット絵を作るテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/emEI.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/3PxT" alt="PlayCanvas でゴゴゴを落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/3PxT.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/2XqZ" alt="PlayCanvas でドット絵にボールをぶつけてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/2XqZ.jpg" width="200" height="200"></a></td>
+<tr></td>
+<tr></td>
 </tr>
 </table>
