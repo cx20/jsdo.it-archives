@@ -134,8 +134,8 @@ jsdo.it archives
 </tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Owwb" title="[WebGL] Babylon.js + SolidParticleSystem を試してみるテスト（その２改2）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Owwb.jpg" width="200" height="200"></a></td>
-<td></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Owwb" title="[WebGL] Babylon.js の CSG 機能を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/jMo5.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Owwb" title="[WebGL] Babylon.js で雲のサンプルを試してみるテスト[WebGL] Babylon.js の CSG 機能を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/jMo5.jpg" width="200" height="200"></a></td>
 <td></td>
 </tr>
 </table>
