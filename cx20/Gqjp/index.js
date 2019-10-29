@@ -82,7 +82,7 @@ gr.registerComponent('Rotate', {
       isInitialized = false;
       isTextureLoaded = true;
     }
-    img.src = "http://jsrun.it/assets/U/Z/X/I/UZXIt.png"; // heightmap_fuji.png
+    img.src = "../../assets/u/Z/X/I/uZXIt.png"; // heightmap_fuji.png
   },
   $update: function () {
     var gr = this.companion.get("GeometryRegistory");
