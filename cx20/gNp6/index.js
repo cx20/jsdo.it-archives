@@ -12,8 +12,8 @@ window.addEventListener("resize", function(){
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    //gl.viewport(0, 0, canvas.width, canvas.heihgt);
-    gl.viewport(window.innerWidth/2 - canvas.height/2, 0, canvas.height, canvas.height); // TODO: Temporarily adjusted to square for full screen display
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    //gl.viewport(window.innerWidth/2 - canvas.height/2, 0, canvas.height, canvas.height); // TODO: Temporarily adjusted to square for full screen display
 }
 
 var p1 = gl.createProgram();
