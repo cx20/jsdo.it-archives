@@ -8,6 +8,18 @@ gl.enable(gl.DEPTH_TEST);
 gl.depthFunc(gl.LEQUAL);
 var ext = gl.getExtension("ANGLE_instanced_arrays");
 
+resizeCanvas();
+window.addEventListener("resize", function(){
+    resizeCanvas();
+});
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    //gl.viewport(window.innerWidth/2 - canvas.height/2, 0, canvas.height, canvas.height); // TODO: Temporarily adjusted to square for full screen display
+}
+
 var p1 = gl.createProgram();
 var type = [gl.VERTEX_SHADER, gl.FRAGMENT_SHADER];
 var src = [vs.text, fs.text];
