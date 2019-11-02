@@ -6,8 +6,8 @@ body {
 #glitch_canvas {
     position: absolute;
     margin: auto;
-    width: 465px;
-    height: 465px;
+    width: auto;
+    height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
