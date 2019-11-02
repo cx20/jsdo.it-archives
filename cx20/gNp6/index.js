@@ -4,6 +4,18 @@ gl.clearColor(0.05, 0.05, 0.1, 1.0);
 gl.enable(gl.DEPTH_TEST);
 gl.depthFunc(gl.LEQUAL);
 
+resizeCanvas();
+window.addEventListener("resize", function(){
+    resizeCanvas();
+});
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    //gl.viewport(0, 0, canvas.width, canvas.heihgt);
+    gl.viewport(window.innerWidth/2 - canvas.height/2, 0, canvas.height, canvas.height); // TODO: Temporarily adjusted to square for full screen display
+}
+
 var p1 = gl.createProgram();
 for (var i = 0; i < 2; i++) {
     var shader = gl.createShader([gl.VERTEX_SHADER, gl.FRAGMENT_SHADER][i]);
@@ -244,7 +256,7 @@ img.onload = function(){
     gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, img);
     gl.generateMipmap(gl.TEXTURE_2D);
 };
-img.src = "/assets/7/5/o/P/75oPt.png"; // 512x256.png
+img.src = "../../assets/7/5/o/P/75oPt.png"; // 512x256.png
 
 // physics
 var world = new OIMO.World();
