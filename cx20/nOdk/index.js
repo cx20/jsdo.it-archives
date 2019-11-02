@@ -15,6 +15,17 @@ function initWebGL() {
     gl = c.getContext("webgl2") || c.getContext("experimental-webgl2");
     gl.enable(gl.DEPTH_TEST);
     vao = gl.createVertexArray();  
+    resizeCanvas();
+    window.addEventListener("resize", function(){
+        resizeCanvas();
+    });
+}
+
+function resizeCanvas() {
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    //gl.viewport(0, 0, c.width, c.heihgt);
+    gl.viewport(window.innerWidth/2 - c.height/2, 0, c.height, c.height); // TODO: Temporarily adjusted to square for full screen display
 }
 
 function initShaders() {
