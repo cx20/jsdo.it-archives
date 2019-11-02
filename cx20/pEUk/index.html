@@ -16,12 +16,13 @@
 in  vec3 position;
 in  vec4 color;
 out vec4 vColor;
+uniform float scale;
 
 void main()
 {
     vColor = color;
     gl_Position = vec4(position, 1.0);
-    gl_PointSize = 12.0;
+    gl_PointSize = 12.0 * scale;
 }
 </script>
 

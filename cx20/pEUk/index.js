@@ -57,10 +57,22 @@ function getRgbColor( c )
 var c, gl;
 var aLoc = [];
 var uLoc = [];
+var SCALE = window.innerHeight / 465;
 
 function initWebGL() {
     c = document.getElementById("c");
     gl = c.getContext("webgl2") || c.getContext("experimental-webgl2");
+    resizeCanvas();
+    window.addEventListener("resize", function(){
+        resizeCanvas();
+    });
+}
+
+function resizeCanvas() {
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    //gl.viewport(0, 0, c.width, c.heihgt);
+    gl.viewport(window.innerWidth/2 - c.height/2, 0, c.height, c.height); // TODO: Temporarily adjusted to square for full screen display
 }
 
 function initShaders() {
@@ -81,6 +93,7 @@ function initShaders() {
     gl.useProgram(p);
     aLoc[0] = gl.getAttribLocation(p, "position");
     aLoc[1] = gl.getAttribLocation(p, "color");
+    uLoc[0] = gl.getUniformLocation(p, "scale");
     gl.enableVertexAttribArray(aLoc[0]);
     gl.enableVertexAttribArray(aLoc[1]);
 }
@@ -105,6 +118,8 @@ function draw() {
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(color), gl.STATIC_DRAW);
     gl.vertexAttribPointer(aLoc[1], 4, gl.FLOAT, false, 0, 0);
 
+    gl.uniform1f(uLoc[0], SCALE);
+    
     gl.drawArrays(gl.POINTS, 0, position.length / 3);
     gl.flush();
 
