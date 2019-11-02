@@ -382,7 +382,8 @@ function init() {
         requestAnimationFrame(gameLoop);
     });
     
-    img.src = "http://jsrun.it/assets/r/T/y/u/rTyue.jpg";    // bricks.jpg
+    //img.src = "http://jsrun.it/assets/r/T/y/u/rTyue.jpg";    // bricks.jpg
+    img.src = "https://cx20.github.io/jsdo.it-archives/assets/y/l/s/1/yls1Y.png";
 }
 
 
