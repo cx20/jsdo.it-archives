@@ -115,7 +115,7 @@ img.onload = function(){
     gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, img);
     gl.generateMipmap(gl.TEXTURE_2D);
 };
-img.src = "/assets/A/k/w/j/AkwjW.jpg";  // frog.jpg
+img.src = "../../assets/A/k/w/j/AkwjW.jpg";  // frog.jpg
 
 var uniforms = {
     u_texture: tex
