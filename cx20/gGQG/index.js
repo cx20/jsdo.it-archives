@@ -3,18 +3,18 @@
 // forked from cx20's "[WebGL] glCubic.js を試してみるテスト" http://jsdo.it/cx20/lRsw
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
-var prg;
-var VBO;
-var IBO;
-var mat4 = gl3.Math.Mat4;
-var mMatrix;
-var vMatrix;
-var pMatrix;
-var vpMatrix;
-var mvpMatrix;
-var rad = 0;
+let prg;
+let VBO;
+let IBO;
+let mat4 = gl3.Math.Mat4;
+let mMatrix;
+let vMatrix;
+let pMatrix;
+let vpMatrix;
+let mvpMatrix;
+let rad = 0;
 
-// 立方体の座標データを用意
+// Cube data
 //             1.0 y 
 //              ^  -1.0 
 //              | / z
@@ -32,7 +32,7 @@ var rad = 0;
 //       |/       |/
 //      [0]------[1]
 //
-var position = [ 
+let position = [ 
     // Front face
     -0.5, -0.5,  0.5, // v0
      0.5, -0.5,  0.5, // v1
@@ -65,7 +65,7 @@ var position = [
     -0.5, -0.5, -0.5  // v4
 ];
 
-var texcoord = [
+let texcoord = [
     // Front face
     1, 0,
     0, 0,
@@ -98,7 +98,7 @@ var texcoord = [
     1, 1
 ];
 
-var indices = [
+let indices = [
      0,  1,  2,    0,  2 , 3,  // Front face
      4,  5,  6,    4,  6 , 7,  // Back face
      8,  9, 10,    8, 10, 11,  // Top face
@@ -115,6 +115,18 @@ function init(){
     ];
     IBO = gl3.createIbo(indices);
     gl3.createTextureFromFile('../../assets/A/k/w/j/AkwjW.jpg',  0, initShader);  // frog.jpg
+
+    resizeCanvas();
+
+    window.addEventListener("resize", function(){
+        resizeCanvas();
+    });
+}
+
+function resizeCanvas() {
+    gl3.canvas.width = window.innerWidth;
+    gl3.canvas.height = window.innerHeight;
+    gl3.gl.viewport(0, 0, gl3.canvas.width, gl3.canvas.height);
 }
 
 function initShader() {
@@ -145,18 +157,18 @@ function render(){
 
     prg.useProgram();
     prg.setAttribute(VBO, IBO);
-    var cameraPosition = [0.0, 0.0, 4.0];
-    var centerPoint    = [0.0, 0.0, 0.0];
-    var cameraUp       = [0.0, 1.0, 0.0];
+    let cameraPosition = [0.0, 0.0, 4.0];
+    let centerPoint    = [0.0, 0.0, 0.0];
+    let cameraUp       = [0.0, 1.0, 0.0];
     mat4.lookAt(cameraPosition, centerPoint, cameraUp, vMatrix);
 
-    var fovy = 30;
-    var aspect = 1.0;
-    var near = 0.1;
-    var far = 5.0;
+    let fovy = 30;
+    let aspect = gl3.canvas.width / gl3.canvas.height;
+    let near = 0.1;
+    let far = 5.0;
     mat4.perspective(fovy, aspect, near, far, pMatrix);
 
-    var axis = [1.0, 1.0, 1.0];
+    let axis = [1.0, 1.0, 1.0];
     mat4.identity(mMatrix);
     mat4.rotate(mMatrix, rad, axis, mMatrix);
     mat4.multiply(pMatrix, vMatrix, vpMatrix);
