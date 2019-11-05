@@ -1,11 +1,11 @@
 // forked from cx20's "[WebGL] glCubic.js を試してみるテスト" http://jsdo.it/cx20/lRsw
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
-var prg;
-var VBO;
-var IBO;
+let prg;
+let VBO;
+let IBO;
 
-// 正方形の座標データを用意
+// Square data
 //             1.0 y 
 //              ^  -1.0 
 //              | / z
@@ -21,21 +21,21 @@ var IBO;
 //         |        |
 //        [2]------[3]
 //
-var position = [ 
+let position = [ 
     -0.5, 0.5, 0.0, // v0
      0.5, 0.5, 0.0, // v1 
     -0.5,-0.5, 0.0, // v2
      0.5,-0.5, 0.0  // v3
 ];
 
-var color = [ 
+let color = [ 
      1.0, 0.0, 0.0, 1.0, // v0
      0.0, 1.0, 0.0, 1.0, // v1
      0.0, 0.0, 1.0, 1.0, // v2
      1.0, 1.0, 0.0, 1.0  // v3
 ];
 
-var indices = [0, 1, 2, 3];
+let indices = [0, 1, 2, 3];
 
 function init() {
     gl3.init('c');
@@ -53,6 +53,18 @@ function init() {
         gl3.createVbo(color)
     ];
     IBO = gl3.createIbo(indices);
+
+    resizeCanvas();
+
+    window.addEventListener("resize", function(){
+        resizeCanvas();
+    });
+}
+
+function resizeCanvas() {
+    gl3.canvas.width = window.innerWidth;
+    gl3.canvas.height = window.innerHeight;
+    gl3.gl.viewport(0, 0, gl3.canvas.width, gl3.canvas.height);
 }
 
 function render(){
