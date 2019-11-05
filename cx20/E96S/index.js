@@ -34,6 +34,17 @@ var render = {
 };
 var wwg = new WWG();
 wwg.init(document.getElementById('screen1'));
+resizeCanvas();
+window.addEventListener("resize", function(){
+    resizeCanvas();
+});
+
+function resizeCanvas() {
+    wwg.can.width = window.innerWidth;
+    wwg.can.height = window.innerHeight;
+    wwg.gl.viewport(0, 0, wwg.can.width, wwg.can.height);
+}
+
 var r = wwg.createRender();
 r.setRender(render).then(function() {
     console.log(r);
