@@ -4,6 +4,16 @@
 
 var c = document.getElementById('c');
 var gl = $gl.getGLContext(c);
+resizeCanvas();
+window.addEventListener("resize", function(){
+    resizeCanvas();
+});
+
+function resizeCanvas() {
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    gl.viewport(0, 0, c.width, c.height);
+}
 
 var prg = $gl.setupProgram({
     vertexShader: $gl.getShaderSourceFromDOM('vs'),
