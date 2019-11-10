@@ -3,6 +3,18 @@
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
 var gl = GL.create({width: 465, height:465});
+
+resizeCanvas();
+window.addEventListener("resize", function(){
+    resizeCanvas();
+});
+
+function resizeCanvas() {
+    gl.canvas.width = window.innerWidth;
+    gl.canvas.height = window.innerHeight;
+    gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
+}
+
 document.body.appendChild(gl.canvas);
 
 
@@ -111,7 +123,7 @@ var temp = mat4.create();
 var identity = mat4.create();
 
 //set the camera position
-mat4.perspective(persp, 45 * DEG2RAD, 465 /465, 0.1, 1000);
+mat4.perspective(persp, 45 * DEG2RAD, gl.canvas.width / gl.canvas.height, 0.1, 1000);
 mat4.lookAt(view, [0,1,3], [0,0,0], [0,1,0]);
 
 var rad = 0;
