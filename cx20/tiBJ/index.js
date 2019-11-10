@@ -5,6 +5,17 @@
 "use strict";
 var m4 = twgl.m4;
 var gl = twgl.getWebGLContext(document.getElementById("c"));
+resizeCanvas();
+window.addEventListener("resize", function(){
+    resizeCanvas();
+});
+
+function resizeCanvas() {
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    gl.viewport(0, 0, c.width, c.height);
+}
+
 var programInfo = twgl.createProgramInfo(gl, ["vs", "fs"]);
 
 // 立方体の座標データを用意
