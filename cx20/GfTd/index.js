@@ -58,7 +58,7 @@ var app = clay.application.create('#main', {
         var diffuse = new clay.Texture2D();
         //diffuse.load("/assets/A/k/w/j/AkwjW.jpg");
         //diffuse.load("/assets/8/Y/F/W/8YFWD.png"); // white.png
-        diffuse.load("/assets/u/y/G/y/uyGy9.jpg"); // grass.jpg
+        diffuse.load("../../assets/u/y/G/y/uyGy9.jpg"); // grass.jpg
 
         this._oimoGround = this._world.add({
            type: "box",
@@ -81,7 +81,7 @@ var app = clay.application.create('#main', {
             shader: shader
         });
         var diffuseSurface = new clay.Texture2D();
-        diffuseSurface.load("/assets/8/Y/F/W/8YFWD.png"); // white.png
+        diffuseSurface.load("../../assets/8/Y/F/W/8YFWD.png"); // white.png
         materialSurface.set('diffuseMap', diffuseSurface);
         materialSurface.set('color', [0x70/0xFF, 0x70/0xFF, 0x70/0xFF]);
         materialSurface.depthMask = false;
