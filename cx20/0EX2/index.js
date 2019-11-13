@@ -150,16 +150,11 @@ function init() {
     world.solver.iterations = 10;
 
     canvas = document.getElementById("world");
+    let width = window.innerWidth;
+    let height = window.innerHeight;
     glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
-    renderer = glBoostContext.createRenderer({
-        clearColor: {
-            red: 0.6,
-            green: 0.6,
-            blue: 0.6,
-            alpha: 1
-        }
-    });
-    
+    renderer = glBoostContext.createRenderer({ canvas: canvas, clearColor: {red:1, green:1, blue:1, alpha:1}});
+    renderer.resize(width, height);
     scene = glBoostContext.createScene();
 
     initCamera();
