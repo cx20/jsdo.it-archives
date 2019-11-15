@@ -6,13 +6,18 @@
 // forked from cx20's "[WebGL] GLBoost を試してみるテスト" http://jsdo.it/cx20/SWec
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
-var canvas = document.getElementById("world");
-var glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
-var renderer = glBoostContext.createRenderer({ canvas: canvas, clearColor: {red:1, green:1, blue:1, alpha:1}});
-var scene = glBoostContext.createScene();
+let width = window.innerWidth;
+let height = window.innerHeight;
 
-var texture = glBoostContext.createTexture('../../assets/A/k/w/j/AkwjW.jpg'); // frog.jpg
-var material = glBoostContext.createClassicMaterial();
+let canvas = document.getElementById("world");
+let glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
+let renderer = glBoostContext.createRenderer({ canvas: canvas, clearColor: {red:1, green:1, blue:1, alpha:1}});
+renderer.resize(width, height);
+
+let scene = glBoostContext.createScene();
+
+let texture = glBoostContext.createTexture('../../assets/A/k/w/j/AkwjW.jpg'); // frog.jpg
+let material = glBoostContext.createClassicMaterial();
 material.setTexture(texture);
 //material.shaderClass = GLBoost.PhongShader;
 material.baseColor = new GLBoost.Vector4(1, 1, 1, 1);
@@ -36,16 +41,16 @@ material.baseColor = new GLBoost.Vector4(1, 1, 1, 1);
 //      [0]------[1]
 //
 
-//var geometry = glBoostContext.createCube(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(1, 1, 1));
-var geometry = glBoostContext.createCube(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector4(1, 1, 1, 1));
+//let geometry = glBoostContext.createCube(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(1, 1, 1));
+let geometry = glBoostContext.createCube(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector4(1, 1, 1, 1));
 
-var mesh = glBoostContext.createMesh(geometry, material);
+let mesh = glBoostContext.createMesh(geometry, material);
 scene.addChild(mesh);
 
-var directionalLight = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(0, 0, -1));
+let directionalLight = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(0, 0, -1));
 scene.addChild( directionalLight );
 
-var camera = glBoostContext.createPerspectiveCamera({
+let camera = glBoostContext.createPerspectiveCamera({
     eye: new GLBoost.Vector3(0.0, 0, 3),
     center: new GLBoost.Vector3(0.0, 0.0, 0.0),
     up: new GLBoost.Vector3(0.0, 1.0, 0.0)
@@ -58,16 +63,16 @@ var camera = glBoostContext.createPerspectiveCamera({
 //camera.cameraController = glBoostContext.createCameraController();
 scene.addChild(camera);
 
-var expression = glBoostContext.createExpressionAndRenderPasses(1);
+let expression = glBoostContext.createExpressionAndRenderPasses(1);
 expression.renderPasses[0].scene = scene;
 expression.prepareToRender();
 
 (function(){
     renderer.clearCanvas();
     renderer.draw(expression);
-    var rotateMatrixX = GLBoost.Matrix33.rotateX(1);
-    var rotateMatrixY = GLBoost.Matrix33.rotateY(1);
-    var rotatedVector = rotateMatrixX.multiplyVector(camera.eye);
+    let rotateMatrixX = GLBoost.Matrix33.rotateX(1);
+    let rotateMatrixY = GLBoost.Matrix33.rotateY(1);
+    let rotatedVector = rotateMatrixX.multiplyVector(camera.eye);
     rotatedVector = rotateMatrixY.multiplyVector(rotatedVector);
     camera.eye = rotatedVector;
 
