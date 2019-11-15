@@ -39,6 +39,3 @@ expression.prepareToRender();
     renderer.draw(expression);
     requestAnimationFrame(arguments.callee);
 })();
-
-
-render();
