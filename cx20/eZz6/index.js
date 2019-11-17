@@ -2,8 +2,16 @@
 
 var canvas = document.getElementById("c");
 var gl = canvas.getContext("experimental-tinygl");
+resizeCanvas();
+window.addEventListener("resize", function(){
+    resizeCanvas();
+});
 
-gl.viewport(0, 0, canvas.width, canvas.height);
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    gl.viewport(0, 0, canvas.width, canvas.height);
+}
 
 gl.clearColor(1.0, 1.0, 1.0, 1.0);
 gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
