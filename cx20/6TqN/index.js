@@ -41,10 +41,15 @@ function initWebGL() {
     gl = c.getContext("experimental-webgl");
     gl.enable(gl.DEPTH_TEST);
 
+    resizeCanvas();
+    window.addEventListener("resize", function(){
+        resizeCanvas();
+    });
+
     mvMatrix = mat4.create();
     pMatrix = mat4.create();
     qMatrix = mat4.create();
-    mat4.perspective(pMatrix, 45, 465 / 465, 0.1, 1000.0);
+    mat4.perspective(pMatrix, 45, c.width / c.height, 0.1, 1000.0);
     translation = vec3.create();
     scale = vec3.create();
     
@@ -59,6 +64,13 @@ function initWebGL() {
     mat4.multiply(pMatrix, pMatrix, view);
     q = quat.create();
     quat.identity(q);
+}
+
+function resizeCanvas() {
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    gl.viewport(0, 0, c.width, c.height);
+    //gl.viewport(window.innerWidth/2 - c.height/2, 0, c.height, c.height); // TODO: Temporarily adjusted to square for full screen display
 }
 
 function initWorld() {
@@ -257,7 +269,7 @@ function draw() {
     vec3.set(center, 0, 0, 0);
     vec3.set(up, 0, 1, 0);
     mat4.lookAt(view, eye, center, up);
-    mat4.perspective(pMatrix, 45, 465 / 465, 0.1, 1000.0);
+    mat4.perspective(pMatrix, 45, c.width / c.height, 0.1, 1000.0);
     mat4.multiply(pMatrix, pMatrix, view);
 
     // Ground
