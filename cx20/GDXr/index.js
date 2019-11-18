@@ -5,7 +5,6 @@
 
 "use strict";
 
-// ‥‥‥‥‥‥‥‥‥‥‥‥‥□□□
 // ‥‥‥‥‥‥〓〓〓〓〓‥‥□□□
 // ‥‥‥‥‥〓〓〓〓〓〓〓〓〓□□
 // ‥‥‥‥‥■■■□□■□‥■■■
@@ -21,7 +20,7 @@
 // ‥‥■■■〓〓〓〓〓〓〓〓〓■■
 // ‥■■■〓〓〓〓〓〓〓‥‥‥‥‥
 // ‥■‥‥〓〓〓〓‥‥‥‥‥‥‥‥
-var dataSet = [
+let dataSet = [
     "無","無","無","無","無","無","無","無","無","無","無","無","無","肌","肌","肌",
     "無","無","無","無","無","無","赤","赤","赤","赤","赤","無","無","肌","肌","肌",
     "無","無","無","無","無","赤","赤","赤","赤","赤","赤","赤","赤","赤","肌","肌",
@@ -42,8 +41,8 @@ var dataSet = [
 
 function getRgbColor( c )
 {
-    var colorHash = {
-        "無":{r:0xDC,g:0xAA,b:0x6B},    // 段ボール色
+    let colorHash = {
+        "無":{r:0xDC,g:0xAA,b:0x6B},
         "白":{r:0xff,g:0xff,b:0xff},
         "肌":{r:0xff,g:0xcc,b:0xcc},
         "茶":{r:0x80,g:0x00,b:0x00},
@@ -57,23 +56,25 @@ function getRgbColor( c )
     return colorHash[ c ];
 }
 
-var TIME_STEP = 1 / 30;
-var SCREEN_WIDTH = 465;
-var SCREEN_HEIGHT = 465;
-var VIEW_ANGLE = 60;
-var N = 256;
+let TIME_STEP = 1 / 30;
+let SCREEN_WIDTH = 465;
+let SCREEN_HEIGHT = 465;
+let VIEW_ANGLE = 60;
+let N = 256;
 
 // glboost var
-var canvas;
-var glBoostContext;
-var renderer;
-var camera;
-var scene;
-var meshs = [];
-var expression;
+let canvas;
+let glBoostContext;
+let width = window.innerWidth;
+let height = window.innerHeight;
+let renderer;
+let camera;
+let scene;
+let meshs = [];
+let expression;
 
 // cannon.js var
-var world;
+let world;
 
 function init() {
     // initialize cannon.js's world
@@ -84,15 +85,8 @@ function init() {
 
     canvas = document.getElementById("world");
     glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
-    renderer = glBoostContext.createRenderer({
-        clearColor: {
-            red: 0.6,
-            green: 0.6,
-            blue: 0.6,
-            alpha: 1
-        }
-    });
-    
+    renderer = glBoostContext.createRenderer({ canvas: canvas, clearColor: {red:0, green:0, blue:0, alpha:1}});
+    renderer.resize(width, height);
     scene = glBoostContext.createScene();
 
     initCamera();
@@ -113,50 +107,56 @@ function initCamera() {
         center: new GLBoost.Vector3(0.0, 10.0, 0.0),
         up: new GLBoost.Vector3(0.0, 1.0, 0.0)
     }, {
-        fovy: 60.0,
-        aspect: 1.0,
-        zNear: 0.1,
+        fovy: 45.0,
+        aspect: width/height,
+        zNear: 0.01,
         zFar: 1000.0
     });
-    
+    camera.cameraController = glBoostContext.createCameraController();
     scene.addChild(camera);
 }
 
 // initialize lights
 function initLights() {
-    var pointLight = glBoostContext.createPointLight(new GLBoost.Vector3(1.0, 1.0, 1.0));
+/*
+    let pointLight = glBoostContext.createPointLight(new GLBoost.Vector3(1.0, 1.0, 1.0));
     pointLight.translate = new GLBoost.Vector3(10, 10, 10);
     scene.addChild(pointLight);
+*/
+    let directionalLight1 = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(30, 30, 30));
+    scene.addChild( directionalLight1 );
+    let directionalLight2 = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(-30, -30, -30));
+    scene.addChild( directionalLight2 );
 }
 
 // ground
 function initGround() {
-    var groundShape = new CANNON.Plane(new CANNON.Vec3(0, 1, 0));
-    var groundBody = new CANNON.Body({mass: 0});
+    let groundShape = new CANNON.Plane(new CANNON.Vec3(0, 1, 0));
+    let groundBody = new CANNON.Body({mass: 0});
     groundBody.addShape(groundShape);
     groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1, 0, 0), -Math.PI / 2);
     world.add(groundBody);
 
     // initialize Object3D
-    var plane = createPlane(100, 100);
+    let plane = createPlane(100, 100);
     plane.rotate.x = -Math.PI / 2;
     plane.translate.y = 0;
     scene.addChild(plane);
 }
 
 function createPlane(w, h) {
-    var material = glBoostContext.createClassicMaterial();
-    var texture = glBoostContext.createTexture("../../assets/u/y/G/y/uyGy9.jpg"); // grass.jpg
-    material.diffuseTexture = texture;
-    var planeGeometry = glBoostContext.createPlane(w, h, 10, 10, null);
-    var plane = glBoostContext.createMesh(planeGeometry, material);
+    let material = glBoostContext.createClassicMaterial();
+    let texture = glBoostContext.createTexture("../../assets/u/y/G/y/uyGy9.jpg"); // grass.jpg
+    material.setTexture(texture);
+    let planeGeometry = glBoostContext.createPlane(w, h, 10, 10, null);
+    let plane = glBoostContext.createMesh(planeGeometry, material);
 
     return plane;
 }
 
 // create a shape
 function createShape(x, y, z, w, h, d, mass, color) {
-    var shape, body;
+    let shape, body;
 
     // initialize rigid body
     shape = new CANNON.Box(new CANNON.Vec3(w, h, d));
@@ -170,11 +170,11 @@ function createShape(x, y, z, w, h, d, mass, color) {
     world.add(body);
 
     // initialize Object3D
-    var material = glBoostContext.createClassicMaterial();
+    let material = glBoostContext.createClassicMaterial();
     material.shaderClass = GLBoost.PhongShader;
-    var color2 = new GLBoost.Vector4(color.r / 0xff, color.g / 0xff, color.b / 0xff, 1.0);
-    var box = glBoostContext.createCube(new GLBoost.Vector3(w*2, h*2, d*2), color2);
-    var mesh = glBoostContext.createMesh(box, material);
+    let color2 = new GLBoost.Vector4(color.r / 0xff, color.g / 0xff, color.b / 0xff, 1.0);
+    let box = glBoostContext.createCube(new GLBoost.Vector3(w*2, h*2, d*2), color2);
+    let mesh = glBoostContext.createMesh(box, material);
 
     mesh.rigidBody = body;
     scene.addChild(mesh);
@@ -182,13 +182,13 @@ function createShape(x, y, z, w, h, d, mass, color) {
 
 // sphere
 function createShapes() {
-    var box_size = 0.7;
-    for ( var y = 0; y < 16; y++ ) {
-        for ( var x = 0; x < 16; x++ ) {
-            var x1 = -15 + x * box_size * 2.5;
-            var y1 = (15 - y) * box_size * 3.0;
-            var z1 = 0;
-            var color = getRgbColor( dataSet[y * 16 + x] );
+    let box_size = 0.7;
+    for ( let y = 0; y < 16; y++ ) {
+        for ( let x = 0; x < 16; x++ ) {
+            let x1 = -15 + x * box_size * 2.5;
+            let y1 = (15 - y) * box_size * 3.0;
+            let z1 = 0;
+            let color = getRgbColor( dataSet[y * 16 + x] );
             createShape(x1, y1, z1, box_size, box_size, box_size, 1, color);
         }
     }
@@ -205,16 +205,20 @@ function animate() {
     // position graphical object on physical object recursively
     (function updateObject3D(mesh) {
         if (mesh.rigidBody) {
-            var body = mesh.rigidBody;
-            var p = body.position;
+            let body = mesh.rigidBody;
+            let p = body.position;
             mesh.translate = new GLBoost.Vector3(p.x, p.y, p.z);
-            var q = body.quaternion;
+            let q = body.quaternion;
             mesh.quaternion = new GLBoost.Quaternion(q.x, q.y, q.z, q.w);
         }
         if (mesh.elements) {
             mesh.elements.map(updateObject3D);
         }
     })(scene);
+
+    let rotateMatrix = GLBoost.Matrix33.rotateY(0.1);
+    let rotatedVector = rotateMatrix.multiplyVector(camera.eye);
+    camera.eye = rotatedVector;
 
     // request next frame
     requestAnimationFrame(animate);
