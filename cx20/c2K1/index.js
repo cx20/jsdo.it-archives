@@ -7,6 +7,8 @@ var DOT_SIZE = 40;
 
 // glboost var
 var canvas = document.getElementById("world");
+var width = window.innerWidth;
+var height = window.innerHeight;
 var renderer;
 var camera;
 var scene;
@@ -34,13 +36,14 @@ function init() {
         canvas: canvas,
         clearColor: {red: 0, green: 0, blue: 0, alpha: 1}
     });
+    renderer.resize(width, height);
     camera = new GLBoost.Camera({
         eye: new GLBoost.Vector3(0, 100, 400),
         center: new GLBoost.Vector3(0.0, 0.0, 0.0),
         up: new GLBoost.Vector3(0.0, 1.0, 0.0)
     }, {
         fovy: 70.0,
-        aspect: 1.0,
+        aspect: width / height,
         zNear: 1,
         zFar: 1000.0
     });
