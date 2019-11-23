@@ -189,7 +189,7 @@ jsdo.it archives
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/qQ0P" title="[WebGL] Grimoire.js でクリフォードアトラクターを描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/qQ0P.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/MY2G" title="[WebGL] Grimoire.js + OimoPhysics.js で大量のボールを落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/MY2G.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/MY2G" title="[WebGL] Grimoire.js で PBR を試してみるテスト（改3）（調整中）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ATDR.jpg" width="200" height="200"></a></td>
 <td></td>
 </tr>
 </table>
