@@ -33,7 +33,7 @@ renderer.resize(width, height);
 let scene = glBoostContext.createScene();
 
 let pointLight = glBoostContext.createPointLight(new GLBoost.Vector3(1.0, 1.0, 1.0));
-pointLight.translate = new GLBoost.Vector3(10, 10, 10);
+pointLight.translate = new GLBoost.Vector3(0, 0, 100);
 scene.addChild(pointLight);
 let camera = glBoostContext.createPerspectiveCamera({
     //eye: new GLBoost.Vector3(2.0, 1.0, 2.0),
