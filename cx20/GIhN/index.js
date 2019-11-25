@@ -2,7 +2,7 @@
 // forked from cx20's "Three.js + Oimo.js でドット絵を落下させるテスト" http://jsdo.it/cx20/voHQ
 // forked from Lo-Th's "oimo basic" http://jsdo.it/Lo-Th/frXo
 
-var DOT_SIZE = 16;
+let DOT_SIZE = 8;
 // ‥‥‥‥‥‥‥‥‥‥‥‥‥□□□
 // ‥‥‥‥‥‥〓〓〓〓〓‥‥□□□
 // ‥‥‥‥‥〓〓〓〓〓〓〓〓〓□□
@@ -19,7 +19,7 @@ var DOT_SIZE = 16;
 // ‥‥■■■〓〓〓〓〓〓〓〓〓■■
 // ‥■■■〓〓〓〓〓〓〓‥‥‥‥‥
 // ‥■‥‥〓〓〓〓‥‥‥‥‥‥‥‥
-var dataSet = [
+let dataSet = [
     "無","無","無","無","無","無","無","無","無","無","無","無","無","肌","肌","肌",
     "無","無","無","無","無","無","赤","赤","赤","赤","赤","無","無","肌","肌","肌",
     "無","無","無","無","無","赤","赤","赤","赤","赤","赤","赤","赤","赤","肌","肌",
@@ -40,8 +40,8 @@ var dataSet = [
 
 function getRgbColor( c )
 {
-    var colorHash = {
-        "無":{r:0xDC,g:0xAA,b:0x6B},    // 段ボール色
+    let colorHash = {
+        "無":{r:0xDC,g:0xAA,b:0x6B},
         "白":{r:0xff,g:0xff,b:0xff},
         "肌":{r:0xff,g:0xcc,b:0xcc},
         "茶":{r:0x80,g:0x00,b:0x00},
@@ -56,168 +56,162 @@ function getRgbColor( c )
 }
 
 // glboost var
-var canvas = document.getElementById("world");
-var renderer;
-var camera;
-var scene;
-var meshs = [];
+let canvas;
+let renderer;
+let camera;
+let scene;
+let meshs = [];
+let glBoostContext;
+let mground1;
 
 //oimo var
-var world;
-var G = -10, nG = -10;
-var wakeup = false;
-var bodys = [];
-var stats;
+let world;
+let groundBody;
+let G = -10;
+let bodys = [];
 
 init();
 
 function init() {
-    stats = new Stats();
-    stats.setMode( 0 ); // 0: fps, 1: ms, 2: mb
-    stats.domElement.style.position = "fixed";
-    stats.domElement.style.left     = "5px";
-    stats.domElement.style.top      = "5px";
-    document.body.appendChild(stats.domElement);
+    canvas = document.getElementById("world");
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    glBoostContext = new GLBoost.GLBoostMiddleContext(canvas);
+    renderer = glBoostContext.createRenderer({ canvas: canvas, clearColor: {red:0, green:0, blue:0, alpha:1}});
+    renderer.resize(width, height);
+    scene = glBoostContext.createScene();
 
-    scene = new GLBoost.Scene();
-    renderer = new GLBoost.Renderer({
-        canvas: canvas,
-        clearColor: {red: 0, green: 0, blue: 0, alpha: 1}
-    });
-    camera = new GLBoost.Camera({
-        eye: new GLBoost.Vector3(0, 100, 400),
+    camera = glBoostContext.createPerspectiveCamera({
+        eye: new GLBoost.Vector3(0.0, 50, 100),
         center: new GLBoost.Vector3(0.0, 0.0, 0.0),
         up: new GLBoost.Vector3(0.0, 1.0, 0.0)
     }, {
-        fovy: 70.0,
-        aspect: 1.0,
-        zNear: 1,
-        zFar: 1000.0
+        fovy: 45.0,
+        aspect: width/height,
+        zNear: 0.001,
+        zFar: 3000.0
     });
-    scene.add(camera);
+    camera.cameraController = glBoostContext.createCameraController();
+    scene.addChild(camera);
 
-    var directionalLight = new GLBoost.DirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(-1, -1, -1), '#world');
-    scene.add( directionalLight );
+    let directionalLight1 = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(30, 30, 30));
+    scene.addChild( directionalLight1 );
+    let directionalLight2 = glBoostContext.createDirectionalLight(new GLBoost.Vector3(1, 1, 1), new GLBoost.Vector3(-30, -30, -30));
+    scene.addChild( directionalLight2 );
 
-    var geo1 = new GLBoost.Cube(new GLBoost.Vector3(400, 40, 400), new GLBoost.Vector3(1, 1, 1), "#world");
-    var material = new GLBoost.ClassicMaterial('#world');
-    //var texture = new GLBoost.Texture('grass.jpg', '#world'); // grass.jpg
-    var texture = new GLBoost.Texture('../../assets/u/y/G/y/uyGy9.jpg', '#world'); // grass.jpg
-    material.diffuseTexture = texture;
+    let texture = glBoostContext.createTexture('../../assets/u/y/G/y/uyGy9.jpg'); // grass.jpg
+    let material = glBoostContext.createClassicMaterial();
+    material.setTexture(texture);
+    material.baseColor = new GLBoost.Vector4(1, 1, 1, 1);
 
-    var mground1 = new GLBoost.Mesh(geo1, material);
-    mground1.translate.y = -50;
+    let geo1 = glBoostContext.createCube(new GLBoost.Vector3(200, 2, 200), new GLBoost.Vector4(1, 1, 1, 1));
+    mground1 = glBoostContext.createMesh(geo1, material);
     mground1.dirty = true;
-    scene.add( mground1 );
+    scene.addChild(mground1);
 
     // oimo init
-    world = new OIMO.World();
+    world = new OIMO.World({ 
+        timestep: 1/10, 
+        iterations: 8, 
+        broadphase: 2, // 1 brute force, 2 sweep and prune, 3 volume tree
+        worldscale: 1, // scale full world 
+        random: true,  // randomize sample
+        info: false,   // calculate statistic or not
+        gravity: [0,-9.8,0] 
+    });
     populate();
 
     // loop
-    scene.prepareForRender();
-    loop();
+    expression = glBoostContext.createExpressionAndRenderPasses(1);
+    expression.renderPasses[0].scene = scene;
+    expression.prepareToRender();
+
+    animate();
 }
 
 function populate() {
-    
-    // The Bit of a collision group
-    var group1 = 1 << 0;  // 00000000 00000000 00000000 00000001
-    var group2 = 1 << 1;  // 00000000 00000000 00000000 00000010
-    var group3 = 1 << 2;  // 00000000 00000000 00000000 00000100
-    var all = 0xffffffff; // 11111111 11111111 11111111 11111111
-
-    var max = 256;
+    let max = 256;
 
     // reset old
-    clearMesh();
     world.clear();
 
-    // Is all the physics setting for rigidbody
-    var config = [
-        1,   // 密度
-        0.4, // 摩擦係数
-        0.6, // 反発係数
-        1,   // 所属する衝突グループのビット
-        all  // 衝突する衝突グループのビット
-    ];
-    
-    var ground2 = new OIMO.Body({size:[400, 40, 400], pos:[0,-50,0], world:world, config:config});
+    groundBody = world.add({
+        type: "box",
+        size: [200, 2, 200],
+        pos: [0, -20, 0],
+        rot: [0, 0, 0],
+        move: false,
+        density: 1,
+        friction: 0.5,
+        restitution: 0.1,
+    });
 
-    var w = DOT_SIZE * 0.8;
-    var h = DOT_SIZE * 0.8;
-    var d = DOT_SIZE * 0.8;
+    let p = groundBody.getPosition();
+    let q = groundBody.getQuaternion();
+    mground1.translate = new GLBoost.Vector3(p.x, p.y, p.z);
+    mground1.quaternion = new GLBoost.Quaternion(q.x, q.y, q.z, q.w);
 
-    for (var i = 0; i < dataSet.length; i++) {
-        var x = i % 16 - 6;
-        var y = 16 - Math.floor(i / 16);
-        var z = 2;
-        var c = getRgbColor(dataSet[i]);
-        bodys[i] = new OIMO.Body({
-            type: 'sphere',
-            size: [w/2],
-            pos: [
-                x * DOT_SIZE + Math.random()*0.05, 
-                y * DOT_SIZE + Math.random()*0.05, 
-                z * DOT_SIZE + Math.random()*0.05
-            ],
-            move: true,
-            world: world
-        });
-        var material = new GLBoost.ClassicMaterial('#world');
-        //var texture = new GLBoost.Texture('football.png', '#world'); // football.png
-        var texture = new GLBoost.Texture('../../assets/s/s/X/x/ssXxc.png', '#world'); // football.png
-        material.diffuseTexture = texture;
-        var color = new GLBoost.Vector4(c.r / 0xff, c.g / 0xff, c.b / 0xff, 1.0);
-        var geoBox = new GLBoost.Sphere(DOT_SIZE/2, 24, 24, color, "#world");
-        meshs[i] = new GLBoost.Mesh(geoBox, material);
-        meshs[i].translate = new GLBoost.Vector3(x * DOT_SIZE, y * DOT_SIZE, z * DOT_SIZE);
-        scene.add(meshs[i]);
+    let texture_football = glBoostContext.createTexture('../../assets/s/s/X/x/ssXxc.png'); // football.png
+
+    let w = DOT_SIZE;
+    let h = DOT_SIZE;
+    let d = DOT_SIZE;
+
+    let i;
+    let y;
+    for ( let x = 0; x < 16; x++ ) {
+        for ( let y = 0; y < 16; y ++ ) {
+            i = x + (15-y) * 16;
+            let c = getRgbColor(dataSet[i]);
+            z = 0;
+            let x2 = (-8+x)*DOT_SIZE * 1.1 + Math.random();
+            let y2 = (1+y)*DOT_SIZE * 1.1 + Math.random();
+            let z2 = z*DOT_SIZE + Math.random();
+            bodys[i] = world.add({
+                type: "sphere",
+                size: [w*0.5],
+                pos: [x2, y2, z2],
+                rot: [0, 0, 0],
+                move: true,
+                density: 1,
+                friction: 0.5,
+                restitution: 0.1,
+            });
+
+            let material = glBoostContext.createClassicMaterial();
+            material.shaderClass = GLBoost.LambertShader;
+            material.setTexture(texture_football);
+            let color = new GLBoost.Vector4(c.r / 0xff, c.g / 0xff, c.b / 0xff, 1.0);
+            let geoBall = glBoostContext.createSphere(w*0.5, 24, 24, color);
+
+            meshs[i] = glBoostContext.createMesh(geoBall, material);
+            scene.addChild(meshs[i]);
+        }
     }
 }
 
-function clearMesh(){
-/*
-    var i=meshs.length;
-    while (i--){scene.remove(meshs[ i ]);}
-*/
-}
-
-// MAIN LOOP
-
-function loop() {
+function animate() {
     renderer.clearCanvas();
-    renderer.draw(scene);
+    renderer.draw(expression);
     
     world.step();
     
-    var p, r, m, x, y, z;
-    var i = bodys.length;
-    var mesh;
-    wakeup = false;
-
-    if (G !== nG) {
-        wakeup = true;
-        G = nG;
-    }
+    let p, r, m, x, y, z;
+    let i = bodys.length;
+    let mesh;
 
     while (i--) {
-        var body = bodys[i].body;
-        mesh = meshs[i];
-        if (wakeup) bodys[i].body.awake();
-        if (!body.sleeping) {
-            var p = body.getPosition();
-            mesh.translate = new GLBoost.Vector3(p.x, p.y, p.z);
-            var q = body.getQuaternion();
-            mesh.quaternion = new GLBoost.Quaternion(q.x, q.y, q.z, q.w);
-        }
+        let body = bodys[i];
+        let mesh = meshs[i];
+        let p = body.getPosition();
+        let q = body.getQuaternion();
+        mesh.translate = new GLBoost.Vector3(p.x, p.y, p.z);
+        mesh.quaternion = new GLBoost.Quaternion(q.x, q.y, q.z, q.w);
     }
 
-    var rotateMatrixY = GLBoost.Matrix33.rotateY(1);
-    var rotatedVector = rotateMatrixY.multiplyVector(camera.eye);
+    let rotateMatrix = GLBoost.Matrix33.rotateY(0.1);
+    let rotatedVector = rotateMatrix.multiplyVector(camera.eye);
     camera.eye = rotatedVector;
 
-    stats.update();
-
-    requestAnimationFrame(loop);
+    requestAnimationFrame(animate);
 }
