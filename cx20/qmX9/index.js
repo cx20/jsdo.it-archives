@@ -236,7 +236,7 @@ Plane.prototype.initGlboostObj = function () {
     var s = this.s;
     var material = glBoostContext.createClassicMaterial();
     var texture = glBoostContext.createTexture("../../assets/u/y/G/y/uyGy9.jpg"); // grass.jpg
-    material.diffuseTexture = texture;
+    material.setTexture(texture);
     var planeGeometry = glBoostContext.createPlane(s, s, 5, 5, null, true);
     var ground = glBoostContext.createMesh(planeGeometry, material);
 
@@ -286,8 +286,8 @@ function initPhysicsWorld() {
 }
 
 window.addEventListener("load", function () {
-    var width = 465;
-    var height = 465;
+    var width = window.innerWidth;
+    var height = window.innerHeight;
     var deltaT = 30;
 
     canvas = document.getElementById("world");
@@ -300,7 +300,7 @@ window.addEventListener("load", function () {
             alpha: 1
         }
     });
-    
+    renderer.resize(width, height);
     scene = glBoostContext.createScene();
 
     camera = glBoostContext.createPerspectiveCamera({
@@ -309,7 +309,7 @@ window.addEventListener("load", function () {
         up: new GLBoost.Vector3(0.0, 1.0, 0.0)
     }, {
         fovy: 60.0,
-        aspect: 1.0,
+        aspect: width / height,
         zNear: 0.1,
         zFar: 2000.0
     });
