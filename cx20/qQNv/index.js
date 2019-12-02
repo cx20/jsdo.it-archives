@@ -103,6 +103,7 @@ function initGlboost() {
     renderer = glBoostContext.createRenderer({
         clearColor: {red: 0.6, green: 0.6, blue: 0.6, alpha: 1}
     });
+    renderer.resize(w, h);
     
     scene = glBoostContext.createScene();
     camera = glBoostContext.createPerspectiveCamera({
@@ -111,7 +112,7 @@ function initGlboost() {
         up: new GLBoost.Vector3(0.0, 1.0, 0.0)
     }, {
         fovy: 30.0,
-        aspect: 1.0,
+        aspect: w / h,
         zNear: 0.1,
         zFar: 10000.0
     });
