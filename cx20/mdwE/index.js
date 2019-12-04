@@ -15,8 +15,8 @@ var oimoCube;
 
 function initWebGL() {
     const canvas = document.createElement('canvas');
-    canvas.width = 465;
-    canvas.height = 465;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
     document.body.appendChild(canvas);
     xgl = new XenoGL.WebGL2(canvas);
     xgl.enable(XenoGL.DEPTH_TEST);
