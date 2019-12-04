@@ -232,7 +232,7 @@ async function draw() {
     const view = Matrix4.lookAt(camera, lookAt, cameraUpDirection);
     
     // Cube
-    let pMatrix = Matrix4.perspective({fovYRadian: 45 * Math.PI/180, aspectRatio: 1, near: 0.1, far: 1000});
+    let pMatrix = Matrix4.perspective({fovYRadian: 45 * Math.PI/180, aspectRatio: window.innerWidth/window.innerHeight, near: 0.1, far: 1000});
     let identity = Matrix4.identity();
     let translation = Matrix4.translation(pos.x, pos.y, pos.z);
     let q = new Quaternion(rot.x, rot.y, rot.z, rot.w);
