@@ -85,7 +85,7 @@ var materialGround = new qtek.Material({
 });
 var diffuse = new qtek.Texture2D();
 //diffuse.load("/assets/A/k/w/j/AkwjW.jpg");
-diffuse.load("../../assets/8/Y/F/W/8YFWD.png"); // white.png
+diffuse.load("../../assets/8/y/F/W/8yFWD.png"); // white.png
 materialGround.set('diffuseMap', diffuse);
 materialGround.set('color', [0x70/0xFF, 0x70/0xFF, 0x70/0xFF]);
 
