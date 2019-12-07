@@ -47,7 +47,7 @@ app.root.addChild(camera);
 camera.setLocalPosition(0.0, 0, 1);
 
 // make the camera interactive
-app.assets.loadFromUrl('https://cdn.rawgit.com/cx20/gltf-test/6f94897a/libs/playcanvas/v1.9.0-dev/orbit-camera.js', 'script', function (err, asset) {
+app.assets.loadFromUrl('https://rawcdn.githack.com/cx20/gltf-test/aeae18583e4d3695744f98661314fd0249c82736/libs/playcanvas/v1.25.0-dev/orbit-camera.js', 'script', function (err, asset) {
     camera.script.create('orbitCamera', {
         attributes: {
             inertiaFactor: 0,
@@ -150,10 +150,10 @@ function init(){
         app.assets.loadFromUrl(url, 'json', function (err, asset) {
             var json = asset.resource;
             var gltf = JSON.parse(json);
-            loadGltf(gltf, app.graphicsDevice, function (model, textures, animationClips) {
+            loadGltf(gltf, app.graphicsDevice, function (err, res) {
                 // add the loaded scene to the hierarchy
                 gltfRoot.addComponent('model');
-                gltfRoot.model.model = model;
+                gltfRoot.model.model = res.model;
                 // focus the camera on the newly loaded scene
                 camera.script.orbitCamera.focusEntity = gltfRoot;
             }, {
