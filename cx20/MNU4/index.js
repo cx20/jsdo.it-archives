@@ -9,18 +9,13 @@
 // forked from cx20's "[WebGL] PlayCanvas Engine を試してみるテスト" http://jsdo.it/cx20/enuS
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
-// create a PlayCanvas application
 var canvas = document.getElementById('application');
-var app = new pc.Application(canvas, {
-    mouse: new pc.Mouse(document.body),
-    keyboard: new pc.Keyboard(window)
-});
+document.body.appendChild(canvas);
+var app = new pc.Application(canvas, {});
 app.start();
 // fill the available space at full resolution
 app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);
 app.setCanvasResolution(pc.RESOLUTION_AUTO);
-app.scene.gammaCorrection = pc.GAMMA_SRGB;
-app.scene.toneMapping = pc.TONEMAP_ACES;
 // ensure canvas is resized when window changes size
 window.addEventListener('resize', function() {
     app.resizeCanvas();
@@ -28,30 +23,9 @@ window.addEventListener('resize', function() {
 // create camera entity
 var camera = new pc.Entity('camera');
 camera.addComponent('camera');
-camera.addComponent('script');
 app.root.addChild(camera);
-camera.setLocalPosition(0, 0, 1);
+camera.setLocalPosition(0, 0, 100);
 
-// make the camera interactive
-app.assets.loadFromUrl('https://cdn.rawgit.com/cx20/gltf-test/e63efa65/libs/playcanvas/v0.223.0-dev/orbit-camera.js', 'script', function (err, asset) {
-    camera.script.create('orbitCamera', {
-        attributes: {
-            inertiaFactor: 0,
-            distanceMin: 0,
-            distanceMax: 0,
-            pitchAngleMax: 90,
-            pitchAngleMin: -90,
-            frameOnStart: true
-        }
-    });
-    camera.script.create('keyboardInput');
-    camera.script.create('mouseInput', {
-        attributes: {
-            orbitSensitivity: 0.3,
-            distanceSensitivity: 0.15
-        }
-    });
-});
 // set a prefiltered cubemap as the skybox
 var cubemapAsset = new pc.Asset('helipad', 'cubemap', {
     url: "https://cdn.rawgit.com/playcanvas/playcanvas-gltf/5489ff62/viewer/cubemap/6079289/Helipad.dds"
@@ -77,70 +51,33 @@ cubemapAsset.ready(function () {
     app.scene.skyboxMip = 2;
     app.scene.setSkybox(cubemapAsset.resources);
 });
+
 // create directional light entity
 var light = new pc.Entity('light');
 light.addComponent('light');
 light.setEulerAngles(45, 0, 0);
 app.root.addChild(light);
+// rotator script
+var Rotate = pc.createScript('rotate');
+Rotate.prototype.update = function (deltaTime) {
+    this.entity.rotate(0, deltaTime * 20, 0);
+};
+// glTF scene root that rotates
+var gltfRoot = new pc.Entity();
+gltfRoot.addComponent('script');
+gltfRoot.script.create('rotate');
+var url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/VoxelCorgi/glTF_merge/VoxelCorgi.gltf";
+var basePath = url.substring(0, url.lastIndexOf("/")) + "/";
 
-// root entity for loaded gltf scenes which can have more than one root entity
-var gltfRoot = new pc.Entity('gltf');
 app.root.addChild(gltfRoot);
- 
-function init(){
-    //var url = "https://cdn.rawgit.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf";
-    //var url = "https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/7268f989/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf";
-    //var url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/76dfc928/models/gltf/2.0/EmaSimpleSkin_blender/glTF/EmaSimpleSkin_blender.gltf";
-    //var url = "https://cdn.rawgit.com/cx20/gltf-test/9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf";
-    //var url = "http://jsrun.it/assets/C/d/c/1/Cdc1C"; // glTF-Embedded/CesiumMilkTruck.gltf";
-    var url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/VoxelCorgi/glTF_merge/VoxelCorgi.gltf";
-    //var url = "http://jsrun.it/assets/k/D/a/R/kDaRV"; // VoxelCorgi.gltf
-
-    var basePath = url.substring(0, url.lastIndexOf("/")) + "/";
-    var ext = url.split(".").pop();
-    var isGlb = ext == "glb" ? true : false;
-
-    if ( isGlb ) {
-        var req = new XMLHttpRequest();
-        req.open("get", url, true);
-        req.responseType = isGlb ? "arraybuffer" : "";
-        req.send(null);
-
-        req.onload = function(){
-            var arrayBuffer = req.response;
-            loadGlb(arrayBuffer, app.graphicsDevice, function (roots) {
-                initScene(roots);
-            });
-        }
-    } else {
-        app.assets.loadFromUrl(url, 'json', function (err, asset) {
-            var json = asset.resource;
-            var gltf = JSON.parse(json);
-            loadGltf(gltf, app.graphicsDevice, function (roots) {
-                initScene(roots);
-            }, {
-                basePath: basePath
-            });
-        });
-    }
-
-    var initScene = function (roots) {
+app.assets.loadFromUrl(url, 'json', function (err, asset) {
+    var json = asset.resource;
+    var gltf = JSON.parse(json);
+    loadGltf(gltf, app.graphicsDevice, function (err, res) {
         // add the loaded scene to the hierarchy
-        roots.forEach(function (root) {
-            gltfRoot.addChild(root);
-        });
-
-        // focus the camera on the newly loaded scene
-        camera.script.orbitCamera.focusEntity = gltfRoot;
-    };
-}
-
-
-var timer = 0;
-app.on("update", function (deltaTime) {
-    timer += deltaTime;
-    // code executed on every frame
-    gltfRoot.rotate(0, -0.2, 0);
+        gltfRoot.addComponent('model');
+        gltfRoot.model.model = res.model;
+    }, {
+        basePath: basePath
+    });
 });
-
-init();
