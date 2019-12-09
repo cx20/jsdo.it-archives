@@ -57,8 +57,8 @@ function getRgbColor( c )
 }
 
 var TIME_STEP = 1 / 30;
-var SCREEN_WIDTH = 465;
-var SCREEN_HEIGHT = 465;
+var SCREEN_WIDTH = window.innerWidth;
+var SCREEN_HEIGHT = window.innerHeight;
 var VIEW_ANGLE = 60;
 var N = 256;
 var world, camera, scene, renderer, rendererElement;
