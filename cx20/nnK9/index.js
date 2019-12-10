@@ -273,8 +273,8 @@ function initPhysicsWorld() {
 }
 
 window.addEventListener("load", function () {
-    var width = 465;
-    var height = 465;
+    var width = window.innerWidth;
+    var height = window.innerHeight;
     var deltaT = 30;
 
     var camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
