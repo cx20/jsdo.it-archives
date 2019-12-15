@@ -11,7 +11,7 @@ jsdo.it archives
 
 ## Tag: Debug
 
-### Spector.js
+### Spector.js + Shader Editor
 
 <table>
 <tr>
