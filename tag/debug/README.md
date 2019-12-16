@@ -37,10 +37,10 @@ jsdo.it archives
 
 <table>
 <tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ibU9" title="webgl-debug.js で WebGL 1.0 のサンプルをトレースしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ibU9.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/IJZH" title="webgl-debug.js で WebGL 2.0 のサンプルをトレースしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/IJZH.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/IMFe" title="webgl-debug.js で Three.js のサンプルをトレースしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/IMFe.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sHXp" title="webgl-debug.js で Babylon.js のサンプルをトレースしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/sHXp.jpg" width="200" height="200"></a></td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 </table>
 
