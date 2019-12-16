@@ -44,3 +44,14 @@ jsdo.it archives
 </tr>
 </table>
 
+### GLSL 
+
+<table>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Amgk" title="GLSL で print デバッグしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Amgk.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
