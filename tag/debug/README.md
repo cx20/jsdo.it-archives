@@ -32,3 +32,15 @@ jsdo.it archives
 <td></td>
 </tr>
 </table>
+
+### webgl-debug.js 
+
+<table>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/sHXp" title="webgl-debug.js で Babylon.js のサンプルをトレースしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/sHXp.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
