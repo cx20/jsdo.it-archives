@@ -115,11 +115,13 @@ function init() {
     ]);
     
     var geometry = new THREE.BufferGeometry();
-    geometry.addAttribute('position', new THREE.BufferAttribute(vertices, 3));
-    geometry.addAttribute('uv', new THREE.BufferAttribute(texcoord, 2));
-    geometry.addAttribute('index', new THREE.BufferAttribute(indices, 1));
+    geometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3));
+    geometry.setAttribute('uv', new THREE.BufferAttribute(texcoord, 2));
+    geometry.setIndex(new THREE.BufferAttribute(indices, 1));
+    var loader = new THREE.TextureLoader();
+    var texture = loader.load("../../assets/A/k/w/j/AkwjW.jpg"); // frog.jpg
     var uniforms = {
-        texture : { type: "t", value: THREE.ImageUtils.loadTexture( '../../assets/A/k/w/j/AkwjW.jpg' ) }  // frog.jpg
+        texture : { type: "t", value: texture }  // frog.jpg
     };
 
     var material = new THREE.RawShaderMaterial({
