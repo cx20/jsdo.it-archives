@@ -116,9 +116,9 @@ function init() {
     ]);
     
     var geometry = new THREE.BufferGeometry();
-    geometry.addAttribute('position', new THREE.BufferAttribute(vertices, 3));
-    geometry.addAttribute('color', new THREE.BufferAttribute(colors, 4));
-    geometry.addAttribute('index', new THREE.BufferAttribute(indices, 1));
+    geometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3));
+    geometry.setAttribute('color', new THREE.BufferAttribute(colors, 4));
+    geometry.setIndex(new THREE.BufferAttribute(indices, 1));
 
     var material = new THREE.RawShaderMaterial({
         vertexShader: document.getElementById('vs').textContent,
