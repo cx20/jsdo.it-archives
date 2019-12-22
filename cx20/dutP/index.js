@@ -36,8 +36,10 @@ function init() {
     //      [0]------[1]
     //
     var geometry = new THREE.BoxGeometry(1, 1, 1);
+    var loader = new THREE.TextureLoader();
+    var texture = loader.load("../../assets/A/k/w/j/AkwjW.jpg"); // frog.jpg
     var material = new THREE.MeshBasicMaterial({
-        map:THREE.ImageUtils.loadTexture('../../assets/A/k/w/j/AkwjW.jpg') // frog.jpg
+        map: texture // frog.jpg
     });
     mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
