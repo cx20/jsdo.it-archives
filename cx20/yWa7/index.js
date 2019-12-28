@@ -28,9 +28,6 @@ var fps = [0,0,0,0];
 var type=1;
 var s = "";
 
-//init();
-//loop();
-
 var xhr = new XMLHttpRequest();
 xhr.addEventListener('load', function(evt) {
     s = (evt.target.response || evt.target.responseText).split("\n");
@@ -79,8 +76,6 @@ xhr.addEventListener('load', function(evt) {
     renderer.autoClear = false;
     renderer.shadowMapEnabled = true;
     renderer.shadowMapType = THREE.PCFShadowMap;
-    //renderer.gammaInput = true;
-   // renderer.gammaOutput = true;
 
     paddel = new THREE.Object3D();
     scene.add( paddel );
@@ -144,7 +139,6 @@ function initTerrain(w, h) {
             var x = j;
             var y = i;
             var z = r[j] * 10;
-            console.log( x + ", " + y + ", " + z );
             data[c] = z;
             c++;
         }
