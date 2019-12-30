@@ -25,7 +25,7 @@ const sky_url = `https://rawcdn.githack.com/cx20/gltf-test/076d00ab4da1989f51e55
 //let mesh_url = "https://cdn.rawgit.com/KhronosGroup/glTF-Blender-Exporter/0e23c773bf27dad67d2c25f060370d6fa012d87d/polly/project_polly.gltf";
 let mesh_url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/8a3e977a/models/gltf/2.0/BearOnBalloons/scene.gltf";
 let basePath = convertRelativeToAbsUrl(getPathNameFromUrl(mesh_url)) + "/";
-let scale = 1.0;
+let scale = 0.5;
 
 function getPathNameFromUrl(path) {
     let result = path.replace(/\\/g, '/').replace(/\/[^/]*$/, '');
