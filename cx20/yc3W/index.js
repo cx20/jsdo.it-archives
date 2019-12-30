@@ -66,7 +66,6 @@ xhr.addEventListener('load', function (evt) {
             var y = Math.floor((r[j * n] * 2) / (n/2)) * (n/2);
             var z = ((i - 1) * n / 2) - 50;
             var color = new THREE.Color();
-            console.log( y );
             color.setHSL((y / 40 * 360 | 0) / 360.0, 0.80, 0.50);
             var material = new THREE.MeshLambertMaterial({
                 color: color,
