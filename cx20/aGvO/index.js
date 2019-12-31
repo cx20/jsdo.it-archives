@@ -102,7 +102,7 @@ function init() {
 	
 	// cloth
 	//var clothTexture = THREE.ImageUtils.loadTexture('fish.png');
-	var clothTexture = THREE.ImageUtils.loadTexture('../../assets/a/G/o/y/aGoyJ.png');
+	var clothTexture = THREE.ImageUtils.loadTexture('../../assets/A/G/o/y/AGoyJ.png');
 	var clothMaterial = new THREE.MeshLambertMaterial({
 		map: clothTexture,
 		side: THREE.DoubleSide
