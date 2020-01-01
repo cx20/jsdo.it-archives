@@ -155,7 +155,6 @@ function initTerrain(w, h) {
             var x = j;
             var y = i;
             var z = r[j] * 8.0;
-            console.log( x + ", " + y + ", " + z );
             data[c] = z;
             c++;
         }
