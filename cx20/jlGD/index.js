@@ -347,8 +347,6 @@ function updateOimoPhysics() {
             if (mesh.material.name === 'sph') mesh.material = matSphereSleep;
         }
     }
-
-    displayInfo();
 }
 
 function gravity(g) {
