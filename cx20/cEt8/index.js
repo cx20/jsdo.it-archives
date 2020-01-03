@@ -68,7 +68,7 @@ function init() {
     scene.add(group);
 
     var textureLoader = new THREE.TextureLoader();
-    texture = textureLoader.load("/assets/4/Y/G/9/4YG92.jpg"); // moon.jpg
+    texture = textureLoader.load("../../assets/4/Y/G/9/4YG92.jpg"); // moon.jpg
 
     var light = new THREE.AmbientLight(0xafafff, 2.0);
     scene.add(light);
@@ -106,14 +106,6 @@ function init() {
     outlinePass.pulsePeriod = 10; // 0.0～5
     outlinePass.visibleEdgeColor = new THREE.Color(0x2f2fff);
     outlinePass.hiddenEdgeColor = new THREE.Color(0xffffff);
-/*
-    outlinePass.edgeStrength = 10; // 0.01～10
-    outlinePass.edgeGlow = 1; // 0.0～1
-    outlinePass.edgeThickness = 1; // 1～4
-    outlinePass.pulsePeriod = 5; // 0.0～5
-    outlinePass.visibleEdgeColor = new THREE.Color(0x00ff80);
-    outlinePass.hiddenEdgeColor = new THREE.Color(0xffffff);
-*/
 }
 
 function animate() {
