@@ -11,7 +11,6 @@
 
 var scene;
 var camera;
-var theta = 0;
 var cylinders = [];
 var angles = [];
 
@@ -22,14 +21,7 @@ function animate() {
 
 function render() {
     camera.lookAt(scene.position);
-/*
-    camera.position.x = 100 * Math.sin(theta * Math.PI / 180);
-    camera.position.y = 100 * Math.cos(60    * Math.PI / 180);
-    camera.position.z = 100 * Math.cos(theta * Math.PI / 180);
-*/
     controls.update();
-
-    theta += 0.1;
     renderer.render(scene, camera);
 }
 
