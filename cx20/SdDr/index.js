@@ -63,8 +63,9 @@ function init() {
     let loader = new THREE.GLTFLoader();
     loader.setCrossOrigin( 'anonymous' ); // r84 以降は明示的に setCrossOrigin() を指定する必要がある
 
-    THREE.DRACOLoader.setDecoderPath( 'https://cdn.rawgit.com/cx20/gltf-test/a63d4941/libs/three.js/r95dev/draco/gltf/' );
-    loader.setDRACOLoader( new THREE.DRACOLoader() );
+    var dracoLoader = new THREE.DRACOLoader();
+    dracoLoader.setDecoderPath( 'https://rawcdn.githack.com/mrdoob/three.js/r110/examples/js/libs/draco/gltf/' );
+    loader.setDRACOLoader( dracoLoader );
     
     let scale = 20;
     //let url = "https://cdn.rawgit.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb";
