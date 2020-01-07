@@ -193,7 +193,6 @@ function populate(n) {
             config[3] = group3;
             bodys[i] = new OIMO.Body({type:'box', size:[w,h,d], pos:[x,y,z], move:true, world:world, config:config});
             var pos = Math.floor(Math.random() * matPocky.length );
-            console.log( pos );
             meshs[i] = new THREE.Mesh( buffgeoBox, matPocky[pos] );
             meshs[i].scale.set( w, h, d );
         }
@@ -261,8 +260,6 @@ function updateOimoPhysics() {
             }
         }
     }
-    
-    displayInfo();
 }
 
 function gravity(g){
