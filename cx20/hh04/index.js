@@ -287,5 +287,5 @@ function oimoLoop()
 
 
     // oimo の状態表示
-    document.getElementById("info").innerHTML = world.performance.show();
+    //document.getElementById("info").innerHTML = world.performance.show();
 }
