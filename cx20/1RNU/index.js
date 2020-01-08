@@ -290,8 +290,6 @@ function updateOimoPhysics() {
             }
         }
     }
-    
-    displayInfo();
 }
 
 function gravity(g){
