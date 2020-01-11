@@ -10,10 +10,10 @@
 const env = 'syferfontein_18d_clear_2k';
 const ibl_url = `https://rawcdn.githack.com/cx20/gltf-test/076d00ab4da1989f51e559a63cd292dea83127f7/textures/ktx/${env}/${env}_ibl.ktx`;
 const sky_url = `https://rawcdn.githack.com/cx20/gltf-test/076d00ab4da1989f51e559a63cd292dea83127f7/textures/ktx/${env}/${env}_skybox.ktx`;
-//let mesh_url = "https://cdn.rawgit.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf";
-//let mesh_url = "https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/395358db/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf"
-//let mesh_url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/c51a03cbff72037e33aa2cc0b7fe7cac4e4bdea8/models/gltf/2.0/EmaSimpleSkin/glTF/EmaSimpleSkin.gltf"; // COLLADA2GLTF 変換結果
-let mesh_url = "https://cdn.rawgit.com/cx20/gltf-test/9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf";
+//let mesh_url = "https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf";
+//let mesh_url = "https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/395358db/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf"
+//let mesh_url = "https://rawcdn.githack.com/cx20/jsdo-static-contents/c51a03cbff72037e33aa2cc0b7fe7cac4e4bdea8/models/gltf/2.0/EmaSimpleSkin/glTF/EmaSimpleSkin.gltf"; // COLLADA2GLTF 変換結果
+let mesh_url = "https://rawcdn.githack.com/cx20/gltf-test/9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf";
 let basePath = convertRelativeToAbsUrl(getPathNameFromUrl(mesh_url)) + "/";
 let scale = 0.6;
 

@@ -29,7 +29,7 @@ function init() {
 
     const duckGeometry = new THREE.Geometry();
     const loader = new THREE.GLTFLoader();
-    const url = "https://cdn.rawgit.com/cx20/gltf-test/be9c59a9/sampleModels/Duck/glTF/Duck.gltf";
+    const url = "https://rawcdn.githack.com/cx20/gltf-test/be9c59a9/sampleModels/Duck/glTF/Duck.gltf";
     loader.load(url, (object) => {
         if (object) {
             let duckVerticesArray = object.scene.children[0].children[0].geometry.attributes.position.array;

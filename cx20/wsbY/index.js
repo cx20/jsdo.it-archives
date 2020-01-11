@@ -23,15 +23,15 @@
 // forked from cx20's "[WebGL] Hilo3d を試してみるテスト" http://jsdo.it/cx20/gwMA
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
-//var url = "https://cdn.rawgit.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb";
+//var url = "https://rawcdn.githack.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb";
 //var url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb";
 //var url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/LittlestTokyo.glb";
 //var url = "https://ft-lab.github.io/gltf/yunomi/Yunomi_normal_20.glb";
-//var url = "https://cdn.rawgit.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/Material_01.gltf";
-//var url = "https://cdn.rawgit.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/Material_04.gltf";
-//var url = "https://cdn.rawgit.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/Material_07.gltf";
+//var url = "https://rawcdn.githack.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/Material_01.gltf";
+//var url = "https://rawcdn.githack.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/Material_04.gltf";
+//var url = "https://rawcdn.githack.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/Material_07.gltf";
 //var url = "https://rawcdn.githack.com/mrdoob/three.js/r97/examples/models/gltf/BotSkinned/glTF-MaterialsUnlit/Bot_Skinned.gltf";
-var url = "https://cdn.rawgit.com/cx20/gltf-test/7af4f399/tutorialModels/SpecGlossVsMetalRough/glTF/SpecGlossVsMetalRough.gltf";
+var url = "https://rawcdn.githack.com/cx20/gltf-test/7af4f399/tutorialModels/SpecGlossVsMetalRough/glTF/SpecGlossVsMetalRough.gltf";
 
 var scale = 20;
 
@@ -83,23 +83,23 @@ var loadingElem = document.getElementById('loading');
 var loadQueue = new Hilo3d.LoadQueue([{
     type: 'CubeTexture',
     images: [
-        'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_01.jpg',
-        'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_02.jpg',
-        'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_03.jpg',
-        'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_04.jpg',
-        'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_05.jpg',
-        'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_06.jpg'
+        'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_01.jpg',
+        'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_02.jpg',
+        'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_03.jpg',
+        'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_04.jpg',
+        'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_05.jpg',
+        'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_06.jpg'
     ]
 }, {
     type: 'CubeTexture',
-    right: 'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/px.jpg',
-    left: 'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/nx.jpg',
-    top: 'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/py.jpg',
-    bottom: 'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/ny.jpg',
-    front: 'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/pz.jpg',
-    back: 'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/nz.jpg',
+    right: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/px.jpg',
+    left: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/nx.jpg',
+    top: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/py.jpg',
+    bottom: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/ny.jpg',
+    front: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/pz.jpg',
+    back: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/nz.jpg',
 },{
-    src: 'https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/brdfLUT.png',
+    src: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/brdfLUT.png',
     type:'Texture'
 },{
     src:url

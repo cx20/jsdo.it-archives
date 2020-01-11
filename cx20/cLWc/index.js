@@ -60,9 +60,9 @@ let gtime = 0;
 let glTF2Loader = GLBoost.GLTF2Loader.getInstance();
 let modelConverter = GLBoost.ModelConverter.getInstance();
 let scale = 1*2;
-//let url = "https://cdn.rawgit.com/cx20/gltf-test/e63efa65/tutorialModels/FlightHelmet/glTF/FlightHelmet.gltf";
-//let url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/05a21973/models/gltf/2.0/PbrSimpleTest/glTF-Binary/PbrSimpleTest.glb";
-let url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/05a21973/models/gltf/2.0/PbrSimpleTest/glTF/PbrSimpleTest.gltf";
+//let url = "https://rawcdn.githack.com/cx20/gltf-test/e63efa65/tutorialModels/FlightHelmet/glTF/FlightHelmet.gltf";
+//let url = "https://rawcdn.githack.com/cx20/jsdo-static-contents/05a21973/models/gltf/2.0/PbrSimpleTest/glTF-Binary/PbrSimpleTest.glb";
+let url = "https://rawcdn.githack.com/cx20/jsdo-static-contents/05a21973/models/gltf/2.0/PbrSimpleTest/glTF/PbrSimpleTest.gltf";
 
 let promise = glTF2Loader.loadGLTF(url, {
       extensionLoader: null,

@@ -54,10 +54,10 @@ let gtime = 0;
 let glTF2Loader = GLBoost.GLTF2Loader.getInstance();
 let modelConverter = GLBoost.ModelConverter.getInstance();
 let scale = 0.4;
-//let url = "https://cdn.rawgit.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf";
-//let url = "https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/7268f989/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf";
-let url = "https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/395358db/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf"
-//var url = "https://cdn.rawgit.com/cx20/gltf-test/7e912826/tutorialModels/TextureSettingsTest/glTF/TextureSettingsTest.gltf";
+//let url = "https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf";
+//let url = "https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/7268f989/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf";
+let url = "https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/395358db/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf"
+//var url = "https://rawcdn.githack.com/cx20/gltf-test/7e912826/tutorialModels/TextureSettingsTest/glTF/TextureSettingsTest.gltf";
 let promise = glTF2Loader.loadGLTF(url, {
       extensionLoader: null,
       defaultShader: GLBoost.PhongShader,

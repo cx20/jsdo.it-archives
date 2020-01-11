@@ -19,9 +19,9 @@ var createScene = function(engine) {
     scene.clearColor = new BABYLON.Color3(1, 1, 1);
 
     // box.gltf
-    //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/cx20/gltf-test/9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/", "CesiumMilkTruck.gltf", engine, function (newScene) {
-    //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/cx20/jsdo-static-contents/762acc8f/models/gltf/2.0/GrimoireLogo/glTF/", "GrimoireLogo.gltf", engine, function (newScene) {
-    BABYLON.SceneLoader.Load("https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/c89c1709fbfd67a11aa7e540ab4ecb795763b627/2.0/MetalRoughSpheres/glTF/", "MetalRoughSpheres.gltf", engine, function (newScene) {
+    //BABYLON.SceneLoader.Load("https://rawcdn.githack.com/cx20/gltf-test/9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/", "CesiumMilkTruck.gltf", engine, function (newScene) {
+    //BABYLON.SceneLoader.Load("https://rawcdn.githack.com/cx20/jsdo-static-contents/762acc8f/models/gltf/2.0/GrimoireLogo/glTF/", "GrimoireLogo.gltf", engine, function (newScene) {
+    BABYLON.SceneLoader.Load("https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/c89c1709fbfd67a11aa7e540ab4ecb795763b627/2.0/MetalRoughSpheres/glTF/", "MetalRoughSpheres.gltf", engine, function (newScene) {
 
         scene = newScene;
         mesh = scene.meshes[0];

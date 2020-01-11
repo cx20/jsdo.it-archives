@@ -12,7 +12,7 @@
 ＜変更履歴＞
 ・2014/09/11 ライブラリのパスを変更
 　変更前）https://rawgithub.com/nosir/obelisk.js/master/build/obelisk.js
-　変更後）https://cdn.rawgit.com/nosir/obelisk.js/master/build/obelisk.js
+　変更後）https://rawcdn.githack.com/nosir/obelisk.js/master/build/obelisk.js
 
 ・2014/03/31 新規作成
 

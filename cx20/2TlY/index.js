@@ -21,7 +21,7 @@ document.onload = function () {
     
     runtime = x3d.runtime;
     
-    var url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/05a21973/models/gltf/2.0/PbrSimpleTest/glTF-Binary/PbrSimpleTest.glb";
+    var url = "https://rawcdn.githack.com/cx20/jsdo-static-contents/05a21973/models/gltf/2.0/PbrSimpleTest/glTF-Binary/PbrSimpleTest.glb";
 
     document.getElementById("inline").setAttribute("url", url);
 

@@ -43,8 +43,8 @@ function init() {
     loader.setCrossOrigin( 'anonymous' ); // r84 以降は明示的に setCrossOrigin() を指定する必要がある
 
     var scale = 1.0;
-    //var url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/f21b9b7a/models/gltf/2.0/EmaSimpleSkin_blender/glTF/EmaSimpleSkin_blender.gltf";
-    var url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/76dfc928/models/gltf/2.0/EmaSimpleSkin_blender/glTF/EmaSimpleSkin_blender.gltf";
+    //var url = "https://rawcdn.githack.com/cx20/jsdo-static-contents/f21b9b7a/models/gltf/2.0/EmaSimpleSkin_blender/glTF/EmaSimpleSkin_blender.gltf";
+    var url = "https://rawcdn.githack.com/cx20/jsdo-static-contents/76dfc928/models/gltf/2.0/EmaSimpleSkin_blender/glTF/EmaSimpleSkin_blender.gltf";
     
     loader.load(url, function (data) {
         gltf = data;

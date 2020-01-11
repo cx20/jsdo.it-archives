@@ -48,8 +48,8 @@ function init() {
     loader.setCrossOrigin( 'anonymous' ); // r84 以降は明示的に setCrossOrigin() を指定する必要がある
 
     var scale = 1.0;
-    //var url = "https://cdn.rawgit.com/cx20/gltf-test/e5c46e508942f1686ed84fcb1e2e1132de80490a/tutorialModels/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf";
-    //var url = "https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/c89c1709fbfd67a11aa7e540ab4ecb795763b627/2.0/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf";
+    //var url = "https://rawcdn.githack.com/cx20/gltf-test/e5c46e508942f1686ed84fcb1e2e1132de80490a/tutorialModels/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf";
+    //var url = "https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/c89c1709fbfd67a11aa7e540ab4ecb795763b627/2.0/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf";
     var url = "https://raw.githubusercontent.com/shrekshao/minimal-gltf-loader/store-drone-model/glTFs/glTF_version_2/buster_drone/scene.gltf";
     
     loader.load(url, function (data) {

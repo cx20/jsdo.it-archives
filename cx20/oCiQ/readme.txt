@@ -16,6 +16,6 @@ https://github.com/GrimoireGL/GrimoireJS
 ■ GrimoireGL/grimoirejs-gltf
 https://github.com/GrimoireGL/grimoirejs-gltf
 ■ Grimoire.js - Examples
-https://cdn.rawgit.com/GrimoireGL/grimoire.gl-example/master/index.html#t90-01
+https://rawcdn.githack.com/GrimoireGL/grimoire.gl-example/master/index.html#t90-01
 ■ glTF-Sample-Models/1.0/RiggedSimple
 https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/1.0/RiggedSimple

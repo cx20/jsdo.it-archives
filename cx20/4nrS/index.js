@@ -17,8 +17,8 @@ let createScene = function(engine) {
     let scene = new BABYLON.Scene(engine);
 
     scene.clearColor = new BABYLON.Color3(0.5, 0.5, 0.5);
-    //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/cx20/gltf-test/e63efa65/tutorialModels/FlightHelmet/glTF/", "FlightHelmet.gltf", engine, function (newScene) {
-    BABYLON.SceneLoader.Load("https://cdn.rawgit.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/", "rocks_trees_ao.glb", engine, function (newScene) {
+    //BABYLON.SceneLoader.Load("https://rawcdn.githack.com/cx20/gltf-test/e63efa65/tutorialModels/FlightHelmet/glTF/", "FlightHelmet.gltf", engine, function (newScene) {
+    BABYLON.SceneLoader.Load("https://rawcdn.githack.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/", "rocks_trees_ao.glb", engine, function (newScene) {
 
         let scene = newScene;
         //scene.clearColor = new BABYLON.Color3(191/255, 228/255, 255/255);

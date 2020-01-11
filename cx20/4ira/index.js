@@ -8,7 +8,7 @@
 
 
 var scale = 0.3;
-//var url = "https://cdn.rawgit.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf";
+//var url = "https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf";
 //var url = "https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/tutorialModels/Triangle/glTF/Triangle.gltf";
 //var url = "https://cx20.github.io/gltf-test/tutorialModels/Triangle/glTF/Triangle.gltf";
 var url = "https://rawcdn.githack.com/cx20/gltf-test/a9cda755ff1c6656c5b3797b8747153e9e630947/tutorialModels/TextureSettingsTest/glTF/TextureSettingsTest.gltf";

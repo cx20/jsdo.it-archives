@@ -15,7 +15,7 @@ https://github.com/GrimoireGL/GrimoireJS
 ■ GrimoireGL/grimoirejs-gltf
 https://github.com/GrimoireGL/grimoirejs-gltf
 ■ Grimoire.js - Examples
-https://cdn.rawgit.com/GrimoireGL/grimoire.gl-example/master/index.html#t90-01
+https://rawcdn.githack.com/GrimoireGL/grimoire.gl-example/master/index.html#t90-01
 
 ＜他ライブラリとの比較＞
 ■ three.js で glTF 形式のデータを表示してみるテスト（その７）（調整中）

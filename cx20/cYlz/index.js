@@ -77,12 +77,12 @@ function createModel(url, height) {
     });
 }
 
-//createModel('https://cdn.rawgit.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf', 10000); // Triangle.gltf
-//createModel('https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/7268f989/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf', 10000); // TextureSettingsTest.gltf
-//createModel('https://cdn.rawgit.com/cx20/jsdo-static-contents/76dfc928/models/gltf/2.0/EmaSimpleSkin_blender/glTF/EmaSimpleSkin_blender.gltf', 10000); // EmaSimpleSkin_blender.gltf
-//createModel('https://cdn.rawgit.com/cx20/gltf-test/9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf', 10000); // CesiumMilkTruck.gltf
-//createModel('https://cdn.rawgit.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/GrimoireLogo/glTF/GrimoireLogo.gltf', 10000); // GrimoireLogo.gltf
-//createModel('https://cdn.rawgit.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/GrimoireLogo/glTF_merge/GrimoireLogo.gltf', 10000); // GrimoireLogo.gltf
-createModel('https://cdn.rawgit.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/VoxelCorgi/glTF_merge/VoxelCorgi.gltf', 10000); // VoxelCorgi.gltf
+//createModel('https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf', 10000); // Triangle.gltf
+//createModel('https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/7268f989/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf', 10000); // TextureSettingsTest.gltf
+//createModel('https://rawcdn.githack.com/cx20/jsdo-static-contents/76dfc928/models/gltf/2.0/EmaSimpleSkin_blender/glTF/EmaSimpleSkin_blender.gltf', 10000); // EmaSimpleSkin_blender.gltf
+//createModel('https://rawcdn.githack.com/cx20/gltf-test/9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf', 10000); // CesiumMilkTruck.gltf
+//createModel('https://rawcdn.githack.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/GrimoireLogo/glTF/GrimoireLogo.gltf', 10000); // GrimoireLogo.gltf
+//createModel('https://rawcdn.githack.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/GrimoireLogo/glTF_merge/GrimoireLogo.gltf', 10000); // GrimoireLogo.gltf
+createModel('https://rawcdn.githack.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/VoxelCorgi/glTF_merge/VoxelCorgi.gltf', 10000); // VoxelCorgi.gltf
 
 flyToHeadingPitchRoll();

@@ -53,15 +53,15 @@ app.assets.loadFromUrl('../../assets/w/x/i/4/wxi4Y.js', 'script', function (err,
 });
 // set a prefiltered cubemap as the skybox
 var cubemapAsset = new pc.Asset('helipad', 'cubemap', {
-    url: "https://cdn.rawgit.com/playcanvas/playcanvas-gltf/5489ff62/viewer/cubemap/6079289/Helipad.dds"
+    url: "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/5489ff62/viewer/cubemap/6079289/Helipad.dds"
 }, {
     "textures": [
-        "https://cdn.rawgit.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079292/Helipad_posx.png",
-        "https://cdn.rawgit.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079290/Helipad_negx.png",
-        "https://cdn.rawgit.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079293/Helipad_posy.png",
-        "https://cdn.rawgit.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079298/Helipad_negy.png",
-        "https://cdn.rawgit.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079294/Helipad_posz.png",
-        "https://cdn.rawgit.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079300/Helipad_negz.png"
+        "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079292/Helipad_posx.png",
+        "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079290/Helipad_negx.png",
+        "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079293/Helipad_posy.png",
+        "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079298/Helipad_negy.png",
+        "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079294/Helipad_posz.png",
+        "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079300/Helipad_negz.png"
     ],
     "magFilter": 1,
     "minFilter": 5,
@@ -87,11 +87,11 @@ var root;
 function init(){
     //　.gltf File Test
     var req = new XMLHttpRequest();
-    //req.open("get", "https://cdn.rawgit.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf", true); // NG
-    //req.open("get", "https://cdn.rawgit.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF/Box.gltf", true); // NG
-    req.open("get", "https://cdn.rawgit.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Embedded/Box.gltf", true); // OK
-    //req.open("get", "https://cdn.rawgit.com/cx20/gltf-test/313ae4c3/sampleModels/Duck/glTF/Duck.gltf", true); // NG
-    //req.open("get", "https://cdn.rawgit.com/cx20/gltf-test/313ae4c3/sampleModels/Duck/glTF-Embedded/Duck.gltf", true); // OK
+    //req.open("get", "https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf", true); // NG
+    //req.open("get", "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF/Box.gltf", true); // NG
+    req.open("get", "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Embedded/Box.gltf", true); // OK
+    //req.open("get", "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Duck/glTF/Duck.gltf", true); // NG
+    //req.open("get", "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Duck/glTF-Embedded/Duck.gltf", true); // OK
     req.send(null);
 	
     req.onload = function(){
@@ -103,8 +103,8 @@ function init(){
 /*
     // .glb File Test
     var req = new XMLHttpRequest();
-    req.open("get", "https://cdn.rawgit.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Binary/Box.glb", true);
-    //req.open("get", "https://cdn.rawgit.com/cx20/gltf-test/313ae4c3/sampleModels/Duck/glTF-Binary/Duck.glb", true);
+    req.open("get", "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Binary/Box.glb", true);
+    //req.open("get", "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Duck/glTF-Binary/Duck.glb", true);
     req.responseType = 'arraybuffer';
     req.send(null);
 	

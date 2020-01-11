@@ -15,7 +15,7 @@ var createScene = function(engine) {
     scene.clearColor = new BABYLON.Color3(1, 1, 1);
 
     // box.gltf
-    BABYLON.SceneLoader.Load("https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/7268f989/2.0/TextureSettingsTest/glTF/", "TextureSettingsTest.gltf", engine, function (newScene) {
+    BABYLON.SceneLoader.Load("https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/7268f989/2.0/TextureSettingsTest/glTF/", "TextureSettingsTest.gltf", engine, function (newScene) {
 
         scene = newScene;
         mesh = scene.meshes[0];

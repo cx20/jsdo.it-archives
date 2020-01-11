@@ -73,6 +73,6 @@ function createModel(url, height) {
     });
 }
 
-createModel('https://cdn.rawgit.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf', 10000); // box.gltf
+createModel('https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf', 10000); // box.gltf
 
 flyToHeadingPitchRoll();

@@ -14,7 +14,7 @@ var createScene = function(engine) {
     scene.clearColor = new BABYLON.Color3(1, 1, 1);
 
     // box.gltf
-    BABYLON.SceneLoader.Load("https://cdn.rawgit.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/", "Triangle.gltf", engine, function (newScene) {
+    BABYLON.SceneLoader.Load("https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/", "Triangle.gltf", engine, function (newScene) {
 
         scene = newScene;
         mesh = scene.meshes[0];

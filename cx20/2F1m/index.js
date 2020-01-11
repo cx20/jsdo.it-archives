@@ -16,7 +16,7 @@ let createScene = function(engine) {
     let scene = new BABYLON.Scene(engine);
 
     scene.clearColor = new BABYLON.Color3(0.5, 0.5, 0.5);
-    BABYLON.SceneLoader.Load("https://cdn.rawgit.com/cx20/gltf-test/e63efa65/tutorialModels/FlightHelmet/glTF/", "FlightHelmet.gltf", engine, function (newScene) {
+    BABYLON.SceneLoader.Load("https://rawcdn.githack.com/cx20/gltf-test/e63efa65/tutorialModels/FlightHelmet/glTF/", "FlightHelmet.gltf", engine, function (newScene) {
 
         let scene = newScene;
         mesh = scene.meshes[0];

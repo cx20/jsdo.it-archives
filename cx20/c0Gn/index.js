@@ -8,8 +8,8 @@
 const env = 'syferfontein_18d_clear_2k';
 const ibl_url = `https://rawcdn.githack.com/cx20/gltf-test/076d00ab4da1989f51e559a63cd292dea83127f7/textures/ktx/${env}/${env}_ibl.ktx`;
 const sky_url = `https://rawcdn.githack.com/cx20/gltf-test/076d00ab4da1989f51e559a63cd292dea83127f7/textures/ktx/${env}/${env}_skybox.ktx`;
-//let mesh_url = "https://cdn.rawgit.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf";
-let mesh_url = "https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/395358db/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf"
+//let mesh_url = "https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf";
+let mesh_url = "https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/395358db/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf"
 let basePath = convertRelativeToAbsUrl(getPathNameFromUrl(mesh_url)) + "/";
 let scale = 0.4;
 

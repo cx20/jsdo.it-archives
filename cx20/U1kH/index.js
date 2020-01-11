@@ -16,7 +16,7 @@ var createScene = function(engine) {
     scene.clearColor = new BABYLON.Color3(1, 1, 1);
 
     // box.gltf
-    BABYLON.SceneLoader.Load("https://cdn.rawgit.com/cx20/jsdo-static-contents/5635d7da/models/gltf/2.0/EmaSimpleSkin/glTF/", "EmaSimpleSkin.gltf", engine, function (newScene) {
+    BABYLON.SceneLoader.Load("https://rawcdn.githack.com/cx20/jsdo-static-contents/5635d7da/models/gltf/2.0/EmaSimpleSkin/glTF/", "EmaSimpleSkin.gltf", engine, function (newScene) {
 
         scene = newScene;
         mesh = scene.meshes[0];

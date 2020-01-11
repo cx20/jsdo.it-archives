@@ -43,11 +43,11 @@ function init() {
     loader.setCrossOrigin( 'anonymous' ); // r84 以降は明示的に setCrossOrigin() を指定する必要がある
 
     var scale = 0.1;
-    //var url = "https://cdn.rawgit.com/cx20/gltf-test/e5c46e508942f1686ed84fcb1e2e1132de80490a/tutorialModels/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf";
+    //var url = "https://rawcdn.githack.com/cx20/gltf-test/e5c46e508942f1686ed84fcb1e2e1132de80490a/tutorialModels/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf";
     //var url = "http://jsrun.it/assets/U/j/F/1/UjF1i";
-    //var url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/GrimoireLogo/glTF/GrimoireLogo.gltf";
-    //var url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/GrimoireLogo/glTF_merge/GrimoireLogo.gltf";
-    var url = "https://cdn.rawgit.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/VoxelCorgi/glTF_merge/VoxelCorgi.gltf";
+    //var url = "https://rawcdn.githack.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/GrimoireLogo/glTF/GrimoireLogo.gltf";
+    //var url = "https://rawcdn.githack.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/GrimoireLogo/glTF_merge/GrimoireLogo.gltf";
+    var url = "https://rawcdn.githack.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/VoxelCorgi/glTF_merge/VoxelCorgi.gltf";
     
     loader.load(url, function (data) {
         gltf = data;

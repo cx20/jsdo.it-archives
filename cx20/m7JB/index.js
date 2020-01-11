@@ -22,13 +22,13 @@ var createScene = function(engine) {
     scene.clearColor = new BABYLON.Color3(1, 1, 1);
 
     // box.gltf
-    //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/cx20/gltf-test/9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/", "CesiumMilkTruck.gltf", engine, function (newScene) {
-    //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/cx20/jsdo-static-contents/762acc8f/models/gltf/2.0/GrimoireLogo/glTF/", "GrimoireLogo.gltf", engine, function (newScene) {
-    //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/c89c1709fbfd67a11aa7e540ab4ecb795763b627/2.0/MetalRoughSpheres/glTF/", "MetalRoughSpheres.gltf", engine, function (newScene) {
+    //BABYLON.SceneLoader.Load("https://rawcdn.githack.com/cx20/gltf-test/9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/", "CesiumMilkTruck.gltf", engine, function (newScene) {
+    //BABYLON.SceneLoader.Load("https://rawcdn.githack.com/cx20/jsdo-static-contents/762acc8f/models/gltf/2.0/GrimoireLogo/glTF/", "GrimoireLogo.gltf", engine, function (newScene) {
+    //BABYLON.SceneLoader.Load("https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/c89c1709fbfd67a11aa7e540ab4ecb795763b627/2.0/MetalRoughSpheres/glTF/", "MetalRoughSpheres.gltf", engine, function (newScene) {
     //BABYLON.SceneLoader.Load("https://raw.githubusercontent.com/shrekshao/minimal-gltf-loader/store-drone-model/glTFs/glTF_version_2/buster_drone/", "scene.gltf", engine, function (newScene) {
-    //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/KhronosGroup/glTF-Blender-Exporter/2bdcb263/polly/", "project_polly.gltf", engine, function (newScene) {
-    //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/KhronosGroup/glTF-Blender-Exporter/0e23c773bf27dad67d2c25f060370d6fa012d87d/polly/", "project_polly.gltf", engine, function (newScene) {
-    BABYLON.SceneLoader.Load("https://cdn.rawgit.com/KhronosGroup/glTF-Blender-Exporter/64017da8f49a618dbeec8ff80f6053cbcb715ad5/polly/", "project_polly.gltf", engine, function (newScene) {
+    //BABYLON.SceneLoader.Load("https://rawcdn.githack.com/KhronosGroup/glTF-Blender-Exporter/2bdcb263/polly/", "project_polly.gltf", engine, function (newScene) {
+    //BABYLON.SceneLoader.Load("https://rawcdn.githack.com/KhronosGroup/glTF-Blender-Exporter/0e23c773bf27dad67d2c25f060370d6fa012d87d/polly/", "project_polly.gltf", engine, function (newScene) {
+    BABYLON.SceneLoader.Load("https://rawcdn.githack.com/KhronosGroup/glTF-Blender-Exporter/64017da8f49a618dbeec8ff80f6053cbcb715ad5/polly/", "project_polly.gltf", engine, function (newScene) {
 
         scene = newScene;
         mesh = scene.meshes[0];
@@ -48,7 +48,7 @@ var createScene = function(engine) {
         
         // Skybox
         var cubeTexture = new BABYLON.CubeTexture(
-            "https://cdn.rawgit.com/cx20/gltf-test/c479d543/textures/cube/skybox/", // "../../textures/cube/skybox/",
+            "https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/", // "../../textures/cube/skybox/",
             scene,
             ["px.jpg", "py.jpg", "pz.jpg", "nx.jpg", "ny.jpg", "nz.jpg"]
         );
