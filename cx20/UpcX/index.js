@@ -65,7 +65,7 @@ var gtime = 0;
 
 var glTFLoader = GLBoost.GLTFLoader.getInstance();
 //var promise = glTFLoader.loadGLTF(glBoostContext, 'https://raw.githubusercontent.com/cx20/gltf-test/master/sampleModels/VC/glTF-Embedded/VC.gltf', 1, null); // VC.gltf
-var promise = glTFLoader.loadGLTF(glBoostContext, 'https://cdn.rawgit.com/emadurandal/GLBoost/master/examples/standalone/loading_gltf_skinning_anim/resources/body/lady.gltf', 1, null); // lady.gltf
+var promise = glTFLoader.loadGLTF(glBoostContext, 'https://rawcdn.githack.com/emadurandal/GLBoost/master/examples/standalone/loading_gltf_skinning_anim/resources/body/lady.gltf', 1, null); // lady.gltf
 
 promise.then(function(mesh) {
     //console.log(mesh);
