@@ -38,7 +38,7 @@ let scale = 1;
 //let gltf = 'https://cdn.rawgit.com/pissang/claygl/c4f45119/example/assets/models/SambaDancing/SambaDancing.gltf';
 //let gltf = 'https://cdn.rawgit.com/cx20/gltf-test/e63efa65/tutorialModels/FlightHelmet/glTF/FlightHelmet.gltf';
 //let gltf = 'https://cdn.rawgit.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb';
-let gltf = 'https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb';
+let gltf = 'https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb';
 
 async function main() {
 

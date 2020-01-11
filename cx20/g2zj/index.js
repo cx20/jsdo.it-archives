@@ -35,8 +35,8 @@ var scale = 0.1;
 //var url = "https://cdn.rawgit.com/pissang/claygl/c4f45119/example/assets/models/SambaDancing/SambaDancing.gltf";
 //var url = "https://cdn.rawgit.com/cx20/gltf-test/e63efa65/tutorialModels/FlightHelmet/glTF/FlightHelmet.gltf";
 //var url = "https://cdn.rawgit.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb";
-//var url = "https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb";
-var url = "https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/LittlestTokyo.glb";
+//var url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb";
+var url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/LittlestTokyo.glb";
 
 var base = url.substr(0, url.lastIndexOf("/") + 1);
 var file = url.substr(url.lastIndexOf("/") + 1);

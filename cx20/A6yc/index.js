@@ -34,8 +34,8 @@ const sky_url = `https://rawcdn.githack.com/cx20/gltf-test/076d00ab4da1989f51e55
 //let mesh_url = "https://cdn.rawgit.com/pissang/claygl/c4f45119/example/assets/models/SambaDancing/SambaDancing.gltf";
 //let mesh_url = "https://cdn.rawgit.com/cx20/gltf-test/e63efa65/tutorialModels/FlightHelmet/glTF/FlightHelmet.gltf";
 //let mesh_url = "https://cdn.rawgit.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb";
-//let mesh_url = "https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb";
-let mesh_url = "https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/LittlestTokyo.glb";
+//let mesh_url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb";
+let mesh_url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/LittlestTokyo.glb";
 let basePath = convertRelativeToAbsUrl(getPathNameFromUrl(mesh_url)) + "/";
 let scale = 0.1;
 

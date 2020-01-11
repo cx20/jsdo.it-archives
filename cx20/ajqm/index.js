@@ -29,7 +29,7 @@ var createScene = function(engine) {
     scene.clearColor = new BABYLON.Color3(1, 0, 0);
 
     //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/", "rocks_trees_ao.glb", engine, function (newScene) {
-    BABYLON.SceneLoader.Load("https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/", "PrimaryIonDrive.glb", engine, function (newScene) {
+    BABYLON.SceneLoader.Load("https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/", "PrimaryIonDrive.glb", engine, function (newScene) {
 
         scene = newScene;
         //scene.clearColor = new BABYLON.Color3(191/255, 228/255, 255/255);

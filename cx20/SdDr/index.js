@@ -69,8 +69,8 @@ function init() {
     
     let scale = 20;
     //let url = "https://cdn.rawgit.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb";
-    //let url = "https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb";
-    //let url = "https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/LittlestTokyo.glb";
+    //let url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb";
+    //let url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/LittlestTokyo.glb";
     //let url = "https://ft-lab.github.io/gltf/yunomi/Yunomi_normal_05.glb";
     //let url = "https://ft-lab.github.io/gltf/yunomi/Yunomi_normal_10.glb";
     let url = "https://ft-lab.github.io/gltf/yunomi/Yunomi_normal_20.glb";

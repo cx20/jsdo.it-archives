@@ -51,6 +51,6 @@ function createModel(url, height) {
 }
 
 //createModel('https://cdn.rawgit.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb', 10000);
-createModel('https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb', 10000);
+createModel('https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb', 10000);
 
 flyToHeadingPitchRoll();

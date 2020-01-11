@@ -30,8 +30,8 @@ var createScene = function(engine) {
     scene.clearColor = new BABYLON.Color3(1, 1, 1);
 
     //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/", "rocks_trees_ao.glb", engine, function (newScene) {
-    //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/", "PrimaryIonDrive.glb", engine, function (newScene) {
-    //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/", "LittlestTokyo.glb", engine, function (newScene) {
+    //BABYLON.SceneLoader.Load("https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/", "PrimaryIonDrive.glb", engine, function (newScene) {
+    //BABYLON.SceneLoader.Load("https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/", "LittlestTokyo.glb", engine, function (newScene) {
     //BABYLON.SceneLoader.Load("https://ft-lab.github.io/gltf/yunomi/", "Yunomi_normal_20.glb", engine, function (newScene) {
     //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/", "Material_01.gltf", engine, function (newScene) {
     //BABYLON.SceneLoader.Load("https://cdn.rawgit.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/", "Material_04.gltf", engine, function (newScene) {

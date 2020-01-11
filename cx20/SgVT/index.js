@@ -99,8 +99,8 @@ function init(){
     //var url = "https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/e3d3c48a/2.0/RiggedSimple/glTF-Binary/RiggedSimple.glb";
     //var url = "https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/e3d3c48a/2.0/RiggedSimple/glTF/RiggedSimple.gltf";
     //var url = "https://cdn.rawgit.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb";
-    //var url = "https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb";
-    var url = "https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/gltf/LittlestTokyo.glb";
+    //var url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb";
+    var url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/LittlestTokyo.glb";
 
     var scale = 1;
     var basePath = url.substring(0, url.lastIndexOf("/")) + "/";
