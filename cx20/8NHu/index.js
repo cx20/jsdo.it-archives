@@ -5,7 +5,7 @@
 //Physijs.scripts.worker = '../physijs_worker.js';
 //Physijs.scripts.ammo = 'examples/js/ammo.js';
 Physijs.scripts.worker = '../../assets/7/0/k/8/70k8I.js';
-Physijs.scripts.ammo = 'http://rawgit.com/chandlerprall/Physijs/master/examples/js/ammo.js';
+Physijs.scripts.ammo = 'http://rawcdn.githack.com/chandlerprall/Physijs/master/examples/js/ammo.js';
 
 var initScene, render, applyForce, setMousePosition, mouse_position,
     ground_material, box_material,

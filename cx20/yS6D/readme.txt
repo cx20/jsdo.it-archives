@@ -9,8 +9,8 @@ http://cjcliffe.github.com/CubicVR.js/cubicvr/samples/vbo_dynamic/wave_pool.html
 CubicVR.js を用いると、CurivcVR_Core.vs の読み込みでネットワークエラー（CORS のエラー）になっていた為、
 CuvicVR.min.js を使うよう変更。
 
-変更前）http://rawgithub.com/cjcliffe/CubicVR.js/master/CubicVR.js
-変更後）http://rawgithub.com/cjcliffe/CubicVR.js/master/dist/CubicVR.min.js
+変更前）https://rawcdn.githack.com/cjcliffe/CubicVR.js/master/CubicVR.js
+変更後）https://rawcdn.githack.com/cjcliffe/CubicVR.js/master/dist/CubicVR.min.js
 
 
 ＜参考＞

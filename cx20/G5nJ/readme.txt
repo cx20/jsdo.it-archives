@@ -28,7 +28,7 @@ GLBoost で glTF ファイルの読み込み機能が開発中らしいので試
 ■ emadurandal/GLBoost
 https://github.com/emadurandal/GLBoost
 ■ GLBoost glTF Loading example
-https://rawgit.com/emadurandal/GLBoost/master/examples/standalone/loading_gltf/index.html
+https://rawcdn.githack.com/emadurandal/GLBoost/master/examples/standalone/loading_gltf/index.html
 ■ glTF/sampleModels/box/glTF-Embedded/
 https://github.com/KhronosGroup/glTF/tree/master/sampleModels/Box/glTF-Embedded
 
