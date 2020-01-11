@@ -51,7 +51,7 @@ app.root.addChild(camera);
 camera.setLocalPosition(0, 0, 1);
 
 // make the camera interactive
-app.assets.loadFromUrl('https://cdn.rawgit.com/cx20/gltf-test/e1324ae3/libs/playcanvas/v1.9.0-dev/orbit-camera.js', 'script', function (err, asset) {
+app.assets.loadFromUrl('https://rawcdn.githack.com/cx20/gltf-test/08f35fd423b432a87b22679bdda11365b5d1ac22/libs/playcanvas/v1.9.0-dev/orbit-camera.js', 'script', function (err, asset) {
     camera.script.create('orbitCamera', {
         attributes: {
             inertiaFactor: 0,
@@ -114,13 +114,13 @@ function loadScript(src) {
 
 function init(){
     if (true) {//typeof WebAssembly !== 'object') {
-        loadScript('https://cdn.rawgit.com/cx20/gltf-test/e1324ae3/libs/playcanvas/v1.9.0-dev/draco_decoder.js').then(function () {
+        loadScript('https://rawcdn.githack.com/cx20/gltf-test/08f35fd423b432a87b22679bdda11365b5d1ac22/libs/playcanvas/v1.9.0-dev/draco_decoder.js').then(function () {
             decoderModule = DracoDecoderModule();
             onLoad();
         });
     } else {
-        loadScript('https://cdn.rawgit.com/cx20/gltf-test/e1324ae3/libs/playcanvas/v1.9.0-dev/draco_wasm_wrapper.js').then(function () {
-            fetch('https://cdn.rawgit.com/cx20/gltf-test/e1324ae3/libs/playcanvas/v1.9.0-dev/draco_decoder.wasm').then(function (response) {
+        loadScript('https://rawcdn.githack.com/cx20/gltf-test/08f35fd423b432a87b22679bdda11365b5d1ac22/libs/playcanvas/v1.9.0-dev/draco_wasm_wrapper.js').then(function () {
+            fetch('https://rawcdn.githack.com/cx20/gltf-test/08f35fd423b432a87b22679bdda11365b5d1ac22/libs/playcanvas/v1.9.0-dev/draco_decoder.wasm').then(function (response) {
                 response.arrayBuffer().then(function (arrayBuffer) {
                     decoderModule = DracoDecoderModule({ wasmBinary: arrayBuffer });
                     onLoad();
