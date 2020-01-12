@@ -45,8 +45,8 @@ var targetRotationOnMouseDown = 0;
 var rotationSpeed = 0.05;
 var mouseX, mouseY, mouseXOnMouseDown, mouseYOnMouseDown = 0;
 
-var windowHalfX = 465;	// window.innerWidth / 2;
-var windowHalfY = 465;	// window.innerHeight / 2;
+var windowHalfX = window.innerWidth / 2;
+var windowHalfY = window.innerHeight / 2;
 
 var ROT_SPEED = 400;
 var group_rot = 0;
@@ -139,7 +139,7 @@ function init() {
         renderer = new THREE.CanvasRenderer();
 
      renderer.setClearColor(0xffffff);
-     renderer.setSize(windowHalfX, windowHalfY);
+     renderer.setSize(window.innerWidth, window.innerHeight);
 
 	document.getElementById('logo-vertical').appendChild(renderer.domElement);
 
