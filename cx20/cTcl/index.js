@@ -46,8 +46,8 @@ var mouseX, mouseY, mouseXOnMouseDown, mouseYOnMouseDown = 0;
 
 //var windowHalfX = 290;	// window.innerWidth / 2;
 //var windowHalfY = 210;	// window.innerHeight / 2;
-var windowHalfX = 460;	// window.innerWidth / 2;
-var windowHalfY = 460;	// window.innerHeight / 2;
+var windowHalfX = window.innerWidth / 2;
+var windowHalfY = window.innerHeight / 2;
 
 var ROT_SPEED = 200;
 var group_rot = 0;
@@ -157,7 +157,7 @@ function init() {
     else
         renderer = new THREE.CanvasRenderer();
 
-    renderer.setSize(windowHalfX, windowHalfY);
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
 	document.getElementById('logo-vertical').appendChild(renderer.domElement);
 
