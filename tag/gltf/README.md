@@ -46,7 +46,7 @@ jsdo.it archives
 <table>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/CNZs" title="[WebGL] Three.js glTF Exporter を使ってみるテスト（その２改3）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/CNZs.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/EvIa" title="[WebGL] Three.js glTF Exporter を使ってみるテスト（その３改5）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/EvIa.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/CYGM" title="[WebGL] Three.js glTF Exporter を使ってみるテスト（その３改2）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/CYGM.jpg" width="200" height="200"></a></td>
 <td></td>
 <td></td>
 </tr>
