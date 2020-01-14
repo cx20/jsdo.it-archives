@@ -51,3 +51,14 @@ jsdo.it archives
 <td></td>
 </tr>
 </table>
+
+### Babylon.js glTF Serializer
+
+<table>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/MQ1p" title="Babylon.js glTF Serializer を使ってみるテスト（その２改）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/MQ1p.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
