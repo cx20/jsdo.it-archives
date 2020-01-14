@@ -322,7 +322,7 @@ function getRgbColor(c) {
 }
 
 var width  = window.innerWidth;
-var height = window.innerWidth;
+var height = window.innerHeight;
 var fov    = 80;
 var aspect = width / height;
 var near   = 1;
