@@ -88,6 +88,6 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/2S44" title="3D描画入門（その１.Wireframe）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/2S44.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ADDX" title="3D描画入門（その２.Rasterization）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ADDX.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Q2cR" title="3D描画入門（その３.Flat Shading）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Q2cR.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/e5rO" title="3D描画入門（その４.Gouraud Shading）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/e5rO.jpg" width="200" height="200"></a></td>
 </tr>
 </table>
