@@ -162,4 +162,10 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/7zTG" title="Three.js + Constructive Solid Geometry ライブラリを試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/7zTG.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/WQIw" title="Three.js で某スイーツを作ってみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/WQIw.jpg" width="200" height="200"></a></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/pyqw" title="Three.js + ShaderMaterial を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/pyqw.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </table>
