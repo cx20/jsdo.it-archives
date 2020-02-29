@@ -241,7 +241,7 @@ function init() {
     mera.Position = new BABYLON.Vector3(0, 0, 10);
     mera.Target = new BABYLON.Vector3(0, 0, 0);
     //device.LoadJSONFileAsync("/assets/o/B/Y/w/oBYws", loadJSONCompleted); // monkey.babylon
-    device.LoadJSONFileAsync("http://david.blob.core.windows.net/html5/SoftEngineProgression/rasterization/monkey.babylon", loadJSONCompleted); // monkey.babylon
+    device.LoadJSONFileAsync("https://david.blob.core.windows.net/html5/SoftEngineProgression/rasterization/monkey.babylon", loadJSONCompleted); // monkey.babylon
 }
 
 function loadJSONCompleted(meshesLoaded) {
