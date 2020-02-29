@@ -86,7 +86,7 @@ jsdo.it archives
 </tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/2S44" title="3D描画入門（その１.Wireframe）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/2S44.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ADDX" title="3D描画入門（その２.Rasterization）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ADDX.jpg" width="200" height="200"></a></td>
 <td></td>
 <td></td>
 </tr>
