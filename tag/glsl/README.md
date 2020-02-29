@@ -139,4 +139,10 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/lMo6" title="GLSL で富士山を描いてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/lMo6.jpg" width="200" height="200"></a></td>
 <td></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/gBNF" title="[GLSL] Glitchy Mario"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/gBNF.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </table>
