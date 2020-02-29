@@ -43,7 +43,7 @@ RedGL(canvas, function (v) {
     tController.tilt = -30;
     tController.distance = 4;
     tRenderer = RedRenderer();
-    tView = RedView('HelloRedGL', this, tScene, tController);
+    tView = RedView(this, tScene, tController);
     tWorld.addView(tView);
     tScene['grid'] = RedGrid(this);
     //tScene['axis'] = RedAxis(this);
