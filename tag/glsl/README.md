@@ -141,7 +141,7 @@ jsdo.it archives
 </tr>
 <tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/gBNF" title="[GLSL] Glitchy Mario"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/gBNF.jpg" width="200" height="200"></a></td>
-<td></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/6sbS" title="[GLSL] Glitchy Mario（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/6sbS.jpg" width="200" height="200"></a></td>
 <td></td>
 <td></td>
 </tr>
