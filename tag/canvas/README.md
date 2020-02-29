@@ -90,4 +90,10 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/Q2cR" title="3D描画入門（その３.Flat Shading）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/Q2cR.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/e5rO" title="3D描画入門（その４.Gouraud Shading）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/e5rO.jpg" width="200" height="200"></a></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/WoR2" title="3D描画入門（その５.Textured）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/WoR2.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </table>
