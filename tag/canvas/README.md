@@ -84,4 +84,10 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/tUm6" title="HTML TABLEで文字を描いてみるテスト（その２）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/tUm6.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/prGL" title="HTML TABLEで文字を描いてみるテスト（その３）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/prGL.jpg" width="200" height="200"></a></td>
 </tr>
+<tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/2S44" title="3D描画入門（その１.Wireframe）"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/2S44.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </table>
