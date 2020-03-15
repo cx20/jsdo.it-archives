@@ -50,7 +50,7 @@ function getHeightData(img) {
 }
 
 function initParticles() {
-    var texture = loader.load('../../assets/h/z/u/p/hzupb.png');  // smokeparticle.png
+    var texture = loader.load('../../assets/h/z/U/p/hzUpb.png');  // smokeparticle.png
 
     particleGroup = new SPE.Group({
         texture: {
