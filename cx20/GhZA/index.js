@@ -205,7 +205,7 @@ img.onload = function() {
     gui = new dat.GUI();
     var mapSelector = gui.add(window, 'MAP', {
         "通常地図": "../../assets/y/O/O/X/yOOXI.jpg;../../assets/m/T/z/G/mTzGm.png",
-        "空撮写真": "../../assets/W/n/q/1/Wnq1l.jpg;../../assets/m/T/z/G/mTzGm.png",
+        "空撮写真": "../../assets/w/N/q/1/wNq1l.jpg;../../assets/m/T/z/G/mTzGm.png",
         "SAR強度画像(2017年10月31日23時)": "../../assets/o/1/K/D/o1KDx.jpg;../../assets/s/Z/r/m/sZrmh.png",
         "SAR強度画像(2018年 3月 6日23時)": "../../assets/s/x/4/e/sx4eN.jpg;../../assets/m/J/K/i/mJKie.png",
         "SAR強度画像(2018年 3月 7日13時)": "../../assets/g/0/S/c/g0ScN.jpg;../../assets/A/5/l/S/A5lSR.png",
