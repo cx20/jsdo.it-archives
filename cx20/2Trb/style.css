@@ -1,0 +1,15 @@
+* {
+    font-size: 12px;
+    font-family: monospace;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+p {
+    background-color: rgba(127, 127, 127, 0.75);
+    border-radius: 5px;
+    padding: 5px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
