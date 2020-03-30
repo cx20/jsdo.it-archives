@@ -70,11 +70,14 @@ var createScene = function(engine) {
         light2.groundColor = new BABYLON.Color3(1, 0, 0);
         
         // Skybox
+/*
         var cubeTexture = new BABYLON.CubeTexture(
             "https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/", // "../../textures/cube/skybox/",
             scene,
             ["px.jpg", "py.jpg", "pz.jpg", "nx.jpg", "ny.jpg", "nz.jpg"]
         );
+*/
+        var cubeTexture = new BABYLON.CubeTexture("https://cx20.github.io/gltf-test/textures/env/papermillSpecularHDR.env", scene);
         scene.createDefaultSkybox(cubeTexture, true, 10000);
 
         var rad = 0.0;
