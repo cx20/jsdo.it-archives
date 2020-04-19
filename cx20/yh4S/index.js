@@ -77,24 +77,24 @@ app.root.addChild(light);
 
 var gltf;
 function init(){
-	var glbAsset = new pc.Asset('Box.gltf', 'model', {
-	    //url: "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Embedded/Box.gltf"
-	    url: "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Binary/Box.glb"
-	}, {
-	    rgbm: true
-	});
+    var glbAsset = new pc.Asset('Box.gltf', 'model', {
+        //url: "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Embedded/Box.gltf"
+        url: "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Binary/Box.glb"
+    }, {
+        rgbm: true
+    });
 
-	app.assets.add(glbAsset);
-	app.assets.load(glbAsset);
+    app.assets.add(glbAsset);
+    app.assets.load(glbAsset);
 
-	glbAsset.ready(function () {
-		gltf = new pc.Entity('gltf');
-		gltf.addComponent('model', {
-		    type: "asset",
-		    asset: glbAsset
-		});
-		app.root.addChild(gltf);
-	});
+    glbAsset.ready(function () {
+        gltf = new pc.Entity('gltf');
+        gltf.addComponent('model', {
+            type: "asset",
+            asset: glbAsset
+        });
+        app.root.addChild(gltf);
+    });
 
 }
 
@@ -103,7 +103,7 @@ app.on("update", function (deltaTime) {
     timer += deltaTime;
     // code executed on every frame
     if (gltf) {
-	    gltf.rotate(1, 1, 1);
+        gltf.rotate(1, 1, 1);
     }
 });
 
