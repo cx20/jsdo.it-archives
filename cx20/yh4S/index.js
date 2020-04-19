@@ -32,7 +32,7 @@ camera.setLocalPosition(0, 0, 1);
 // make the camera interactive
 
 //app.assets.loadFromUrl('./orbit-camera.js', 'script', function (err, asset) {
-app.assets.loadFromUrl('../../assets/w/x/i/4/wxi4Y.js', 'script', function (err, asset) {
+app.assets.loadFromUrl('https://cx20.github.io/gltf-test/libs/playcanvas/v1.27.0-dev/orbit-camera.js', 'script', function (err, asset) {
     camera.script.create('orbitCamera', {
         attributes: {
             inertiaFactor: 0,
@@ -41,13 +41,6 @@ app.assets.loadFromUrl('../../assets/w/x/i/4/wxi4Y.js', 'script', function (err,
             pitchAngleMax: 90,
             pitchAngleMin: -90,
             frameOnStart: true
-        }
-    });
-    camera.script.create('keyboardInput');
-    camera.script.create('mouseInput', {
-        attributes: {
-            orbitSensitivity: 0.3,
-            distanceSensitivity: 0.15
         }
     });
 });
@@ -81,48 +74,37 @@ var light = new pc.Entity('light');
 light.addComponent('light');
 light.setEulerAngles(45, 0, 0);
 app.root.addChild(light);
-// handle dropped GLB/GLTF files
 
-var root;
+var gltf;
 function init(){
-    //　.gltf File Test
-    var req = new XMLHttpRequest();
-    //req.open("get", "https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf", true); // NG
-    //req.open("get", "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF/Box.gltf", true); // NG
-    req.open("get", "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Embedded/Box.gltf", true); // OK
-    //req.open("get", "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Duck/glTF/Duck.gltf", true); // NG
-    //req.open("get", "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Duck/glTF-Embedded/Duck.gltf", true); // OK
-    req.send(null);
-	
-    req.onload = function(){
-        var json = JSON.parse(req.responseText);
-        root = loadGltf(json, app.graphicsDevice);
-        app.root.addChild(root);
-        camera.script.orbitCamera.focusEntity = root;
-    }
-/*
-    // .glb File Test
-    var req = new XMLHttpRequest();
-    req.open("get", "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Binary/Box.glb", true);
-    //req.open("get", "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Duck/glTF-Binary/Duck.glb", true);
-    req.responseType = 'arraybuffer';
-    req.send(null);
-	
-    req.onload = function(){
-        //var json = JSON.parse(req.responseText);
-        //root = loadGltf(json, app.graphicsDevice);
-        root = loadGlb(req.response, app.graphicsDevice);
-        app.root.addChild(root);
-        camera.script.orbitCamera.focusEntity = root;
-    }
-*/
+	var glbAsset = new pc.Asset('Box.gltf', 'model', {
+	    //url: "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Embedded/Box.gltf"
+	    url: "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Binary/Box.glb"
+	}, {
+	    rgbm: true
+	});
+
+	app.assets.add(glbAsset);
+	app.assets.load(glbAsset);
+
+	glbAsset.ready(function () {
+		gltf = new pc.Entity('gltf');
+		gltf.addComponent('model', {
+		    type: "asset",
+		    asset: glbAsset
+		});
+		app.root.addChild(gltf);
+	});
+
 }
 
 var timer = 0;
 app.on("update", function (deltaTime) {
     timer += deltaTime;
     // code executed on every frame
-    root.rotate(1, 1, 1);
+    if (gltf) {
+	    gltf.rotate(1, 1, 1);
+    }
 });
 
 init();
