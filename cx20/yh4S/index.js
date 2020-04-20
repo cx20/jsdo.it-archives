@@ -6,20 +6,20 @@
 
 // create a PlayCanvas application
 var canvas = document.getElementById('application');
-var app = new pc.Application(canvas, {
-    mouse: new pc.Mouse(document.body),
-    keyboard: new pc.Keyboard(window)
-});
+var app = new pc.Application(canvas);
 app.start();
+
 // fill the available space at full resolution
 app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);
 app.setCanvasResolution(pc.RESOLUTION_AUTO);
 app.scene.gammaCorrection = pc.GAMMA_SRGB;
 app.scene.toneMapping = pc.TONEMAP_ACES;
+
 // ensure canvas is resized when window changes size
 window.addEventListener('resize', function() {
     app.resizeCanvas();
 });
+
 // create camera entity
 var camera = new pc.Entity('camera');
 camera.addComponent('camera', {
@@ -29,39 +29,16 @@ camera.addComponent('camera', {
 camera.addComponent('script');
 app.root.addChild(camera);
 camera.setLocalPosition(0, 0, 1);
-// make the camera interactive
 
-//app.assets.loadFromUrl('./orbit-camera.js', 'script', function (err, asset) {
 app.assets.loadFromUrl('https://cx20.github.io/gltf-test/libs/playcanvas/v1.27.0-dev/orbit-camera.js', 'script', function (err, asset) {
-    camera.script.create('orbitCamera', {
-        attributes: {
-            inertiaFactor: 0,
-            distanceMin: 0,
-            distanceMax: 0,
-            pitchAngleMax: 90,
-            pitchAngleMin: -90,
-            frameOnStart: true
-        }
-    });
+    camera.script.create('orbitCamera');
 });
+
 // set a prefiltered cubemap as the skybox
 var cubemapAsset = new pc.Asset('helipad', 'cubemap', {
     url: "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/5489ff62/viewer/cubemap/6079289/Helipad.dds"
 }, {
-    "textures": [
-        "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079292/Helipad_posx.png",
-        "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079290/Helipad_negx.png",
-        "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079293/Helipad_posy.png",
-        "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079298/Helipad_negy.png",
-        "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079294/Helipad_posz.png",
-        "https://rawcdn.githack.com/playcanvas/playcanvas-gltf/tree/master/viewer/cubemap/6079300/Helipad_negz.png"
-    ],
-    "magFilter": 1,
-    "minFilter": 5,
-    "anisotropy": 1,
-    "name": "Helipad",
-    "rgbm": true,
-    "prefiltered": "Helipad.dds"
+    "rgbm": true
 });
 app.assets.add(cubemapAsset);
 app.assets.load(cubemapAsset);
@@ -69,6 +46,7 @@ cubemapAsset.ready(function () {
     app.scene.skyboxMip = 2;
     app.scene.setSkybox(cubemapAsset.resources);
 });
+
 // create directional light entity
 var light = new pc.Entity('light');
 light.addComponent('light');
@@ -77,25 +55,17 @@ app.root.addChild(light);
 
 var gltf;
 function init(){
-    var glbAsset = new pc.Asset('Box.gltf', 'model', {
-        //url: "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Embedded/Box.gltf"
-        url: "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Binary/Box.glb"
-    }, {
-        rgbm: true
-    });
-
-    app.assets.add(glbAsset);
-    app.assets.load(glbAsset);
-
-    glbAsset.ready(function () {
+    var url = "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Embedded/Box.gltf"
+    var filename = url.split('/').pop();
+    app.assets.loadFromUrlAndFilename(url, filename, "container", function (err, asset) {
+        var resource = asset.resource;
         gltf = new pc.Entity('gltf');
         gltf.addComponent('model', {
             type: "asset",
-            asset: glbAsset
+            asset: resource.model
         });
         app.root.addChild(gltf);
     });
-
 }
 
 var timer = 0;
