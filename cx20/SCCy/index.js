@@ -5,11 +5,12 @@
 // forked from cx20's "[WebGL] PlayCanvas Engine を試してみるテスト" http://jsdo.it/cx20/enuS
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
-
-
 // create a PlayCanvas application
 var canvas = document.getElementById('application');
-var app = new pc.Application(canvas);
+var app = new pc.Application(canvas, {
+    mouse: new pc.Mouse(canvas),
+    touch: new pc.TouchDevice(canvas)
+});
 app.start();
 
 // fill the available space at full resolution
@@ -35,6 +36,8 @@ camera.setLocalPosition(0, 0, 1);
 
 app.assets.loadFromUrl('https://cx20.github.io/gltf-test/libs/playcanvas/v1.27.0-dev/orbit-camera.js', 'script', function (err, asset) {
     camera.script.create('orbitCamera');
+    camera.script.create("orbitCameraInputMouse");
+    camera.script.create("orbitCameraInputTouch");
 });
 
 // set a prefiltered cubemap as the skybox
