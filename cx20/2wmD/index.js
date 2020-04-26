@@ -27,40 +27,25 @@ app.scene.ambientLight = new pc.Color(0.2, 0.2, 0.2);
 var plane = new pc.Entity();
 plane.addComponent("model", { type: "plane" });
 plane.addComponent("script");
-plane.script.create("customShader");
 
 app.root.addChild(plane);
 plane.rotate(90, 0, 0);
 
-// Create plane's material
-function getTexture (imageFile) {
-    var texture = new pc.gfx.Texture(app.graphicsDevice);
-    
-    var img = new Image();
-    img.onload = function () {
-        texture.minFilter = pc.gfx.FILTER_LINEAR;
-        texture.magFilter = pc.gfx.FILTER_LINEAR;
-        texture.addressU = pc.gfx.ADDRESS_CLAMP_TO_EDGE;
-        texture.addressV = pc.gfx.ADDRESS_CLAMP_TO_EDGE;
-        texture.setSource(img);
-    };
-    img.src = imageFile;
-    return texture;
-}
-
-var diffuseMap;
-var heightMap;
 app.assets.loadFromUrl("../../assets/A/k/w/j/AkwjW.jpg", "texture", function (err, asset) {
-    diffuseMap = asset;
-    heightMap = asset;
+    plane.script.create("customShader", {
+        attributes : {
+            diffuseMap: asset,
+            heightMap: asset
+        }
+    });
 });
+
 var vs_resource = document.getElementById("vs").textContent;
 var fs_resource = document.getElementById("fs").textContent;
 
 var CustomShader = pc.createScript('customShader');
 
 // TODO: Investigate how to load assets dynamically
-/*
 CustomShader.attributes.add('vs', {
     type: 'asset',
     assetType: 'shader',
@@ -84,7 +69,6 @@ CustomShader.attributes.add('heightMap', {
     assetType: 'texture',
     title: 'Height Map'
 });
-*/
 
 // initialize code called once per entity
 CustomShader.prototype.initialize = function() {
@@ -94,10 +78,8 @@ CustomShader.prototype.initialize = function() {
     var model = this.entity.model.model;
     var gd = app.graphicsDevice;
 
-    //var diffuseTexture = this.diffuseMap.resource;
-    //var heightTexture = this.heightMap.resource;
-    var diffuseTexture = diffuseMap.resource;
-    var heightTexture = heightMap.resource;
+    var diffuseTexture = this.diffuseMap.resource;
+    var heightTexture = this.heightMap.resource;
 
     //var vertexShader = this.vs.resource;
     //var fragmentShader = "precision " + gd.precision + " float;\n";
