@@ -26,6 +26,9 @@ app.scene.ambientLight = new pc.Color(0.2, 0.2, 0.2);
 // Create plane
 var plane = new pc.Entity();
 plane.addComponent("model", { type: "plane" });
+plane.addComponent("script");
+plane.script.create("customShader");
+
 app.root.addChild(plane);
 plane.rotate(90, 0, 0);
 
@@ -45,56 +48,105 @@ function getTexture (imageFile) {
     return texture;
 }
 
-var time = 0;
-var diffuseTexture = getTexture("../../assets/A/k/w/j/AkwjW.jpg");  // frog.jpg
-var heightTexture = getTexture("../../assets/A/k/w/j/AkwjW.jpg");  // frog.jpg
+var diffuseMap;
+var heightMap;
+app.assets.loadFromUrl("../../assets/A/k/w/j/AkwjW.jpg", "texture", function (err, asset) {
+    diffuseMap = asset;
+    heightMap = asset;
+});
+var vs_resource = document.getElementById("vs").textContent;
+var fs_resource = document.getElementById("fs").textContent;
 
-var model = plane.model.model;
-var gd = app.graphicsDevice;
+var CustomShader = pc.createScript('customShader');
 
-var vertexShader = document.getElementById("vs").textContent;
-var fragmentShader = document.getElementById("fs").textContent;
+// TODO: Investigate how to load assets dynamically
+/*
+CustomShader.attributes.add('vs', {
+    type: 'asset',
+    assetType: 'shader',
+    title: 'Vertex Shader'
+});
 
-// A shader definition used to create a new shader.
-var shaderDefinition = {
-    attributes: {
-        aPosition: pc.SEMANTIC_POSITION,
-        aUv0: pc.SEMANTIC_TEXCOORD0
-    },
-    vshader: vertexShader,
-    fshader: fragmentShader
+CustomShader.attributes.add('fs', {
+    type: 'asset',
+    assetType: 'shader',
+    title: 'Fragment Shader'
+});
+
+CustomShader.attributes.add('diffuseMap', {
+    type: 'asset',
+    assetType: 'texture',
+    title: 'Diffuse Map'
+});
+
+CustomShader.attributes.add('heightMap', {
+    type: 'asset',
+    assetType: 'texture',
+    title: 'Height Map'
+});
+*/
+
+// initialize code called once per entity
+CustomShader.prototype.initialize = function() {
+    this.time = 0;
+
+    var app = this.app;
+    var model = this.entity.model.model;
+    var gd = app.graphicsDevice;
+
+    //var diffuseTexture = this.diffuseMap.resource;
+    //var heightTexture = this.heightMap.resource;
+    var diffuseTexture = diffuseMap.resource;
+    var heightTexture = heightMap.resource;
+
+    //var vertexShader = this.vs.resource;
+    //var fragmentShader = "precision " + gd.precision + " float;\n";
+    //fragmentShader = fragmentShader + this.fs.resource;
+    var vertexShader = vs_resource;
+    var fragmentShader = "precision " + gd.precision + " float;\n";
+    fragmentShader = fragmentShader + fs_resource;
+
+    // A shader definition used to create a new shader.
+    var shaderDefinition = {
+        attributes: {
+            aPosition: pc.SEMANTIC_POSITION,
+            aUv0: pc.SEMANTIC_TEXCOORD0
+        },
+        vshader: vertexShader,
+        fshader: fragmentShader
+    };
+
+    // Create the shader from the definition
+    this.shader = new pc.Shader(gd, shaderDefinition);
+
+    // Create a new material and set the shader
+    this.material = new pc.Material();
+    this.material.setShader(this.shader);
+
+    // Set the initial time parameter
+    this.material.setParameter('uTime', 0);
+
+    // Set the diffuse texture
+    this.material.setParameter('uDiffuseMap', diffuseTexture);
+
+    // Use the "clouds" texture as the height map property
+    this.material.setParameter('uHeightMap', heightTexture);
+
+    // Replace the material on the model with our new material
+    model.meshInstances[0].material = this.material;
 };
 
-// Create the shader from the definition
-var shader = new pc.Shader(gd, shaderDefinition);
+// update code called every frame
+CustomShader.prototype.update = function(dt) {
+    this.time += dt;
 
-// Create a new material and set the shader
-material = new pc.Material();
-material.setShader(shader);
-
-// Set the initial time parameter
-material.setParameter('uTime', 0);
-
-// Set the diffuse texture
-material.setParameter('uDiffuseMap', diffuseTexture);
-
-// Use the "clouds" texture as the height map property
-material.setParameter('uHeightMap', heightTexture);
-
-// Replace the material on the model with our new material
-model.meshInstances[0].material = material;
-
-var timer = 0;
-app.on("update", function (deltaTime) {
-    timer += deltaTime;
-    // code executed on every frame
-    //plane.rotate(1, 1, 1);
-    
-    // t 0->1->0のbounce値
-    var t = (timer % 2);
+    // Bounce value of t 0->1->0
+    var t = (this.time % 2);
     if (t > 1) {
         t = 1 - (t - 1);
     }
 
-    material.setParameter('uTime', t);
-});
+    // Update the time value in the material
+    this.material.setParameter('uTime', t);
+};
+
