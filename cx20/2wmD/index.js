@@ -147,6 +147,8 @@ CustomShader.prototype.update = function(dt) {
     }
 
     // Update the time value in the material
-    this.material.setParameter('uTime', t);
+    if (this.material) {
+        this.material.setParameter('uTime', t);
+    }
 };
 
