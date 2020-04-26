@@ -31,21 +31,25 @@ plane.addComponent("script");
 app.root.addChild(plane);
 plane.rotate(90, 0, 0);
 
+// TODO: Investigate how to load assets dynamically
+var vs = new pc.Asset("vs", "shader");
+var fs = new pc.Asset("fs", "shader");
+vs.resource = document.getElementById("vs").textContent;
+fs.resource = document.getElementById("fs").textContent;
+
 app.assets.loadFromUrl("../../assets/A/k/w/j/AkwjW.jpg", "texture", function (err, asset) {
     plane.script.create("customShader", {
         attributes : {
+            vs: vs,
+            fs: fs,
             diffuseMap: asset,
             heightMap: asset
         }
     });
 });
 
-var vs_resource = document.getElementById("vs").textContent;
-var fs_resource = document.getElementById("fs").textContent;
-
 var CustomShader = pc.createScript('customShader');
 
-// TODO: Investigate how to load assets dynamically
 CustomShader.attributes.add('vs', {
     type: 'asset',
     assetType: 'shader',
@@ -81,12 +85,9 @@ CustomShader.prototype.initialize = function() {
     var diffuseTexture = this.diffuseMap.resource;
     var heightTexture = this.heightMap.resource;
 
-    //var vertexShader = this.vs.resource;
-    //var fragmentShader = "precision " + gd.precision + " float;\n";
-    //fragmentShader = fragmentShader + this.fs.resource;
-    var vertexShader = vs_resource;
+    var vertexShader = this.vs.resource;
     var fragmentShader = "precision " + gd.precision + " float;\n";
-    fragmentShader = fragmentShader + fs_resource;
+    fragmentShader = fragmentShader + this.fs.resource;
 
     // A shader definition used to create a new shader.
     var shaderDefinition = {
