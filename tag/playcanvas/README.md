@@ -77,6 +77,7 @@ jsdo.it archives
 ### Ammo.js
 
 <table>
+<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/oWV0" alt="PlayCanvas で物理演算を試してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/oWV0.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/gmdS" alt="PlayCanvas で碁石を落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/gmdS.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/xFX1" alt="PlayCanvas で碁盤を回転させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/xFX1.jpg" width="200" height="200"></a></td>
