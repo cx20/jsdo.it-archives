@@ -25,6 +25,7 @@ geometry.setAllRectUV([[0, 1], [1, 1], [1, 0], [0, 0]]);
 var mesh = new Hilo3d.Mesh({
     geometry: geometry,
     material: new Hilo3d.BasicMaterial({
+        lightType: 'NONE',
         diffuse:new Hilo3d.LazyTexture({
             src:'../../assets/A/k/w/j/AkwjW.jpg'
         })

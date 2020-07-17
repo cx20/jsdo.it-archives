@@ -126,6 +126,7 @@ function addGround() {
         z: 0,
         geometry: geometryGround,
         material: new Hilo3d.BasicMaterial({
+            lightType: 'NONE',
             diffuse:new Hilo3d.LazyTexture({
                 src:'../../assets/u/y/G/y/uyGy9.jpg' // grass.jpg
             }),
