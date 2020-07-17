@@ -30,6 +30,7 @@ var mesh1 = new Hilo3d.Mesh({
     scaleZ: 0.8,
     geometry: geometry,
     material: new Hilo3d.BasicMaterial({
+        lightType: 'NONE',
         diffuse:new Hilo3d.LazyTexture({
             src:'../../assets/A/k/w/j/AkwjW.jpg'
         })
@@ -51,6 +52,7 @@ var mesh2 = new Hilo3d.Mesh({
     scaleZ: 0.8,
     geometry: geometry,
     material: new Hilo3d.BasicMaterial({
+        lightType: 'NONE',
         diffuse:new Hilo3d.LazyTexture({
             src:'../../assets/A/k/w/j/AkwjW.jpg'
         })
