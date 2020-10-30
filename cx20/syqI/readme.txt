@@ -1,4 +1,4 @@
-<script src="//unpkg.com/filament@1.9.5/filament.js"></script>
+<script src="//unpkg.com/filament@1.9.6/filament.js"></script>
 
 <script src="//unpkg.com/gl-matrix@2.8.1/dist/gl-matrix-min.js"></script>
 <script src="//unpkg.com/gltumble@1.0.1/gltumble.js"></script>
