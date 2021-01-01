@@ -22,12 +22,18 @@ jsdo.it archives
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/HappyNewYear2018" title="Happy New Year 2018"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/ME8A.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/HappyNewYear2019" title="Happy New Year 2019"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/QATO.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/HappyNewYear2020" title="Happy New Year 2020"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/HappyNewYear2020.jpg" width="200" height="200"></a></td>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/HappyValentinesDay2014" title="Happy Valentine's Day 2014"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8meZ.jpg" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/HappyNewYear2021" title="Happy New Year 2021"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/HappyNewYear2021.jpg" width="200" height="200"></a></td>
 </tr>
 <tr>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/HappyValentinesDay2014" title="Happy Valentine's Day 2014"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/8meZ.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/HappyValentinesDay2014ver2" title="某チョコを落下させてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/1poK.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/LastDayOfWinter2015" title="Three.js + Oimo.js で豆まきしてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/rJXX.jpg" width="200" height="200"></a></td>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/DollsFestival2015" title="Three.js + Oimo.js でひな壇に紅白餅を落としてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/aRzy.jpg" width="200" height="200"></a></td>
+</tr>
+<tr>
 <td><a href="https://cx20.github.io/jsdo.it-archives/cx20/ChildrensDay2015" title="Three.js で鯉のぼりをなびかせてみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/brMs.jpg" width="200" height="200"></a></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </table>
