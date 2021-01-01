@@ -173,7 +173,7 @@ function createObjects() {
 
     // Greeting Card
     const cardMass = 1000;
-    const cardHalfExtents = new THREE.Vector3( 5, 5, 0.1 );
+    const cardHalfExtents = new THREE.Vector3( 5, 5, 0.2 );
     pos.set( 0, 5, -5 );
     quat.set( 0, 0, 0, 1 );
 
