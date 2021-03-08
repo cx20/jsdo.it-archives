@@ -181,8 +181,8 @@ function getRgbColor(c) {
   return colorHash[c];
 }
 
-var width  = 440;
-var height = 440;
+var width  = window.innerWidth;
+var height = window.innerHeight;
 var fov    = 80;
 var aspect = width / height;
 var near   = 1;
@@ -315,7 +315,7 @@ function init() {
     scene1.add(light2);
 
     // 座標軸表示
-    var axis = new THREE.AxisHelper(100);
+    var axis = new THREE.AxesHelper(100);
     //scene1.add(axis);
 
     renderer = new THREE.WebGLRenderer();

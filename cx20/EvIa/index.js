@@ -293,9 +293,9 @@ function init() {
     geometryMergeA = THREE.BufferGeometryUtils.mergeBufferGeometries(geometryArrayA);
     geometryMergeB = THREE.BufferGeometryUtils.mergeBufferGeometries(geometryArrayB);
     geometryMergeC = THREE.BufferGeometryUtils.mergeBufferGeometries(geometryArrayC);
-    geometryMergeA.removeAttribute( 'normal' ).removeAttribute( 'uv' );
-    geometryMergeB.removeAttribute( 'normal' ).removeAttribute( 'uv' );
-    geometryMergeC.removeAttribute( 'normal' ).removeAttribute( 'uv' );
+    geometryMergeA.deleteAttribute( 'normal' ).deleteAttribute( 'uv' );
+    geometryMergeB.deleteAttribute( 'normal' ).deleteAttribute( 'uv' );
+    geometryMergeC.deleteAttribute( 'normal' ).deleteAttribute( 'uv' );
     
     var materialA = new THREE.MeshStandardMaterial({color: getRgbColor("茶"), roughness: 0.99});
     var meshA = new THREE.Mesh(geometryMergeA, materialA);
@@ -310,9 +310,6 @@ function init() {
     scene1.add(meshC);
 
     //ライティング
-    var ambient = new THREE.AmbientLight( 0xffffff, 0.3 );
-    scene1.add( ambient );
-
     var light = new THREE.DirectionalLight(0xffffff, 1.0);
     light.position.set(1, 1, 1).normalize();
     scene1.add(light);
@@ -320,9 +317,9 @@ function init() {
     var light2 = new THREE.DirectionalLight(0xffffff);
     light2.position.set(-1, -1, -1).normalize();
     scene1.add(light2);
-
+	
     // 座標軸表示
-    var axis = new THREE.AxisHelper(100);
+    var axis = new THREE.AxesHelper(100);
     //scene1.add(axis);
 
     renderer = new THREE.WebGLRenderer();
