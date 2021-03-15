@@ -86,6 +86,7 @@ xhr.addEventListener('load', function (evt) {
             var h = r[j] == 'e' ? 0 : Number(r[j]);
             //geometry.vertices[c].z = h * 1; // 高さの強調度を変える場合は、ここの数値を変更する
             geometry.vertices[c].z = h * 1.0; // 1.0 → 1.5 に変更
+            //geometry.attributes.position.array[c * 3 + 2] = h * 1.0; // 1.0 → 1.5 に変更
             c++;
         }
     }
@@ -117,7 +118,7 @@ render = function() {
 createShape = (function() {
     var addshapes = true,
         shapes = 0,
-        box_geometry = new THREE.CubeGeometry( 3, 3, 3 ),
+        box_geometry = new THREE.BoxGeometry( 3, 3, 3 ),
         sphere_geometry = new THREE.SphereGeometry( 1.5, 32, 32 ),
         cylinder_geometry = new THREE.CylinderGeometry( 2, 2, 1, 32 ),
         cone_geometry = new THREE.CylinderGeometry( 0, 2, 4, 32 ),
