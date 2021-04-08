@@ -36,7 +36,8 @@ class App {
     this.ib.setBuffer(engine, new Uint16Array([0, 1, 2]));
     //const mat = engine.createMaterial('triangle.filamat');
     //const mat = engine.createMaterial('/assets/k/S/h/N/kShN2'); // triangle.filamat
-    const mat = engine.createMaterial('https://rawcdn.githack.com/google/filament/724e9abf960700201c05f50df80a60ddd3a1ce06/docs/webgl/triangle.filamat');
+    //const mat = engine.createMaterial('https://rawcdn.githack.com/google/filament/724e9abf960700201c05f50df80a60ddd3a1ce06/docs/webgl/triangle.filamat');
+    const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/ec7497675b4eb5e39a019cf7957547c2af31640f/examples/filament/triangle/triangle.filamat');
     const matinst = mat.getDefaultInstance();
     Filament.RenderableManager.Builder(1)
     .boundingBox({
@@ -52,7 +53,7 @@ class App {
     this.view = engine.createView();
     this.view.setCamera(this.camera);
     this.view.setScene(this.scene);
-    this.view.setClearColor([1.0, 1.0, 1.0, 1.0]);
+    this.renderer.setClearOptions({clearColor: [1.0, 1.0, 1.0, 1.0], clear: true});
     this.resize(); // adjust the initial viewport
     this.render = this.render.bind(this);
     this.resize = this.resize.bind(this);
@@ -76,6 +77,7 @@ class App {
 }
 //Filament.init(['triangle.filamat'], () => {
 //Filament.init(['/assets/k/S/h/N/kShN2'], () => { // triangle.filamat
-Filament.init(['https://rawcdn.githack.com/google/filament/724e9abf960700201c05f50df80a60ddd3a1ce06/docs/webgl/triangle.filamat'], () => {
+//Filament.init(['https://rawcdn.githack.com/google/filament/724e9abf960700201c05f50df80a60ddd3a1ce06/docs/webgl/triangle.filamat'], () => {
+Filament.init(['https://rawcdn.githack.com/cx20/webgl-test/ec7497675b4eb5e39a019cf7957547c2af31640f/examples/filament/triangle/triangle.filamat'], () => {
   window.app = new App()
 });
