@@ -1,6 +1,7 @@
 // forked from cx20's "[WebGL] Filament を試してみるテスト（調整中）" http://jsdo.it/cx20/Kj5Y
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
+/*
 // file : square.mat
 // usage : matc -o square.filamat square.mat
 material {
