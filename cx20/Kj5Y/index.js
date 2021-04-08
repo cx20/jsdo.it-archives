@@ -1,5 +1,24 @@
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
+// file : triangle.mat
+// usage : matc -o triangle.filamat triangle.mat
+material {
+    name : triangle,
+    requires : [
+        color
+    ],
+    shadingModel : unlit,
+    culling : none
+}
+
+fragment {
+    void material(inout MaterialInputs material) {
+        prepareMaterial(material);
+        material.baseColor = getColor();
+    }
+}
+*/
+
 class App {
   constructor() {
     this.canvas = document.getElementsByTagName('canvas')[0];
@@ -9,9 +28,9 @@ class App {
       .create();
     this.scene.addEntity(this.triangle);
     const TRIANGLE_POSITIONS = new Float32Array([
-        0.0,  0.5,
-       -0.5, -0.5,
-        0.5, -0.5 
+        0.0, 0.5, 0.0, // v0
+       -0.5,-0.5, 0.0, // v1
+        0.5,-0.5, 0.0  // v2
     ]);
     const TRIANGLE_COLORS = new Uint32Array([
         0xffff0000, 
@@ -23,7 +42,7 @@ class App {
     this.vb = Filament.VertexBuffer.Builder()
       .vertexCount(3)
       .bufferCount(2)
-      .attribute(VertexAttribute.POSITION, 0, AttributeType.FLOAT2, 0, 8)
+      .attribute(VertexAttribute.POSITION, 0, AttributeType.FLOAT3, 0, 12)
       .attribute(VertexAttribute.COLOR, 1, AttributeType.UBYTE4, 0, 4)
       .normalized(VertexAttribute.COLOR)
       .build(engine);
@@ -49,7 +68,7 @@ class App {
     .build(engine, this.triangle);
     this.swapChain = engine.createSwapChain();
     this.renderer = engine.createRenderer();
-    this.camera = engine.createCamera();
+    this.camera = engine.createCamera(Filament.EntityManager.get().create());
     this.view = engine.createView();
     this.view.setCamera(this.camera);
     this.view.setScene(this.scene);

@@ -110,7 +110,7 @@ class App {
     const AttributeType = Filament.VertexBuffer$AttributeType;
     this.vb = Filament.VertexBuffer.Builder()
       .vertexCount(24)
-      .bufferCount(3)
+      .bufferCount(2)
       .attribute(VertexAttribute.POSITION, 0, AttributeType.FLOAT3, 0, 0)
       .attribute(VertexAttribute.COLOR, 1, AttributeType.UBYTE4, 0, 0)
       .normalized(VertexAttribute.COLOR)
@@ -143,7 +143,7 @@ class App {
     .build(engine, this.triangle);
     this.swapChain = engine.createSwapChain();
     this.renderer = engine.createRenderer();
-    this.camera = engine.createCamera();
+    this.camera = engine.createCamera(Filament.EntityManager.get().create());
     this.view = engine.createView();
     this.view.setCamera(this.camera);
     this.view.setScene(this.scene);
