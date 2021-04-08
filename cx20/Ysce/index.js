@@ -147,7 +147,8 @@ class App {
       20, 21, 22,   20, 22, 23   // Left face
     ]));
     //const mat = engine.createMaterial('texture.filamat');
-    const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/c9eb189fe338dd949f0fe2d1dc287f06be16a384/examples/filament/texture/texture.filamat'); // texture.filamat
+    //const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/c9eb189fe338dd949f0fe2d1dc287f06be16a384/examples/filament/texture/texture.filamat'); // texture.filamat
+    const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/ec7497675b4eb5e39a019cf7957547c2af31640f/examples/filament/texture/texture.filamat');
     const matinst = mat.getDefaultInstance();
 
     const sampler = new Filament.TextureSampler(
@@ -171,7 +172,7 @@ class App {
     this.view = engine.createView();
     this.view.setCamera(this.camera);
     this.view.setScene(this.scene);
-    this.view.setClearColor([1.0, 1.0, 1.0, 1.0]);
+    this.renderer.setClearOptions({clearColor: [1.0, 1.0, 1.0, 1.0], clear: true});
     this.resize(); // adjust the initial viewport
     this.render = this.render.bind(this);
     this.resize = this.resize.bind(this);
@@ -207,7 +208,8 @@ class App {
 
 Filament.init([
     '../../assets/A/k/w/j/AkwjW.jpg', // frog.jpg
-    'https://rawcdn.githack.com/cx20/webgl-test/c9eb189fe338dd949f0fe2d1dc287f06be16a384/examples/filament/texture/texture.filamat'      // texture.filamat
+    //'https://rawcdn.githack.com/cx20/webgl-test/c9eb189fe338dd949f0fe2d1dc287f06be16a384/examples/filament/texture/texture.filamat'      // texture.filamat
+    'https://rawcdn.githack.com/cx20/webgl-test/ec7497675b4eb5e39a019cf7957547c2af31640f/examples/filament/texture/texture.filamat'      // texture.filamat
 ], () => {
   window.app = new App()
 });
