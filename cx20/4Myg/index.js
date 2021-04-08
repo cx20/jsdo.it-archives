@@ -1,6 +1,25 @@
 // forked from cx20's "[WebGL] Filament を試してみるテスト（調整中）" http://jsdo.it/cx20/Kj5Y
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
+// file : square.mat
+// usage : matc -o square.filamat square.mat
+material {
+    name : square,
+    requires : [
+        color
+    ],
+    shadingModel : unlit,
+    culling : none
+}
+
+fragment {
+    void material(inout MaterialInputs material) {
+        prepareMaterial(material);
+        material.baseColor = getColor();
+    }
+}
+*/
+
 class App {
   constructor() {
     this.canvas = document.getElementsByTagName('canvas')[0];
@@ -9,7 +28,7 @@ class App {
     this.triangle = Filament.EntityManager.get()
       .create();
     this.scene.addEntity(this.triangle);
-    // 正方形の座標データを用意
+    // Square data
     //             1.0 y 
     //              ^  -1.0 
     //              | / z
@@ -25,29 +44,29 @@ class App {
     //         |  /     |
     //        [2]------[3]
     //
-    const TRIANGLE_POSITIONS = new Float32Array([
-      -0.5, 0.5, // v0
-       0.5, 0.5, // v1 
-      -0.5,-0.5, // v2
-       0.5,-0.5  // v3
+    const SQUARE_POSITIONS = new Float32Array([
+      -0.5, 0.5, 0.0, // v0
+       0.5, 0.5, 0.0, // v1 
+      -0.5,-0.5, 0.0, // v2
+       0.5,-0.5, 0.0  // v3
     ]);
-    const TRIANGLE_COLORS = new Uint32Array([
-      0x0000ff,
-      0x00ff00,
-      0xff0000,
-      0x00ffff
+    const SQUARE_COLORS = new Uint32Array([
+      0xff0000ff,
+      0xff00ff00,
+      0xffff0000,
+      0xff00ffff
     ]);
     const VertexAttribute = Filament.VertexAttribute;
     const AttributeType = Filament.VertexBuffer$AttributeType;
     this.vb = Filament.VertexBuffer.Builder()
       .vertexCount(4)
       .bufferCount(2)
-      .attribute(VertexAttribute.POSITION, 0, AttributeType.FLOAT2, 0, 8)
+      .attribute(VertexAttribute.POSITION, 0, AttributeType.FLOAT3, 0, 12)
       .attribute(VertexAttribute.COLOR, 1, AttributeType.UBYTE4, 0, 4)
       .normalized(VertexAttribute.COLOR)
       .build(engine);
-    this.vb.setBufferAt(engine, 0, TRIANGLE_POSITIONS);
-    this.vb.setBufferAt(engine, 1, TRIANGLE_COLORS);
+    this.vb.setBufferAt(engine, 0, SQUARE_POSITIONS);
+    this.vb.setBufferAt(engine, 1, SQUARE_COLORS);
     this.ib = Filament.IndexBuffer.Builder()
       .indexCount(6)
       .bufferType(Filament.IndexBuffer$IndexType.USHORT)
@@ -59,7 +78,7 @@ class App {
     //const mat = engine.createMaterial('triangle.filamat');
     //const mat = engine.createMaterial('/assets/k/S/h/N/kShN2'); // triangle.filamat
     //const mat = engine.createMaterial('https://rawcdn.githack.com/google/filament/724e9abf960700201c05f50df80a60ddd3a1ce06/docs/webgl/triangle.filamat');
-    const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/ec7497675b4eb5e39a019cf7957547c2af31640f/examples/filament/triangle/triangle.filamat');
+    const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/ec7497675b4eb5e39a019cf7957547c2af31640f/examples/filament/square/square.filamat');
     const matinst = mat.getDefaultInstance();
     Filament.RenderableManager.Builder(1)
     .boundingBox({
@@ -71,7 +90,7 @@ class App {
     .build(engine, this.triangle);
     this.swapChain = engine.createSwapChain();
     this.renderer = engine.createRenderer();
-    this.camera = engine.createCamera();
+    this.camera = engine.createCamera(Filament.EntityManager.get().create());
     this.view = engine.createView();
     this.view.setCamera(this.camera);
     this.view.setScene(this.scene);
@@ -100,6 +119,6 @@ class App {
 //Filament.init(['triangle.filamat'], () => {
 //Filament.init(['/assets/k/S/h/N/kShN2'], () => { // triangle.filamat
 //Filament.init(['https://rawcdn.githack.com/google/filament/724e9abf960700201c05f50df80a60ddd3a1ce06/docs/webgl/triangle.filamat'], () => {
-Filament.init(['https://rawcdn.githack.com/cx20/webgl-test/ec7497675b4eb5e39a019cf7957547c2af31640f/examples/filament/triangle/triangle.filamat'], () => {
+Filament.init(['https://rawcdn.githack.com/cx20/webgl-test/ec7497675b4eb5e39a019cf7957547c2af31640f/examples/filament/square/square.filamat'], () => {
   window.app = new App()
 });
