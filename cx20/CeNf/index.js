@@ -58,35 +58,13 @@ function getRgbColor( c )
     return colorHash[ c ];
 }
 
-//let TIME_STEP = 1 / 60;
 let TIME_STEP = 1 / 30;
-let SCREEN_WIDTH = 465;
-let SCREEN_HEIGHT = 465;
-let VIEW_ANGLE = 60;
 let N = 256;
 let world, camera, scene, renderer, rendererElement;
-//let stats;
+let controls;
     
-
-let requestAnimationFrame = window.requestAnimationFrame  ||
-                       window.webkitRequestAnimationFrame ||
-                       window.mozRequestAnimationFrame    ||
-                       window.msRequestAnimationFrame     ||
-                       function(c) {
-                           window.setTimeout(c, 15);
-                       };
-
 function init() {
     // Stats
-/*
-    stats = new Stats();
-
-    // 左上に設定
-    stats.getDomElement().style.position = "fixed";
-    stats.getDomElement().style.left = "0px";
-    stats.getDomElement().style.top = "0px";
-    document.body.appendChild(stats.getDomElement());
-*/
     let parentElement = document.body;
 
     // initialize cannon.js's world
@@ -96,36 +74,25 @@ function init() {
     world.solver.iterations = 10;
 
     // initialize three.js's scene, camera and renderer
-    if (isWebgl()) {
         renderer = new THREE.WebGLRenderer();
-    } else {
-        renderer = new THREE.CanvasRenderer();
-    }
-    renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+    renderer.setSize(window.innerWidth, window.innerHeight);
     parentElement.appendChild(renderer.domElement);
     scene = new THREE.Scene();
-    camera = new THREE.PerspectiveCamera(VIEW_ANGLE, SCREEN_WIDTH / SCREEN_HEIGHT, 0.1, 1000);
-    camera.position.x = 4;
-    camera.position.y = 10;
-    camera.position.z = 20;
-    camera.lookAt(new THREE.Vector3(0, 0, 0));
+    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.x = 8;
+    camera.position.y = 20;
+    camera.position.z = 50;
+    camera.lookAt(new THREE.Vector3(0, 10, 0));
 
     initLights();
     initGround();
 
-    //createShapes();
     createDominos();
-    
     createShapes();
-}
 
+    controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.autoRotate = true;
 
-function isWebgl() {
-    try {
-        return !!window.WebGLRenderingContext && !! document.createElement('canvas').getContext('experimental-webgl');
-    } catch (e) {
-        return false;
-    }
 }
 
 // initialize lights
@@ -157,7 +124,7 @@ function createPlane(w, h) {
     let loader = new THREE.TextureLoader();
     let texture = loader.load('../../assets/u/y/G/y/uyGy9.jpg'); // grass.jpg
     texture.wrapS   = texture.wrapT = THREE.RepeatWrapping;
-    texture.repeat.set( 10, 10 );  
+    texture.repeat.set( 5, 5 );  
     let material = new THREE.MeshLambertMaterial( { color: 0x777777, map: texture } );
     let geometry = new THREE.PlaneGeometry( w, h );
     let mesh = new THREE.Mesh(geometry, material);
@@ -190,11 +157,11 @@ function createShape(x, y, z, w, h, d, mass, color) {
         map: texture
     });
     mesh = new THREE.Mesh(geometry, material);
-    mesh.useQuaternion = true;
-    mesh.rigidBody = body; // THREE.Object3D#rigidBody has a field of CANNON.RigidBody
+    mesh.rigidBody = body;
     scene.add(mesh);
 }
 
+// create a shape
 function createDomino(x, y, z, w, h, d, mass, color) {
     let geometry, material, mesh, shape, body;
 
@@ -203,49 +170,57 @@ function createDomino(x, y, z, w, h, d, mass, color) {
     //shape = new CANNON.Sphere(w);
     body = new CANNON.Body({mass: mass});
     body.addShape(shape);
-    //body.angularVelocity.set(0, 10, 0);
     body.position.x = x;
     body.position.y = y;
     body.position.z = z;
-    //body.quaternion.set(Math.random()/50, Math.random()/50, Math.random()/50, 0.2);
     world.add(body);
 
     // initialize Object3D
-    geometry = new THREE.CubeGeometry(w, h, d);
+    geometry = new THREE.BoxGeometry(w, h, d);
     material = new THREE.MeshLambertMaterial({
         color: Math.round(color)
     });
     mesh = new THREE.Mesh(geometry, material);
-    mesh.useQuaternion = true;
-    mesh.rigidBody = body; // THREE.Object3D#rigidBody has a field of CANNON.RigidBody
+    mesh.rigidBody = body;
     scene.add(mesh);
 }
 
+
+// sphere
 function createDominos() {
-    let box_size = 1;
+    let box_size = 2;
+    let w = box_size * 0.15;
+    let h = box_size * 1.5;
+    let d = box_size * 1.0;
+    let mass = 1;
     for ( let y = 0; y < 16; y++ ) {
         for ( let x = 0; x < 16; x++ ) {
-            let x1 = -5 + x * box_size * 0.95;
-            let y1 = box_size * 2;
-            let z1 = -5 + y * box_size * 1.2;
+            let x1 = -8 * box_size + x * box_size * 1.0;
+            let y1 = box_size;
+            let z1 = -8 * box_size + y * box_size * 1.2;
             let color = getRgbColor( dataSet[y * 16 + x] );
-            createDomino(x1, y1, z1, 0.2, 1, 1, 1, color);
+            createDomino(x1, y1, z1, w, h, d, mass, color);
         }
     }
 }
 
 function createShapes() {
-    let box_size = 1;
+    let box_size = 2;
+    let w = box_size / 2;
+    let h = box_size / 2;
+    let d = box_size / 2;
+    let mass = 1;
     for ( let y = 0; y < 16; y++ ) {
-        let x1 = -5.5;
-        let y1 = 3;
-        let z1 = -5 + (15 - y) * box_size * 1.2;
+        let x1 = -8 * box_size - 0.5;
+        let y1 = 8;
+        let z1 = -8 * box_size + (15 - y) * box_size * 1.2;
         let color = getRgbColor("白");
-        createShape(x1, y1, z1, box_size/2, box_size/2, box_size/2, 1, color);
+        createShape(x1, y1, z1, w, h, d, mass, color);
     }
 }
 
 function animate() {
+    controls.update();
     // step physical simulation
     world.step(TIME_STEP);
 
