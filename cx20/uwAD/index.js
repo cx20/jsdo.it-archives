@@ -6,7 +6,8 @@ function setup() {
 
 function draw() {
     background(255, 255, 255);
-    beginShape('TRIANGLES');
+    noStroke();
+    beginShape(TRIANGLES);
     fill(0, 0, 255);
     vertex(   0,-190, 0);
     vertex(-230, 230, 0);
