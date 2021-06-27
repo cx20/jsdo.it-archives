@@ -13,5 +13,6 @@ function draw(){
     background(255, 255, 255);
     translate(0, 0, -100);
     rotate(angle, [1, 1, 1]);
+    normalMaterial();
     box(200);
 }

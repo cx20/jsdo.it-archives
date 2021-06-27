@@ -8,8 +8,8 @@ function setup(){
 function draw(){
     background(255, 255, 255);
     fill(0, 0, 255);
-
-    beginShape('TRIANGLE_STRIP');
+    noStroke();
+    beginShape(TRIANGLE_STRIP);
     vertex(-230, -230, 0);
     vertex( 230, -230, 0);
     vertex(-230,  230, 0);
