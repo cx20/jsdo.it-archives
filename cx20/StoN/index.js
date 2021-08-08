@@ -9,29 +9,29 @@
 // forked from Lo-Th's "Oimo.js Moving" http://lo-th.github.io/Oimo.js/test_moving.html
 
 // three var
-var camera, cameraCube, scene, sceneCube, light, renderer, container, content;
-var meshs = [];
-var grounds = [];
-var paddel;
-var matGround, matGroundTrans;
-var matPocky = [];
-var matKoala;
-var matMono;
-var buffgeoBox;
-var buffgeoMono;
-var buffgeoCylinder;
-var raycaster, projector;
-var ToRad = Math.PI / 180;
-var ToDeg = 180 / Math.PI;
-var rotTest;
-var controls;
+let camera, cameraCube, scene, sceneCube, light, renderer, container, content;
+let meshs = [];
+let grounds = [];
+let paddel;
+let matGround, matGroundTrans;
+let matPocky = [];
+let matKoala;
+let matMono;
+let buffgeoBox;
+let buffgeoMono;
+let buffgeoCylinder;
+let raycaster, projector;
+let ToRad = Math.PI / 180;
+let ToDeg = 180 / Math.PI;
+let rotTest;
+let controls;
 
 //oimo var
-var world = null;
-var bodys = null;
+let world = null;
+let bodys = null;
 
-var fps = [0,0,0,0];
-var type=1;
+let now = 0;
+let FPS = 60;
 
 init();
 loop();
@@ -68,9 +68,9 @@ function init() {
     scene.add( light );
     
     // background
-    var buffgeoBack = new THREE.BufferGeometry();
+    let buffgeoBack = new THREE.BufferGeometry();
     buffgeoBack.fromGeometry( new THREE.IcosahedronGeometry(8000,1) );
-    var back = new THREE.Mesh( buffgeoBack, new THREE.MeshBasicMaterial( { map:gradTexture([[1,0.75,0.5,0.25], ['#1B1D1E','#3D4143','#72797D', '#b0babf']]), side:THREE.BackSide, depthWrite: false }  ));
+    let back = new THREE.Mesh( buffgeoBack, new THREE.MeshBasicMaterial( { map:gradTexture([[1,0.75,0.5,0.25], ['#1B1D1E','#3D4143','#72797D', '#b0babf']]), side:THREE.BackSide, depthWrite: false }  ));
     back.geometry.applyMatrix(new THREE.Matrix4().makeRotationZ(15*ToRad));
     scene.add( back );
     
@@ -84,7 +84,7 @@ function init() {
     buffgeoCylinder= new THREE.BufferGeometry();
     buffgeoCylinder.fromGeometry( new THREE.CylinderGeometry( 0.5, 0.5, 1, 6 ) );
     
-    var materials = [
+    let materials = [
        new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/7/c/m/Z/7cmZs.png')}), // 1.png
        new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/r/7/0/e/r70eD.png')}), // 2.png
        new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('../../assets/d/v/s/L/dvsLs.png')}), // 3.png
@@ -98,12 +98,12 @@ function init() {
     //matGround = new THREE.MeshLambertMaterial( { color: 0x3D4143 } );
     matGroundTrans = new THREE.MeshLambertMaterial( { color: 0x3D4143, transparent:true, opacity:0.6 } );
     
-    var texture = THREE.ImageUtils.loadTexture("../../assets/u/y/G/y/uyGy9.jpg"); // grass.jpg
+    let texture = THREE.ImageUtils.loadTexture("../../assets/u/y/G/y/uyGy9.jpg"); // grass.jpg
     texture.wrapS   = texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set( 20, 20 );  
     matGround = new THREE.MeshLambertMaterial( { color: 0x777777, map: texture } );
 
-    var urls = [
+    let urls = [
         "../../assets/j/r/q/8/jrq8Z.jpg",    // px.jpg
         "../../assets/b/A/n/h/bAnhv.jpg",    // nx.jpg
         "../../assets/k/F/t/6/kFt6K.jpg",    // py.jpg
@@ -112,16 +112,16 @@ function init() {
         "../../assets/l/O/u/H/lOuHI.jpg"     // nz.jpg
         ];
     
-    var textureCube = THREE.ImageUtils.loadTextureCube( urls );
+    let textureCube = THREE.ImageUtils.loadTextureCube( urls );
     textureCube.format = THREE.RGBFormat;
 
     scene.matrixAutoUpdate = false;
 
     // Skybox
-    var shader = THREE.ShaderLib[ "cube" ];
+    let shader = THREE.ShaderLib[ "cube" ];
     shader.uniforms[ "tCube" ].value = textureCube;
 
-    var material = new THREE.ShaderMaterial( {
+    let material = new THREE.ShaderMaterial( {
 
         fragmentShader: shader.fragmentShader,
         vertexShader: shader.vertexShader,
@@ -147,7 +147,7 @@ function init() {
     controls.maxDistance = 5000.0;
     controls.maxPolarAngle = Math.PI * 0.4;
     controls.autoRotate = true;     //true:自動回転する,false:自動回転しない
-    controls.autoRotateSpeed = 5.0;    //自動回転する時の速度
+    controls.autoRotateSpeed = 1.0;    //自動回転する時の速度
 
     paddel = new THREE.Object3D();
     
@@ -160,17 +160,22 @@ function init() {
     initOimoPhysics();
 }
 
-function loop() {
-    requestAnimationFrame( loop );
+function loop(timestamp) {
+    let delta = Math.floor(timestamp - now);
+    if (!isNaN(delta)) {
+        updateOimoPhysics(delta);
+    }
     controls.update();
     cameraCube.rotation.copy( camera.rotation );
     renderer.clear();
     renderer.render( scene, camera );
     renderer.render( sceneCube, cameraCube );
+    now = timestamp;
+    requestAnimationFrame( loop );
 }
 
 function addStaticBox(size, position, rotation, spec) {
-    var mesh;
+    let mesh;
     if(spec) mesh = new THREE.Mesh( buffgeoBox, matGroundTrans );
     else mesh = new THREE.Mesh( buffgeoBox, matGround );
     mesh.scale.set( size[0], size[1], size[2] );
@@ -184,7 +189,7 @@ function addStaticBox(size, position, rotation, spec) {
 }
 
 function clearMesh(){
-    var i=meshs.length;
+    let i=meshs.length;
     while (i--) scene.remove(meshs[ i ]);
     i = grounds.length;
     while (i--) scene.remove(grounds[ i ]);
@@ -198,19 +203,17 @@ function clearMesh(){
 
 function initOimoPhysics(){
     
-    world = new OIMO.World(1/60, 2);
+    world = new OIMO.World(1/FPS, 2);
     populate(1);
-    setInterval(updateOimoPhysics, 1000/60);
-    
 }
 
 function populate(n) {
     
     // The Bit of a collision group
-    var group1 = 1 << 0;  // 00000000 00000000 00000000 00000001
-    var group2 = 1 << 1;  // 00000000 00000000 00000000 00000010
-    var group3 = 1 << 2;  // 00000000 00000000 00000000 00000100
-    var all = 0xffffffff; // 11111111 11111111 11111111 11111111
+    let group1 = 1 << 0;  // 00000000 00000000 00000000 00000001
+    let group2 = 1 << 1;  // 00000000 00000000 00000000 00000010
+    let group3 = 1 << 2;  // 00000000 00000000 00000000 00000100
+    let all = 0xffffffff; // 11111111 11111111 11111111 11111111
     
     // reset old
     clearMesh();
@@ -218,7 +221,7 @@ function populate(n) {
     bodys = [];
     
     // Is all the physics setting for rigidbody
-    var config = [
+    let config = [
         1, // The density of the shape.
         0.4, // The coefficient of friction of the shape.
         0.2, // The coefficient of restitution of the shape.
@@ -227,11 +230,11 @@ function populate(n) {
     ];
     
     //add ground
-    var ground = new OIMO.Body({size:[6000, 60, 6000], pos:[0,-20,0], world:world, config:config});
+    let ground = new OIMO.Body({size:[6000, 60, 6000], pos:[0,-20,0], world:world, config:config});
     addStaticBox([6000, 60, 6000], [0,-20,0], [0,0,0]);
     
     // now add object
-    var dataSet = [
+    let dataSet = [
     /* 一段目 */
     { x: 85 * Math.cos(2 * Math.PI *   1/12), y: 85 * Math.sin(2 * Math.PI *   1/12), z: 40, rot_x: 30* 1, rot_y:-90, rot_z:00},
     { x: 85 * Math.cos(2 * Math.PI *   2/12), y: 85 * Math.sin(2 * Math.PI *   2/12), z: 40, rot_x: 30* 2, rot_y:-90, rot_z:00},
@@ -285,12 +288,12 @@ function populate(n) {
     { x: 80 * Math.cos(2 * Math.PI *11.5/12), y: 80 * Math.sin(2 * Math.PI *11.5/12), z:100, rot_x:     0, rot_y:  0, rot_z:75-30*11},
     { x: 80 * Math.cos(2 * Math.PI *12.5/12), y: 80 * Math.sin(2 * Math.PI *12.5/12), z:100, rot_x:     0, rot_y:  0, rot_z:75-30*12},
     ];
-    var max = dataSet.length;
+    let max = dataSet.length;
     
-    var x, y, z, w, h, d;
-    var rot_x, rot_y, rot_z;
+    let x, y, z, w, h, d;
+    let rot_x, rot_y, rot_z;
     
-    for ( var i = 0; i < dataSet.length; i++ ) {
+    for ( let i = 0; i < dataSet.length; i++ ) {
         x = dataSet[i].x;
         z = dataSet[i].y;
         y = dataSet[i].z;
@@ -323,8 +326,8 @@ function populate(n) {
 }
 
 
-function updateOimoPhysics() {
-    
+function updateOimoPhysics(delta) {
+    world.timeStep = delta/1000;
     world.step();
     
     // apply new position on last rigidbody
@@ -336,11 +339,11 @@ function updateOimoPhysics() {
     // apply new rotation on last rigidbody
     bodys[bodys.length-1].setQuaternion(paddel.quaternion);
     
-    var p, r, m, x, y, z;
-    var mtx = new THREE.Matrix4();
-    var i = bodys.length;
-    var mesh;
-    var body;
+    let p, r, m, x, y, z;
+    let mtx = new THREE.Matrix4();
+    let i = bodys.length;
+    let mesh;
+    let body;
     
     while (i--){
         body = bodys[i].body;
@@ -371,7 +374,7 @@ function gravity(g){
     world.gravity = new OIMO.Vec3(0, nG, 0);
 }
 
-var unwrapDegrees = function (r) {
+let unwrapDegrees = function (r) {
     r = r % 360;
     if (r > 180) r -= 360;
     if (r < -180) r += 360;
@@ -383,24 +386,24 @@ var unwrapDegrees = function (r) {
 //----------------------------------
 
 function gradTexture(color) {
-    var c = document.createElement("canvas");
-    var ct = c.getContext("2d");
+    let c = document.createElement("canvas");
+    let ct = c.getContext("2d");
     c.width = 16; c.height = 256;
-    var gradient = ct.createLinearGradient(0,0,0,256);
-    var i = color[0].length;
+    let gradient = ct.createLinearGradient(0,0,0,256);
+    let i = color[0].length;
     while(i--){ gradient.addColorStop(color[0][i],color[1][i]); }
     ct.fillStyle = gradient;
     ct.fillRect(0,0,16,256);
-    var texture = new THREE.Texture(c);
+    let texture = new THREE.Texture(c);
     texture.needsUpdate = true;
     return texture;
 }
 
 function basicTexture(n){
-    var canvas = document.createElement( 'canvas' );
+    let canvas = document.createElement( 'canvas' );
     canvas.width = canvas.height = 64;
-    var ctx = canvas.getContext( '2d' );
-    var colors = [];
+    let ctx = canvas.getContext( '2d' );
+    let colors = [];
 
     if(n===0){ // box
         colors[0] = "#AA8058";
@@ -432,7 +435,7 @@ function basicTexture(n){
         ctx.fillRect(32, 32, 32, 32);
     }
 
-    var tx = new THREE.Texture(canvas);
+    let tx = new THREE.Texture(canvas);
     tx.needsUpdate = true;
     return tx;
 }
@@ -441,11 +444,11 @@ function basicTexture(n){
 //  RAY TEST
 //----------------------------------
 
-var rayTest = function () {
-    var vector = new THREE.Vector3( mouse.mx, mouse.my, 1 );
+function rayTest() {
+    let vector = new THREE.Vector3( mouse.mx, mouse.my, 1 );
     projector.unprojectVector( vector, camera );
     raycaster.set( camera.position, vector.sub( camera.position ).normalize() );
-    var intersects = raycaster.intersectObjects( content.children, true );
+    let intersects = raycaster.intersectObjects( content.children, true );
     if ( intersects.length) {
         paddel.position.copy( intersects[0].point.add(new THREE.Vector3( 0, 20, 0 )) );
     }
