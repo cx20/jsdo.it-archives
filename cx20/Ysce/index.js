@@ -149,7 +149,7 @@ class App {
     ]));
     //const mat = engine.createMaterial('texture.filamat');
     //const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/c9eb189fe338dd949f0fe2d1dc287f06be16a384/examples/filament/texture/texture.filamat'); // texture.filamat
-    const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/99aa9824879e15dfcb409a55772d590c7c9ce3ed/examples/filament/texture/texture.filamat');
+    const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/a5580792b3ab546c13feee7edb22e7e068547602/examples/filament/texture/texture.filamat');
     const matinst = mat.getDefaultInstance();
 
     const sampler = new Filament.TextureSampler(
@@ -210,7 +210,7 @@ class App {
 Filament.init([
     '../../assets/A/k/w/j/AkwjW.jpg', // frog.jpg
     //'https://rawcdn.githack.com/cx20/webgl-test/c9eb189fe338dd949f0fe2d1dc287f06be16a384/examples/filament/texture/texture.filamat'      // texture.filamat
-    'https://rawcdn.githack.com/cx20/webgl-test/99aa9824879e15dfcb409a55772d590c7c9ce3ed/examples/filament/texture/texture.filamat'      // texture.filamat
+    'https://rawcdn.githack.com/cx20/webgl-test/a5580792b3ab546c13feee7edb22e7e068547602/examples/filament/texture/texture.filamat'      // texture.filamat
 ], () => {
   window.app = new App()
 });
