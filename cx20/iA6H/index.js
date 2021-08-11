@@ -131,7 +131,7 @@ class App {
     ]));
     //const mat = engine.createMaterial('cube.filamat');
     //const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/c9eb189fe338dd949f0fe2d1dc287f06be16a384/examples/filament/cube/cube.filamat');
-    const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/99aa9824879e15dfcb409a55772d590c7c9ce3ed/examples/filament/cube/cube.filamat');
+    const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/a5580792b3ab546c13feee7edb22e7e068547602/examples/filament/cube/cube.filamat');
     const matinst = mat.getDefaultInstance();
     Filament.RenderableManager.Builder(1)
     .boundingBox({
@@ -183,7 +183,7 @@ class App {
 
 //Filament.init(['cube.filamat'], () => {
 //Filament.init(['https://rawcdn.githack.com/cx20/webgl-test/c9eb189fe338dd949f0fe2d1dc287f06be16a384/examples/filament/cube/cube.filamat'], () => {
-Filament.init(['https://rawcdn.githack.com/cx20/webgl-test/99aa9824879e15dfcb409a55772d590c7c9ce3ed/examples/filament/cube/cube.filamat'], () => {
+Filament.init(['https://rawcdn.githack.com/cx20/webgl-test/a5580792b3ab546c13feee7edb22e7e068547602/examples/filament/cube/cube.filamat'], () => {
   window.app = new App()
 });
   

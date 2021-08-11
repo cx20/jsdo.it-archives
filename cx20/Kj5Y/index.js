@@ -57,7 +57,7 @@ class App {
     //const mat = engine.createMaterial('triangle.filamat');
     //const mat = engine.createMaterial('/assets/k/S/h/N/kShN2'); // triangle.filamat
     //const mat = engine.createMaterial('https://rawcdn.githack.com/google/filament/724e9abf960700201c05f50df80a60ddd3a1ce06/docs/webgl/triangle.filamat');
-    const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/99aa9824879e15dfcb409a55772d590c7c9ce3ed/examples/filament/triangle/triangle.filamat');
+    const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/a5580792b3ab546c13feee7edb22e7e068547602/examples/filament/triangle/triangle.filamat');
     const matinst = mat.getDefaultInstance();
     Filament.RenderableManager.Builder(1)
     .boundingBox({
@@ -98,6 +98,6 @@ class App {
 //Filament.init(['triangle.filamat'], () => {
 //Filament.init(['/assets/k/S/h/N/kShN2'], () => { // triangle.filamat
 //Filament.init(['https://rawcdn.githack.com/google/filament/724e9abf960700201c05f50df80a60ddd3a1ce06/docs/webgl/triangle.filamat'], () => {
-Filament.init(['https://rawcdn.githack.com/cx20/webgl-test/99aa9824879e15dfcb409a55772d590c7c9ce3ed/examples/filament/triangle/triangle.filamat'], () => {
+Filament.init(['https://rawcdn.githack.com/cx20/webgl-test/a5580792b3ab546c13feee7edb22e7e068547602/examples/filament/triangle/triangle.filamat'], () => {
   window.app = new App()
 });
