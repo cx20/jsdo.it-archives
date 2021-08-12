@@ -34,6 +34,7 @@ function createModel(url, height) {
     });
     viewer.trackedEntity = entity;
 }
+*/
 
 function flyToHeadingPitchRoll() {
     viewer.camera.flyTo({
@@ -45,26 +46,25 @@ function flyToHeadingPitchRoll() {
         }
     });
 }
-*/
 
 function createModel(url, height) {
     viewer.entities.removeAll();
 
-    var position = Cesium.Cartesian3.fromDegrees(139.691706, 35.689487, height);
+    let position = Cesium.Cartesian3.fromDegrees(139.691706, 35.689487, height);
+    let heading = Cesium.Math.toRadians(135);
+    let pitch = 0;
+    let roll = 0;
 /*
-    var heading = Cesium.Math.toRadians(135);
-    var pitch = 0;
-    var roll = 0;
+    let heading = Cesium.Math.toRadians(30);
+    let pitch = Cesium.Math.toRadians(0);
+    let roll = Cesium.Math.toRadians(0);
 */
-    var heading = Cesium.Math.toRadians(10.0);
-    var pitch = Cesium.Math.toRadians(0.0);
-    var roll = Cesium.Math.toRadians(0.0);
+    
+    let hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+    let orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
 
-    var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-    var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-
-    var entity = viewer.entities.add({
-        name : url,
+    let entity = viewer.entities.add({
+        //name : modelInfo.filename, // TODO: The `name` property is not available in Cesium 1.52
         position : position,
         orientation : orientation,
         model : {
@@ -81,5 +81,3 @@ function createModel(url, height) {
 //createModel('https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/7268f989/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf', 10000); // TextureSettingsTest.gltf
 //createModel('https://rawcdn.githack.com/cx20/jsdo-static-contents/76dfc928/models/gltf/2.0/EmaSimpleSkin_blender/glTF/EmaSimpleSkin_blender.gltf', 10000); // EmaSimpleSkin_blender.gltf
 createModel('https://rawcdn.githack.com/cx20/gltf-test/9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf', 10000); // CesiumMilkTruck.gltf
-
-flyToHeadingPitchRoll();

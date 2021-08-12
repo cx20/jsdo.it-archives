@@ -58,5 +58,3 @@ function createModel(url, height) {
 //createModel('https://ft-lab.github.io/gltf/yunomi/Yunomi_normal_05.glb', 10000);
 //createModel('https://ft-lab.github.io/gltf/yunomi/Yunomi_normal_10.glb', 10000);
 createModel('https://ft-lab.github.io/gltf/yunomi/Yunomi_normal_20.glb', 10000);
-
-flyToHeadingPitchRoll();

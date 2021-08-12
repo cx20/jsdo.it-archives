@@ -62,4 +62,3 @@ function createModel(url, height) {
 //createModel('https://rawcdn.githack.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/Material_04.gltf', 10000);
 createModel('https://rawcdn.githack.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/Material_07.gltf', 10000);
 
-flyToHeadingPitchRoll();
