@@ -14,42 +14,6 @@ var viewer = new Cesium.Viewer('cesiumContainer', {
     shouldAnimate: true
 });                               
 
-/*
-function createModel(url, height) {
-    viewer.entities.removeAll();
-
-    var position = Cesium.Cartesian3.fromDegrees(139.691706, 35.689487, height);
-    var heading = Cesium.Math.toRadians(135);
-    var pitch = 0;
-    var roll = 0;
-    //var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, heading, pitch, roll);
-    var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-    var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-
-    var entity = viewer.entities.add({
-        name : url,
-        position : position,
-        orientation : orientation,
-        model : {
-            uri : url,
-            minimumPixelSize : 128,
-            maximumScale : 20000
-        }
-    });
-    viewer.trackedEntity = entity;
-}
-
-function flyToHeadingPitchRoll() {
-    viewer.camera.flyTo({
-        destination : Cesium.Cartesian3.fromDegrees(139.691706 + 1.0, 35.689487 - 1.0, 100000.0),
-        orientation : {
-            heading : Cesium.Math.toRadians(-20.0),
-            pitch : Cesium.Math.toRadians(-35.0),
-            roll : 0.0
-        }
-    });
-}
-*/
 function createModel(url, height) {
     viewer.entities.removeAll();
 
@@ -90,5 +54,3 @@ function createModel(url, height) {
 //createModel('https://raw.githubusercontent.com/shrekshao/minimal-gltf-loader/store-drone-model/glTFs/glTF_version_2/buster_drone/scene.gltf', 10000); // scene.gltf
 //createModel('https://rawcdn.githack.com/KhronosGroup/glTF-Blender-Exporter/2bdcb263/polly/project_polly.gltf', 10000); // project_polly.gltf
 createModel('https://rawcdn.githack.com/KhronosGroup/glTF-Blender-Exporter/0e23c773bf27dad67d2c25f060370d6fa012d87d/polly/project_polly.gltf', 10000); // project_polly.gltf
-
-//flyToHeadingPitchRoll();

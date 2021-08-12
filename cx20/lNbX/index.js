@@ -2,13 +2,7 @@
 
 //var widget = new Cesium.CesiumWidget('container');
 var widget = new Cesium.CesiumWidget('container', {
-/*
     imageryProvider : new Cesium.OpenStreetMapImageryProvider({
-        url : 'http://cyberjapandata.gsi.go.jp/xyz/std/',
-        credit: new Cesium.Credit('国土地理院', '', 'http://portal.cyberjapan.jp/help/termsofuse.html')
-    })
-*/
-    imageryProvider : Cesium.createOpenStreetMapImageryProvider({
         url : 'http://cyberjapandata.gsi.go.jp/xyz/std/',
         credit: new Cesium.Credit('国土地理院', '', 'http://portal.cyberjapan.jp/help/termsofuse.html')
     })
@@ -35,4 +29,4 @@ function flyToTokyoRectangle() {
 }
 
 flyToTokyo();
-//flyToTokyoRectangle();
+
