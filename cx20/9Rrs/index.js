@@ -113,7 +113,7 @@ function initialize() {
     //debugaxis(100);
 }
 
-function render() {
+function render(timestamp) {
     requestAnimationFrame(render);
     
     analyserNode.getByteTimeDomainData(timeDomainData1);
@@ -123,9 +123,14 @@ function render() {
     drawChart(timeDomainData2);
     
     camera.lookAt( scene.position );
+/*
     camera.position.x = 200 * Math.sin( theta * Math.PI / 180 ) * -1; // 逆回転
     camera.position.y = 200 * Math.sin( 10 * Math.PI / 180 );
     camera.position.z = 200 * Math.cos( theta * Math.PI / 180 );
+*/
+    camera.position.x = 200 * Math.sin( timestamp / 1000 ) * -1; // 逆回転
+    camera.position.y = 200 * Math.sin( 10 * Math.PI / 180 );
+    camera.position.z = 200 * Math.cos( timestamp / 1000 );
 
     theta++;
 
