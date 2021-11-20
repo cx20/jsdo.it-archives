@@ -80,8 +80,8 @@ function loadData() {
             for (var j in r) {
                 var h = r[j] == "e" ? 0 : Number(r[j]);
                 x = (Number(j) / WIDTH_SEGMENT - 0.5) * 2.0;
-                y = (i / HEIGHT_SEGMENT - 0.5) * 2.0;
-                z = h * 0.03;
+                y = h * 0.03;
+                z = (i / HEIGHT_SEGMENT - 0.5) * 2.0;
                 data.push(x);
                 data.push(y);
                 data.push(z);
@@ -96,8 +96,8 @@ function loadData() {
     }, false);
 }
 
-function animate() {
-    render();
+function animate(timestamp) {
+    render(timestamp);
     requestAnimationFrame(animate);
 }
 
@@ -106,9 +106,10 @@ var rad = 0;
 var baseTime = +new Date;
 var time = 0;
 
-function render() {
-    rad += Math.PI * 1.0 / 180.0;
-
+function render(timestamp) {
+    //rad += Math.PI * 1.0 / 180.0;
+    rad = timestamp / 1000; // Seconds since the first requestAnimationFrame (ms)
+    
     var c = Math.cos(rad);
     var s = Math.sin(rad);
 
@@ -118,10 +119,18 @@ function render() {
 
     // 変換行列を用意
     // x軸で回転
+/*
     var matAxisX = [
         1.0, 0.0, 0.0, 0.0,
         0.0,   c,  -s, 0.0,
         0.0,   s,   c, 0.0,
+        0.0, 0.0, 0.0, 1.0
+    ];
+*/
+    var matAxisX = [
+        1.0, 0.0, 0.0, 0.0,
+        0.0, 1.0, 0.0, 0.0,
+        0.0, 0.0, 1.0, 0.0,
         0.0, 0.0, 0.0, 1.0
     ];
 
