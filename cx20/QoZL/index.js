@@ -97,18 +97,19 @@ function init() {
     outlinePass.hiddenEdgeColor = new THREE.Color(0xffffff);
 }
 
-function animate() {
+function animate(timestamp) {
+
+    render(timestamp);
 
     requestAnimationFrame(animate);
-
-    render();
 }
 
 var angle = 0;
-function render() {
+function render(timestamp) {
     controls.update();
 
-    angle += Math.PI * 0.5/ 180;
+    //angle += Math.PI * 0.5/ 180;
+    angle = timestamp / 1000 * 0.5; // Seconds since the first requestAnimationFrame (ms)
     var timer = performance.now();
     renderer.autoClear = true;
     renderer.setClearColor(0xffffff);
