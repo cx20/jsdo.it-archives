@@ -82,10 +82,11 @@ function init() {
         scene.add(object);
     });
 
-    var axis = new THREE.AxisHelper(1000);   
+    var axis = new THREE.AxesHelper(1000);   
     scene.add(axis);
 
     renderer = new THREE.WebGLRenderer();
+    renderer.outputEncoding = THREE.sRGBEncoding; // if >r112, specify outputEncoding instead of gammaOutput
     renderer.setClearColor( 0xaaaaaa );
 
     controls = new THREE.OrbitControls( camera, renderer.domElement );
@@ -94,10 +95,10 @@ function init() {
     controls.maxDistance = 5000.0;
     controls.maxPolarAngle = Math.PI * 0.495;
     controls.autoRotate = false;
-    controls.autoRotateSpeed = -10.0;
+    controls.autoRotateSpeed = -2.0;
 
     renderer.setSize( width, height );
-    renderer.gammaOutput = true; // if >r88, models are dark unless you activate gammaOutput
+    //renderer.gammaOutput = true; // if >r88, models are dark unless you activate gammaOutput
 
     document.body.appendChild( renderer.domElement );
 }

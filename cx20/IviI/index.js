@@ -95,6 +95,7 @@ function init() {
     scene.add(axis);
 
     renderer = new THREE.WebGLRenderer();
+    renderer.outputEncoding = THREE.sRGBEncoding; // if >r112, specify outputEncoding instead of gammaOutput
     renderer.setClearColor( 0xbfe4ff );
     //renderer.setClearColor( 0x000000 );
     renderer.shadowMap.enabled = true;
@@ -109,7 +110,7 @@ function init() {
     controls.autoRotateSpeed = 2.0;
 
     renderer.setSize( width, height );
-    renderer.gammaOutput = true;
+    //renderer.gammaOutput = true;
     document.body.appendChild( renderer.domElement );
 }
 
