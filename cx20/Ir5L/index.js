@@ -134,7 +134,8 @@ function initBuffers() {
     };
     //img1.src = "/assets/s/i/i/9/sii9N.jpg"; // mars_heightmap.jpg
     //img1.src = "/assets/2/h/3/H/2h3HU.jpg"; // earth_heightmap.jpg
-    img1.src = "../../assets/8/6/J/8/86J8V.jpg"; // moon.jpg
+    //img1.src = "../../assets/8/6/J/8/86J8V.jpg"; // moon.jpg
+    img1.src = "./heightmap.jpg"; // Displacement texture: https://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=4720
 }
 
 
