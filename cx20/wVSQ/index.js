@@ -15,6 +15,16 @@ var texture1;
 function initWebGL() {
     c = document.getElementById("c");
     gl = c.getContext("experimental-webgl");
+    resizeCanvas();
+    window.addEventListener("resize", function(){
+        resizeCanvas();
+    });
+}
+
+function resizeCanvas() {
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    gl.viewport(0, 0, c.width, c.height);
 }
 
 function initShaders() {
@@ -104,7 +114,7 @@ function initBuffers() {
     };
     //img0.src = "frog.jpg";
     img0.src = "../../assets/A/k/w/j/AkwjW.jpg";
-
+    
     var img1 = new Image();
     img1.onload = function(){
         // テクスチャを用意

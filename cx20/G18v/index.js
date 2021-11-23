@@ -17,6 +17,17 @@ var texture1;
 function initWebGL() {
     c = document.getElementById("c");
     gl = c.getContext("experimental-webgl");
+
+    resizeCanvas();
+    window.addEventListener("resize", function(){
+        resizeCanvas();
+    });
+}
+
+function resizeCanvas() {
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    gl.viewport(0, 0, c.width, c.height);
 }
 
 function initShaders() {
@@ -52,10 +63,16 @@ function initShaders() {
 
 function initBuffers() {
     var data = [ 
+/*
         -1.0, 0.5, 0.0, // v0 
          1.0, 0.5, 0.0, // v1
         -1.0,-0.5, 0.0, // v2
          1.0,-0.5, 0.0  // v3
+*/
+        -1.0, 1.0, 0.0, // v0 
+         1.0, 1.0, 0.0, // v1
+        -1.0,-1.0, 0.0, // v2
+         1.0,-1.0, 0.0  // v3
     ];
     
     var color = [ 

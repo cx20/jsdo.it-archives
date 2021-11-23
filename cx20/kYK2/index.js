@@ -17,6 +17,23 @@ var texture1;
 function initWebGL() {
     c = document.getElementById("c");
     gl = c.getContext("experimental-webgl");
+
+    resizeCanvas();
+    window.addEventListener("resize", function(){
+        resizeCanvas();
+    });
+}
+
+function resizeCanvas() {
+    var aspect = window.innerWidth / window.innerHeight;
+    if ( aspect > 1.0 ) {
+        c.width = window.innerHeight;
+        c.height = window.innerHeight;
+    } else {
+        c.width = window.innerWidth;
+        c.height = window.innerWidth;
+    }
+    gl.viewport(0, 0, c.width, c.height);
 }
 
 function initShaders() {
@@ -106,7 +123,7 @@ function initBuffers() {
     };
     //img0.src = "mars.jpg";
     img0.src = "../../assets/A/j/X/S/AjXS2.jpg";
-
+    
     var img1 = new Image();
     img1.onload = function(){
         // テクスチャを用意
@@ -118,7 +135,6 @@ function initBuffers() {
     };
     //img1.src = "mars_heightmap.jpg";
     img1.src = "../../assets/s/i/i/9/sii9N.jpg";
-
 }
 
 

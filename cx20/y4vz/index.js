@@ -11,6 +11,17 @@ var uLoc = [];
 function initWebGL() {
     c = document.getElementById("c");
     gl = c.getContext("experimental-webgl");
+
+    resizeCanvas();
+    window.addEventListener("resize", function(){
+        resizeCanvas();
+    });
+}
+
+function resizeCanvas() {
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    gl.viewport(0, 0, c.width, c.height);
 }
 
 function initShaders() {
