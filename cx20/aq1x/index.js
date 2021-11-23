@@ -118,6 +118,7 @@ function init() {
     scene.add(axis);
 
     renderer = new THREE.WebGLRenderer();
+    renderer.outputEncoding = THREE.sRGBEncoding; // if >r112, specify outputEncoding instead of gammaOutput
     //renderer.setClearColor( 0xbfe4ff );
     renderer.setClearColor( 0x000000 );
     renderer.shadowMap.enabled = true;

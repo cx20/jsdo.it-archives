@@ -66,7 +66,7 @@ function init() {
         scene.add(object);
     });
 
-    var axis = new THREE.AxisHelper(1000);   
+    var axis = new THREE.AxesHelper(1000);   
     scene.add(axis);
 
     renderer = new THREE.WebGLRenderer();
@@ -78,7 +78,7 @@ function init() {
     controls.maxDistance = 5000.0;
     controls.maxPolarAngle = Math.PI * 0.495;
     controls.autoRotate = true;
-    controls.autoRotateSpeed = -5.0;
+    controls.autoRotateSpeed = -2.0;
 
     renderer.setSize( width, height );
     document.body.appendChild( renderer.domElement );
