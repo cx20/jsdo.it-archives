@@ -9,6 +9,8 @@ var mesh, decal;
 var raycaster = new THREE.Raycaster();
 var lihght1;
 var lihght2;
+var textureMoon;
+var textureHeightmap;
 
 var mouse = new THREE.Vector2();
 var selectedObjects = [];
@@ -55,7 +57,8 @@ function init() {
     scene.add(group);
 
     var textureLoader = new THREE.TextureLoader();
-    texture = textureLoader.load("../../assets/A/u/M/t/AuMt1.jpg"); // moon.jpg
+    textureMoon = textureLoader.load("../../assets/A/u/M/t/AuMt1.jpg"); // moon.jpg
+    textureHeightmap =textureLoader.load("../../assets/4/Y/G/9/ldem_3_8bit.jpg"); // moon_heightmap.jpg
 
     light1 = new THREE.AmbientLight(0x8090a0, 0.5);
     scene.add(light1);
@@ -66,7 +69,9 @@ function init() {
     
     var geometry = new THREE.SphereGeometry(200, 30, 30);
     material = new THREE.MeshLambertMaterial({
-        map: texture
+        map: textureMoon,
+        bumpMap: textureHeightmap,
+        bumpScale: 1.0
     });
     var moon = new THREE.Mesh(geometry, material);
     moon.rotation.x = (23.5/180)*Math.PI;

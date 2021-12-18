@@ -20,15 +20,15 @@ function init() {
 
     scene = new THREE.Scene();
     light = new THREE.PointLight( new THREE.Color(0x808080), 1.5);
-    light2 = new THREE.PointLight( new THREE.Color(0x101010), 1);
-    light.position.set(0, -100, 1000);
-    light2.position.set(50, 50, 1000);
+    //light2 = new THREE.PointLight( new THREE.Color(0x101010), 1);
+    light.position.set(500, -100, 1000);
+    //light2.position.set(50, 50, 1000);
     scene.add(light);
-    scene.add(light2);
+    //scene.add(light2);
     geometry = new THREE.SphereGeometry(140, 30, 30);
-    material = new THREE.MeshPhongMaterial({
+    material = new THREE.MeshLambertMaterial({
         map: THREE.ImageUtils.loadTexture('../../assets/4/Y/G/9/4YG92.jpg'),	// moon.jpg
-        bumpMap: THREE.ImageUtils.loadTexture('../../assets/4/Y/G/9/4YG92.jpg'), // moon.jpg
+        bumpMap: THREE.ImageUtils.loadTexture('../../assets/4/Y/G/9/ldem_3_8bit.jpg'), // moon.jpg
         bumpScale: 1.0
     });
     mesh = new THREE.Mesh(geometry, material);
@@ -40,12 +40,13 @@ function init() {
     container.appendChild(renderer.domElement);
 }
 
-function animate() {
+function animate(timestamp) {
+    render(timestamp);
     requestAnimationFrame(animate);
-    render();
 }
 
-function render() {
-    mesh.rotation.y += 0.005;
+function render(timestamp) {
+    //mesh.rotation.y += 0.005;
+    mesh.rotation.y = timestamp / 1000 * 0.3;
     renderer.render(scene, camera);
 }

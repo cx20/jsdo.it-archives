@@ -59,13 +59,14 @@ function init() {
     container.appendChild(renderer.domElement);
 }
 
-function animate() {
+function animate(timestamp) {
+    render(timestamp);
     requestAnimationFrame(animate);
-    render();
 }
 
-function render() {
-    mars.rotation.y += 0.005;
+function render(timestamp) {
+    //mars.rotation.y += 0.005;
     //cloud.rotation.y += 0.006;
+    mars.rotation.y = timestamp / 1000 * 0.3;
     renderer.render(scene, camera);
 }
