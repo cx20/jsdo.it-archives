@@ -143,9 +143,9 @@ app.on("update", function (deltaTime) {
 
 function main() {
    if (wasmSupported()) {
-        loadWasmModuleAsync('DracoDecoderModule', 'https://cx20.github.io/gltf-test/libs/playcanvas/v1.51.4/draco.wasm.js', 'https://cx20.github.io/gltf-test/libs/playcanvas/v1.51.4/draco.wasm.wasm', init);
+        loadWasmModuleAsync('DracoDecoderModule', 'https://cx20.github.io/gltf-test/libs/playcanvas/v1.51.4/draco/draco.wasm.js', 'https://cx20.github.io/gltf-test/libs/playcanvas/v1.51.4/draco/draco.wasm.wasm', init);
     } else {
-        loadWasmModuleAsync('DracoDecoderModule', 'https://cx20.github.io/gltf-test/libs/playcanvas/v1.51.4/draco.js', '', init);
+        loadWasmModuleAsync('DracoDecoderModule', 'https://cx20.github.io/gltf-test/libs/playcanvas/v1.51.4/draco/draco.js', '', init);
     }
 }
 
