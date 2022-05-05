@@ -8,21 +8,23 @@
 // forked from cx20's "Three.js で冥王星を表示させてみるテスト" http://jsdo.it/cx20/tenj
 // forked from cx20's "Three.js で地球を回してみるテスト" http://jsdo.it/cx20/tv0T
 
-var parent;
-var createScene = function (engine) {
-    var scene = new BABYLON.Scene(engine);
+const canvas = document.querySelector("#renderCanvas");
+const engine = new BABYLON.Engine(canvas, true);
+
+const createScene = function (engine) {
+    const scene = new BABYLON.Scene(engine);
     scene.clearColor  = new BABYLON.Color3(0.0, 0.0, 0.0);
-    var camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 2, 1.0, 110, BABYLON.Vector3.Zero(), scene);
+    const camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 2, 1.0, 110, BABYLON.Vector3.Zero(), scene);
     camera.setPosition(new BABYLON.Vector3(0, 50, -150));
     camera.attachControl(canvas, true);
-    var light = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(0, -0.5, 1.0), scene);
+    const light = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(0, -0.5, 1.0), scene);
 
-    parent = new BABYLON.Mesh.CreateBox("parent", 1, scene);
-    var box1 = BABYLON.Mesh.CreateBox("box1", 50, scene);
-    var box2 = BABYLON.Mesh.CreateBox("box2", 49.9, scene);
-    var surface = BABYLON.Mesh.CreateSphere("surface", 16, 75, scene);
-    var mantle = BABYLON.Mesh.CreateSphere("mantle", 16, 73, scene);
-    var core = BABYLON.Mesh.CreateSphere("core", 16, 40, scene);
+    const parent = new BABYLON.Mesh.CreateBox("parent", 1, scene);
+    const box1 = BABYLON.Mesh.CreateBox("box1", 50, scene);
+    const box2 = BABYLON.Mesh.CreateBox("box2", 49.9, scene);
+    const surface = BABYLON.Mesh.CreateSphere("surface", 16, 75, scene);
+    const mantle = BABYLON.Mesh.CreateSphere("mantle", 16, 73, scene);
+    const core = BABYLON.Mesh.CreateSphere("core", 16, 40, scene);
 
     box1.position.x += 25;
     box1.position.y += 25;
@@ -37,47 +39,49 @@ var createScene = function (engine) {
     surface.isVisible = false;
     mantle.isVisible = false;
 
-    var box1CSG = BABYLON.CSG.FromMesh(box1);
-    var box2CSG = BABYLON.CSG.FromMesh(box2);
-    var surfaceCSG = BABYLON.CSG.FromMesh(surface);
-    var mantleCSG = BABYLON.CSG.FromMesh(mantle);
+    const box1CSG = BABYLON.CSG.FromMesh(box1);
+    const box2CSG = BABYLON.CSG.FromMesh(box2);
+    const surfaceCSG = BABYLON.CSG.FromMesh(surface);
+    const mantleCSG = BABYLON.CSG.FromMesh(mantle);
 
-    var surfaceMaterial = new BABYLON.StandardMaterial("mat_surface", scene);
-    surfaceMaterial.diffuseTexture = new BABYLON.Texture("../../assets/u/r/e/y/ureyw.jpg", scene); // io_rgb_cyl.jpg
+    const surfaceMaterial = new BABYLON.StandardMaterial("mat_surface", scene);
+    //surfaceMaterial.diffuseTexture = new BABYLON.Texture("../../assets/u/r/e/y/ureyw.jpg", scene); // io_rgb_cyl.jpg
+    surfaceMaterial.diffuseTexture = new BABYLON.Texture("../../assets/q/Y/Q/E/qYQEm.jpg", scene); // io_rgb_cyl.jpg
     surfaceMaterial.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
 
-    var mantleMaterial = new BABYLON.StandardMaterial("mat_mantle", scene);
-    mantleMaterial.diffuseTexture = new BABYLON.Texture("../../assets/c/C/I/q/cCIqn.jpg", scene); // ava.jpg
+    const mantleMaterial = new BABYLON.StandardMaterial("mat_mantle", scene);
+    mantleMaterial.diffuseTexture = new BABYLON.Texture("../../assets/c/C/I/q/cCIqn.jpg", scene); // lava.jpg
     mantleMaterial.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
-    
-    var subCSG = surfaceCSG.subtract(box1CSG);
-    var surfaceMesh = subCSG.toMesh("csg1", surfaceMaterial, scene);
+
+    const subCSG = surfaceCSG.subtract(box1CSG);
+    const surfaceMesh = subCSG.toMesh("csg1", surfaceMaterial, scene);
     surfaceMesh.parent = parent;
 
-    var subCSG2 = mantleCSG.subtract(box2CSG);
-    var mantleMesh = subCSG2.toMesh("csg2", mantleMaterial, scene);
+    const subCSG2 = mantleCSG.subtract(box2CSG);
+    const mantleMesh = subCSG2.toMesh("csg2", mantleMaterial, scene);
     mantleMesh.parent = parent;
-
-    var coreMaterial = new BABYLON.StandardMaterial("mat_core", scene);
+    
+    const coreMaterial = new BABYLON.StandardMaterial("mat_core", scene);
     coreMaterial.diffuseTexture = new BABYLON.Texture("../../assets/g/I/9/t/gI9tJ.png", scene); // core.png
     coreMaterial.emissiveColor = new BABYLON.Color3(1.0, 1.0, 1.0);
     core.material = coreMaterial;
     core.parent = parent;
 
+    let rad = 0.0;
+    scene.registerBeforeRender(function () {
+        rad -= Math.PI * 0.5 / 180.0;
+        parent.rotation.y = rad;
+        scene.activeCamera.alpha += 0.001 * scene.getAnimationRatio();
+    });
+
     return scene;
 };
 
-var canvas = document.querySelector("#renderCanvas");
-var engine = new BABYLON.Engine(canvas, true);
-var scene = createScene(engine);
+const scene = createScene(engine);
 
-var rad = 0.0;
-engine.runRenderLoop(function () {
-    rad -= Math.PI * 0.5 / 180.0;
-    parent.rotation.y = rad;
+engine.runRenderLoop(function(){
     scene.render();
 });
-
 
 window.addEventListener('resize', function(){
     engine.resize();
