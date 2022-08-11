@@ -87,7 +87,7 @@ class App {
             .build(engine, sunlight);
         this.scene.addEntity(sunlight);
 
-        const indirectLight = this.ibl = engine.createIblFromKtx(ibl_url);
+        const indirectLight = this.ibl = engine.createIblFromKtx1(ibl_url);
         this.scene.setIndirectLight(indirectLight);
         indirectLight.setIntensity(50000);
 
