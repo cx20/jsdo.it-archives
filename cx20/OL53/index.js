@@ -87,7 +87,7 @@ class App {
         this.scene.setIndirectLight(indirectLight);
         indirectLight.setIntensity(50000);
 
-        const skybox = engine.createSkyFromKtx(sky_url);
+        const skybox = engine.createSkyFromKtx1(sky_url);
         this.scene.setSkybox(skybox);
 
         const loader = engine.createAssetLoader();
