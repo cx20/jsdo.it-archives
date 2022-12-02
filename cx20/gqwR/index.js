@@ -5,14 +5,15 @@
 // forked from cx20's "[WebGL] three.js を試してみるテスト（BufferGeometry編）" http://jsdo.it/cx20/yCyD
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
-var container;
-var camera, scene, renderer;
-var geometry;
-var uniforms = {};
-var material;
-var mesh;
+let container;
+let camera, scene, renderer;
+let geometry;
+let uniforms = {};
+let material;
+let mesh;
+let rad = 0.0;
 
-//var spector = new SPECTOR.Spector();
+//let spector = new SPECTOR.Spector();
 
 init();
 animate();
@@ -41,7 +42,7 @@ function init() {
     //       |/       |/
     //      [0]------[1]
     //
-    var vertexPositions = [
+    let vertexPositions = [
             // Front face
             [-0.5, -0.5,  0.5], // v0
             [ 0.5, -0.5,  0.5], // v1
@@ -73,13 +74,13 @@ function init() {
             [-0.5,  0.5, -0.5], // v7
             [-0.5, -0.5, -0.5]  // v4
     ];
-    var vertices = new Float32Array(vertexPositions.length * 3);
-    for (var i = 0; i < vertexPositions.length; i++) {
+    const vertices = new Float32Array(vertexPositions.length * 3);
+    for (let i = 0; i < vertexPositions.length; i++) {
         vertices[i * 3 + 0] = vertexPositions[i][0];
         vertices[i * 3 + 1] = vertexPositions[i][1];
         vertices[i * 3 + 2] = vertexPositions[i][2];
     }
-    var texcoord = new Float32Array([
+    let texcoord = new Float32Array([
         // Front face
         1, 0,
         0, 0,
@@ -112,7 +113,7 @@ function init() {
         1, 1
     ]);
     
-    var indices = new Uint16Array([
+    const indices = new Uint16Array([
          0,  1,  2,    0,  2 , 3,  // Front face
          4,  5,  6,    4,  6 , 7,  // Back face
          8,  9, 10,    8, 10, 11,  // Top face
@@ -122,11 +123,13 @@ function init() {
     ]);
     
     geometry = new THREE.BufferGeometry();
-    geometry.addAttribute('position', new THREE.BufferAttribute(vertices, 3));
-    geometry.addAttribute('uv', new THREE.BufferAttribute(texcoord, 2));
-    geometry.addAttribute('index', new THREE.BufferAttribute(indices, 1));
+    geometry.setAttribute('position', new THREE.BufferAttribute(vertices, 3));
+    geometry.setAttribute('uv', new THREE.BufferAttribute(texcoord, 2));
+    geometry.setIndex(new THREE.BufferAttribute(indices, 1));
+    const loader = new THREE.TextureLoader();
+    const texture = loader.load('../../assets/A/k/w/j/AkwjW.jpg'); // frog.jpg
     uniforms = {
-        texture : { type: "t", value: THREE.ImageUtils.loadTexture( '../../assets/A/k/w/j/AkwjW.jpg' ) }  // frog.jpg
+        texture : { type: "t", value: texture }  // frog.jpg
     };
 
     material = new THREE.RawShaderMaterial({
@@ -153,8 +156,6 @@ function init() {
 
 function rebuildProgram(vertexSourceCode,  fragmentSourceCode, onCompiled, onError)
 {
-    //console.log(vertexSourceCode);
-    //console.log(fragmentSourceCode);
     scene.remove(mesh);
     material = new THREE.RawShaderMaterial({
         vertexShader: vertexSourceCode,
@@ -173,7 +174,6 @@ function animate() {
     render();
 }
 
-var rad = 0.0;
 function render() {
     rad += Math.PI * 1.0 / 180.0
     mesh.rotation.x = rad;
