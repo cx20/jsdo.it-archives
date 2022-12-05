@@ -2,16 +2,16 @@
 // forked from cx20's "Three.js で月を表示させてみるテスト" http://jsdo.it/cx20/vcVy
 // forked from cx20's "Three.js で冥王星を表示させてみるテスト" http://jsdo.it/cx20/tenj
 // forked from cx20's "Three.js で地球を回してみるテスト" http://jsdo.it/cx20/tv0T
-var container;
-var camera;
-var scene;
-var geometry;
-var material;
-var mars;
-var cloud;
-var renderer;
-var light;
-var light2;
+let container;
+let camera;
+let scene;
+let geometry;
+let material;
+let mars;
+let cloud;
+let renderer;
+let light;
+let light2;
 
 init();
 animate();
@@ -29,10 +29,11 @@ function init() {
     scene.add(light);
     scene.add(light2);
     geometry = new THREE.SphereGeometry(140, 30, 30);
-    var planetTexture = THREE.ImageUtils.loadTexture('../../assets/k/C/E/D/kCEDg.jpg'); // mars_atmos_1024.jpg
-    //var planetTexture = THREE.ImageUtils.loadTexture('../../assets/g/k/b/s/gkbsR.jpg'); // mars_ocean_1024.jpg
-    var normalTexture = THREE.ImageUtils.loadTexture('../../assets/k/u/S/Y/kuSYW.jpg'); // mars_normal_1024.jpg
-    //var specularTexture = THREE.ImageUtils.loadTexture('../../assets/w/N/j/h/wNjh6.jpg'); // mars_specular_1024.jpg
+    const loader = new THREE.TextureLoader();
+    const planetTexture = loader.load('../../assets/k/C/E/D/kCEDg.jpg'); // mars_atmos_1024.jpg
+    //const planetTexture = loader.load('../../assets/g/k/b/s/gkbsR.jpg'); // mars_ocean_1024.jpg
+    const normalTexture = loader.load('../../assets/k/u/S/Y/kuSYW.jpg'); // mars_normal_1024.jpg
+    //const specularTexture = loader.load('../../assets/w/N/j/h/wNjh6.jpg'); // mars_specular_1024.jpg
     material = new THREE.MeshPhongMaterial({
         map: planetTexture,
         normalMap: normalTexture,
@@ -44,8 +45,8 @@ function init() {
     mars = new THREE.Mesh(geometry, material);
     scene.add(mars);
 
-    var cloudsTexture = THREE.ImageUtils.loadTexture('../../assets/n/l/9/m/nl9m8.png'); // earth_clouds_1024.png
-    var materialClouds = new THREE.MeshLambertMaterial({
+    const cloudsTexture = loader.load('../../assets/n/l/9/m/nl9m8.png'); // earth_clouds_1024.png
+    const materialClouds = new THREE.MeshLambertMaterial({
         color: 0xffffff,
         map: cloudsTexture,
         transparent: true

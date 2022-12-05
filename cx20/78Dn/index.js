@@ -1,16 +1,16 @@
 // forked from cx20's "Three.js で月を表示させてみるテスト" http://jsdo.it/cx20/vcVy
 // forked from cx20's "Three.js で冥王星を表示させてみるテスト" http://jsdo.it/cx20/tenj
 // forked from cx20's "Three.js で地球を回してみるテスト" http://jsdo.it/cx20/tv0T
-var container;
-var camera;
-var scene;
-var geometry;
-var material;
-var earth;
-var cloud;
-var renderer;
-var light;
-var light2;
+let container;
+let camera;
+let scene;
+let geometry;
+let material;
+let earth;
+let cloud;
+let renderer;
+let light;
+let light2;
 
 init();
 animate();
@@ -28,9 +28,10 @@ function init() {
     scene.add(light);
     scene.add(light2);
     geometry = new THREE.SphereGeometry(140, 30, 30);
-    var planetTexture = THREE.ImageUtils.loadTexture('../../assets/4/I/b/A/4IbAL.jpg'); // earth_atmos_1024.jpg
-    var normalTexture = THREE.ImageUtils.loadTexture('../../assets/A/b/2/p/Ab2pP.jpg'); // earth_normal_1024.jpg
-    var specularTexture = THREE.ImageUtils.loadTexture('../../assets/w/N/j/h/wNjh6.jpg'); // earth_specular_1024.jpg
+    const loader = new THREE.TextureLoader();
+    const planetTexture = loader.load('../../assets/4/I/b/A/4IbAL.jpg'); // earth_atmos_1024.jpg
+    const normalTexture = loader.load('../../assets/A/b/2/p/Ab2pP.jpg'); // earth_normal_1024.jpg
+    const specularTexture = loader.load('../../assets/w/N/j/h/wNjh6.jpg'); // earth_specular_1024.jpg
     material = new THREE.MeshPhongMaterial({
         map: planetTexture,
         normalMap: normalTexture,
@@ -42,8 +43,8 @@ function init() {
     earth = new THREE.Mesh(geometry, material);
     scene.add(earth);
 
-    var cloudsTexture = THREE.ImageUtils.loadTexture('../../assets/n/l/9/m/nl9m8.png'); // earth_clouds_1024.png
-    var materialClouds = new THREE.MeshLambertMaterial({
+    const cloudsTexture = loader.load('../../assets/n/l/9/m/nl9m8.png'); // earth_clouds_1024.png
+    const materialClouds = new THREE.MeshLambertMaterial({
         color: 0xffffff,
         map: cloudsTexture,
         transparent: true
