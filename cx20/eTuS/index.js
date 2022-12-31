@@ -74,7 +74,7 @@ class App {
             const entities = asset.getEntities();
             scene.addEntities(entities);
             messages.remove();
-            this.animator = asset.getAnimator();
+            this.animator = asset.getInstance().getAnimator();
             this.animationStartTime = Date.now();
         };
         asset.loadResources(onDone, onFetched, basePath);
@@ -107,7 +107,7 @@ class App {
 
         if (this.animator) {
             const ms = Date.now() - this.animationStartTime;
-            for (let i = 0; i < this.asset.getAnimator().getAnimationCount(); i++ ) {
+            for (let i = 0; i < this.asset.getInstance().getAnimator().getAnimationCount(); i++ ) {
                 this.animator.applyAnimation(i, ms / 1000);
                 this.animator.updateBoneMatrices();
             }

@@ -99,7 +99,7 @@ class App {
             const entities = asset.getEntities();
             scene.addEntities(entities);
             messages.remove();
-            this.animator = asset.getAnimator();
+            this.animator = asset.getInstance().getAnimator();
             this.animationStartTime = Date.now();
         };
         asset.loadResources(onDone, onFetched, basePath);
