@@ -13,6 +13,9 @@ const createScene = function(engine) {
         const bunny = scene.getMeshByName("Object_2");
         bunny.material.wireframe = true;
 
+        const indices = bunny.getIndices();
+        const max = indices.length;
+
         const scale = 50;
         const modelScaling = mesh.scaling;
         mesh.scaling = new BABYLON.Vector3(modelScaling.x * scale, modelScaling.y * scale, modelScaling.z * scale);
@@ -31,8 +34,28 @@ const createScene = function(engine) {
         );
         scene.createDefaultSkybox(cubeTexture, true, 10000);
 
+        let count = 0;
+        let isFinished = false;
+        const STEP = 10;
+
         engine.runRenderLoop(function () {
-            scene.activeCamera.alpha -= 0.005 * scene.getAnimationRatio();
+            if (isFinished) {
+                scene.activeCamera.alpha -= 0.005 * scene.getAnimationRatio();
+            }
+ 
+            if (count < max) {
+                count += STEP;
+                if ( count > max ) {
+                    count = max;
+                }
+            } else {
+                isFinished = true;
+            }
+
+            if (!isFinished) {
+                bunny.setIndices(indices.slice(0, count));
+            }
+
             scene.render();
         });
     });
