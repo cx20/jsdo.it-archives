@@ -11,7 +11,7 @@ const createScene = function(engine) {
         const scene = newScene;
         const mesh = scene.meshes[0];
         const bunny = scene.getMeshByName("Object_2");
-        bunny.material.wireframe = true;﻿
+        bunny.material.wireframe = true;
 
         const scale = 50;
         const modelScaling = mesh.scaling;
