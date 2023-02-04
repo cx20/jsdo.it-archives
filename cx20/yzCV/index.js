@@ -118,8 +118,9 @@ function Load() {
 
     var tableSize = 16;
 
-    viewer = new JSM.Viewer();
-    if (!viewer.Start('example', viewerSettings)) {
+    viewer = new JSM.ThreeViewer ();
+    if (!viewer.Start (document.getElementById ('example'), viewerSettings)) {
+        Error ();
         return;
     }
 
