@@ -54,7 +54,7 @@ camera.addComponent('script');
 app.root.addChild(camera);
 camera.setLocalPosition(1, 0.5, 1);
 
-app.assets.loadFromUrl('https://cx20.github.io/gltf-test/libs/playcanvas/v1.60.0/orbit-camera.js', 'script', function (err, asset) {
+app.assets.loadFromUrl('https://cx20.github.io/gltf-test/libs/playcanvas/v1.61.0/orbit-camera.js', 'script', function (err, asset) {
     camera.script.create('orbitCamera');
     camera.script.create("orbitCameraInputMouse");
     camera.script.create("orbitCameraInputTouch");
@@ -148,9 +148,9 @@ app.on("update", function (deltaTime) {
 
 function main() {
    if (wasmSupported()) {
-        loadWasmModuleAsync('DracoDecoderModule', 'https://cx20.github.io/gltf-test/libs/playcanvas/v1.60.0/draco/draco.wasm.js', 'https://cx20.github.io/gltf-test/libs/playcanvas/v1.60.0/draco/draco.wasm.wasm', init);
+        loadWasmModuleAsync('DracoDecoderModule', 'https://cx20.github.io/gltf-test/libs/playcanvas/v1.61.0/draco/draco.wasm.js', 'https://cx20.github.io/gltf-test/libs/playcanvas/v1.61.0/draco/draco.wasm.wasm', init);
     } else {
-        loadWasmModuleAsync('DracoDecoderModule', 'https://cx20.github.io/gltf-test/libs/playcanvas/v1.60.0/draco/draco.js', '', init);
+        loadWasmModuleAsync('DracoDecoderModule', 'https://cx20.github.io/gltf-test/libs/playcanvas/v1.61.0/draco/draco.js', '', init);
     }
 }
 
