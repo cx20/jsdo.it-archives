@@ -8,9 +8,19 @@
 // forked from cx20's "three.js で Blender のデータを表示してみるテスト" http://jsdo.it/cx20/2CXI
 // forked from 【WebGL特集】第4回：Blenderでモデル出力 http://mox-motion.com/blog/webgl04-2/
 
-var gltf = null;
-var mixer = null;
-var clock = new THREE.Clock();
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+let width = 0;
+let height = 0;
+let gltf = null;
+let mixer = null;
+let clock = new THREE.Clock();
+let scene
+let renderer;
+let controls;
+let camera;
 
 init();
 animate();
@@ -41,7 +51,7 @@ function init() {
         console.log( item, loaded, total );
     };
 
-    var loader = new THREE.GLTFLoader();
+    var loader = new GLTFLoader();
     loader.setCrossOrigin( 'anonymous' ); // r84 以降は明示的に setCrossOrigin() を指定する必要がある
 
     var scale = 1.0;
@@ -71,7 +81,7 @@ function init() {
     renderer = new THREE.WebGLRenderer();
     renderer.setClearColor( 0xaaaaaa );
 
-    controls = new THREE.OrbitControls( camera, renderer.domElement );
+    controls = new OrbitControls( camera, renderer.domElement );
     controls.userPan = false;
     controls.userPanSpeed = 0.0;
     controls.maxDistance = 5000.0;

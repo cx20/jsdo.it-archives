@@ -13,16 +13,14 @@
 <!-- Copyright cx20 - http://jsdo.it/cx20 -->
 <!-- Licensed under MIT License - http://www.opensource.org/licenses/mit-license.php -->
 <!-- three.js -->
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r146/build/three.js"></script>
-
-<!-- GLTFExporter.js -->
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r146/examples/js/exporters/GLTFExporter.js"></script>
-
-<!-- OrbitControls.js -->
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r146/examples/js/controls/OrbitControls.js"></script>
-
-<!-- BufferGeometryUtils.js -->
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r146/examples/js/utils/BufferGeometryUtils.js"></script>
+<script type="importmap">
+{
+	"imports": {
+		"three": "https://cx20.github.io/gltf-test/libs/three.js/r154/build/three.module.js",
+		"three/addons/": "https://cx20.github.io/gltf-test/libs/three.js/r154/examples/jsm/"
+	}
+}
+</script>
 
 <div id="info">
     GLTF Exporter<br/>
@@ -30,7 +28,6 @@
     <label><input id="option_binary" name="visible" type="checkbox">Binary (<code>.glb</code>)</label>
 </div>
 
-
-<script type="text/javascript" src="index.js"></script>
+<script type="module" src="index.js"></script>
 </body>
 </html>

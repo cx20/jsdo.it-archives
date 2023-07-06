@@ -13,10 +13,15 @@
 <!-- Copyright cx20 - http://jsdo.it/cx20 -->
 <!-- Licensed under MIT License - http://www.opensource.org/licenses/mit-license.php -->
 
-<!-- three.js r110 -->
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r146/build/three.js"></script>
-<!-- Spector.js -->
-<!-- <script src="https://spectorcdn.babylonjs.com/spector.bundle.js"></script> -->
+<!-- three.js -->
+<script type="importmap">
+{
+	"imports": {
+		"three": "https://cx20.github.io/gltf-test/libs/three.js/r154/build/three.module.js",
+		"three/addons/": "https://cx20.github.io/gltf-test/libs/three.js/r154/examples/jsm/"
+	}
+}
+</script>
 
 <script id="vs" type="x-shader/x-vertex">
 attribute vec3 position;
@@ -44,6 +49,6 @@ void main() {
 <div id="container"></div>
 
 
-<script type="text/javascript" src="index.js"></script>
+<script type="module" src="index.js"></script>
 </body>
 </html>

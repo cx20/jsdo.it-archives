@@ -9,9 +9,17 @@
 // forked from cx20's "three.js で Blender のデータを表示してみるテスト" http://jsdo.it/cx20/2CXI
 // forked from 【WebGL特集】第4回：Blenderでモデル出力 http://mox-motion.com/blog/webgl04-2/
 
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+let width = 0;
+let height = 0;
 let gltf = null;
 let mixer = null;
 let clock = new THREE.Clock();
+let scene
+let renderer;
 let controls;
 let camera;
 
@@ -22,7 +30,7 @@ function init() {
     width = window.innerWidth;
     height = window.innerHeight;
     
-    container = document.getElementById('container');
+    let container = document.getElementById('container');
     camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 1, 1000);
     camera.position.z = 10;
     scene = new THREE.Scene();
@@ -36,7 +44,7 @@ function init() {
         console.log( item, loaded, total );
     };
 
-    let loader = new THREE.GLTFLoader();
+    let loader = new GLTFLoader();
     loader.setCrossOrigin( 'anonymous' ); // r84 以降は明示的に setCrossOrigin() を指定する必要がある
 
     let scale = 1;
@@ -66,7 +74,7 @@ function init() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     container.appendChild(renderer.domElement);
     
-    controls = new THREE.OrbitControls( camera, renderer.domElement );
+    controls = new OrbitControls( camera, renderer.domElement );
     controls.userPan = false;
     controls.userPanSpeed = 0.0;
     controls.maxDistance = 5000.0;

@@ -3,22 +3,29 @@
 // forked from cx20's "Three.js で月を表示させてみるテスト" http://jsdo.it/cx20/vcVy
 // forked from cx20's "Three.js で冥王星を表示させてみるテスト" http://jsdo.it/cx20/tenj
 // forked from cx20's "Three.js で地球を回してみるテスト" http://jsdo.it/cx20/tv0T
-let container;
-let camera;
-let scene;
-let geometry;
-let material;
-let mars;
-let cloud;
+
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+let width = 0;
+let height = 0;
+let mixer = null;
+let clock = new THREE.Clock();
+let scene
 let renderer;
+let controls;
+let camera;
 let light;
 let light2;
+let mars;
+let cloud;
 
 init();
 animate();
 
 function init() {
-    container = document.getElementById('container');
+    let container = document.getElementById('container');
     camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
     camera.position.z = 400;
 
@@ -29,7 +36,7 @@ function init() {
     light2.position.set(50, 50, 1000);
     scene.add(light);
     scene.add(light2);
-    geometry = new THREE.SphereGeometry(140, 30, 30);
+    let geometry = new THREE.SphereGeometry(140, 30, 30);
     const loader = new THREE.TextureLoader();
     //const planetTexture = loader.load('../../assets/K/C/E/D/KCEDg.jpg'); // mars_atmos_1024.jpg
     //const planetTexture = loader.load('../../assets/M/y/f/I/MyfIJ.jpg'); // mars_ocean_1024_001.jpg
@@ -39,7 +46,7 @@ function init() {
     const planetTexture = loader.load('../../assets/e/0/L/P/e0LPo.jpg'); // mars_ocean_1024_005.jpg
     const normalTexture = loader.load('../../assets/k/u/S/Y/kuSYW.jpg'); // mars_normal_1024.jpg
     //const specularTexture = loader.load('../../assets/w/N/j/h/wNjh6.jpg'); // mars_specular_1024.jpg
-    material = new THREE.MeshPhongMaterial({
+    let material = new THREE.MeshPhongMaterial({
         map: planetTexture,
         normalMap: normalTexture,
         //specularMap: specularTexture,

@@ -1,14 +1,14 @@
 // forked from cx20's "Three.js で冥王星を表示させてみるテスト" http://jsdo.it/cx20/tenj
 // forked from cx20's "Three.js で地球を回してみるテスト" http://jsdo.it/cx20/tv0T
-let container;
-let camera;
-let scene;
-let geometry;
-let material;
-let mesh;
+
+import * as THREE from 'three';
+
+let scene
 let renderer;
+let camera;
+let container;
 let light;
-let light2;
+let mesh;
 
 init();
 animate();
@@ -26,8 +26,8 @@ function init() {
     scene.add(light);
     //scene.add(light2);
     const loader = new THREE.TextureLoader();
-    geometry = new THREE.SphereGeometry(140, 30, 30);
-    material = new THREE.MeshLambertMaterial({
+    const geometry = new THREE.SphereGeometry(140, 30, 30);
+    const material = new THREE.MeshLambertMaterial({
         map: loader.load('../../assets/4/Y/G/9/4YG92.jpg'),	// moon.jpg
         bumpMap: loader.load('../../assets/4/Y/G/9/ldem_3_8bit.jpg'), // moon.jpg
         bumpScale: 1.0

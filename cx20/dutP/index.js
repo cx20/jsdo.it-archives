@@ -4,9 +4,17 @@
 // forked from cx20's "[WebGL] three.js を試してみるテスト（BufferGeometry編）" http://jsdo.it/cx20/yCyD
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
-var container;
-var camera, scene, renderer;
-var mesh;
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+let width = 0;
+let height = 0;
+let container;
+let scene
+let mesh;
+let renderer;
+let camera;
 
 init();
 animate();

@@ -1,6 +1,8 @@
 // forked from cx20's "[WebGL] three.js を試してみるテスト（BufferGeometry編）" http://jsdo.it/cx20/yCyD
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
+import * as THREE from 'three';
+
 var container;
 var camera, scene, renderer;
 
