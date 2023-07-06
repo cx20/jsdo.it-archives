@@ -4,7 +4,9 @@
 // forked from cx20's "Stats.js で cannon.js の FPS を計測してみるテスト" http://jsdo.it/cx20/nEVns
 // forked from Kon's "俺のキャノン砲を試してみるかい？" http://jsdo.it/Kon/1ksj
 
-"use strict";
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 // ‥‥‥‥‥‥‥‥‥‥‥‥‥□□□
 // ‥‥‥‥‥‥〓〓〓〓〓‥‥□□□
@@ -159,7 +161,7 @@ function init() {
     createDominos();
     createShapes();
 
-    controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls = new OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
 
 }

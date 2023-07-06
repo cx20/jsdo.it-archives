@@ -2,6 +2,8 @@
 // forked from cx20's "Three.js で月を表示させてみるテスト" http://jsdo.it/cx20/vcVy
 // forked from cx20's "Three.js で冥王星を表示させてみるテスト" http://jsdo.it/cx20/tenj
 // forked from cx20's "Three.js で地球を回してみるテスト" http://jsdo.it/cx20/tv0T
+import * as THREE from 'three';
+
 let container;
 let camera;
 let scene;

@@ -14,9 +14,18 @@
 <!-- Licensed under MIT License - http://www.opensource.org/licenses/mit-license.php -->
 <div id="container"></div>
 
-<!-- three.js r110 -->
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r146/build/three.js"></script>
+<!-- three.js -->
+<script type="importmap">
+{
+	"imports": {
+		"three": "https://cx20.github.io/gltf-test/libs/three.js/r154/build/three.module.js",
+		"three/addons/": "https://cx20.github.io/gltf-test/libs/three.js/r154/examples/jsm/"
+	}
+}
+</script>
 
-<script type="text/javascript" src="index.js"></script>
+<div id="container"></div>
+
+<script type="module" src="index.js"></script>
 </body>
 </html>

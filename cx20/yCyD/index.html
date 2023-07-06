@@ -28,11 +28,17 @@ void main() {
 }
 </script>
 
+<script type="importmap">
+{
+	"imports": {
+		"three": "https://cx20.github.io/gltf-test/libs/three.js/r154/build/three.module.js",
+		"three/addons/": "https://cx20.github.io/gltf-test/libs/three.js/r154/examples/jsm/"
+	}
+}
+</script>
+
 <div id="container"></div>
 
-<!-- three.min.js r110 -->
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r146/build/three.min.js"></script>
-
-<script type="text/javascript" src="index.js"></script>
+<script type="module" src="index.js"></script>
 </body>
 </html>

@@ -8,6 +8,11 @@
 // forked from cx20's "Three.js でドット絵を回転するテスト（その１）" http://jsdo.it/cx20/r8Zv
 // forked from cx20's "Three.js でドット絵を表示するテスト" http://jsdo.it/cx20/3U7N
 
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFExporter } from 'three/addons/exporters/GLTFExporter.js';
+import { mergeBufferGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
+
 var DOT_SIZE = 3;
 var X_START_POS = -24;
 var Y_START_POS = -24;
@@ -195,9 +200,10 @@ var camera;
 var renderer;
 var theta = 0;
 var controls;
+var color;
 
 function exportGLTF(input) {
-    var gltfExporter = new THREE.GLTFExporter();
+    var gltfExporter = new GLTFExporter();
     var options = {
         binary: document.getElementById('option_binary').checked
     };
@@ -273,7 +279,7 @@ function init() {
             z = j * DOT_SIZE + Z_START_POS;
             color = getRgbColor(dataSet[j][i]);
             
-            var geometry = new THREE.BoxBufferGeometry(DOT_SIZE * 1, DOT_SIZE * 1, DOT_SIZE * 1)
+            var geometry = new THREE.BoxGeometry(DOT_SIZE * 1, DOT_SIZE * 1, DOT_SIZE * 1)
 
             geometry.translate(x - 0, y, z);
 
@@ -289,9 +295,9 @@ function init() {
             }
         }
     }
-    geometryMergeA = THREE.BufferGeometryUtils.mergeBufferGeometries(geometryArrayA);
-    geometryMergeB = THREE.BufferGeometryUtils.mergeBufferGeometries(geometryArrayB);
-    geometryMergeC = THREE.BufferGeometryUtils.mergeBufferGeometries(geometryArrayC);
+    geometryMergeA = mergeBufferGeometries(geometryArrayA);
+    geometryMergeB = mergeBufferGeometries(geometryArrayB);
+    geometryMergeC = mergeBufferGeometries(geometryArrayC);
     
     var materialA = new THREE.MeshStandardMaterial({color: getRgbColor("茶"), roughness: 0.99});
     var meshA = new THREE.Mesh(geometryMergeA, materialA);
@@ -320,7 +326,7 @@ function init() {
 
     renderer = new THREE.WebGLRenderer();
 
-    controls = new THREE.OrbitControls( camera, renderer.domElement );
+    controls = new OrbitControls( camera, renderer.domElement );
     controls.userPan = false;
     controls.userPanSpeed = 0.0;
     controls.maxDistance = 5000.0;

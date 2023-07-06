@@ -19,9 +19,18 @@
 // forked from cx20's "three.js で Blender のデータを表示してみるテスト" http://jsdo.it/cx20/2CXI
 // forked from 【WebGL特集】第4回：Blenderでモデル出力 http://mox-motion.com/blog/webgl04-2/
 
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
+
+let width = 0;
+let height = 0;
 let gltf = null;
 let mixer = null;
 let clock = new THREE.Clock();
+let scene
+let renderer;
 let controls;
 let camera;
 
@@ -61,11 +70,10 @@ function init() {
         console.log( item, loaded, total );
     };
 
-    let loader = new THREE.GLTFLoader();
+    let loader = new GLTFLoader();
     loader.setCrossOrigin( 'anonymous' ); // r84 以降は明示的に setCrossOrigin() を指定する必要がある
 
-    var dracoLoader = new THREE.DRACOLoader();
-    dracoLoader.setDecoderPath( 'https://rawcdn.githack.com/mrdoob/three.js/r146/examples/js/libs/draco/gltf/' );
+	const dracoLoader = new DRACOLoader().setDecoderPath( 'https://rawcdn.githack.com/mrdoob/three.js/r154/examples/jsm/libs/draco/gltf/' );
     loader.setDRACOLoader( dracoLoader );
     
     let scale = 10;
@@ -101,12 +109,12 @@ function init() {
     scene.add(axis);
 
     renderer = new THREE.WebGLRenderer();
-    renderer.outputEncoding = THREE.sRGBEncoding; // if >r112, specify outputEncoding instead of gammaOutput
+    renderer.outputColorSpace = THREE.SRGBColorSpace; // if >= r152, specify SRGBColorSpace instead of outputEncoding
     //renderer.setClearColor( 0xbfe4ff );
     renderer.setClearColor( 0x000000 );
     renderer.shadowMap.enabled = true;
     
-    controls = new THREE.OrbitControls( camera, renderer.domElement );
+    controls = new OrbitControls( camera, renderer.domElement );
     controls.userPan = false;
     controls.userPanSpeed = 0.0;
     controls.maxDistance = 5000.0;
