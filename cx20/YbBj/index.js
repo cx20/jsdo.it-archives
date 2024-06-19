@@ -73,7 +73,7 @@ function init() {
     let loader = new GLTFLoader();
     loader.setCrossOrigin( 'anonymous' ); // r84 以降は明示的に setCrossOrigin() を指定する必要がある
 
-	const dracoLoader = new DRACOLoader().setDecoderPath( 'https://rawcdn.githack.com/mrdoob/three.js/r164/examples/jsm/libs/draco/gltf/' );
+	const dracoLoader = new DRACOLoader().setDecoderPath( 'https://rawcdn.githack.com/mrdoob/three.js/r165/examples/jsm/libs/draco/gltf/' );
     loader.setDRACOLoader( dracoLoader );
     
     let scale = 10;
