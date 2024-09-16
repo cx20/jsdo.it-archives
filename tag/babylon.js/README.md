@@ -140,11 +140,11 @@ jsdo.it archives
 </tr>
 </table>
 
-### three.js to Babylon.js
+### Port samples (from three.js to Babylon.js)
 
 <table>
 <tr>
-<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/d38T_babylon" title="[WebGL] Babylon.js で海に某未確認飛行物体を追加してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/d38T_babylon" width="200" height="200"></a></td>
+<td><a href="https://cx20.github.io/jsdo.it-archives/cx20/d38T_babylon" title="[WebGL] Babylon.js で海に某未確認飛行物体を追加してみるテスト"><img src="https://cx20.github.io/jsdo.it-archives/screenshot/d38T_babylon.jpg" width="200" height="200"></a></td>
 <td></td>
 <td></td>
 <td></td>
