@@ -16,6 +16,7 @@ let scene
 let renderer;
 let controls;
 let camera;
+let ambient;
 let light;
 let light2;
 let mars;
@@ -30,10 +31,12 @@ function init() {
     camera.position.z = 400;
 
     scene = new THREE.Scene();
+    ambient = new THREE.AmbientLight(0xffffff);
     light = new THREE.PointLight( new THREE.Color(0x808080), 3);
     light2 = new THREE.PointLight( new THREE.Color(0x101010), 2);
     light.position.set(0, -100, 1000);
     light2.position.set(50, 50, 1000);
+    scene.add(ambient);
     scene.add(light);
     scene.add(light2);
     let geometry = new THREE.SphereGeometry(140, 30, 30);
