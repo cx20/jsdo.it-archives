@@ -113,7 +113,7 @@ function createScene(engine) {
     //Creation of the scene
     const scene = new BABYLON.Scene(engine);
 
-    const camera = new BABYLON.ArcRotateCamera("Camera", 0, 2 * Math.PI, 100, new BABYLON.Vector3.Zero(), scene);
+    const camera = new BABYLON.ArcRotateCamera("Camera", 0, 2 * Math.PI, 100, BABYLON.Vector3.Zero(), scene);
 
     const directional1 = new BABYLON.DirectionalLight("directional", new BABYLON.Vector3(100, 100, 100), scene);
     const directional2 = new BABYLON.DirectionalLight("directional", new BABYLON.Vector3(100, -100, -100), scene);

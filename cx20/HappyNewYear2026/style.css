@@ -11,3 +11,15 @@ html, body {
     height: 100%;
     touch-action: none;
 }
+
+.error-message {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    color: #fff;
+    background: #05050d;
+    font: 20px/1.5 sans-serif;
+    text-align: center;
+}

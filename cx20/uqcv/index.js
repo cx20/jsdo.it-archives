@@ -8,7 +8,7 @@ var createScene = function(engine) {
     var scene = new BABYLON.Scene(engine);
     var camera = new BABYLON.FreeCamera("camera", new BABYLON.Vector3(0, 0, -3), scene);
     scene.clearColor = new BABYLON.Color3(1, 1, 1);
-    cube = new BABYLON.Mesh.CreateBox('cube', 1.0, scene);
+    cube = BABYLON.Mesh.CreateBox('cube', 1.0, scene);
     var colors = [
             1.0, 0.0, 0.0, 1.0, // Front face
             1.0, 0.0, 0.0, 1.0, // Front face

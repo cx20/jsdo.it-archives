@@ -27,10 +27,10 @@ let createScene = function (engine) {
     let colors = [];
     let indices = [];
     let idx = 0;
-    let color = new BABYLON.Color4(0, 0, 0, 1);
+    let color = new BABYLON.Color3(0, 0, 0);
     for ( let t = 0; t <= 200; t += 0.01 ) {
         positions.push(0, 0, 0);
-        BABYLON.ColorCurves.fromHSBToRef((t/200 * 360 | 0), 80, 50, color);
+        BABYLON.Color3.HSVtoRGBToRef((t/200 * 360 | 0), 0.8, 0.5, color);
         colors.push(color.r, color.g, color.b, 1);
         indices.push(idx++);
     }

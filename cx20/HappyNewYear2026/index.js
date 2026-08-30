@@ -182,8 +182,21 @@ var colors = {
     "白": { r: 0.95, g: 0.95, b: 0.95 }
 };
 
+function showError(message) {
+    var errorMessage = document.createElement("div");
+    errorMessage.className = "error-message";
+    errorMessage.setAttribute("role", "alert");
+    errorMessage.textContent = message;
+    document.body.appendChild(errorMessage);
+}
+
 async function init() {
     const canvas = document.querySelector("#renderCanvas");
+
+    if (!navigator.gpu) {
+        throw new Error("WebGPU is not supported by this browser.");
+    }
+
     const engine = new BABYLON.WebGPUEngine(canvas);
     await engine.initAsync();
 
@@ -492,6 +505,13 @@ async function init() {
         scene.render();
     });
 
+    window.addEventListener("resize", function () {
+        engine.resize();
+    });
+
 }
 
-init();
+init().catch(function (error) {
+    console.error(error);
+    showError("This sample requires a browser with WebGPU support.");
+});
