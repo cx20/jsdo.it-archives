@@ -22,11 +22,8 @@ function init() {
 
     uniforms2 = {
         time: { type: "f", value: 1.0 },
-        resolution: { type: "v2", value: new THREE.Vector2() },
-        texture: { type: "t", value: THREE.ImageUtils.loadTexture("//jsrun.it/assets/t/I/T/z/tITz0.jpg") } // disturb.jpg
+        resolution: { type: "v2", value: new THREE.Vector2() }
     };
-
-    uniforms2.texture.value.wrapS = uniforms2.texture.value.wrapT = THREE.RepeatWrapping;
 
     var params = [
         ['fragment_shader1', uniforms1]

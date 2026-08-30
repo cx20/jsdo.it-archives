@@ -333,13 +333,11 @@ function animate() {
 
 var pos = 0;
 function render() {
-    selectedObjects = [];
-    selectedObjects = meshArray[Math.floor(pos)];
-    if ( pos < meshArray.length ) {
-        pos += 0.5;
-    } else {
+    if ( pos >= meshArray.length ) {
         pos = 0;
     }
+    selectedObjects = meshArray[Math.floor(pos)] || [];
+    pos += 0.5;
     
     outlinePass.selectedObjects = selectedObjects;
 

@@ -300,6 +300,28 @@ function init() {
 	mirrorEffect.renderToScreen = true;
 	composer.addPass( mirrorEffect );
 */
+    THREE.EdgeShader2.fragmentShader = [
+        "uniform sampler2D tDiffuse;",
+        "varying vec2 vUv;",
+        "uniform vec2 aspect;",
+        "void main() {",
+        "    vec2 texel = vec2(1.0 / aspect.x, 1.0 / aspect.y);",
+        "    float i00 = length(texture2D(tDiffuse, vUv + texel * vec2(-1.0, -1.0)).rgb);",
+        "    float i01 = length(texture2D(tDiffuse, vUv + texel * vec2(-1.0,  0.0)).rgb);",
+        "    float i02 = length(texture2D(tDiffuse, vUv + texel * vec2(-1.0,  1.0)).rgb);",
+        "    float i10 = length(texture2D(tDiffuse, vUv + texel * vec2( 0.0, -1.0)).rgb);",
+        "    float i12 = length(texture2D(tDiffuse, vUv + texel * vec2( 0.0,  1.0)).rgb);",
+        "    float i20 = length(texture2D(tDiffuse, vUv + texel * vec2( 1.0, -1.0)).rgb);",
+        "    float i21 = length(texture2D(tDiffuse, vUv + texel * vec2( 1.0,  0.0)).rgb);",
+        "    float i22 = length(texture2D(tDiffuse, vUv + texel * vec2( 1.0,  1.0)).rgb);",
+        "    float edgeX = i00 + 2.0 * i01 + i02 - i20 - 2.0 * i21 - i22;",
+        "    float edgeY = i00 - i02 + 2.0 * i10 - 2.0 * i12 + i20 - i22;",
+        "    float edgeX2 = edgeX * edgeX;",
+        "    float edgeY2 = edgeY * edgeY;",
+        "    gl_FragColor = vec4(0.5 * sqrt(edgeX2 * edgeX2 + edgeY2 * edgeY2));",
+        "}"
+    ].join("\n");
+
     var edgeEffect = new THREE.ShaderPass( THREE.EdgeShader2 );
 	edgeEffect.renderToScreen = true;
 	composer.addPass( edgeEffect );
