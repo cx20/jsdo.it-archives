@@ -26,7 +26,7 @@ app.root.addChild(camera);
 
 let Triangle = pc.createScript('triangle');
 Triangle.prototype.initialize = function () {
-    let node = new pc.scene.GraphNode();
+    let node = new pc.GraphNode();
     let positions = [
          0.0, 0.5, 0.0, // v0
         -0.5,-0.5, 0.0, // v1
@@ -47,9 +47,9 @@ Triangle.prototype.initialize = function () {
     let material = new pc.StandardMaterial();
     material.diffuseVertexColor = true;
 
-    let instance = new pc.scene.MeshInstance(node, mesh, material);
+    let instance = new pc.MeshInstance(node, mesh, material);
 
-    let model = new pc.scene.Model();
+    let model = new pc.Model();
     model.graph = node;
     model.meshInstances = [ instance ];
 

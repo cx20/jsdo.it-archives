@@ -31,7 +31,7 @@ app.root.addChild(camera);
 
 let Cube = pc.createScript('cube');
 Cube.prototype.initialize = function () {
-    let node = new pc.scene.GraphNode();
+    let node = new pc.GraphNode();
     // Cube data
     //             1.0 y 
     //              ^  -1.0 
@@ -152,9 +152,9 @@ Cube.prototype.initialize = function () {
         return texture;
     }
 
-    let instance = new pc.scene.MeshInstance(node, mesh, material);
+    let instance = new pc.MeshInstance(node, mesh, material);
 
-    let model = new pc.scene.Model();
+    let model = new pc.Model();
     model.graph = node;
     model.meshInstances = [ instance ];
 
