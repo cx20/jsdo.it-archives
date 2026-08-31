@@ -52,9 +52,9 @@ function createModel(url, height) {
     });
 }
 
-//createModel('https://rawcdn.githack.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb', 10000);
-//createModel('https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb', 10000);
-//createModel('https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/LittlestTokyo.glb', 10000);
+//createModel('https://cdn.jsdelivr.net/gh/ft-lab/ft-lab.github.io@c56ef016/gltf/grass/rocks_trees_ao.glb', 10000);
+//createModel('https://cdn.jsdelivr.net/gh/mrdoob/three.js@dev/examples/models/gltf/PrimaryIonDrive.glb', 10000);
+//createModel('https://cdn.jsdelivr.net/gh/mrdoob/three.js@dev/examples/models/gltf/LittlestTokyo.glb', 10000);
 //createModel('https://ft-lab.github.io/gltf/yunomi/Yunomi_normal_05.glb', 10000);
 //createModel('https://ft-lab.github.io/gltf/yunomi/Yunomi_normal_10.glb', 10000);
 createModel('https://ft-lab.github.io/gltf/yunomi/Yunomi_normal_20.glb', 10000);

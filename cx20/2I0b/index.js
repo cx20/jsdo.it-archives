@@ -77,7 +77,7 @@ function createModel(url, height) {
     });
 }
 
-//createModel('https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf', 10000); // Triangle.gltf
-//createModel('https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/7268f989/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf', 10000); // TextureSettingsTest.gltf
-//createModel('https://rawcdn.githack.com/cx20/jsdo-static-contents/76dfc928/models/gltf/2.0/EmaSimpleSkin_blender/glTF/EmaSimpleSkin_blender.gltf', 10000); // EmaSimpleSkin_blender.gltf
-createModel('https://rawcdn.githack.com/cx20/gltf-test/9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf', 10000); // CesiumMilkTruck.gltf
+//createModel('https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-WebGL-PBR@817404a4/models/Triangle/glTF/Triangle.gltf', 10000); // Triangle.gltf
+//createModel('https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models@7268f989/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf', 10000); // TextureSettingsTest.gltf
+//createModel('https://cdn.jsdelivr.net/gh/cx20/jsdo-static-contents@76dfc928/models/gltf/2.0/EmaSimpleSkin_blender/glTF/EmaSimpleSkin_blender.gltf', 10000); // EmaSimpleSkin_blender.gltf
+createModel('https://cdn.jsdelivr.net/gh/cx20/gltf-test@9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf', 10000); // CesiumMilkTruck.gltf

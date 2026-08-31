@@ -16,9 +16,9 @@ document.onload = function () {
     
     runtime = x3d.runtime;
     
-    //var url = "https://rawcdn.githack.com/cx20/gltf-test/master/sampleModels/Box/glTF-Binary/Box.glb";
-    //var url = "https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf";
-    var url = "https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/7268f989/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf";
+    //var url = "https://cdn.jsdelivr.net/gh/cx20/gltf-test@master/sampleModels/Box/glTF-Binary/Box.glb";
+    //var url = "https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-WebGL-PBR@817404a4/models/Triangle/glTF/Triangle.gltf";
+    var url = "https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models@7268f989/2.0/TextureSettingsTest/glTF/TextureSettingsTest.gltf";
 
     document.getElementById("inline").setAttribute("url", url);
 

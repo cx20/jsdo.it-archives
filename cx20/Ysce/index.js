@@ -148,7 +148,7 @@ class App {
       20, 21, 22,   20, 22, 23   // Left face
     ]));
     //const mat = engine.createMaterial('texture.filamat');
-    //const mat = engine.createMaterial('https://rawcdn.githack.com/cx20/webgl-test/c9eb189fe338dd949f0fe2d1dc287f06be16a384/examples/filament/texture/texture.filamat'); // texture.filamat
+    //const mat = engine.createMaterial('https://cdn.jsdelivr.net/gh/cx20/webgl-test@c9eb189fe338dd949f0fe2d1dc287f06be16a384/examples/filament/texture/texture.filamat'); // texture.filamat
     const mat = engine.createMaterial('texture.filamat');
     const matinst = mat.getDefaultInstance();
 
@@ -209,7 +209,7 @@ class App {
 
 Filament.init([
     '../../assets/A/k/w/j/AkwjW.jpg', // frog.jpg
-    //'https://rawcdn.githack.com/cx20/webgl-test/c9eb189fe338dd949f0fe2d1dc287f06be16a384/examples/filament/texture/texture.filamat'      // texture.filamat
+    //'https://cdn.jsdelivr.net/gh/cx20/webgl-test@c9eb189fe338dd949f0fe2d1dc287f06be16a384/examples/filament/texture/texture.filamat'      // texture.filamat
     'texture.filamat'
 ], () => {
   window.app = new App()

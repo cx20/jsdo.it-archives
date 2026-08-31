@@ -78,22 +78,22 @@ function init() {
     let loader = new GLTFLoader();
     loader.setCrossOrigin( 'anonymous' ); // r84 以降は明示的に setCrossOrigin() を指定する必要がある
 
-	const dracoLoader = new DRACOLoader().setDecoderPath( 'https://rawcdn.githack.com/mrdoob/three.js/r177/examples/jsm/libs/draco/gltf/' );
+	const dracoLoader = new DRACOLoader().setDecoderPath( 'https://cdn.jsdelivr.net/gh/mrdoob/three.js@r177/examples/jsm/libs/draco/gltf/' );
     loader.setDRACOLoader( dracoLoader );
     
     let scale = 0.02;
-    //let url = "https://rawcdn.githack.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb";
-    //let url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb";
-    //let url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/LittlestTokyo.glb";
+    //let url = "https://cdn.jsdelivr.net/gh/ft-lab/ft-lab.github.io@c56ef016/gltf/grass/rocks_trees_ao.glb";
+    //let url = "https://cdn.jsdelivr.net/gh/mrdoob/three.js@dev/examples/models/gltf/PrimaryIonDrive.glb";
+    //let url = "https://cdn.jsdelivr.net/gh/mrdoob/three.js@dev/examples/models/gltf/LittlestTokyo.glb";
     //let url = "https://ft-lab.github.io/gltf/yunomi/Yunomi_normal_20.glb";
-    //let url = "https://rawcdn.githack.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/Material_01.gltf";
-    //let url = "https://rawcdn.githack.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/Material_04.gltf";
-    //let url = "https://rawcdn.githack.com/bghgary/glTF-Asset-Generator/a66119b3/Output/Material/Material_07.gltf";
-    //let url = "https://rawcdn.githack.com/mrdoob/three.js/r97/examples/models/gltf/BotSkinned/glTF-MaterialsUnlit/Bot_Skinned.gltf";
-    //let url = "https://rawcdn.githack.com/cx20/gltf-test/7af4f399/tutorialModels/SpecGlossVsMetalRough/glTF/SpecGlossVsMetalRough.gltf";
-    //let url = "https://rawcdn.githack.com/cx20/jsdo-static-contents/33ab7250/models/gltf/2.0/Itokawa/glTF-Draco/Itokawa.glb";
-    //var url = "https://rawcdn.githack.com/BabylonJS/Exporters/9bc140006be149687be045f60b4a25cdb45ce4fc/Maya/Samples/glTF 2.0/T-Rex/trex_running.gltf";
-    var url = "https://rawcdn.githack.com/cx20/jsdo-static-contents/ef789b017e86ed960bd38df4617fadbbfbd245ec/models/gltf/2.0/Kaendoki/glTF-Binary/Kaendoki.glb";
+    //let url = "https://cdn.jsdelivr.net/gh/bghgary/glTF-Asset-Generator@a66119b3/Output/Material/Material_01.gltf";
+    //let url = "https://cdn.jsdelivr.net/gh/bghgary/glTF-Asset-Generator@a66119b3/Output/Material/Material_04.gltf";
+    //let url = "https://cdn.jsdelivr.net/gh/bghgary/glTF-Asset-Generator@a66119b3/Output/Material/Material_07.gltf";
+    //let url = "https://cdn.jsdelivr.net/gh/mrdoob/three.js@r97/examples/models/gltf/BotSkinned/glTF-MaterialsUnlit/Bot_Skinned.gltf";
+    //let url = "https://cdn.jsdelivr.net/gh/cx20/gltf-test@7af4f399/tutorialModels/SpecGlossVsMetalRough/glTF/SpecGlossVsMetalRough.gltf";
+    //let url = "https://cdn.jsdelivr.net/gh/cx20/jsdo-static-contents@33ab7250/models/gltf/2.0/Itokawa/glTF-Draco/Itokawa.glb";
+    //var url = "https://cdn.jsdelivr.net/gh/BabylonJS/Exporters@9bc140006be149687be045f60b4a25cdb45ce4fc/Maya/Samples/glTF 2.0/T-Rex/trex_running.gltf";
+    var url = "https://cdn.jsdelivr.net/gh/cx20/jsdo-static-contents@ef789b017e86ed960bd38df4617fadbbfbd245ec/models/gltf/2.0/Kaendoki/glTF-Binary/Kaendoki.glb";
     
     loader.load(url, function (data) {
         gltf = data;
@@ -152,7 +152,7 @@ function init() {
 // https://github.com/mrdoob/three.js/tree/dev/examples/textures/cube/skybox
 function getEnvMap() {
     //var path = '../../textures/cube/skybox/';
-    var path = 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/';
+    var path = 'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/';
     var format = '.jpg';
     var urls = [
         path + 'px' + format, path + 'nx' + format,

@@ -35,7 +35,7 @@ var geometryCube = glBoostContext.createCube(new GLBoost.Vector3(3, 3, 3), new G
 var material = glBoostContext.createPBRMetallicRoughnessMaterial();
 material.shaderClass = GLBoost.PBRPrincipledShader;
 // https://www.cgbookcase.com/textures/brick-wall-02
-var urlBase = "https://rawcdn.githack.com/cx20/jsdo-static-contents/89194aefe92cf7111cbac116f6f0bfb194b65503/";
+var urlBase = "https://cdn.jsdelivr.net/gh/cx20/jsdo-static-contents@89194aefe92cf7111cbac116f6f0bfb194b65503/";
 var texture          = glBoostContext.createTexture(urlBase + 'textures/Brick_wall_02_1K_Base_Color.jpg');
 var textureAO        = glBoostContext.createTexture(urlBase + 'textures/Brick_wall_02_1K_AO.jpg');
 var textureNormal    = glBoostContext.createTexture(urlBase + 'textures/Brick_wall_02_1K_Normal.jpg');

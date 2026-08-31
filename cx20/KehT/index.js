@@ -30,7 +30,7 @@ var createScene = function () {
 
     // Skybox
     var cubeTexture = new BABYLON.CubeTexture(
-        "https://rawcdn.githack.com/mrdoob/three.js/d8b547a7c1535e9ff044d196b72043f5998091ee/examples/textures/cube/MilkyWay/",
+        "https://cdn.jsdelivr.net/gh/mrdoob/three.js@d8b547a7c1535e9ff044d196b72043f5998091ee/examples/textures/cube/MilkyWay/",
         scene,
         ["dark-s_px.jpg", "dark-s_py.jpg", "dark-s_pz.jpg", "dark-s_nx.jpg", "dark-s_ny.jpg", "dark-s_nz.jpg"]
     );

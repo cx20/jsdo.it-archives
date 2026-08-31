@@ -5,7 +5,7 @@
 // forked from cx20's "[WebGL] Hilo3d を試してみるテスト" http://jsdo.it/cx20/gwMA
 // forked from cx20's "[簡易版] 30行で WebGL を試してみるテスト" http://jsdo.it/cx20/oaQC
 
-var url = "https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf";
+var url = "https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-WebGL-PBR@817404a4/models/Triangle/glTF/Triangle.gltf";
 var scale = 1.0;
 var modelName = "Triangle";
 
@@ -52,23 +52,23 @@ var loadingElem = document.getElementById('loading');
 var loadQueue = new Hilo3d.LoadQueue([{
     type: 'CubeTexture',
     images: [
-        'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_01.jpg',
-        'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_02.jpg',
-        'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_03.jpg',
-        'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_04.jpg',
-        'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_05.jpg',
-        'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/diffuse/bakedDiffuse_06.jpg'
+        'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/diffuse/bakedDiffuse_01.jpg',
+        'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/diffuse/bakedDiffuse_02.jpg',
+        'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/diffuse/bakedDiffuse_03.jpg',
+        'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/diffuse/bakedDiffuse_04.jpg',
+        'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/diffuse/bakedDiffuse_05.jpg',
+        'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/diffuse/bakedDiffuse_06.jpg'
     ]
 }, {
     type: 'CubeTexture',
-    right: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/px.jpg',
-    left: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/nx.jpg',
-    top: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/py.jpg',
-    bottom: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/ny.jpg',
-    front: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/pz.jpg',
-    back: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/nz.jpg',
+    right: 'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/px.jpg',
+    left: 'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/nx.jpg',
+    top: 'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/py.jpg',
+    bottom: 'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/ny.jpg',
+    front: 'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/pz.jpg',
+    back: 'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/nz.jpg',
 },{
-    src: 'https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/brdfLUT.png',
+    src: 'https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/brdfLUT.png',
     type:'Texture'
 },{
     src:url

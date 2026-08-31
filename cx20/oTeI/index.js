@@ -13,7 +13,7 @@ Material.SHADER_PATH = CDN + Material.SHADER_PATH;
 let scale = 0.3;
 
 //let gltf = 'https://cx20.github.io/gltf-test/tutorialModels/Triangle/glTF/Triangle.gltf';
-let gltf = 'https://rawcdn.githack.com/cx20/gltf-test/a9cda755ff1c6656c5b3797b8747153e9e630947/tutorialModels/TextureSettingsTest/glTF/TextureSettingsTest.gltf';
+let gltf = 'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a9cda755ff1c6656c5b3797b8747153e9e630947/tutorialModels/TextureSettingsTest/glTF/TextureSettingsTest.gltf';
 
 async function main() {
 

@@ -7,7 +7,7 @@ const createScene = function(engine) {
     const scene = new BABYLON.Scene(engine);
     scene.clearColor = new BABYLON.Color3(1, 1, 1);
 
-    BABYLON.SceneLoader.Load("https://rawcdn.githack.com/cx20/jsdo-static-contents/8622ac8912e25caa6ce49dc17e24be15541929b9/models/gltf/2.0/StanfordBunny/", "StanfordBunny.glb", engine, function (newScene) {
+    BABYLON.SceneLoader.Load("https://cdn.jsdelivr.net/gh/cx20/jsdo-static-contents@8622ac8912e25caa6ce49dc17e24be15541929b9/models/gltf/2.0/StanfordBunny/", "StanfordBunny.glb", engine, function (newScene) {
         const scene = newScene;
         const mesh = scene.meshes[0];
         const bunny = scene.getMeshByName("Object_2");
@@ -28,7 +28,7 @@ const createScene = function(engine) {
 
         // Skybox
         const cubeTexture = new BABYLON.CubeTexture(
-            "https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/",
+            "https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/",
             scene,
             ["px.jpg", "py.jpg", "pz.jpg", "nx.jpg", "ny.jpg", "nz.jpg"]
         );
