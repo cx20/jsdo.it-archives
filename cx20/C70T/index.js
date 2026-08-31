@@ -29,7 +29,7 @@ app.on("update", function (dt) {
 
 let Square = pc.createScript('square');
 Square.prototype.initialize = function () {
-    let node = new pc.scene.GraphNode();
+    let node = new pc.GraphNode();
     // Square data
     //             1.0 y 
     //              ^  -1.0 
@@ -72,9 +72,9 @@ Square.prototype.initialize = function () {
     material.diffuseVertexColor = true;
     material.cull = pc.CULLFACE_NONE;
 
-    let instance = new pc.scene.MeshInstance(node, mesh, material);
+    let instance = new pc.MeshInstance(node, mesh, material);
 
-    let model = new pc.scene.Model();
+    let model = new pc.Model();
     model.graph = node;
     model.meshInstances = [ instance ];
 
