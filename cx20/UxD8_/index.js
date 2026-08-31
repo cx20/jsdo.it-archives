@@ -19,7 +19,7 @@ const sky_url = `https://rawcdn.githack.com/cx20/gltf-test/076d00ab4da1989f51e55
 //let mesh_url = "https://rawcdn.githack.com/cx20/gltf-test/9fb5f39992bdd548e17fb18b256c41b14fb8840e/sampleModels/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf";
 //let mesh_url = "https://rawcdn.githack.com/cx20/jsdo-static-contents/94bb7090/models/gltf/2.0/VoxelCorgi/glTF_merge/VoxelCorgi.gltf";
 //let mesh_url = "https://rawcdn.githack.com/KhronosGroup/glTF-Sample-Models/c89c1709fbfd67a11aa7e540ab4ecb795763b627/2.0/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf";
-let mesh_url = "https://raw.githubusercontent.com/shrekshao/minimal-gltf-loader/store-drone-model/glTFs/glTF_version_2/buster_drone/scene.gltf";
+let mesh_url = "https://raw.githubusercontent.com/shrekshao/minimal-gltf-loader/a50dc51b7b401294243de56b29ec356475a6d069/glTFs/glTF_version_2/buster_drone/scene.gltf";
 let basePath = convertRelativeToAbsUrl(getPathNameFromUrl(mesh_url)) + "/";
 let scale = 1.0;
 
