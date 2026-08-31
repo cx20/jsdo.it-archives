@@ -36,7 +36,7 @@ const createScene = function () {
     const groundMaterial = new BABYLON.StandardMaterial("ground", scene);
     
     const galaxyShader = { fragmentElement: 'GalaxyShader' };
-    const customProcText = new BABYLON.CustomProceduralTexture("customtext", galaxyShader, 1024, scene);
+    const customProcText = new BABYLON.ProceduralTexture("customtext", 1024, galaxyShader, scene);
     groundMaterial.diffuseTexture = customProcText;
 
     ground.position.y = -2.05;

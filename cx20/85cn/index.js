@@ -16,7 +16,7 @@ var createScene = function (engine) {
     camera.setPosition(new BABYLON.Vector3(0, 50, -150));
     camera.attachControl(canvas, true);
 
-    parent = new BABYLON.Mesh.CreateBox("parent", 1, scene);
+    parent = BABYLON.Mesh.CreateBox("parent", 1, scene);
     var box1 = BABYLON.Mesh.CreateBox("box1", 50, scene);
     var box2 = BABYLON.Mesh.CreateBox("box2", 49.9, scene);
     var box3 = BABYLON.Mesh.CreateBox("box2", 49.8, scene);

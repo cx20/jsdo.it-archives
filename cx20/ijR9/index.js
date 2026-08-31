@@ -20,13 +20,13 @@ var createScene = function(engine) {
     var material = new BABYLON.StandardMaterial("material", scene);
     material.diffuseTexture = new BABYLON.Texture("../../assets/A/k/w/j/AkwjW.jpg", scene); // frog.jpg
     material.emissiveColor = new BABYLON.Color3(1, 1, 1);
-    var ground = new BABYLON.Mesh.CreateBox('ground', 200.0, scene);
+    var ground = BABYLON.Mesh.CreateBox('ground', 200.0, scene);
     ground.position.y = -20;
     ground.scaling.y = 0.01;
     ground.material = material;
     ground.physicsImpostor = new BABYLON.PhysicsImpostor(ground, BABYLON.PhysicsImpostor.BoxImpostor, {mass: 0, friction: 0.1, restitution: 0.1}, scene);
 
-    var cube = new BABYLON.Mesh.CreateBox('cube', 50.0, scene);
+    var cube = BABYLON.Mesh.CreateBox('cube', 50.0, scene);
     cube.material = material;
     cube.position.y = 100;
     cube.rotation.x = Math.PI * 10/180;

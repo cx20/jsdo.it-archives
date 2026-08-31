@@ -19,7 +19,7 @@ const createScene = function (engine) {
     camera.attachControl(canvas, true);
     const light = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(0, -0.5, 1.0), scene);
 
-    const parent = new BABYLON.Mesh.CreateBox("parent", 1, scene);
+    const parent = BABYLON.Mesh.CreateBox("parent", 1, scene);
     const box1 = BABYLON.Mesh.CreateBox("box1", 50, scene);
     const box2 = BABYLON.Mesh.CreateBox("box2", 49.9, scene);
     const surface = BABYLON.Mesh.CreateSphere("surface", 16, 75, scene);

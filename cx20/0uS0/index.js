@@ -55,7 +55,7 @@ var createScene = function() {
 
     function createBeam(hilt, ps, color1, color2, colorDead) {
         //var url = "http://i166.photobucket.com/albums/u83/j1m68/star.jpg";
-        var url = "/assets/O/w/z/3/Owz3K.jpg"; // star.jpg
+        var url = "/assets/i/q/3/o/iq3oJ.png"; // flare.png
         //var url = "/assets/i/q/3/o/iq3oJ.png"; // flare.png
 
         // var ps1 = new BABYLON.ParticleSystem("ps1", 10000, scene);
@@ -91,7 +91,7 @@ var createScene = function() {
 
     function createSparkles(emitter, color1, color2) {
         //var url = "http://i166.photobucket.com/albums/u83/j1m68/star.jpg";
-        var url = "/assets/O/w/z/3/Owz3K.jpg"; // star.jpg
+        var url = "/assets/i/q/3/o/iq3oJ.png"; // flare.png
         //var url = "/assets/i/q/3/o/iq3oJ.png"; // flare.png
 
         var ps1 = new BABYLON.ParticleSystem("ps1", 10000, scene);
