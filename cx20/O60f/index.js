@@ -32,12 +32,12 @@ var createScene = function(engine) {
     var light2 = new BABYLON.DirectionalLight("dir02", new BABYLON.Vector3(-0.5, -0.5, -0.5), scene);
     // Skybox
     var cubeTexture = new BABYLON.CubeTexture(
-        "https://rawcdn.githack.com/cx20/gltf-test/7c5f5eddf9e204d9bcbbc6ac06e610bc261fecc1/textures/cube/skybox/",
+        "https://cdn.jsdelivr.net/gh/cx20/gltf-test@7c5f5eddf9e204d9bcbbc6ac06e610bc261fecc1/textures/cube/skybox/",
         scene,
         ["px.jpg", "py.jpg", "pz.jpg", "nx.jpg", "ny.jpg", "nz.jpg"]
     );
     scene.createDefaultSkybox(cubeTexture, true, 10000);
-    var urlBase = "https://rawcdn.githack.com/cx20/jsdo-static-contents/89194aefe92cf7111cbac116f6f0bfb194b65503/";
+    var urlBase = "https://cdn.jsdelivr.net/gh/cx20/jsdo-static-contents@89194aefe92cf7111cbac116f6f0bfb194b65503/";
 
     // https://www.cgbookcase.com/textures/brick-wall-02
     var textureAO         = new BABYLON.Texture(urlBase + 'textures/Brick_wall_02_1K_AO.jpg', scene);

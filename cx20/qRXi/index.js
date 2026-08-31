@@ -71,20 +71,30 @@ function getDotChar( c )
 }
 
 
-$(function () {
-
-    "use strict";
-
-    var canvas = $("#canvas");
+window.addEventListener("load", function () {
+    var engine = Matter.Engine.create();
+    var canvas = document.getElementById("canvas");
+    var bodies = [];
     for (var i = 0; i < dataSet.length; i++) {
-        canvas.append($("<span>" + getDotChar(dataSet[i]) + "</span>").css("color", getRgbColor(dataSet[i])));
-        if ((i % 16) == 0) {
-            canvas.append($("<br>"));
+        if (dataSet[i] !== "無") {
+            var x = (i % 16) * 15 + 7.5;
+            var y = Math.floor(i / 16) * 18 + 9;
+            var span = document.createElement("span");
+            span.textContent = getDotChar(dataSet[i]);
+            span.style.cssText = "position:absolute;color:" + getRgbColor(dataSet[i]);
+            canvas.appendChild(span);
+
+            var body = Matter.Bodies.rectangle(x, y, 15, 18);
+            body.element = span;
+            bodies.push(body);
         }
     }
 
-    $("span").box2d({
-        'y-velocity': 5
+    Matter.Composite.add(engine.world, bodies);
+    Matter.Events.on(engine, "afterUpdate", function () {
+        bodies.forEach(function (body) {
+            body.element.style.transform = "translate(" + (body.position.x - 7.5) + "px," + (body.position.y - 9) + "px) rotate(" + body.angle + "rad)";
+        });
     });
-
+    Matter.Runner.run(Matter.Runner.create(), engine);
 });

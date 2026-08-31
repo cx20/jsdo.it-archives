@@ -7,8 +7,8 @@
 
 
 var scale = 1.0;
-var url = "https://rawcdn.githack.com/KhronosGroup/glTF-WebGL-PBR/817404a4/models/Triangle/glTF/Triangle.gltf";
-//var url = "https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/tutorialModels/Triangle/glTF/Triangle.gltf";
+var url = "https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-WebGL-PBR@817404a4/models/Triangle/glTF/Triangle.gltf";
+//var url = "https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/tutorialModels/Triangle/glTF/Triangle.gltf";
 //var url = "https://cx20.github.io/gltf-test/tutorialModels/Triangle/glTF/Triangle.gltf";
 var base = url.substr(0, url.lastIndexOf("/") + 1);
 var file = url.substr(url.lastIndexOf("/") + 1);
@@ -30,12 +30,12 @@ RedGL(canvas, function (v) {
     tScene['grid'] = RedGrid(this);
     //tScene['axis'] = RedAxis(this);
     tScene.skyBox = RedSkyBox(this, [
-        'https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/px.jpg',
-        'https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/nx.jpg',
-        'https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/py.jpg',
-        'https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/ny.jpg',
-        'https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/pz.jpg',
-        'https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/nz.jpg'
+        'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/px.jpg',
+        'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/nx.jpg',
+        'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/py.jpg',
+        'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/ny.jpg',
+        'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/pz.jpg',
+        'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/nz.jpg'
     ]);
     var tALight = RedAmbientLight(this)
     tScene.addLight(tALight)
@@ -63,12 +63,12 @@ RedGL(canvas, function (v) {
         },
         RedBitmapCubeTexture(this, // environmentTexture
             [
-                'https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/px.jpg',
-                'https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/nx.jpg',
-                'https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/py.jpg',
-                'https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/ny.jpg',
-                'https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/pz.jpg',
-                'https://rawcdn.githack.com/cx20/gltf-test/a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/nz.jpg'
+                'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/px.jpg',
+                'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/nx.jpg',
+                'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/py.jpg',
+                'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/ny.jpg',
+                'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/pz.jpg',
+                'https://cdn.jsdelivr.net/gh/cx20/gltf-test@a152f08b1321902ff0497b6e6407922baa16cca7/textures/cube/skybox/nz.jpg'
             ]
         )
     );

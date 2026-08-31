@@ -48,4 +48,4 @@ function createModel(url, height) {
     });
 }
 
-createModel('https://rawcdn.githack.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb', 10000);
+createModel('https://cdn.jsdelivr.net/gh/ft-lab/ft-lab.github.io@c56ef016/gltf/grass/rocks_trees_ao.glb', 10000);

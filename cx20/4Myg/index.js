@@ -78,7 +78,7 @@ class App {
     ]));
     //const mat = engine.createMaterial('triangle.filamat');
     //const mat = engine.createMaterial('/assets/k/S/h/N/kShN2'); // triangle.filamat
-    //const mat = engine.createMaterial('https://rawcdn.githack.com/google/filament/724e9abf960700201c05f50df80a60ddd3a1ce06/docs/webgl/triangle.filamat');
+    //const mat = engine.createMaterial('https://cdn.jsdelivr.net/gh/google/filament@724e9abf960700201c05f50df80a60ddd3a1ce06/docs/webgl/triangle.filamat');
     const mat = engine.createMaterial('https://cx20.github.io/webgl-test/examples/filament/square/square.filamat');
     const matinst = mat.getDefaultInstance();
     Filament.RenderableManager.Builder(1)
@@ -119,7 +119,7 @@ class App {
 }
 //Filament.init(['triangle.filamat'], () => {
 //Filament.init(['/assets/k/S/h/N/kShN2'], () => { // triangle.filamat
-//Filament.init(['https://rawcdn.githack.com/google/filament/724e9abf960700201c05f50df80a60ddd3a1ce06/docs/webgl/triangle.filamat'], () => {
+//Filament.init(['https://cdn.jsdelivr.net/gh/google/filament@724e9abf960700201c05f50df80a60ddd3a1ce06/docs/webgl/triangle.filamat'], () => {
 Filament.init(['https://cx20.github.io/webgl-test/examples/filament/square/square.filamat'], () => {
   window.app = new App()
 });

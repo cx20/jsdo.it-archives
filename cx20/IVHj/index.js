@@ -71,7 +71,7 @@ var createScene = function() {
 */
     // Skybox
     var cubeTexture = new BABYLON.CubeTexture(
-        "https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/", // "../../textures/cube/skybox/",
+        "https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/", // "../../textures/cube/skybox/",
         scene,
         ["px.jpg", "py.jpg", "pz.jpg", "nx.jpg", "ny.jpg", "nz.jpg"]
     );

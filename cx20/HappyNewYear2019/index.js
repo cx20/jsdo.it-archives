@@ -8,7 +8,7 @@ var createScene = function(engine) {
     var mesh;
     scene.clearColor = new BABYLON.Color3(1, 1, 1);
 
-    BABYLON.SceneLoader.Load("https://rawcdn.githack.com/cx20/jsdo-static-contents/474496ebb2c82ce14f8fb97e48d3ac577b289798/models/gltf/2.0/VoxelBoar/glTF_merge/", "VoxelBoar.glb", engine, function (newScene) {
+    BABYLON.SceneLoader.Load("https://cdn.jsdelivr.net/gh/cx20/jsdo-static-contents@474496ebb2c82ce14f8fb97e48d3ac577b289798/models/gltf/2.0/VoxelBoar/glTF_merge/", "VoxelBoar.glb", engine, function (newScene) {
         scene = newScene;
         mesh = scene.meshes[0];
 
@@ -23,7 +23,7 @@ var createScene = function(engine) {
 
         // Skybox
         var cubeTexture = new BABYLON.CubeTexture(
-            "https://rawcdn.githack.com/cx20/gltf-test/c479d543/textures/cube/skybox/",
+            "https://cdn.jsdelivr.net/gh/cx20/gltf-test@c479d543/textures/cube/skybox/",
             scene,
             ["px.jpg", "py.jpg", "pz.jpg", "nx.jpg", "ny.jpg", "nz.jpg"]
         );

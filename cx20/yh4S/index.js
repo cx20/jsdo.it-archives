@@ -60,7 +60,7 @@ app.root.addChild(light);
 
 var gltf;
 function init(){
-    var url = "https://rawcdn.githack.com/cx20/gltf-test/313ae4c3/sampleModels/Box/glTF-Embedded/Box.gltf"
+    var url = "https://cdn.jsdelivr.net/gh/cx20/gltf-test@313ae4c3/sampleModels/Box/glTF-Embedded/Box.gltf"
     var filename = url.split('/').pop();
     app.assets.loadFromUrlAndFilename(url, filename, "container", function (err, asset) {
         var resource = asset.resource;

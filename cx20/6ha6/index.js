@@ -28,8 +28,8 @@ document.onload = function () {
     
     runtime = x3d.runtime;
     
-    //var url = "https://rawcdn.githack.com/ft-lab/ft-lab.github.io/c56ef016/gltf/grass/rocks_trees_ao.glb";
-    var url = "https://rawcdn.githack.com/mrdoob/three.js/dev/examples/models/gltf/PrimaryIonDrive.glb";
+    //var url = "https://cdn.jsdelivr.net/gh/ft-lab/ft-lab.github.io@c56ef016/gltf/grass/rocks_trees_ao.glb";
+    var url = "https://cdn.jsdelivr.net/gh/mrdoob/three.js@dev/examples/models/gltf/PrimaryIonDrive.glb";
 
     document.getElementById("inline").setAttribute("url", url);
 

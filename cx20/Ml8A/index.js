@@ -34,7 +34,7 @@ var geometryCube = glBoostContext.createCube(new GLBoost.Vector3(3, 3, 3), new G
 // setup material
 var material = glBoostContext.createPBRMetallicRoughnessMaterial();
 material.shaderClass = GLBoost.PBRPrincipledShader;
-var urlBase = "https://rawcdn.githack.com/cx20/jsdo-static-contents/2e26d2e3787eef8301ec72393978d3d835024a3c/";
+var urlBase = "https://cdn.jsdelivr.net/gh/cx20/jsdo-static-contents@2e26d2e3787eef8301ec72393978d3d835024a3c/";
 /*
 var texture          = glBoostContext.createTexture(urlBase + 'textures/Brick_wall_02_1K_Base_Color.jpg');
 var textureAO        = glBoostContext.createTexture(urlBase + 'textures/Brick_wall_02_1K_AO.jpg');
