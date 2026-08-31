@@ -2,7 +2,8 @@
 // forked from cx20's "Cesium.js を用いて富士山を表示してみるテスト" http://jsdo.it/cx20/6Dgw
 // forked from cx20's "3D地図ライブラリ「Cesium」を用いて地球を表示してみるテスト" http://jsdo.it/cx20/pGyG
 
-var worldTerrain = Cesium.createWorldTerrain({
+(async function() {
+var worldTerrain = await Cesium.createWorldTerrainAsync({
 //    requestWaterMask: true,
 //    requestVertexNormals: true
 });
@@ -34,3 +35,4 @@ function flyToMtShinmoedake() {
 }
 
 flyToMtShinmoedake();
+})();

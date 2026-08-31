@@ -23,7 +23,7 @@ function flyToTokyoRectangle() {
     var south = 35.685692 - 2.0;
     var east = 139.054784 + 2.0;
     var north = 35.685692 + 2.0;
-    scene.camera.flyToRectangle({
+    scene.camera.flyTo({
         destination : Cesium.Rectangle.fromDegrees(west, south, east, north)
     });
 }
